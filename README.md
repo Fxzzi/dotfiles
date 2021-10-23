@@ -2,9 +2,14 @@
 Dotfiles for my Arch linux configurations, edited and maintained by FaarisAnsari.
 
 ![Nord Screenshot](https://cdn.upload.systems/uploads/5K5fvRUu.png)
+![rofi](https://cdn.upload.systems/uploads/8ppzDPUT.png)
 
 # Permissions
 All of these are free to use! I've uploaded them in a way where all files are where you need them to be when you clone.
+
+# Wallpapers
+Huge thanks to @linuxdotexe for these beautiful wallpapers!
+[nordic-wallpapers](https://github.com/linuxdotexe/nordic-wallpapers "nordic-wallpapers on GitHub")
 
 # Dependencies
 
