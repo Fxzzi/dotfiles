@@ -117,13 +117,13 @@
 [urgency_normal]
 
     # Normal urgency notifications
-    background = "#202632"
-    foreground = "#ffffff"
+    background = "#434C5E"
+    foreground = "#E5E9F0"
     timeout = 5
 
 [urgency_critical]
 
     # High urgency notifications
-    background = "#ffffff"
-    foreground = "#db0101"
+    background = "#88C0D0"
+    foreground = "#ECEFF4"
     timeout = 0
