@@ -199,7 +199,10 @@ exec --no-startup-id openrgb --startminimized --profile Blue.orp
 exec --no-startup-id pactl set-default-sink alsa_output.pci-0000_2b_00.1.hdmi-stereo-extra2
 exec --no-startup-id pactl set-default-source alsa_input.usb-Generic_Blue_Microphones_2052BAB0KZA8-00.analog-stereo
 exec --no-startup-id unclutter
-exec_always --no-startup-id dunst -conf /home/faaris/.config/dunst/base16-nord.dunstrc
+exec_always --no-startup-id dunst
+exec --no-startup-id xrandr --output DP-2 --mode 2560x1440 --rate 169.83
+exec --no-startup-id nvidia-settings -a "DigitalVibrance=400"
+exec --no-startup-id /home/faaris/suspend.sh
 
 ## Remove Title Bars.
 for_window [class="^.*"] border pixel 1
