@@ -48,7 +48,7 @@ idle_fg = "#718ca8"
 
 [[block]]
 block = "time"
-interval = 0
+interval = 1
 format = "%a %d/%m %T"
 [block.theme_overrides]
 idle_bg = "#2e3440"
