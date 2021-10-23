@@ -209,7 +209,7 @@ exec --no-startup-id xset s off
 for_window [class="^.*"] border pixel 1
 
 ## start rofi (a program launcher)
-bindsym $mod+d exec --no-startup-id rofi -modi drun -show drun
+bindsym $mod+d exec --no-startup-id rofi -show drun
 
 ## app open keybindings
 bindsym $mod+t exec alacritty
