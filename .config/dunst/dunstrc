@@ -28,6 +28,7 @@
     sort = yes
     # Idle seconds
     idle_threshold = 0
+    icon_path = /usr/share/icons/Adwaita/16x16/status/:/usr/share/icons/Adwaita/16x16/devices/:/usr/share/icons/Adwaita/16x16/legacy/
 
     ### Text ###
 
