@@ -202,7 +202,7 @@ exec --no-startup-id unclutter
 exec_always --no-startup-id dunst -conf ~/.config/dunst/dunstrc
 exec --no-startup-id xrandr --output DP-2 --mode 2560x1440 --rate 169.83
 exec --no-startup-id nvidia-settings -a "DigitalVibrance=400"
-exec --no-startup-id ~/dotfiles/.scripts/xidlehook.sh
+exec --no-startup-id ~/.scripts/xidlehook.sh
 exec --no-startup-id xset s off
 
 ## Remove Title Bars.
