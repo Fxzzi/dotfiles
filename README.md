@@ -3,6 +3,24 @@ THIS WILL OVERWRITE OLD CONFIGS IF THEY ARE PRESENT. PLEASE USE AT YOUR OWN RISK
 
 SOME CONFIGS MAY BE SPECIFIC TO MY SYSTEM. PLEASE CONSULT THE CONFIGS FOR MORE INFO AND CHECK THE DEPENDENCY PAGES FOR SUB-DEPENDECIES BEFORE INSTALLING!
 
+# 📖 Jump to
+
+[WARNING!](https://github.com/FaarisAnsari/nord-dotfiles#%EF%B8%8F-warning)
+
+[nord-dotfiles](https://github.com/FaarisAnsari/nord-dotfiles#-nord-dotfiles)
+
+[Permissions](https://github.com/FaarisAnsari/nord-dotfiles#-permissions)
+
+[Wallpapers](https://github.com/FaarisAnsari/nord-dotfiles#%EF%B8%8F-wallpapers)
+
+[Dependencies](https://github.com/FaarisAnsari/nord-dotfiles#-dependencies)
+
+[Dependencies without configs](https://github.com/FaarisAnsari/nord-dotfiles#-dependencies-without-configs)
+
+[Optional Apps](https://github.com/FaarisAnsari/nord-dotfiles#use-these-if-you-want-some-of-the-programs-that-i-use-in-the-screenshots)
+
+[Installation](https://github.com/FaarisAnsari/nord-dotfiles#%EF%B8%8F-installation)
+
 # 🔷 nord-dotfiles
 Dotfiles for my Arch linux configurations, edited and maintained by FaarisAnsari.
 
@@ -37,7 +55,7 @@ Huge thanks to @ linuxdotexe for these beautiful wallpapers!
 
 [rofi](https://github.com/davatorium/rofi "rofi on GitHub")
 
-## 👩‍💻 Dependecies without configs
+## 👩‍💻 Dependencies without configs
 
 
 [zsh](https://www.zsh.org/ "zsh")
@@ -58,11 +76,15 @@ Huge thanks to @ linuxdotexe for these beautiful wallpapers!
 
 [spotify (needed for spicetify)](https://www.spotify.com/us/download/linux/ "Spotify for Linux")
 
+[Ungoogled-chromium](https://github.com/Eloston/ungoogled-chromium "ungoogled-chromium on GitHub")
+
 ## ✔️ Installation
 
 ```
-copy .config to your home folder
-copy .zshrc and .xprofile to root home directory
+# git clone https://github.com/FaarisAnsari/nord-dotfiles.git && cd nord-dotfiles
+# cp -i .config ~/.config
+# cp -i .zshrc ~/.zshrc
+# cp -i .xprofile ~/.xprofile
 
-(or symlink if you know what you're doing)
+(or symlink if you know what you're doing.)
 ```
