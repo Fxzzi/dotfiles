@@ -44,3 +44,6 @@ Huge thanks to @linuxdotexe for these beautiful wallpapers!
 ```
 copy .config to your home folder (or symlink if you know what you're doing)
 ```
+```
+copy .zshrc and .xprofile to root home directory
+```
