@@ -36,9 +36,9 @@ exec --no-startup-id nm-applet
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id i3-volume -n up 5
+bindsym XF86AudioLowerVolume exec --no-startup-id i3-volume -n down 5
+bindsym XF86AudioMute exec --no-startup-id i3-volume -n mute
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -198,6 +198,8 @@ exec --no-startup-id xset r rate 210 40
 exec --no-startup-id openrgb --startminimized --profile Blue.orp
 exec --no-startup-id pactl set-default-sink alsa_output.pci-0000_2b_00.1.hdmi-stereo-extra2
 exec --no-startup-id pactl set-default-source alsa_input.usb-Generic_Blue_Microphones_2052BAB0KZA8-00.analog-stereo
+exec --no-startup-id unclutter
+exec_always --no-startup-id dunst -conf /home/faaris/.config/dunst/base16-nord.dunstrc
 
 ## Remove Title Bars.
 for_window [class="^.*"] border pixel 1
