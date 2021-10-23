@@ -222,5 +222,7 @@ bindsym $mod+Shift+Escape exec ~/.scripts/lock.sh
 
 ## other configurations
 focus_follows_mouse no
-gaps inner 16
+gaps inner 14
 gaps outer 8
+
+for_window [class=".*"] border pixel 4
