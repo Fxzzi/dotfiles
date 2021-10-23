@@ -192,7 +192,7 @@ exec --no-startup-id nitrogen --restore
 exec --no-startup-id discord-canary --start-minimized
 exec_always --no-startup-id picom --experimental-backends --config /home/faaris/.config/picom.conf
 exec --no-startup-id imwheel b "45"
-exec_always --no-startup-id /usr/bin/light-locker
+exec_always --no-startup-id autotiling
 exec_always --no-startup-id for id in $(xinput list | grep "pointer" | cut -d '=' -f 2 | cut -f 1); do xinput --set-prop $id 'libinput Accel Profile Enabled' 0, 1; done
 exec --no-startup-id xset r rate 210 40
 exec --no-startup-id openrgb --startminimized --profile Blue.orp
@@ -218,4 +218,3 @@ bindsym $mod+Shift+Escape exec /home/faaris/lock.sh
 focus_follows_mouse no
 gaps inner 16
 gaps outer 8
-
