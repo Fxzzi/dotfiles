@@ -12,10 +12,10 @@
 # 'autosens' will attempt to decrease sensitivity if the bars peak. 1 = on, 0 = off
 # new as of 0.6.0 autosens of low values (dynamic range)
 # 'overshoot' allows bars to overshoot (in % of terminal height) without initiating autosens. DEPRECATED as of 0.6.0
-; autosens = 1
+; autosens = 0
 ; overshoot = 20
 
-# Manual sensitivity in %. Autosens must be turned off for this to take effect.
+# Manual sensitivity in %. If autosens is enabled, this will only be the initial value.
 # 200 means double height. Accepts only non-negative values.
 ; sensitivity = 100
 
@@ -116,21 +116,21 @@
 # if supported, ncurses mode will be forced on if user defined colors are used.
 # default is to keep current terminal color
 ; background = default
-; foreground = default
+foreground = '#d50368'
 
 # Gradient mode, only hex defined colors (and thereby ncurses mode) are supported,
 # background must also be defined in hex  or remain commented out. 1 = on, 0 = off.
 # You can define as many as 8 different colors. They range from bottom to top of screen
-; gradient = 1
-; gradient_count = 8
-; gradient_color_1 = '#59cc33'
-; gradient_color_2 = '#80cc33'
-; gradient_color_3 = '#a6cc33'
-; gradient_color_4 = '#cccc33'
-; gradient_color_5 = '#cca633'
-; gradient_color_6 = '#cc8033'
-; gradient_color_7 = '#cc5933'
-; gradient_color_8 = '#cc3333'
+gradient = 1
+gradient_count = 8
+gradient_color_1 = '#5e81ac'
+gradient_color_2 = '#618ab2'
+gradient_color_3 = '#6593b8'
+gradient_color_4 = '#699dbd'
+gradient_color_5 = '#70a6c2'
+gradient_color_6 = '#77aec7'
+gradient_color_7 = '#7fb7cc'
+gradient_color_8 = '#88c0d0'
 
 
 
