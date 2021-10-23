@@ -218,7 +218,7 @@ bindsym $mod+f exec nautilus
 #bindsym $mod+d exec discord-canary
 bindsym $mod+Print exec gnome-screenshot -a
 bindsym Print exec gnome-screenshot
-bindsym $mod+Shift+Escape exec ~/dotfiles/.scripts/lock.sh
+bindsym $mod+Shift+Escape exec ~/.scripts/lock.sh
 
 ## other configurations
 focus_follows_mouse no
