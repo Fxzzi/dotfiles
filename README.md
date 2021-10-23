@@ -55,7 +55,9 @@ Huge thanks to @ linuxdotexe for these beautiful wallpapers!
 
 [rofi](https://github.com/davatorium/rofi "rofi on GitHub")
 
-[i3lock](https://github.com/i3/i3lock ""i3lock on GitHub)
+[i3lock-color](https://github.com/Raymo111/i3lock-color "i3lock-color on GitHub")
+
+[xidlehook](https://github.com/jD91mZM2/xidlehook "xidlehook on github")
 
 ## 👩‍💻 Dependencies without configs
 
