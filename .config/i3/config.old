@@ -19,10 +19,6 @@ font pango:monospace 8
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
 
-# Start XDG autostart .desktop files using dex. See also
-# https://wiki.archlinux.org/index.php/XDG_Autostart
-exec --no-startup-id dex --autostart --environment i3
-
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
@@ -44,8 +40,19 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+# start a terminal
+bindsym $mod+Return exec alacritty
+
 # kill focused window
-bindsym $mod+q kill
+bindsym $mod+Shift+q kill
+
+# start dmenu (a program launcher)
+bindsym $mod+d exec --no-startup-id dmenu_run
+# A more modern dmenu replacement is rofi:
+# bindcode $mod+40 exec "rofi -modi drun,run -show drun"
+# There also is i3-dmenu-desktop which only displays applications shipping a
+# .desktop file. It is a wrapper around dmenu, so you need that installed.
+# bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
 # change focus
 bindsym $mod+j focus left
@@ -78,7 +85,7 @@ bindsym $mod+h split h
 bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
-bindsym $mod+Shift+f fullscreen toggle
+bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -89,7 +96,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-# bindsym $mod+space focus mode_toggle
+bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -155,10 +162,10 @@ mode "resize" {
         bindsym semicolon resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 2 px or 2 ppt
-        bindsym Down resize grow height 2 px or 2 ppt
-        bindsym Up resize shrink height 2 px or 2 ppt
-        bindsym Right resize grow width 2 px or 2 ppt
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
 
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
@@ -168,52 +175,8 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-
-
-## i3status-rust
+# Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available)
 bar {
-    font pango:DejaVu Sans Mono, FontAwesome 14
-    position top
-    status_command /home/faaris/.cargo/bin/i3status-rs /home/faaris/.config/i3status-rust/config.toml
-    i3bar_command i3bar --transparency  
-    colors {
-        separator #00000000
-        background #00000000
-        statusline #00000000
-        focused_workspace #434C5E #434C5E #ffffff
-        active_workspace #434C5E #434C5E #ffffff
-        inactive_workspace #2E3440 #2E3440 #D8DEE9
-        urgent_workspace #2f343a #900000 #ffffff
-    }
+        status_command i3status
 }
-
-## Startup Commands
-exec --no-startup-id nitrogen --restore
-exec --no-startup-id discord-canary --start-minimized
-exec_always --no-startup-id picom --experimental-backends --config /home/faaris/.config/picom.conf
-exec --no-startup-id imwheel b "45"
-exec_always --no-startup-id /usr/bin/light-locker
-exec_always --no-startup-id for id in $(xinput list | grep "pointer" | cut -d '=' -f 2 | cut -f 1); do xinput --set-prop $id 'libinput Accel Profile Enabled' 0, 1; done
-exec --no-startup-id xset r rate 210 40
-exec --no-startup-id openrgb --startminimized --profile Blue.orp
-exec --no-startup-id pactl set-default-sink alsa_output.pci-0000_2b_00.1.hdmi-stereo-extra2
-exec --no-startup-id pactl set-default-source alsa_input.usb-Generic_Blue_Microphones_2052BAB0KZA8-00.analog-stereo
-## Remove Title Bars.
-for_window [class="^.*"] border pixel 1
-
-## start rofi (a program launcher)
-bindsym $mod+d exec --no-startup-id rofi -modi drun -show drun
-
-## app open keybindings
-bindsym $mod+t exec alacritty
-bindsym $mod+b exec chromium
-bindsym $mod+f exec nautilus
-#bindsym $mod+d exec discord-canary
-bindsym $mod+Print exec gnome-screenshot -a
-bindsym Print exec gnome-screenshot
-
-## other configurations
-focus_follows_mouse no
-gaps inner 16
-gaps outer 8
-

@@ -89,7 +89,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-# bindsym $mod+space focus mode_toggle
+bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -155,10 +155,10 @@ mode "resize" {
         bindsym semicolon resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 2 px or 2 ppt
-        bindsym Down resize grow height 2 px or 2 ppt
-        bindsym Up resize shrink height 2 px or 2 ppt
-        bindsym Right resize grow width 2 px or 2 ppt
+        bindsym Left resize shrink width 5 px or 5 ppt
+        bindsym Down resize grow height 5 px or 5 ppt
+        bindsym Up resize shrink height 5 px or 5 ppt
+        bindsym Right resize grow width 5 px or 5 ppt
 
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
@@ -180,9 +180,9 @@ bar {
         separator #00000000
         background #00000000
         statusline #00000000
-        focused_workspace #434C5E #434C5E #ffffff
-        active_workspace #434C5E #434C5E #ffffff
-        inactive_workspace #2E3440 #2E3440 #D8DEE9
+        focused_workspace #0088CC #0088CC #ffffff
+        active_workspace #333333 #333333 #ffffff
+        inactive_workspace #333333 #333333 #888888
         urgent_workspace #2f343a #900000 #ffffff
     }
 }
@@ -196,8 +196,7 @@ exec_always --no-startup-id /usr/bin/light-locker
 exec_always --no-startup-id for id in $(xinput list | grep "pointer" | cut -d '=' -f 2 | cut -f 1); do xinput --set-prop $id 'libinput Accel Profile Enabled' 0, 1; done
 exec --no-startup-id xset r rate 210 40
 exec --no-startup-id openrgb --startminimized --profile Blue.orp
-exec --no-startup-id pactl set-default-sink alsa_output.pci-0000_2b_00.1.hdmi-stereo-extra2
-exec --no-startup-id pactl set-default-source alsa_input.usb-Generic_Blue_Microphones_2052BAB0KZA8-00.analog-stereo
+
 ## Remove Title Bars.
 for_window [class="^.*"] border pixel 1
 
@@ -216,4 +215,3 @@ bindsym Print exec gnome-screenshot
 focus_follows_mouse no
 gaps inner 16
 gaps outer 8
-
