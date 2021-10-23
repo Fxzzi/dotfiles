@@ -85,10 +85,11 @@ Huge thanks to @ linuxdotexe for these beautiful wallpapers!
 ## ✔️ Installation
 
 ```
-# git clone https://github.com/FaarisAnsari/nord-dotfiles.git && cd nord-dotfiles
+# git clone https://github.com/FaarisAnsari/dotfiles.git && cd dotfiles
 # cp -i .config ~/.config
 # cp -i .zshrc ~/.zshrc
 # cp -i .xprofile ~/.xprofile
+# cp -i .scripts ~/.scripts
 
 (or symlink if you know what you're doing.)
 ```
