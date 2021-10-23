@@ -1,18 +1,23 @@
-# nord-dotfiles
+# ⚠️ WARNING!
+THIS WILL OVERWRITE OLD CONFIGS IF THEY ARE PRESENT. PLEASE USE AT YOUR OWN RISK.
+
+SOME CONFIGS MAY BE SPECIFIC TO MY SYSTEM. PLEASE CONSULT THE CONFIGS FOR MORE INFO AND CHECK THE DEPENDECY PAGES FOR SUB-DEPENDECIES BEFORE INSTALLING!
+
+# 🔷 nord-dotfiles
 Dotfiles for my Arch linux configurations, edited and maintained by FaarisAnsari.
 
 ![Nord Screenshot](https://cdn.upload.systems/uploads/5K5fvRUu.png)
 ![rofi](https://cdn.upload.systems/uploads/8ppzDPUT.png)
 ![neofetch](https://cdn.upload.systems/uploads/uCdiX2xq.png)
 
-# Permissions
+# 🙏 Permissions
 All of these are free to use! I've uploaded them in a way where all files are where you need them to be when you clone.
 
-# Wallpapers
+# 🖥️ Wallpapers
 Huge thanks to @linuxdotexe for these beautiful wallpapers!
 [nordic-wallpapers](https://github.com/linuxdotexe/nordic-wallpapers "nordic-wallpapers on GitHub")
 
-# Dependencies
+# 👨‍💻 Dependencies
 
 [i3-gaps](https://github.com/Airblader/i3 "i3-gaps on GitHub")
 
@@ -42,7 +47,7 @@ Huge thanks to @linuxdotexe for these beautiful wallpapers!
 
 [Powerlevel10k](https://github.com/romkatv/powerlevel10k "Powerlevel10k on GitHub")
 
-# Installation
+# ✔️ Installation
 
 ```
 copy .config to your home folder (or symlink if you know what you're doing)
