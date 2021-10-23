@@ -40,6 +40,8 @@ Huge thanks to @linuxdotexe for these beautiful wallpapers!
 
 [spicetify](https://github.com/khanhas/spicetify-cli "spicetify-cli on GitHub")
 
+[Powerlevel10k](https://github.com/romkatv/powerlevel10k "Powerlevel10k on GitHub")
+
 # Installation
 
 ```
