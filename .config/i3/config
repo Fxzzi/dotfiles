@@ -203,6 +203,7 @@ exec_always --no-startup-id dunst
 exec --no-startup-id xrandr --output DP-2 --mode 2560x1440 --rate 169.83
 exec --no-startup-id nvidia-settings -a "DigitalVibrance=400"
 exec --no-startup-id /home/faaris/dotfiles/.scripts/suspend.sh
+exec --no-startup-id xset s off
 
 ## Remove Title Bars.
 for_window [class="^.*"] border pixel 1
