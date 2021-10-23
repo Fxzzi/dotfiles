@@ -70,7 +70,7 @@ Huge thanks to @ linuxdotexe for these beautiful wallpapers!
 
 [Powerlevel10k](https://github.com/romkatv/powerlevel10k "Powerlevel10k on GitHub")
 
-### Use these if you want some of the programs that I use in the screenshots!
+## ‼️ Optional Apps from Screenshots
 
 [rsClock](https://github.com/valebes/rsClock "rsClock on GitHub")
 
