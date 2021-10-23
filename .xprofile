@@ -1,3 +1,4 @@
 xset s off
 xset -dpms
 xset s noblank
+nvidia-settings -a "DigitalVibrance=400"

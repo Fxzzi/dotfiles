@@ -198,6 +198,7 @@ exec --no-startup-id xset r rate 210 40
 exec --no-startup-id openrgb --startminimized --profile Blue.orp
 exec --no-startup-id pactl set-default-sink alsa_output.pci-0000_2b_00.1.hdmi-stereo-extra2
 exec --no-startup-id pactl set-default-source alsa_input.usb-Generic_Blue_Microphones_2052BAB0KZA8-00.analog-stereo
+
 ## Remove Title Bars.
 for_window [class="^.*"] border pixel 1
 
@@ -211,6 +212,7 @@ bindsym $mod+f exec nautilus
 #bindsym $mod+d exec discord-canary
 bindsym $mod+Print exec gnome-screenshot -a
 bindsym Print exec gnome-screenshot
+bindsym $mod+Shift+Escape exec /home/faaris/lock.sh
 
 ## other configurations
 focus_follows_mouse no
