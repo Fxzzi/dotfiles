@@ -118,4 +118,4 @@ neofetch --config ~/.config/neofetch/blockfetch.conf
 
 #--kitty "/home/faaris/.config/neofetch/SonicBig.png" --image_size none
 
-export PATH="/home/faaris/git/rsClock/target/release:$PATH"
+export PATH="~/git/rsClock/target/release:$PATH"
