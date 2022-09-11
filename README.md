@@ -22,7 +22,7 @@ This will create symlinks and overwrite files. It will also install all packages
 
 [Wallpaper Folder](https://github.com/Fxzzi/.dots/tree/main/walls "walls folder") 
 
-=======
+---
 
 <details>
   <summary>👨‍💻 Dependencies</summary>
