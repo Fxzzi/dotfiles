@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>kitty</icon>
+	<name>Open Kitty Here</name>
+	<unique-id>1639924717782833-1</unique-id>
+	<command>kitty %f</command>
+	<description></description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>accessories-text-editor</icon>
+	<name>Edit with Nano</name>
+	<unique-id>1640175617623905-4</unique-id>
+	<command>kitty nano %f</command>
+	<description></description>
+	<patterns>*</patterns>
+	<text-files/>
+</action>
+<action>
+	<icon>com.github.donadigo.appeditor</icon>
+	<name>Edit with Nano (doas)</name>
+	<unique-id>1640175685205739-5</unique-id>
+	<command>kitty doas nano %f</command>
+	<description></description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<text-files/>
+</action>
+<action>
+	<icon>clipboard</icon>
+	<name>Copy File Path</name>
+	<unique-id>1653335357081852-1</unique-id>
+	<command>echo -n %f | xclip -selection clipboard</command>
+	<description></description>
+	<patterns>*</patterns>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+</actions>

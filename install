@@ -1,0 +1,60 @@
+#!/usr/bin/env bash
+
+set -e
+
+CONFIG="install.conf.yaml"
+DOTBOT_DIR="dotbot"
+
+DOTBOT_BIN="bin/dotbot"
+BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+cd "${BASEDIR}"
+git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
+git submodule update --init --recursive "${DOTBOT_DIR}"
+
+"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
+
+while true
+do
+      read -r -p "Do you want to install paru? [Y/n] " input
+ 
+      case $input in
+            [yY][eE][sS]|[yY])
+                  echo Installing!
+		  sudo pacman -S --needed base-devel
+		  git clone https://aur.archlinux.org/paru.git
+		  cd paru
+		  makepkg -si
+		  cd ..
+  		  rm -rf paru
+                  break
+                  ;;
+            [nN][oO]|[nN])
+                  echo "No Problem."
+                  break
+                  ;;
+            *)
+                  echo "Invalid input..."
+                  ;;
+      esac      
+done
+
+while true
+do
+      read -r -p "Do you want to install all packages from needed.list? [Y/n] " input
+
+      case $input in
+            [yY][eE][sS]|[yY])
+                  echo Installing!
+                  paru -Syu --needed --noconfirm - < ${BASEDIR}/needed.list
+                  break
+                  ;;
+            [nN][oO]|[nN])
+                  echo "Okay!"
+                  break
+                  ;;
+            *)
+                  echo "Invalid input..."
+                  ;;
+      esac
+done

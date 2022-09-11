@@ -1,0 +1,10 @@
+[Configuration]
+LastActiveMode=THUNAR_RENAMER_MODE_BOTH
+LastActiveRenamer=TagRenamer
+
+[TagRenamer]
+Lowercase=FALSE
+ReplaceSpaces=FALSE
+Text=
+Format=TAG_RENAMER_FORMAT_ARTIST_TITLE
+
