@@ -5,7 +5,7 @@ python $HOME/.config/bspwm/workspaces.py &
 
 # Launch Programs
 pgrep -x sxhkd > /dev/null || sxhkd &
-picom -b --experimental-backends & # Compositor
+picom & # Compositor
 nitrogen --restore & # Wallpaper
 
 nvidia-settings --config=$XDG_CONFIG_HOME/nvidia/settings --load-config-only & # Load nvidia settings

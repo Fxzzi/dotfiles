@@ -1,0 +1,79 @@
+{
+    "unsafeRequire": false,
+    "useQuickCss": true,
+    "plugins": {
+        "STFU": {
+            "enabled": false
+        },
+        "MessageEventsAPI": {
+            "enabled": true
+        },
+        "BANger": {
+            "enabled": false
+        },
+        "BetterGifAltText": {
+            "enabled": false
+        },
+        "ClickableRoleDot": {
+            "enabled": false
+        },
+        "Experiments": {
+            "enabled": false
+        },
+        "Ify": {
+            "enabled": true
+        },
+        "MessageQuickActions": {
+            "enabled": true
+        },
+        "Nitro Bypass": {
+            "enabled": true
+        },
+        "NoTrack": {
+            "enabled": true
+        },
+        "Settings": {
+            "enabled": true
+        },
+        "Unindent": {
+            "enabled": true
+        },
+        "ViewIcons": {
+            "enabled": true
+        },
+        "ApiNotices": {
+            "enabled": true
+        },
+        "ConsoleShortcuts": {
+            "enabled": false
+        },
+        "iLoveSpam": {
+            "enabled": false
+        },
+        "isStaff": {
+            "enabled": false
+        },
+        "MuteNewGuild": {
+            "enabled": true
+        },
+        "NitroBypass": {
+            "enabled": true
+        },
+        "NoReplyMention": {
+            "enabled": false
+        },
+        "PlainFolderIcon": {
+            "enabled": true
+        },
+        "RandomiseFileNames": {
+            "enabled": true
+        },
+        "SilentTyping": {
+            "enabled": false
+        },
+        "BetterUploadButton": {
+            "enabled": true
+        }
+    },
+    "notifyAboutUpdates": true
+}
