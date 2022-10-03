@@ -22,7 +22,7 @@
     ~/.config/zsh: .config/zsh
     ~/.config/X11: .config/X11
     ~/.local/scripts: scripts
-    ~/.local/share/fonts: fonts
+    ~/.local/share/fonts: .local/share/fonts
     ~/.imwheelrc: .imwheelrc
     ~/.zshenv: .zshenv
 

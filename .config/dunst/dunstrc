@@ -12,7 +12,7 @@ progress_bar_min_width = 240
 progress_bar_max_width = 480
 
 dmenu = /usr/bin/rofi -show run
-browser = /usr/bin/librewolf
+browser = /usr/bin/firefox
 
 indicate_hidden = true
 shrink = true
@@ -35,12 +35,12 @@ offset = "11x58"
 
 format = "<b>%s</b>\n%b"
 alignment = left
-show_age_threshold = 60
+show_age_threshold = 120
 word_wrap = true
 ignore_newline = false
-stack_duplicates = false
-hide_duplicate_count = true
-show_indicators = true
+stack_duplicates = true
+hide_duplicate_count = false
+show_indicators = false
 
 icon_position = left
 max_icon_size = 100
@@ -56,8 +56,8 @@ notification_limit = 5
 icon_theme = Papirus-Dark
 enable_recursive_icon_lookup = true
 
-mouse_left_click = close_current
-mouse_right_click = do_action
+mouse_right_click= close_current
+mouse_left_click = do_action
 
 ignore_dbusclose = true
 
@@ -88,8 +88,13 @@ format = "<b>%s</b>\n%b"
 appname= Spotify
 summary = "*"
 set_stack_tag = "spotify"
-format = "<b>Now Playing </b>%s\n%b"
+format = "<b>Now Playing</b>\n%b"
 
 [volume]
 summary = "Volume *"
-format = "<b>Volume</b>\n%n%%"
+format = "<b>Volume</b>\n"
+
+[discord]
+appname = discord
+summary = "*"
+set_stack_tag = "discord"

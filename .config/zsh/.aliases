@@ -11,16 +11,17 @@ alias ll='exa --icons -lah --group-directories-first'
 alias ls='exa --icons --group-directories-first'
 alias tree='exa --icons --tree'
 
-alias bsrc="nano $HOME/.config/bspwm/bspwmrc"
-alias sxrc="nano $HOME/.config/sxhkd/sxhkdrc"
-alias picomrc="nano $HOME/.config/picom/picom.conf"
-alias dunstrc="nano $HOME/.config/dunst/dunstrc"
-alias rofirc="nano $HOME/.config/rofi/config.rasi"
-alias kittyrc="nano $HOME/.config/kitty/kitty.conf"
-alias polybarrc="nano $HOME/.config/polybar/config.ini"
-alias zshrc="nano $HOME/.config/zsh/.zshrc"
-alias xinitrc="nano $HOME/.config/X11/xinitrc"
+alias bsrc="$EDITOR $HOME/.config/bspwm/bspwmrc"
+alias sxrc="$EDITOR $HOME/.config/sxhkd/sxhkdrc"
+alias picomrc="$EDITOR $HOME/.config/picom/picom.conf"
+alias dunstrc="$EDITOR $HOME/.config/dunst/dunstrc"
+alias rofirc="$EDITOR $HOME/.config/rofi/config.rasi"
+alias kittyrc="$EDITOR $HOME/.config/kitty/kitty.conf"
+alias polybarrc="$EDITOR $HOME/.config/polybar/config.ini"
+alias zshrc="$EDITOR $HOME/.config/zsh/.zshrc"
+alias xinitrc="$EDITOR $HOME/.config/X11/xinitrc"
 
 alias updates="checkupdates; paru -Qum"
 alias rs="curl --data-binary @- https://paste.rs | xclip -selection clipboard"
-
+alias neofetch="doas pacman -S --noconfirm --noprogressbar neofetch >/dev/null && neofetch && doas pacman -R --noconfirm --nosave neofetch >/dev/null"
+alias cmus="cmus-rpc-rs --b1u '' --b1t '' --link &>/dev/null & cmus"

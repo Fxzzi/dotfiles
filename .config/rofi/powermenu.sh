@@ -29,10 +29,10 @@ $reboot)
   systemctl reboot
   ;;
 $lock)
-  ~/.local/scripts/lock.sh
+  i3lock-fancy-multimonitor -n -p
   ;;
 $suspend)
-  ~/.local/scripts/lock.sh
+  i3lock-fancy-multimonitor -n -p
   systemctl suspend
   ;;
 $logout)

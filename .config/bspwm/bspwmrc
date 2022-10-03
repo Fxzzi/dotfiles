@@ -6,9 +6,8 @@ python $HOME/.config/bspwm/workspaces.py &
 # Launch Programs
 pgrep -x sxhkd > /dev/null || sxhkd &
 picom -b --experimental-backends & # Compositor
-imwheel -k -b 45 & # Mouse Scroll Speed
 nitrogen --restore & # Wallpaper
-for id in $(xinput list | grep "pointer" | cut -d '=' -f 2 | cut -f 1); do xinput --set-prop $id 'libinput Accel Profile Enabled' 0, 1; done & # Disables mouse acceleration
+
 nvidia-settings --config=$XDG_CONFIG_HOME/nvidia/settings --load-config-only & # Load nvidia settings
 $HOME/.config/polybar/launch.sh & # Polybar
 xset r rate 375 45 & # Typing repeat speed
@@ -28,8 +27,6 @@ bspc config click_to_focus any
 
 # Launch Programs only on login, and not on refresh of bspwm
 [ "$1" = 0 ] && {
-	$HOME/.local/scripts/res.sh &
-	xsetroot -cursor_name left_ptr &
 	discord --ignore-gpu-blocklist --disable-features=UseOzonePlatform --enable-features=VaapiVideoDecoder --use-gl=desktop --enable-gpu-rasterization --enable-zero-copy --start-minimized &
 	/usr/lib/mate-polkit/polkit-mate-authentication-agent-1 &
 	$HOME/.local/scripts/xidlehook.sh &

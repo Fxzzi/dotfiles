@@ -33,7 +33,7 @@
 	<icon>clipboard</icon>
 	<name>Copy File Path</name>
 	<unique-id>1653335357081852-1</unique-id>
-	<command>echo -n %f | xclip -selection clipboard</command>
+	<command>echo -n &apos;&quot;%f&quot;&apos; | xclip -selection clipboard</command>
 	<description></description>
 	<patterns>*</patterns>
 	<audio-files/>

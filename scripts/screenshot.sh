@@ -4,9 +4,7 @@
 # and then uploads with sharenix, copying the link to your
 # clipboard.
 
-tmpImage=$(mktemp /tmp/tmpImage.XXXXXXXXXX) # Makes a temporary file to save the screenshot to
-mv "$tmpImage" "$tmpImage.png"
-tmpImage="$tmpImage.png"
+tmpImage=$(mktemp /tmp/tmpImage.XXXXXXXXXX.png) # Makes a temporary file to save the screenshot to
 
 case $1 in
 # Takes screenshot of primary monitor
@@ -19,7 +17,7 @@ case $1 in
     ;;
 # Takes screenshot of rectangle selection
   --selection)
-    maim -sBulc '0,0,0,0.15' -m 3 "$tmpImage"
+    maim -sBu -m 3 "$tmpImage"
     ;;
 # Takes screenshot of active window
   --active)

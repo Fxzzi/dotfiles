@@ -11,7 +11,7 @@ xidlehook \
     'xrandr --output DP-2 --brightness 1 --output DP-4 --brightness 1' \
   `# Dim more & lock after 5 more minutes, undim if user becomes active` \
   --timer 300 \
-    'xrandr --output DP-2 --brightness 0.3 --output DP-4 --brightness 0.3; ~/.local/scripts/lock.sh' \
+    'xrandr --output DP-2 --brightness 0.3 --output DP-4 --brightness 0.3; i3lock-fancy-multimonitor -n -p' \
     'xrandr --output DP-2 --brightness 1 --output DP-4 --brightness 1' \
   `# Finally, suspend 5 minutes after it locks and undim` \
   --timer 300 \
