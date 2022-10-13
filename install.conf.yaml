@@ -22,6 +22,7 @@
     ~/.config/zsh: .config/zsh
     ~/.config/X11: .config/X11
     ~/.config/Vencord: .config/Vencord
+    ~/.config/redshift: .config/redshift
     ~/.local/scripts: scripts
     ~/.local/share/fonts: .local/share/fonts
     ~/.zshenv: .zshenv

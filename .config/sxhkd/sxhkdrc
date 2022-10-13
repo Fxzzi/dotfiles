@@ -18,7 +18,7 @@ shift + Print
 	
 # Clipboard History
 super + h
-	env CM_LAUNCHER=rofi clipmenu
+	rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 
 # Terminal Emulator
 super + t

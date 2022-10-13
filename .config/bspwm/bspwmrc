@@ -4,13 +4,22 @@
 python $HOME/.config/bspwm/workspaces.py &
 
 # Launch Programs
-pgrep -x sxhkd > /dev/null || sxhkd &
+pgrep -x sxhkd > /dev/null || sxhkd & # Keybinds
 picom & # Compositor
 nitrogen --restore & # Wallpaper
-
 nvidia-settings --config=$XDG_CONFIG_HOME/nvidia/settings --load-config-only & # Load nvidia settings
 $HOME/.config/polybar/launch.sh & # Polybar
 xset r rate 375 45 & # Typing repeat speed
+
+# Launch Programs only on login, and not on refresh of bspwm
+[ "$1" = 0 ] && {
+  discord --ignore-gpu-blocklist --disable-features=UseOzonePlatform --enable-features=VaapiVideoDecoder --use-gl=desktop --enable-gpu-rasterization --enable-zero-copy --start-minimized & # Discord with performance flags
+  /usr/lib/mate-polkit/polkit-mate-authentication-agent-1 & # Polkit
+  $HOME/.local/scripts/xidlehook.sh & # Auto suspend and lockscreen
+  /usr/bin/openrgb -p blue.orp & # RGB on Computer
+  greenclip daemon & # Clipboard manager
+  redshift & # Blue light filter
+}
 
 bspc config border_width        		3
 bspc config window_gap          		6
@@ -24,11 +33,4 @@ bspc config borderless_monocle true
 bspc config gapless_monocle true
 bspc config focus_follows_pointer false
 bspc config click_to_focus any 
-
-# Launch Programs only on login, and not on refresh of bspwm
-[ "$1" = 0 ] && {
-	discord --ignore-gpu-blocklist --disable-features=UseOzonePlatform --enable-features=VaapiVideoDecoder --use-gl=desktop --enable-gpu-rasterization --enable-zero-copy --start-minimized &
-	/usr/lib/mate-polkit/polkit-mate-authentication-agent-1 &
-	$HOME/.local/scripts/xidlehook.sh &
-	/usr/bin/openrgb -p blue.orp &
-}
+bspc config pointer_follows_monitor true

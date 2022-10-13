@@ -73,7 +73,62 @@
         },
         "BetterUploadButton": {
             "enabled": true
+        },
+        "NoBlockedMessages": {
+            "enabled": false
+        },
+        "NoSystemBadge": {
+            "enabled": false
+        },
+        "clearURLs": {
+            "enabled": true
+        },
+        "Webhook Tags": {
+            "enabled": true
+        },
+        "CommandsAPI": {
+            "enabled": true
+        },
+        "lenny": {
+            "enabled": true
+        },
+        "Moyai": {
+            "enabled": false
+        },
+        "NoCanaryMessageLinks": {
+            "enabled": false
+        },
+        "Quickreply": {
+            "enabled": true
+        },
+        "UwUifier": {
+            "enabled": false
+        },
+        "Fart2": {
+            "enabled": true
+        },
+        "FxTwitter": {
+            "enabled": false
+        },
+        "No RPC": {
+            "enabled": false
+        },
+        "InteractionKeybinds": {
+            "enabled": true
+        },
+        "MoreCommands": {
+            "enabled": true
+        },
+        "No F1": {
+            "enabled": false
+        },
+        "petpet": {
+            "enabled": false
+        },
+        "ReactErrorDecoder": {
+            "enabled": false
         }
     },
-    "notifyAboutUpdates": true
+    "notifyAboutUpdates": true,
+    "enableReactDevtools": false
 }

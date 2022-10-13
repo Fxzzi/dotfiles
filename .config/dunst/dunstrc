@@ -88,11 +88,11 @@ format = "<b>%s</b>\n%b"
 appname= Spotify
 summary = "*"
 set_stack_tag = "spotify"
-format = "<b>Now Playing</b>\n%b"
+format = "<b>Now Playing</b>\n%s"
 
 [volume]
 summary = "Volume *"
-format = "<b>Volume</b>\n"
+format = "<b>Volume</b>\n%n%%"
 
 [discord]
 appname = discord

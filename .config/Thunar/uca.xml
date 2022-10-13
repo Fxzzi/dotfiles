@@ -31,11 +31,12 @@
 </action>
 <action>
 	<icon>clipboard</icon>
-	<name>Copy File Path</name>
+	<name>Copy File / Folder Path</name>
 	<unique-id>1653335357081852-1</unique-id>
 	<command>echo -n &apos;&quot;%f&quot;&apos; | xclip -selection clipboard</command>
 	<description></description>
 	<patterns>*</patterns>
+	<directories/>
 	<audio-files/>
 	<image-files/>
 	<other-files/>
