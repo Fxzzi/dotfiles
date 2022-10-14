@@ -14,6 +14,7 @@ export HISTFILE="$XDG_STATE_HOME"/zsh/history
 export XCURSOR_PATH=${XCURSOR_PATH}:~/.local/share/icons
 export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="${XDG_CONFIG_HOME}"/java
+export ANDROID_HOME="$XDG_DATA_HOME"/android
 
 export _JAVA_AWT_WM_NONREPARENTING=1
 export __GL_SYNC_DISPLAY_DEVICE=DP-2

@@ -14,13 +14,13 @@
 ## ✔️ Installation
 
 ```
-$ git clone https://github.com/Fxzzi/.dots.git; ./.dots/install
+$ git clone https://gitlab.com/fazzi/dotfiles.git; ./dotfiles/install
 ```
 This will create symlinks and overwrite files. It will also install all packages from needed.list. Please backup your current configs before installing!
 
 ## 🖥️ Wallpapers
 
-[Wallpaper Folder](https://github.com/Fxzzi/.dots/tree/main/walls "walls folder") 
+[Wallpaper Folder](https://gitlab.com/fazzi/dotfiles/-/tree/main/walls "walls folder") 
 
 ---
 
