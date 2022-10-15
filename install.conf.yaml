@@ -26,7 +26,8 @@
     ~/.local/scripts: .local/scripts
     ~/.local/share/fonts: .local/share/fonts
     ~/.local/share/rofi: .local/share/rofi 
+    ~/Pictures/Wallpapers: Wallpapers
     ~/.zshenv: .zshenv
-
+  
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
