@@ -49,13 +49,13 @@ This will create symlinks and overwrite files. It will also install all packages
 
 [zsh](https://www.zsh.org/ "zsh")
 
+[zgenom](https://github.com/jandamm/zgenom "zgenom")
+
 </details>
 
 <details>
   <summary>👩‍💻 Other Useful Tidbits</summary>
   
-[OhMyZsh](https://github.com/ohmyzsh/ohmyzsh "OhMyZsh on GitHub")
-
 [rsClock](https://github.com/valebes/rsClock "rsClock on GitHub")
 
 [Firefox](https://www.mozilla.org/en-GB/firefox/new/ "firefox")

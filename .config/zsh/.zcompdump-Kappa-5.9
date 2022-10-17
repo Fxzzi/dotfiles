@@ -1,4 +1,4 @@
-#files: 823	version: 5.9
+#files: 830	version: 5.9
 
 _comps=(
 '-' '_precommand'
@@ -1537,6 +1537,7 @@ _comps=(
 'zf_rm' '_rm'
 'zf_rmdir' '_rmdir'
 'zfs' '_zfs'
+'zgenom' '_zgenom'
 'zgetattr' '_zattr'
 'zgrep' '_grep'
 'zip' '_zip'
@@ -1675,7 +1676,8 @@ bindkey '^[,' _history-complete-newer
 bindkey '^[/' _history-complete-older
 bindkey '^[~' _bash_complete-word
 
-autoload -Uz _bat _bootctl _bspc _btm _busctl \
+autoload -Uz __zgenom _zgenom __zgenom_autoupdate __zgenom_err __zgenom_out \
+            _bat _bootctl _bspc _btm _busctl \
             _bwrap _cargo _checkupdates _cmus _coredumpctl \
             _curl _exa _hostnamectl _journalctl _kernel-install \
             _kitty _libinput _localectl _loginctl _machinectl \
@@ -1845,5 +1847,5 @@ autoload -Uz +X _call_program
 typeset -gUa _comp_assocs
 _comp_assocs=( '' )
 
-#omz revision: d41ca84af1271e8bfbe26f581cebe3b86521d0db
-#omz fpath: /home/faaris/.config/oh-my-zsh/custom/plugins/zsh-syntax-highlighting /home/faaris/.config/oh-my-zsh/custom/plugins/zsh-autosuggestions /home/faaris/.config/oh-my-zsh/plugins/git /home/faaris/.config/oh-my-zsh/functions /home/faaris/.config/oh-my-zsh/completions /home/faaris/.config/oh-my-zsh/cache/completions /usr/local/share/zsh/site-functions /usr/share/zsh/site-functions /usr/share/zsh/functions/Calendar /usr/share/zsh/functions/Chpwd /usr/share/zsh/functions/Completion /usr/share/zsh/functions/Completion/Base /usr/share/zsh/functions/Completion/Linux /usr/share/zsh/functions/Completion/Unix /usr/share/zsh/functions/Completion/X /usr/share/zsh/functions/Completion/Zsh /usr/share/zsh/functions/Exceptions /usr/share/zsh/functions/Math /usr/share/zsh/functions/MIME /usr/share/zsh/functions/Misc /usr/share/zsh/functions/Newuser /usr/share/zsh/functions/Prompts /usr/share/zsh/functions/TCP /usr/share/zsh/functions/VCS_Info /usr/share/zsh/functions/VCS_Info/Backends /usr/share/zsh/functions/Zftp /usr/share/zsh/functions/Zle
+#omz revision: 65a1e4edbe678cdac37ad96ca4bc4f6d77e27adf
+#omz fpath: /home/faaris/dotfiles/.config/zsh/.zgenom/sources/ohmyzsh/ohmyzsh/___/functions /home/faaris/dotfiles/.config/zsh/.zgenom/sources/ohmyzsh/ohmyzsh/___/completions /home/faaris/dotfiles/.config/zsh/.zgenom/sources/ohmyzsh/ohmyzsh/___/cache/completions /home/faaris/dotfiles/.config/zsh/.zgenom/sources/clarketm/zsh-completions/___ /home/faaris/dotfiles/.config/zsh/.zgenom/sources/zsh-users/zsh-syntax-highlighting/___ /home/faaris/dotfiles/.config/zsh/.zgenom/sources/zsh-users/zsh-autosuggestions/___ /home/faaris/dotfiles/.config/zsh/.zgenom/sources/ohmyzsh/ohmyzsh/___/themes /home/faaris/dotfiles/.config/zsh/.zgenom/sources/ohmyzsh/ohmyzsh/___/plugins/git /home/faaris/dotfiles/.config/zsh/.zgenom/sources/ohmyzsh/ohmyzsh/___ /home/faaris/dotfiles/.config/zsh/.zgenom/functions /usr/local/share/zsh/site-functions /usr/share/zsh/site-functions /usr/share/zsh/functions/Calendar /usr/share/zsh/functions/Chpwd /usr/share/zsh/functions/Completion /usr/share/zsh/functions/Completion/Base /usr/share/zsh/functions/Completion/Linux /usr/share/zsh/functions/Completion/Unix /usr/share/zsh/functions/Completion/X /usr/share/zsh/functions/Completion/Zsh /usr/share/zsh/functions/Exceptions /usr/share/zsh/functions/Math /usr/share/zsh/functions/MIME /usr/share/zsh/functions/Misc /usr/share/zsh/functions/Newuser /usr/share/zsh/functions/Prompts /usr/share/zsh/functions/TCP /usr/share/zsh/functions/VCS_Info /usr/share/zsh/functions/VCS_Info/Backends /usr/share/zsh/functions/Zftp /usr/share/zsh/functions/Zle
