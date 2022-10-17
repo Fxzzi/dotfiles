@@ -1,0 +1,4 @@
+*.bak
+renamerrc
+accels.scm
+.zcompdump*
