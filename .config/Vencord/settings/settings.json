@@ -54,7 +54,7 @@
             "enabled": false
         },
         "MuteNewGuild": {
-            "enabled": true
+            "enabled": false
         },
         "NitroBypass": {
             "enabled": true
@@ -126,6 +126,9 @@
             "enabled": false
         },
         "ReactErrorDecoder": {
+            "enabled": false
+        },
+        "PronounDB": {
             "enabled": false
         }
     },
