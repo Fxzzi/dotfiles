@@ -54,7 +54,7 @@
             "enabled": false
         },
         "MuteNewGuild": {
-            "enabled": false
+            "enabled": true
         },
         "NitroBypass": {
             "enabled": true
@@ -129,6 +129,12 @@
             "enabled": false
         },
         "PronounDB": {
+            "enabled": false
+        },
+        "AnonymiseFileNames": {
+            "enabled": false
+        },
+        "Sendify": {
             "enabled": false
         }
     },
