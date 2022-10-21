@@ -21,9 +21,9 @@
 </action>
 <action>
 	<icon>com.github.donadigo.appeditor</icon>
-	<name>Edit with Nano (doas)</name>
+	<name>Edit with sudoedit</name>
 	<unique-id>1640175685205739-5</unique-id>
-	<command>kitty doas nano %f</command>
+	<command>kitty sudoedit %f</command>
 	<description></description>
 	<patterns>*</patterns>
 	<startup-notify/>

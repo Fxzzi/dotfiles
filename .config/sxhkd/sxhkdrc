@@ -46,7 +46,7 @@ super + shift + Escape
 
 # Powermenu
 super + shift + e
-    ~/.config/rofi/powermenu.sh
+    ~/.config/rofi/powermenu/powermenu.sh
 
 ## Hardware
 
