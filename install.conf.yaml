@@ -23,6 +23,7 @@
     ~/.config/X11: .config/X11
     ~/.config/Vencord: .config/Vencord
     ~/.config/redshift: .config/redshift
+    ~/.config/paru: .config/paru
     ~/.local/scripts: .local/scripts
     ~/.local/share/fonts: .local/share/fonts
     ~/.local/share/rofi: .local/share/rofi 

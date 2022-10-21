@@ -40,7 +40,7 @@
 	--backgroundprimary: 		26, 27, 38;				/*	Background 1		 - 	default:	54,57,63		 - 	hex:	#36393f		*/
 	--backgroundsecondary: 		19, 21, 31;				/*	Background 2		 - 	default:	47,49,54		 - 	hex:	#2f3136		*/
 	--backgroundsecondaryalt: 	19, 21, 31;				/*	Background 3		 - 	default:	41,43,47		 - 	hex:	#292b2f		*/
-	--backgroundtertiary: 		19, 21, 31;				/*	Background 4		 - 	default:	32,34,37		 - 	hex:	#202225		*/
+	--backgroundtertiary: 		16, 15, 25;				/*	Background 4		 - 	default:	32,34,37		 - 	hex:	#202225		*/
 	--backgroundfloating: 		24, 25, 33;					/*	Background Elevated	 - 	default:	24,25,28		 - 	hex:	#18191c		*/
 }
 
