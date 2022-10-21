@@ -132,10 +132,13 @@
             "enabled": false
         },
         "AnonymiseFileNames": {
-            "enabled": false
+            "enabled": true
         },
         "Sendify": {
             "enabled": false
+        },
+        "vcDoubleClick": {
+            "enabled": true
         }
     },
     "notifyAboutUpdates": true,

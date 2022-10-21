@@ -10,15 +10,16 @@ if ! zgenom saved; then
 
   # specify plugins here
   zgenom ohmyzsh
-  zgenom ohmyzsh plugins/git
   zgenom ohmyzsh themes/robbyrussell
-
+  
+  zgenom load mdumitru/git-aliases
   zgenom load zdharma-continuum/fast-syntax-highlighting
   zgenom load zsh-users/zsh-autosuggestions
   zgenom load zsh-users/zsh-history-substring-search
   zgenom load clarketm/zsh-completions
   zgenom load joshskidmore/zsh-fzf-history-search
   zgenom load Aloxaf/fzf-tab
+  zgenom load akash329d/zsh-alias-finder
 
 # generate the init script from plugins above
   zgenom save
