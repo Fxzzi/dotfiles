@@ -1,11 +1,11 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 ## Author  : Aditya Shakya
 ## Mail    : adi1090x@gmail.com
 ## Github  : @adi1090x
 ## Twitter : @adi1090x
 
-dir="$HOME/.config/rofi/"
+dir="$XDG_CONFIG_HOME/rofi/"
 rofi_command="rofi -theme $dir/powermenu.rasi"
 
 uptime=$(uptime -p | sed -e 's/up //g')

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 xidlehook \
   `# Don't lock when there's a fullscreen application` \

@@ -1,5 +1,5 @@
+#!/bin/sh
 
-#!/bin/bash
 # Author: https://github.com/AlphaTechnolog
 # Adapted by: https://github.com/Fxzzi
 user="${USER}"
@@ -28,7 +28,7 @@ repeat_by_len () {
   local len=$(len "$str")
   local i=1
 
-  while [[ $i -lt $len ]]; do
+  while [ $i -lt $len ]; do
     printf "$char"
     i=$(expr $i + 1)
   done

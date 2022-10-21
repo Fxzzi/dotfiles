@@ -15,12 +15,13 @@ export XCURSOR_PATH=${XCURSOR_PATH}:~/.local/share/icons
 export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="${XDG_CONFIG_HOME}"/java
 export ANDROID_HOME="$XDG_DATA_HOME"/android
+export PNPM_HOME="/home/faaris/.local/share/pnpm"
 
 export _JAVA_AWT_WM_NONREPARENTING=1
 export __GL_SYNC_DISPLAY_DEVICE=DP-2
 export VDPAU_NVIDIA_SYNC_DISPLAY_DEVICE=DP-2
 
-export PATH=$PATH:~/.local/scripts:~/.local/bin:~/.local/share/cargo/bin
+export PATH=$PATH:$PNPM_HOME:~/.local/scripts:~/.local/bin:~/.local/share/cargo/bin
 export EDITOR='lvim'
 
 if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then

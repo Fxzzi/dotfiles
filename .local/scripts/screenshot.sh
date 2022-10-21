@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Screenshot either monitor, a selection, or active window
 # and then uploads with sharenix, copying the link to your
