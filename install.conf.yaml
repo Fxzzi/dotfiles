@@ -24,6 +24,8 @@
     ~/.config/Vencord: .config/Vencord
     ~/.config/redshift: .config/redshift
     ~/.config/paru: .config/paru
+    ~/.config/ncmpcpp: .config/ncmpcpp
+    ~/.config/mpd: .config/mpd
     ~/.local/scripts: .local/scripts
     ~/.local/share/fonts: .local/share/fonts
     ~/.local/share/rofi: .local/share/rofi 

@@ -22,6 +22,7 @@ export __GL_SYNC_DISPLAY_DEVICE=DP-2
 export VDPAU_NVIDIA_SYNC_DISPLAY_DEVICE=DP-2
 
 export PATH=$PATH:$PNPM_HOME:~/.local/scripts:~/.local/bin:~/.local/share/cargo/bin
+export SUDO_PROMPT='[] Enter Password: '
 export EDITOR='lvim'
 
 if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then

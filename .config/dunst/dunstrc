@@ -90,9 +90,9 @@ summary = "*"
 set_stack_tag = "spotify"
 format = "<b>Now Playing</b>\n%s"
 
-[volume]
-summary = "Volume *"
-format = "<b>Volume</b>\n%n%%"
+#[volume]
+#summary = "Volume *"
+#format = "<b>Volume</b>\n%n%%"
 
 [discord]
 appname = discord
