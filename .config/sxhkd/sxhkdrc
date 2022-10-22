@@ -42,25 +42,27 @@ super + f
 
 # Lock Screen
 super + shift + Escape
-    ~/.scripts/lock.sh
+   i3lock-fancy-multimonitor -n -p 
 
 # Powermenu
 super + shift + e
     ~/.config/rofi/powermenu/powermenu.sh
 
+# btm to mimic windows control panel
+ctrl + shift + Escape
+    kitty btm
+
+
 ## Hardware
 
-# Raise Vol
 XF86AudioRaiseVolume
-    env NO_NOTIFY_COLOR=1 i3-volume -n up 5 -x 100 -e 2500
+	~/dotfiles/.local/scripts/volume.sh up
 
-# Lower Vol
 XF86AudioLowerVolume
-    env NO_NOTIFY_COLOR=1 i3-volume -n down 5 -x 100 -e 2500
+	~/dotfiles/.local/scripts/volume.sh down
 
-# Mute Vol
 XF86AudioMute
-    env NO_NOTIFY_COLOR=1 i3-volume -n mute -e 2500
+	~/dotfiles/.local/scripts/volume.sh mute
 
 ## Window Management
 

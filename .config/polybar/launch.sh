@@ -6,7 +6,7 @@
 polybar-msg cmd quit
 
 # Launch Polybar, using default config location ~/.config/polybar/config.ini
-polybar main 2>&1 | tee -a /tmp/polybar.log & disown
-polybar second 2>&1 | tee -a /tmp/polybar.log & disown
+nohup polybar main 2>&1 | tee -a /tmp/polybar.log &
+nohup polybar second 2>&1 | tee -a /tmp/polybar.log &
 
 echo "Polybar launched..."
