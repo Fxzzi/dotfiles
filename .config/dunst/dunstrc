@@ -33,7 +33,7 @@
     origin = top-right
 
     # Offset from the origin
-    offset = "11x58"
+    offset = "7x49"
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0
