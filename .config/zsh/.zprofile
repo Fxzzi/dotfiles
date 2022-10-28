@@ -2,6 +2,7 @@ export XDG_CONFIG_HOME="${HOME}/.config"
 export XDG_CACHE_HOME="${HOME}/.cache"
 export XDG_DATA_HOME="${HOME}/.local/share"
 export XDG_STATE_HOME="${HOME}/.local/state"
+export XDG_SESSION_TYPE=x11
 
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
 export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv
@@ -15,7 +16,8 @@ export XCURSOR_PATH=${XCURSOR_PATH}:~/.local/share/icons
 export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="${XDG_CONFIG_HOME}"/java
 export ANDROID_HOME="$XDG_DATA_HOME"/android
-export PNPM_HOME="/home/faaris/.local/share/pnpm"
+export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
+export PNPM_HOME="$XDG_DATA_HOME"/share/pnpm
 
 export _JAVA_AWT_WM_NONREPARENTING=1
 export __GL_SYNC_DISPLAY_DEVICE=DP-2

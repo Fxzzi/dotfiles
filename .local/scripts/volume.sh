@@ -1,10 +1,10 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 send_notification() {
 	volume=$(pamixer --get-volume)
-    if (( volume >= 70 )); then icon=notification-audio-volume-high
-    elif (( volume >= 40 )); then icon=notification-audio-volume-medium
-    elif (( volume > 0 )); then icon=notification-audio-volume-low
+    if [ ${volume} -gt 70 ]; then icon=notification-audio-volume-high
+    elif [ ${volume} -gt  40 ]; then icon=notification-audio-volume-medium
+    elif [ ${volume} -gt 0 ]; then icon=notification-audio-volume-low
     else icon=notification-audio-volume-muted
     fi
   dunstify -a "changevolume" -u low -r "9993" -h int:value:"$volume" -i "$icon" "Volume: ${volume}%" -t 2000

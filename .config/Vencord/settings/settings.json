@@ -12,7 +12,7 @@
             "enabled": false
         },
         "BetterGifAltText": {
-            "enabled": false
+            "enabled": true
         },
         "ClickableRoleDot": {
             "enabled": false
@@ -21,7 +21,9 @@
             "enabled": false
         },
         "Ify": {
-            "enabled": true
+            "enabled": true,
+            "noSpotifyAutoPause": true,
+            "keepSpotifyActivityOnIdle": false
         },
         "MessageQuickActions": {
             "enabled": true
@@ -57,7 +59,9 @@
             "enabled": true
         },
         "NitroBypass": {
-            "enabled": true
+            "enabled": false,
+            "enableEmojiBypass": true,
+            "enableStreamQualityBypass": true
         },
         "NoReplyMention": {
             "enabled": false
@@ -111,7 +115,7 @@
             "enabled": false
         },
         "No RPC": {
-            "enabled": true
+            "enabled": false
         },
         "InteractionKeybinds": {
             "enabled": true
@@ -132,16 +136,32 @@
             "enabled": false
         },
         "AnonymiseFileNames": {
-            "enabled": true
+            "enabled": true,
+            "method": 0,
+            "randomisedLength": 7,
+            "consistent": "image"
         },
         "Sendify": {
             "enabled": false
         },
         "vcDoubleClick": {
-            "enabled": true
+            "enabled": false
         },
         "MessageAccessoriesAPI": {
             "enabled": false
+        },
+        "ForceOwnerCrown": {
+            "enabled": false
+        },
+        "IgnoreActivities": {
+            "enabled": false
+        },
+        "moarKaomojis": {
+            "enabled": true
+        },
+        "ShowHiddenChannels": {
+            "enabled": false,
+            "hideUnreads": true
         }
     },
     "notifyAboutUpdates": true,

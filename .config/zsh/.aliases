@@ -21,4 +21,3 @@ alias xinitrc="$EDITOR $XDG_CONFIG_HOME/X11/xinitrc"
 
 alias updates="checkupdates; paru -Qum"
 alias rs="curl --data-binary @- https://paste.rs | xclip -selection clipboard"
-alias neofetch="doas pacman -S --noconfirm --noprogressbar neofetch >/dev/null && neofetch && doas pacman -R --noconfirm --nosave neofetch >/dev/null"

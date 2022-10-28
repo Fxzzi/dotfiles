@@ -45,4 +45,4 @@ source $HOME/.config/zsh/.aliases
 
 # Run fetch script on zsh start
 #$HOME/.local/scripts/fetch.sh
-env XDG_SESSION_TYPE=x11 macchina --theme fazzi
+macchina --theme fazzi
