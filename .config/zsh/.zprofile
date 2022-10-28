@@ -17,7 +17,6 @@ export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="${XDG_CONFIG_HOME}"/java
 export ANDROID_HOME="$XDG_DATA_HOME"/android
 export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
-export PNPM_HOME="$XDG_DATA_HOME"/share/pnpm
 
 export _JAVA_AWT_WM_NONREPARENTING=1
 export __GL_SYNC_DISPLAY_DEVICE=DP-2
