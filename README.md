@@ -3,6 +3,7 @@
 <h4 align="center">based on the tokyonight color scheme.</h4>
 
 <img src="assets/preview.png" alt="Rice Showcase" align="right" width="400px">
+
 - **Operating System:** [arch](https://archlinux.org/)
 - **Window Manager:** [bspwm](https://github.com/baskerville/bspwm)
 - **Keybind Manager:** [sxhkd](https://github.com/baskerville/sxhkd)
