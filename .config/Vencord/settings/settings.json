@@ -136,7 +136,7 @@
             "enabled": false
         },
         "AnonymiseFileNames": {
-            "enabled": true,
+            "enabled": false,
             "method": 0,
             "randomisedLength": 7,
             "consistent": "image"
@@ -162,6 +162,21 @@
         "ShowHiddenChannels": {
             "enabled": false,
             "hideUnreads": true
+        },
+        "MenuItemDeobfuscatorApi": {
+            "enabled": true
+        },
+        "NoticesApi": {
+            "enabled": true
+        },
+        "ClipboardImageFix": {
+            "enabled": true
+        },
+        "ReverseImageSearch": {
+            "enabled": true
+        },
+        "LoadingQuotes": {
+            "enabled": false
         }
     },
     "notifyAboutUpdates": true,

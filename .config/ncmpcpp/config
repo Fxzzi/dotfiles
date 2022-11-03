@@ -1,5 +1,5 @@
 mpd_music_dir = "$HOME/spotdl/"
-
+lyrics_directory = ~/.local/share/ncmpcpp/lyrics
 #mpd_host = "127.0.0.1"
 #mpd_port = "6601"
 mouse_list_scroll_whole_page = "yes"

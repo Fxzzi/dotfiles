@@ -45,7 +45,9 @@
 }
 
 body {
-  --font-primary: "SF Pro Display";
+  --font-primary: "SF Pro Text";
   --font-code: "JetBrainsMono Nerd Font";
   --font-display: "SF Pro Text"
 }
+
+.tutorialContainer-2jwoiB, .tutorialContainer-2jwoiB+div { display: none;}

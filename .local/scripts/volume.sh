@@ -7,8 +7,10 @@ send_notification() {
     elif [ ${volume} -gt 0 ]; then icon=notification-audio-volume-low
     else icon=notification-audio-volume-muted
     fi
-  dunstify -a "changevolume" -u low -r "9993" -h int:value:"$volume" -i "$icon" "Volume: ${volume}%" -t 2000
-}
+    dunstify -a "changevolume" -u low -r "9993" -h int:value:"$volume" -i "$icon" "Volume: ${volume}%" -t 2000
+    canberra-gtk-play -i audio-volume-change -d "changeVolume"  
+
+  }
 
 case $1 in
 up)
