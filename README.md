@@ -2,7 +2,7 @@
 <h4 align="center">by fxzzi.</h4>
 <h4 align="center">based on the tokyonight color scheme.</h4>
 
-<img src="assets/preview.png" alt="Rice Showcase" align="right" width="400px">
+<img src="assets/preview.png" alt="Rice Showcase" align="right" width="600">
 
 - **Operating System:** [arch](https://archlinux.org/)
 - **Window Manager:** [bspwm](https://github.com/baskerville/bspwm)
