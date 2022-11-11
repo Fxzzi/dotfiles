@@ -41,6 +41,7 @@ if [ $tmpImageSize != 0 ]; then
         url=$(echo $curlOut | python -c "import sys,json; print(json.load(sys.stdin)['url'])")
         echo $url | xclip -selection clipboard
         dunstify -i "$tmpImage" -a "screenshot" "Screenshot Copied" "Your screenshot has been copied to the clipboard"
+        canberra-gtk-play -i message &
         exit $?
 fi
 
