@@ -42,7 +42,7 @@ super + f
 
 # Lock Screen
 super + shift + Escape
-   i3lock-fancy-multimonitor -n -p 
+    betterlockscreen --lock dimblur
 
 # Powermenu
 super + shift + e

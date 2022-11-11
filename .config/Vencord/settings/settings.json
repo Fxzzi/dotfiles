@@ -23,7 +23,7 @@
         "Ify": {
             "enabled": true,
             "noSpotifyAutoPause": true,
-            "keepSpotifyActivityOnIdle": false
+            "keepSpotifyActivityOnIdle": true
         },
         "MessageQuickActions": {
             "enabled": true
@@ -61,7 +61,9 @@
         "NitroBypass": {
             "enabled": false,
             "enableEmojiBypass": true,
-            "enableStreamQualityBypass": true
+            "enableStreamQualityBypass": true,
+            "enableStickerBypass": true,
+            "stickerSize": 160
         },
         "NoReplyMention": {
             "enabled": false
@@ -115,7 +117,7 @@
             "enabled": false
         },
         "No RPC": {
-            "enabled": false
+            "enabled": true
         },
         "InteractionKeybinds": {
             "enabled": true
@@ -124,7 +126,7 @@
             "enabled": true
         },
         "No F1": {
-            "enabled": false
+            "enabled": true
         },
         "petpet": {
             "enabled": false
@@ -176,6 +178,15 @@
             "enabled": true
         },
         "LoadingQuotes": {
+            "enabled": false
+        },
+        "StartupTimings": {
+            "enabled": false
+        },
+        "SpotifyControls": {
+            "enabled": false
+        },
+        "CorruptMp4s": {
             "enabled": false
         }
     },

@@ -8,7 +8,7 @@ pgrep -x sxhkd > /dev/null || sxhkd & # Keybinds
 
 # Launch Programs, even when refreshed with [Code + Shift + R]
 picom & # Compositor
-nitrogen --restore & # Wallpaper
+betterlockscreen -w & # Wallpaper
 nvidia-settings --config=$XDG_CONFIG_HOME/nvidia/settings --load-config-only & # Load nvidia settings
 $HOME/.config/polybar/launch.sh & # Polybar
 xset r rate 375 45 & # Typing repeat speed

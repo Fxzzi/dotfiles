@@ -61,12 +61,11 @@ run_cmd() {
 	selected="$(confirm_exit)"
 	if [[ "$selected" == "$yes" ]]; then
 		if [[ $1 == '--shutdown' ]]; then
-			systemctl poweroff
+      systemctl poweroff
 		elif [[ $1 == '--reboot' ]]; then
-			systemctl reboot
+      systemctl reboot
 		elif [[ $1 == '--suspend' ]]; then
-			i3lock-fancy-multimonitor -n -p
-      systemctl suspend
+			betterlockscreen --lock dimblur & systemctl suspend
 		elif [[ $1 == '--logout' ]]; then
 			bspc quit
 		fi
@@ -85,7 +84,7 @@ case ${chosen} in
 		run_cmd --reboot
         ;;
     $lock)
-    i3lock-fancy-multimonitor -n -p 
+    betterlockscreen --lock dimblur 
         ;;
     $suspend)
 		run_cmd --suspend

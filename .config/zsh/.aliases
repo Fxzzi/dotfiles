@@ -3,6 +3,8 @@ alias cp='cp -rv'
 alias mv='mv -v'
 alias mkdir='mkdir -vp'
 alias ..='cd ..'
+alias grep='rg'
+alias cat='bat'
 
 alias la='exa --icons -a --group-directories-first'
 alias ll='exa --icons -lah --group-directories-first'
