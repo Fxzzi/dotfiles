@@ -15,7 +15,7 @@ xset r rate 375 45 & # Typing repeat speed
 
 # Launch Programs only on login, and not on refresh of bspwm
 [ "$1" = 0 ] && {
-  discord & # Discord
+  discord --start-minimized & # Discord
   /usr/lib/mate-polkit/polkit-mate-authentication-agent-1 & # Polkit
   $HOME/.local/scripts/xidlehook.sh & # idle lock and suspend
   /usr/bin/openrgb -p blue.orp & # RGB

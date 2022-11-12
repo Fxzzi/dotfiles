@@ -6,7 +6,7 @@ Print
 
 # Second Monitor
 ctrl + Print
-        ~/.local/scripts/screenshot.sh --monitor2
+   ~/.local/scripts/screenshot.sh --monitor2
 
 # Active window
 super + Print
@@ -15,7 +15,7 @@ super + Print
 # Rectangle selection
 shift + Print
 	~/.local/scripts/screenshot.sh --selection
-	
+
 # Clipboard History
 super + h
 	rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
@@ -56,13 +56,13 @@ ctrl + shift + Escape
 ## Hardware
 
 XF86AudioRaiseVolume
-	~/dotfiles/.local/scripts/volume.sh up
+	~/.local/scripts/volume.sh up
 
 XF86AudioLowerVolume
-	~/dotfiles/.local/scripts/volume.sh down
+	~/.local/scripts/volume.sh down
 
 XF86AudioMute
-	~/dotfiles/.local/scripts/volume.sh mute
+	~/.local/scripts/volume.sh mute
 
 ## Window Management
 
