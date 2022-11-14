@@ -10,18 +10,22 @@ case $1 in
 # Takes screenshot of primary monitor
   --monitor1)
     maim -Bu -m 3 -g 2560x1440+1920+0 "$tmpImage"
+    name=monitor1
     ;;
 # Takes screenshot of secondary monitor
   --monitor2)
     maim -Bu -m 3 -g 1920x1080+0+0 "$tmpImage"
+    name=monitor2
     ;;
 # Takes screenshot of rectangle selection
   --selection)
     maim -sBu -m 3 "$tmpImage"
+    name=selection
     ;;
 # Takes screenshot of active window
   --active)
     maim -Bu -m 3 --window $(xdotool getactivewindow) "$tmpImage"
+    name=active
     ;;
   *)
     echo 'wrong or missing argument'
@@ -42,6 +46,7 @@ if [ $tmpImageSize != 0 ]; then
         echo $url | xclip -selection clipboard
         dunstify -i "$tmpImage" -a "screenshot" "Screenshot Copied" "Your screenshot has been copied to the clipboard"
         canberra-gtk-play -i message &
+        cp $tmpImage $HOME/Pictures/Screenshots/"$name-$(date +%d-%m-%Y) - $(date +%H:%M:%S).png"
         exit $?
 fi
 

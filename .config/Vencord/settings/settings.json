@@ -2,9 +2,6 @@
     "unsafeRequire": false,
     "useQuickCss": true,
     "plugins": {
-        "STFU": {
-            "enabled": false
-        },
         "MessageEventsAPI": {
             "enabled": true
         },
@@ -12,21 +9,13 @@
             "enabled": false
         },
         "BetterGifAltText": {
-            "enabled": true
+            "enabled": false
         },
         "ClickableRoleDot": {
             "enabled": false
         },
         "Experiments": {
             "enabled": false
-        },
-        "Ify": {
-            "enabled": true,
-            "noSpotifyAutoPause": true,
-            "keepSpotifyActivityOnIdle": true
-        },
-        "MessageQuickActions": {
-            "enabled": true
         },
         "Nitro Bypass": {
             "enabled": true
@@ -58,13 +47,6 @@
         "MuteNewGuild": {
             "enabled": true
         },
-        "NitroBypass": {
-            "enabled": false,
-            "enableEmojiBypass": true,
-            "enableStreamQualityBypass": true,
-            "enableStickerBypass": true,
-            "stickerSize": 160
-        },
         "NoReplyMention": {
             "enabled": false
         },
@@ -85,9 +67,6 @@
         },
         "NoSystemBadge": {
             "enabled": false
-        },
-        "clearURLs": {
-            "enabled": true
         },
         "Webhook Tags": {
             "enabled": true
@@ -119,14 +98,11 @@
         "No RPC": {
             "enabled": true
         },
-        "InteractionKeybinds": {
-            "enabled": true
-        },
         "MoreCommands": {
             "enabled": true
         },
         "No F1": {
-            "enabled": true
+            "enabled": false
         },
         "petpet": {
             "enabled": false
@@ -143,12 +119,6 @@
             "randomisedLength": 7,
             "consistent": "image"
         },
-        "Sendify": {
-            "enabled": false
-        },
-        "vcDoubleClick": {
-            "enabled": false
-        },
         "MessageAccessoriesAPI": {
             "enabled": false
         },
@@ -158,18 +128,9 @@
         "IgnoreActivities": {
             "enabled": false
         },
-        "moarKaomojis": {
-            "enabled": true
-        },
         "ShowHiddenChannels": {
             "enabled": false,
             "hideUnreads": true
-        },
-        "MenuItemDeobfuscatorApi": {
-            "enabled": true
-        },
-        "NoticesApi": {
-            "enabled": true
         },
         "ClipboardImageFix": {
             "enabled": true
@@ -187,6 +148,48 @@
             "enabled": false
         },
         "CorruptMp4s": {
+            "enabled": false
+        },
+        "BadgeAPI": {
+            "enabled": true
+        },
+        "MenuItemDeobfuscatorAPI": {
+            "enabled": true
+        },
+        "NoticesAPI": {
+            "enabled": true
+        },
+        "ClearURLs": {
+            "enabled": true
+        },
+        "FakeNitro": {
+            "enabled": false,
+            "enableEmojiBypass": true,
+            "enableStreamQualityBypass": true,
+            "enableStickerBypass": true,
+            "stickerSize": 160
+        },
+        "MessageClickActions": {
+            "enabled": true
+        },
+        "MoreKaomoji": {
+            "enabled": false
+        },
+        "NoDevtoolsWarning": {
+            "enabled": false
+        },
+        "QuickReply": {
+            "enabled": true
+        },
+        "SpotifyCrack": {
+            "enabled": true,
+            "noSpotifyAutoPause": true,
+            "keepSpotifyActivityOnIdle": true
+        },
+        "SpotifyShareCommands": {
+            "enabled": false
+        },
+        "VoiceChatDoubleClick": {
             "enabled": false
         }
     },
