@@ -11,9 +11,6 @@
         "BetterGifAltText": {
             "enabled": false
         },
-        "ClickableRoleDot": {
-            "enabled": false
-        },
         "Experiments": {
             "enabled": false
         },
@@ -136,7 +133,7 @@
             "enabled": true
         },
         "ReverseImageSearch": {
-            "enabled": true
+            "enabled": false
         },
         "LoadingQuotes": {
             "enabled": false
@@ -179,7 +176,7 @@
             "enabled": false
         },
         "QuickReply": {
-            "enabled": true
+            "enabled": false
         },
         "SpotifyCrack": {
             "enabled": true,
@@ -190,7 +187,87 @@
             "enabled": false
         },
         "VoiceChatDoubleClick": {
+            "enabled": true
+        },
+        "BetterRoleDot": {
             "enabled": false
+        },
+        "EmoteCloner": {
+            "enabled": true
+        },
+        "MessageLogger": {
+            "enabled": true,
+            "deleteStyle": "text",
+            "ignoreBots": true,
+            "ignoreSelf": true
+        },
+        "FriendInvites": {
+            "enabled": false
+        },
+        "ReviewDB": {
+            "enabled": false,
+            "notifyReviews": true
+        },
+        "WebContextMenus": {
+            "enabled": false
+        },
+        "ServerListAPI": {
+            "enabled": true
+        },
+        "QuickMention": {
+            "enabled": false
+        },
+        "WhoReacted": {
+            "enabled": true
+        },
+        "WebRichPresence (arRPC)": {
+            "enabled": false
+        },
+        "LastFMRichPresence": {
+            "enabled": false,
+            "hideWithSpotify": true,
+            "useListeningStatus": false
+        },
+        "oneko": {
+            "enabled": false
+        },
+        "ReadAllNotificationsButton": {
+            "enabled": true
+        },
+        "TimeBarAllActivities": {
+            "enabled": false
+        },
+        "NoUnblockToJump": {
+            "enabled": false
+        },
+        "PlatformIndicators": {
+            "enabled": true,
+            "displayMode": "both"
+        },
+        "BetterNotesBox": {
+            "enabled": true,
+            "hide": true,
+            "noSpellCheck": false
+        },
+        "HideAttachments": {
+            "enabled": false
+        },
+        "VolumeBooster": {
+            "enabled": true,
+            "multiplier": 2
+        },
+        "UrbanDictionary": {
+            "enabled": false
+        },
+        "KeepCurrentChannel": {
+            "enabled": false
+        },
+        "MessageTags": {
+            "enabled": false,
+            "clyde": true
+        },
+        "CallTimer": {
+            "enabled": true
         }
     },
     "notifyAboutUpdates": true,

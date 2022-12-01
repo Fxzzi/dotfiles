@@ -16,12 +16,13 @@ export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="${XDG_CONFIG_HOME}"/java
 export ANDROID_HOME="$XDG_DATA_HOME"/android
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
+export PNPM_HOME="/home/faaris/.local/share/pnpm"
 
 export _JAVA_AWT_WM_NONREPARENTING=1
 export __GL_SYNC_DISPLAY_DEVICE=DP-2
 export VDPAU_NVIDIA_SYNC_DISPLAY_DEVICE=DP-2
 
-export PATH=$PATH:$PNPM_HOME:~/.local/scripts:~/.local/bin:~/.local/share/cargo/bin
+export PATH=$PNPM_HOME:$PATH:~/.local/scripts:~/.local/bin:~/.local/share/cargo/bin
 export SUDO_PROMPT='[] Enter Password: '
 export EDITOR='lvim'
 

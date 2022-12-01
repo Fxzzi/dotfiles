@@ -78,9 +78,9 @@ super + Tab
 super + {_,shift + }q
     bspc node -{c,k}
 
-# Switch focus between monitor
+# Switch focus between last window
 alt + Tab
-    bspc monitor --focus {prev,next}
+	bspc node -f next.!hidden.window
 
 # Resize windows with arrow keys
 super + {Up,Down,Left,Right}
@@ -101,6 +101,19 @@ super + m
 super + {_,shift + }{1-9,0}
     bspc {desktop -f, node -d} '{1-9,10}'
 
+# Preselect the direction of the next window
+super + ctrl + {Up,Down,Left,Right}
+    bspc node -p {north,south,west,east}
+
+# Cancel preselection
+super + ctrl + space
+    bspc node -p cancel
+
 # sxhkd reload
 super + Escape
     pkill -USR1 -x sxhkd
+
+# Rotate tree
+super + shift + {d,a}
+    bspc node @/ -C {forward,backward}
+
