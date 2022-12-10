@@ -21,6 +21,7 @@ export PNPM_HOME="/home/faaris/.local/share/pnpm"
 export _JAVA_AWT_WM_NONREPARENTING=1
 export __GL_SYNC_DISPLAY_DEVICE=DP-2
 export VDPAU_NVIDIA_SYNC_DISPLAY_DEVICE=DP-2
+export NVD_BACKEND=direct
 
 export PATH=$PNPM_HOME:$PATH:~/.local/scripts:~/.local/bin:~/.local/share/cargo/bin
 export SUDO_PROMPT='[] Enter Password: '

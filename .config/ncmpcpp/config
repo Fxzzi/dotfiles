@@ -54,7 +54,7 @@ execute_on_song_change="~/.config/ncmpcpp/ncmpcpp-ueberzug/ncmpcpp_cover_art.sh"
 song_window_title_format = " {%a} - {%t}"
 
 visualizer_data_source = "/tmp/mpd.fifo"
-visualizer_output_name = "my_fifo"
+visualizer_output_name = "fifo Visualizer"
 visualizer_in_stereo = "no"
 visualizer_type = "spectrum"
 visualizer_look = "▮●"

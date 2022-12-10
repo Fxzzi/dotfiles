@@ -19,7 +19,8 @@
 /* All colors are in RGB format (red, green, blue) use: https://www.google.com/search?q=colorpicker	*/
 
 :root {
-	--settingsicons:			1;						/*	Use Settings Icons in User/Server/Channel Settings: 1 = yes, 0 = no			*/
+	--font:						"SF Pro Text", "Noto Sans", sans-serif;		/*	General Font			*/
+  --settingsicons:			0;						/*	Use Settings Icons in User/Server/Channel Settings: 1 = yes, 0 = no			*/
 	
 	--accentcolor: 				122, 162, 247;				/*	Blurple				 - 	default:	88,101,242		 - 	hex:	#5865f2		*/
 	--accentcolor2: 			187, 154, 247;			/*	Boostpink			 - 	default:	255,115,250		 - 	hex:	#ff73fa		*/
@@ -44,12 +45,14 @@
 	--backgroundfloating: 		24, 25, 33;					/*	Background Elevated	 - 	default:	24,25,28		 - 	hex:	#18191c		*/
 }
 
+/*
 body {
   --font-primary: "SF Pro Text";
   --font-code: "JetBrainsMono Nerd Font";
   --font-display: "SF Pro Text"
 }
+*/
 
+/*
 .tutorialContainer-2jwoiB, .tutorialContainer-2jwoiB+div { display: none;}
-
-
+*/
