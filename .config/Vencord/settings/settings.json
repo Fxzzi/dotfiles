@@ -118,7 +118,7 @@
             "consistent": "image"
         },
         "MessageAccessoriesAPI": {
-            "enabled": false
+            "enabled": true
         },
         "ForceOwnerCrown": {
             "enabled": false
@@ -273,7 +273,8 @@
             "enabled": true
         },
         "BlurNSFW": {
-            "enabled": false
+            "enabled": false,
+            "blurAmount": 10
         },
         "MemberCount": {
             "enabled": true
@@ -292,6 +293,12 @@
             "bgOpacity": 100
         },
         "ViewRaw": {
+            "enabled": false
+        },
+        "NSFWGateBypass": {
+            "enabled": false
+        },
+        "SortFriendRequests": {
             "enabled": false
         }
     },

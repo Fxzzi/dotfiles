@@ -2,7 +2,6 @@ alias rm='rm -rIv'
 alias cp='cp -rv'
 alias mv='mv -v'
 alias mkdir='mkdir -vp'
-alias ..='cd ..'
 alias grep='rg'
 alias cat='bat'
 
