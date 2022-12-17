@@ -150,7 +150,7 @@ low_battery_color="red"
 
 [mount_filter]
 is_list_ignored = true
-list = ["/var/cache/pacman/pkg", "/var/log", "/mnt", "/run/timeshift/backup", "/home", "/data"]
+list = ["/var/cache/pacman/pkg", "/var/log", "/mnt", "/run/timeshift/backup", "/home", "/games"]
 regex = true
 case_sensitive = false
 whole_word = false

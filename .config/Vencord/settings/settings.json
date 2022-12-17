@@ -94,7 +94,7 @@
             "enabled": false
         },
         "No RPC": {
-            "enabled": true
+            "enabled": false
         },
         "MoreCommands": {
             "enabled": true
@@ -256,7 +256,7 @@
             "enabled": false
         },
         "VolumeBooster": {
-            "enabled": false,
+            "enabled": true,
             "multiplier": 2
         },
         "UrbanDictionary": {
@@ -277,10 +277,11 @@
             "blurAmount": 10
         },
         "MemberCount": {
-            "enabled": true
+            "enabled": false
         },
         "ServerListIndicators": {
-            "enabled": false
+            "enabled": false,
+            "mode": 2
         },
         "MessagePopoverAPI": {
             "enabled": true
@@ -299,6 +300,10 @@
             "enabled": false
         },
         "SortFriendRequests": {
+            "enabled": true,
+            "showDates": true
+        },
+        "MessageLinkEmbeds": {
             "enabled": false
         }
     },
