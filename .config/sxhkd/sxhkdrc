@@ -34,7 +34,7 @@ super + b
 
 # Discord
 super + w
-	discord
+	  discord
 
 # File manager
 super + f

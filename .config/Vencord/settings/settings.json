@@ -221,7 +221,7 @@
             "enabled": false
         },
         "WhoReacted": {
-            "enabled": false
+            "enabled": true
         },
         "WebRichPresence (arRPC)": {
             "enabled": false
@@ -300,10 +300,22 @@
             "enabled": false
         },
         "SortFriendRequests": {
-            "enabled": true,
+            "enabled": false,
             "showDates": true
         },
         "MessageLinkEmbeds": {
+            "enabled": false
+        },
+        "MessageDecorationsAPI": {
+            "enabled": true
+        },
+        "MemberListDecoratorsAPI": {
+            "enabled": true
+        },
+        "DisableDMCallIdle": {
+            "enabled": false
+        },
+        "NoScreensharePreview": {
             "enabled": false
         }
     },

@@ -6,4 +6,4 @@ Xft.antialias: 1
 Xft.rgba: bgr
 
 Xcursor.theme: Simp1e
-Xcursor.size: 8
+#Xcursor.size: 16

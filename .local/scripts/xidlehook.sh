@@ -1,6 +1,7 @@
 #!/bin/sh
 
 xidlehook \
+  --socket "/tmp/xidlehook.sock" \
   `# Don't lock when there's a fullscreen application` \
   --not-when-fullscreen \
   `# Don't lock when there's audio playing` \
