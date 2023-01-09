@@ -1,0 +1,30 @@
+# Fazzi
+
+spacing = 1
+padding = 0
+hide_ascii = false
+separator = ""
+key_color = "Blue"
+separator_color = "Green"
+
+[box]
+border = "rounded"
+visible = false
+
+[box.inner_margin]
+x = 1
+y = 0
+
+[custom_ascii]
+path = "~/dotfiles/ascii/arch"
+color = "Blue"
+
+[keys]
+kernel = " kr"
+wm = "缾wm"
+distro = " os"
+shell = " sh"
+packages = " pk"
+memory = " mm"
+terminal = "\ue795 tr"
+host = "\uf25b hs"

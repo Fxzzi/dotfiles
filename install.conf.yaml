@@ -27,7 +27,6 @@
     ~/.config/ncmpcpp: .config/ncmpcpp
     ~/.config/mpd: .config/mpd
     ~/.config/macchina: .config/macchina
-    ~/.config/gtk-2.0: .config/gtk-2.0
     ~/.config/gtk-3.0: .config/gtk-3.0
     ~/.config/discord-flags.conf: .config/discord-flags.conf
     ~/.local/scripts: .local/scripts
