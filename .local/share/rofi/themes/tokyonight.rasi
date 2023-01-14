@@ -6,5 +6,4 @@
     selected:       #7aa2f7FF;
     active:         #414868FF;
     urgent:         #F7768EFF;
-    width: 600;
 }
