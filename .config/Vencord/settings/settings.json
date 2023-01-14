@@ -287,11 +287,12 @@
             "enabled": true
         },
         "ShikiCodeblocks": {
-            "enabled": false,
-            "theme": "https://raw.githubusercontent.com/shikijs/shiki/0b28ad8ccfbf2615f2d9d38ea8255416b8ac3043/packages/shiki/themes/dark-plus.json",
-            "tryHljs": "SECONDARY",
-            "useDevIcon": "GREYSCALE",
-            "bgOpacity": 100
+            "enabled": true,
+            "theme": "https://raw.githubusercontent.com/shikijs/shiki/0b28ad8ccfbf2615f2d9d38ea8255416b8ac3043/packages/shiki/themes/css-variables.json",
+            "tryHljs": "PRIMARY",
+            "useDevIcon": "COLOR",
+            "bgOpacity": 100,
+            "customTheme": "https://raw.githubusercontent.com/enkia/tokyo-night-vscode-theme/master/themes/tokyo-night-color-theme.json"
         },
         "ViewRaw": {
             "enabled": false
@@ -304,7 +305,8 @@
             "showDates": true
         },
         "MessageLinkEmbeds": {
-            "enabled": false
+            "enabled": false,
+            "automodEmbeds": "never"
         },
         "MessageDecorationsAPI": {
             "enabled": true
@@ -317,9 +319,16 @@
         },
         "NoScreensharePreview": {
             "enabled": false
+        },
+        "AlwaysTrust": {
+            "enabled": true
+        },
+        "InvisibleChat": {
+            "enabled": false
         }
     },
     "notifyAboutUpdates": true,
     "enableReactDevtools": false,
-    "themeLinks": []
+    "themeLinks": [],
+    "frameless": false
 }

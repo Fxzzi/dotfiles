@@ -45,6 +45,7 @@ physical_cores = true
 #   - Memory
 #   - Battery
 # Example:
+
 show = [
   "Host",
   "Distribution",
@@ -55,3 +56,10 @@ show = [
   "Memory",
   "Terminal",
 ]
+
+#show = [
+#  "Distribution",
+#  "Kernel",
+#  "WindowManager",
+#  "Packages",
+#]

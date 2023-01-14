@@ -10,11 +10,12 @@
 /*****----- Configuration -----*****/
 configuration {
     show-icons:                 false;
+    font: "JetBrains Mono Nerd Font 10";
 }
 
 /*****----- Global Properties -----*****/
-@import                          "colors.rasi"
-@import                          "fonts.rasi"
+
+@theme                           "tokyonight"
 
 /*
 USE_BUTTONS=YES

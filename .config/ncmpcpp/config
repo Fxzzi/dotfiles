@@ -1,4 +1,4 @@
-mpd_music_dir = "$HOME/spotdl/"
+mpd_music_dir = "$HOME/Music/"
 lyrics_directory = ~/.local/share/ncmpcpp/lyrics
 #mpd_host = "127.0.0.1"
 #mpd_port = "6601"
@@ -48,7 +48,7 @@ color2 = "black"
 #song_list_format = " $7%l  $2%t $R$5%a "
 song_list_format = "$5{%a $2»$8 %t}$0"
 
-execute_on_song_change="~/.config/ncmpcpp/ncmpcpp-ueberzug/ncmpcpp_cover_art.sh"
+#execute_on_song_change="~/.config/ncmpcpp/ncmpcpp-ueberzug/ncmpcpp_cover_art.sh"
 
 #song_status_format = "$b$7♫ $2%a $4⟫$3⟫ $8%t $4⟫$3⟫ $5%b "
 song_window_title_format = " {%a} - {%t}"

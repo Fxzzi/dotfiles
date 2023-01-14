@@ -1,31 +1,27 @@
 #!/bin/sh
 
-# Screenshot either monitor, a selection, or active window
+# Screenshot either monitor, a selection, or active window with maim
 # and then uploads with curl, copying the link to your
-# clipboard.
+# clipboard, and saving the screenshot with a timestamp.
 
-tmpImage=$(mktemp /tmp/tmpImage.XXXXXXXXXX.png) # Makes a temporary file to save the screenshot to
+tmpImage=$(mktemp /tmp/tmpImage.XXXXXXXXXX --suffix .png) # Makes a temporary file to save the screenshot to
 
 case $1 in
 # Takes screenshot of primary monitor
   --monitor1)
-    maim -Bu -m 3 -g 2560x1440+1920+0 "$tmpImage"
-    name=monitor1
+    maim -Bu -g 2560x1440+1920+0 "$tmpImage"
     ;;
 # Takes screenshot of secondary monitor
   --monitor2)
-    maim -Bu -m 3 -g 1920x1080+0+0 "$tmpImage"
-    name=monitor2
+    maim -Bu -g 1920x1080+0+0 "$tmpImage"
     ;;
 # Takes screenshot of rectangle selection
   --selection)
-    maim -sBu -m 3 --noopengl "$tmpImage"
-    name=selection
+    maim -sBu --noopengl "$tmpImage"
     ;;
 # Takes screenshot of active window
   --active)
-    maim -Bu -m 3 --window $(xdotool getactivewindow) "$tmpImage"
-    name=active
+    maim -Bu --window $(xdotool getactivewindow) "$tmpImage"
     ;;
   *)
     echo 'wrong or missing argument'
@@ -42,11 +38,10 @@ if [ $tmpImageSize != 0 ]; then
           --header 'Content-Type: multipart/form-data' \
           --form key=$(cat $HOME/Documents/uploadKey) \
           --form file="@$tmpImage")
-        url=$(echo $curlOut | python -c "import sys,json; print(json.load(sys.stdin)['url'])")
-        echo $url | xclip -selection clipboard
+        echo $curlOut | jq -r '.url' | xclip -selection clipboard
         dunstify -i "$tmpImage" -a "screenshot" "Screenshot Copied" "Your screenshot has been copied to the clipboard"
         canberra-gtk-play -i message &
-        cp $tmpImage $HOME/Pictures/Screenshots/"$name-$(date +%d-%m-%Y) - $(date +%H:%M:%S).png"
+        cp $tmpImage $HOME/Pictures/Screenshots/"Screenshot from $(date '+%d.%m.%y %H:%M:%S').png"
         exit $?
 fi
 
