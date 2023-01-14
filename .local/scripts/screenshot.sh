@@ -33,12 +33,12 @@ tmpImageSize=$(wc -c <"$tmpImage")
 
 if [ $tmpImageSize != 0 ]; then
         canberra-gtk-play -i camera-shutter &
-        curlOut=$(curl --request POST \
-          --url https://api.upload.systems/images/upload \
-          --header 'Content-Type: multipart/form-data' \
-          --form key=$(cat $HOME/Documents/uploadKey) \
-          --form file="@$tmpImage")
-        echo $curlOut | jq -r '.url' | xclip -selection clipboard
+        curl --request POST \
+        --url https://api.upload.systems/images/upload \
+        --header 'Content-Type: multipart/form-data' \
+        --form key=$(cat $HOME/Documents/uploadKey) \
+        --form file="@$tmpImage" | \
+        jq -r '.url' | xclip -selection clipboard
         dunstify -i "$tmpImage" -a "screenshot" "Screenshot Copied" "Your screenshot has been copied to the clipboard"
         canberra-gtk-play -i message &
         cp $tmpImage $HOME/Pictures/Screenshots/"Screenshot from $(date '+%d.%m.%y %H:%M:%S').png"
