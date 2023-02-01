@@ -2,7 +2,7 @@
 <h4 align="center">by fxzzi.</h4>
 <h4 align="center">based on the tokyonight color scheme.</h4>
 
-<img src="assets/preview.png" alt="Rice Showcase" align="right" width="500">
+<img src="assets/preview.png" alt="Rice Showcase" align="right" width="450">
 
 - **Operating System:** [arch](https://archlinux.org/)
 - **Compositor:** [Hyprland](https://github.com/hyprwm/Hyprland)
