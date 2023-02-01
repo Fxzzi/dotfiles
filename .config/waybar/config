@@ -59,7 +59,7 @@
     },
     
     "custom/pacman": {
-        "exec": "~/.config/polybar/scripts/package-updates.sh",
+        "exec": "$XDG_CONFIG_HOME/waybar/scripts/package-updates.sh",
         "format": "<span color=\"#7aa2f7\"> </span>{}",
         "interval": 600,
         "signal": 1
