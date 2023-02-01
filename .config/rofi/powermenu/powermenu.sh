@@ -68,6 +68,7 @@ run_cmd() {
 			betterlockscreen --lock dimblur & systemctl suspend
 		elif [[ $1 == '--logout' ]]; then
 			bspc quit
+      hyprctl dispatch exit
 		fi
 	else
 		exit 0

@@ -33,7 +33,7 @@
     origin = top-right
 
     # Offset from the origin
-    offset = "7x49"
+    offset = "10x10"
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0
@@ -77,7 +77,7 @@
     separator_height = 3
 
     # Padding between text and separator.
-    padding = 8
+    padding = 6
 
     # Horizontal padding.
     horizontal_padding = 8
@@ -87,7 +87,7 @@
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 3
+    frame_width = 2
 
     # Defines color of the frame around the notification window.
     frame_color = "#96CDFB"

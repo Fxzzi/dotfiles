@@ -20,7 +20,7 @@
 	<command>kitty lvim %f</command>
 	<description></description>
 	<range></range>
-	<patterns>*</patterns>
+	<patterns>*;*.sh</patterns>
 	<text-files/>
 </action>
 <action>
@@ -50,5 +50,16 @@
 	<other-files/>
 	<text-files/>
 	<video-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Set as poopy wallpaper</name>
+	<submenu></submenu>
+	<unique-id>1674846902763733-1</unique-id>
+	<command>betterlockscreen -u %f; betterlockscreen -w</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
 </action>
 </actions>

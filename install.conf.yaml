@@ -9,26 +9,20 @@
 - clean: ['~', '~/.config']
 
 - link:
-    ~/.config/picom: .config/picom
+    ~/.config/hypr: .config/hypr
     ~/.config/bottom: .config/bottom
-    ~/.config/bspwm: .config/bspwm
-    ~/.config/cava: .config/cava
+    ~/.config/waybar: .config/waybar
     ~/.config/dunst: .config/dunst
     ~/.config/kitty: .config/kitty
-    ~/.config/polybar: .config/polybar
     ~/.config/rofi: .config/rofi
-    ~/.config/sxhkd: .config/sxhkd
     ~/.config/Thunar: .config/Thunar
     ~/.config/zsh: .config/zsh
-    ~/.config/X11: .config/X11
     ~/.config/Vencord: .config/Vencord
-    ~/.config/redshift: .config/redshift
     ~/.config/paru: .config/paru
     ~/.config/ncmpcpp: .config/ncmpcpp
     ~/.config/mpd: .config/mpd
     ~/.config/macchina: .config/macchina
     ~/.config/gtk-3.0: .config/gtk-3.0
-    ~/.config/discord-flags.conf: .config/discord-flags.conf
     ~/.local/scripts: .local/scripts
     ~/.local/share/fonts: .local/share/fonts
     ~/.local/share/rofi: .local/share/rofi 

@@ -5,13 +5,10 @@
 <img src="assets/preview.png" alt="Rice Showcase" align="right" width="500">
 
 - **Operating System:** [arch](https://archlinux.org/)
-- **Window Manager:** [bspwm](https://github.com/baskerville/bspwm)
-- **Keybind Manager:** [sxhkd](https://github.com/baskerville/sxhkd)
+- **Compositor:** [Hyprland](https://github.com/hyprwm/Hyprland)
 - **Terminal Emulator:** [Kitty](https://github.com/kovidgoyal/kitty)
-- **Status Bar:** [Polybar](https://github.com/polybar/polybar)
-- **Compositor:** [picom-git](https://github.com/yshui/picom)
-- **App Launcher:** [rofi](https://github.com/davatorium/rofi)
-- **Idle Locker:**[xidlehook](https://github.com/jD91mZM2/xidlehook)
+- **Status Bar:** [waybar](https://github.com/Alexays/Waybar/)
+- **App Launcher:** [rofi](https://github.com/lbonn/rofi)
 - **Notification Daemon:** [dunst](https://github.com/dunst-project/dunst)
 - **Shell:** [zsh](https://www.zsh.org/)
 - **Shell Plugin Manager:** [zgenom](https://github.com/jandamm/zgenom)
