@@ -55,6 +55,7 @@
 
     "custom/kernel": {
         "exec": "uname -r | cut -d '-' -f1",
+        "interval": "once",
         "format": "<span color=\"#7aa2f7\"> </span>{}"
     },
     
@@ -66,7 +67,8 @@
     },
 
     "custom/sep": {
-        "format": "|"       
+        "format": "|",
+        "interval": "once"
     },
     "tray": {
         "icon-size": 21,
