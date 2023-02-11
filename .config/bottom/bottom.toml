@@ -187,7 +187,7 @@ enable_gpu_memory = true
 
 [temp_filter]
 is_list_ignored = true
-list = ["nct", "jc42", "Composite"]
+list = ["VRM", "T_Sensor", "nct"]
 regex = false
 case_sensitive = false
 whole_word = false

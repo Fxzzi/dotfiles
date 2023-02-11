@@ -16,7 +16,7 @@ if ! zgenom saved; then
   zgenom load zdharma-continuum/fast-syntax-highlighting
   zgenom load zsh-users/zsh-autosuggestions
   zgenom load zsh-users/zsh-history-substring-search
-  zgenom load clarketm/zsh-completions
+  zgenom load --completion clarketm/zsh-completions
   zgenom load joshskidmore/zsh-fzf-history-search
   zgenom load Aloxaf/fzf-tab
   zgenom load akash329d/zsh-alias-finder

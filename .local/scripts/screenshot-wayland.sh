@@ -29,6 +29,7 @@ tmpImageSize=$(wc -c <"$tmpImage")
 
 if [ $tmpImageSize != 0 ]; then
         canberra-gtk-play -i camera-shutter &
+        cp $tmpImage $HOME/Pictures/Screenshots/"Screenshot from $(date '+%d.%m.%y %H:%M:%S').png"
         curl --request POST \
         --url https://api.upload.systems/images/upload \
         --header 'Content-Type: multipart/form-data' \
@@ -37,7 +38,6 @@ if [ $tmpImageSize != 0 ]; then
         jq -r '.url' | wl-copy
         dunstify -i "$tmpImage" -a "screenshot" "Screenshot Copied" "Your screenshot has been copied to the clipboard"
         canberra-gtk-play -i message &
-        cp $tmpImage $HOME/Pictures/Screenshots/"Screenshot from $(date '+%d.%m.%y %H:%M:%S').png"
         exit $?
 fi
 

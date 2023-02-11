@@ -15,16 +15,14 @@ configuration{
 
 @theme "tokyonight"
 
-element-text, element-icon , mode-switcher {
+element-text, element-icon {
     background-color: inherit;
     text-color:       inherit;
 }
 
 window {
-    height: 360px;
-    width: 600px;
-    border: 3px;
-    border-color: @background;
+    height: 350px;
+    width: 580px;
     background-color: @background;
 }
 
@@ -74,7 +72,7 @@ element {
 }
 
 element-icon {
-    size: 25px;
+    size: 24px;
 }
 
 element selected {
