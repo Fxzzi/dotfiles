@@ -8,7 +8,6 @@ send_notification() {
     else icon=notification-audio-volume-muted
     fi
     dunstify -a "changevolume" -u low -r "9993" -h int:value:"$volume" -i "$icon" "Volume: ${volume}%" -t 2000
-    polybar-msg action pipewire-simple hook 0 &
     canberra-gtk-play -i audio-volume-change -d "changeVolume" &
   }
 

@@ -65,9 +65,8 @@ run_cmd() {
 		elif [[ $1 == '--reboot' ]]; then
       systemctl reboot
 		elif [[ $1 == '--suspend' ]]; then
-			betterlockscreen --lock dimblur & systemctl suspend
+			systemctl suspend
 		elif [[ $1 == '--logout' ]]; then
-			bspc quit
       hyprctl dispatch exit
 		fi
 	else
