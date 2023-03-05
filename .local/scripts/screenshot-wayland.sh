@@ -35,7 +35,7 @@ if [ $tmpImageSize != 0 ]; then
         --header 'Content-Type: multipart/form-data' \
         --form key=$(cat $HOME/Documents/uploadKey) \
         --form file="@$tmpImage" | \
-        jq -r '.url' | wl-copy
+        jq -r '.url' | wl-copy -n
         dunstify -i "$tmpImage" -a "screenshot" "Screenshot Copied" "Your screenshot has been copied to the clipboard"
         canberra-gtk-play -i message &
         exit $?

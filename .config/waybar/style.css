@@ -2,12 +2,15 @@
     border: none;
     border-radius: 0;
     font-family: JetBrainsMono Nerd Font, monospace;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 14px;
     min-height: 0;
-
-    background: #15161E;
     color: #C0CAF5;
+}
+
+window#waybar{
+    border: transparent;
+    background: rgba(21, 22, 30, 0.7);
 }
 
 tooltip {
@@ -46,8 +49,8 @@ tooltip {
 #custom-sep {
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 #tray {

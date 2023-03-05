@@ -27,5 +27,5 @@ if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 2 ]; then
 fi
 
 if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-  exec wrappedhl
+  exec Hyprland
 fi
