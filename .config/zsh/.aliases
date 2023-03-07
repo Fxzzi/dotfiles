@@ -25,4 +25,4 @@ alias zshrc="$EDITOR $XDG_CONFIG_HOME/zsh/.zshrc"
 alias xinitrc="$EDITOR $XDG_CONFIG_HOME/X11/xinitrc"
 
 alias updates="checkupdates; paru -Qum"
-alias rs="curl --data-binary @- https://paste.rs | xclip -selection clipboard"
+alias rs="curl --data-binary @- https://paste.rs | wl-copy"

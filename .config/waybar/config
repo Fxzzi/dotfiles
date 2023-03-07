@@ -20,17 +20,20 @@
     },
     "cpu": {
         "format": "<span color=\"#7aa2f7\"> </span>{}%",
-        "tooltip": false
+        "tooltip": false,
+        "interval": 3
     },
     "memory": {
-        "format": "<span color=\"#7aa2f7\"> </span>{used}GiB"
+        "format": "<span color=\"#7aa2f7\"> </span>{used}GiB",
+        "interval": 3
     },
     
     "temperature": {
     // "thermal-zone": 2,
     "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
     // "critical-threshold": 80,
-    "format": "<span color=\"#7aa2f7\"> </span>{temperatureC}°C"
+    "format": "<span color=\"#7aa2f7\"> </span>{temperatureC}°C",
+    "interval": 3
     },
     
     "pulseaudio": {
@@ -71,14 +74,12 @@
         "interval": "once"
     },
     "tray": {
-        "icon-size": 18,
-        "spacing": 10,
+        "icon-size": 20,
+        "spacing": 8,
     },
     "wlr/workspaces": {
         "disable-scroll": false,
         "on-click": "activate",
-        "on-scroll-up": "hyprctl dispatch workspace e+1",
-        "on-scroll-down": "hyprctl dispatch workspace e-1",
     }
 
 }
