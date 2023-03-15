@@ -1,58 +1,49 @@
 * {
-    border: none;
-    border-radius: 0;
     font-family: JetBrainsMono Nerd Font, monospace;
     font-weight: 600;
     font-size: 14px;
-    min-height: 0;
     color: #C0CAF5;
 }
 
-window#waybar{
-    border: transparent;
+#waybar{
     background: rgba(21, 22, 30, 0.7);
 }
 
 tooltip {
-    background: #1e1e2e;
-    border-width: 3px;
-    border-style: solid;
-    border-color: #11111b;
-}
-
-#workspaces button {
-    padding: 0px;
-}
-
-#workspaces button.active {
-    border-bottom: 2px solid #7aa2f7; 
-
-}
-
-#workspaces button.focused {
-    color: #a6adc8;
-}
-
-#workspaces button.urgent {
-    color: #F7768E;
-}
-
-#workspaces button:hover {
-    background: #11111b;
-    color: #cdd6f4;
+  background: #1e1e2e;
+  border: 3px solid #11111b;
 }
 
 #workspaces {
-    margin-left: 10px;
+  margin-left: 10px;
+}
+
+#workspaces button {
+  padding: 0;
+  color: #c0caf5;
+}
+
+#workspaces button.active {
+  border-bottom: 2px solid #7aa2f7; 
+}
+
+#workspaces button.focused {
+  color: #a6adc8;
+}
+
+#workspaces button.urgent {
+  color: #F7768E;
+}
+
+#workspaces button:hover {
+  background: #11111b;
+  color: #cdd6f4;
 }
 
 #custom-sep {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+  padding: 4px 10px;
 }
 
 #tray {
-   margin-right: 10px;  
+  margin-right: 10px;  
 }

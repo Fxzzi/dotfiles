@@ -82,6 +82,3 @@ source ${ZDOTDIR}/.aliases
 # Run fetch script on zsh start
 #$HOME/.local/scripts/fetch.sh
 macchina --theme fazzi
-
-#(\cat ~/.cache/wal/sequences &)
-
