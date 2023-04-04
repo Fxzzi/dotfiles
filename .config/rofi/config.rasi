@@ -1,7 +1,7 @@
 configuration{
     modi: "drun";
     lines: 10;
-    font: "JetBrainsMono Nerd Font 13";
+    font: "SpaceMono Nerd Font 13";
     show-icons: true;
     icon-theme: "Papirus-Dark";
     terminal: "kitty";
@@ -21,8 +21,8 @@ element-text, element-icon {
 }
 
 window {
-    height: 350px;
-    width: 580px;
+    height: 375px;
+    width: 550px;
     background-color: @background;
 }
 
@@ -60,13 +60,13 @@ entry {
 listview {
     border: 0px 0px 0px;
     padding: 6px 0px 0px;
-    margin: 10px 0px 0px 20px;
+    margin: 20px 0px 0px 20px;
     columns: 2;
     background-color: @background;
 }
 
 element {
-    padding: 5px;
+    padding: 4px;
     background-color: @background;
     text-color: @foreground  ;
 }

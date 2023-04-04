@@ -19,7 +19,7 @@ exec = nwg-look -a
 exec = hyprctl setcursor Simp1e 24
 exec-once = gnome-keyring-daemon --start --components=secrets
 exec-once = /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
-exec = xrandr --output DP-2 --primary
+exec = xrandr --output XWAYLAND1 --primary
 exec = pkill waybar; waybar
 exec = pkill swaybg; swaybg -i ~/Pictures/Wallpapers/tn-wallhaven-1p398w.jpg
 exec-once = webcord --start-minimized
@@ -51,7 +51,6 @@ general {
   col.inactive_border=rgba(171a1fff)
   no_border_on_floating = false
   layout = dwindle
-  cursor_inactive_timeout = 5
 }
 
 # █▀▄▀█ █ █▀ █▀▀
@@ -61,7 +60,7 @@ misc {
   disable_splash_rendering = true
   animate_mouse_windowdragging = false
   mouse_move_enables_dpms = true
-  #mouse_move_focuses_monitor = false
+  mouse_move_focuses_monitor = false
   focus_on_activate = true
   enable_swallow = true
   swallow_regex = ^(kitty)$
@@ -85,8 +84,10 @@ decoration {
     # Your blur "amount" is blur_size * blur_passes, but high blur_size (over around 5-ish) will produce artifacts.
     # if you want heavy blur, you need to up the blur_passes.
     # the more passes, the more you can up the blur_size without noticing artifacts.
+    
     #blur_xray = true
-    layerrule = blur, waybar
+
+    blurls = waybar
 }
 
 # ▄▀█ █▄░█ █ █▀▄▀█ ▄▀█ ▀█▀ █ █▀█ █▄░█ █▀

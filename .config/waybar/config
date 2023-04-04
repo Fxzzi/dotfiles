@@ -31,6 +31,7 @@
     "temperature": {
     // "thermal-zone": 2,
     "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+    // "hwmon-path": "/tmp/nvidia-temp",
     // "critical-threshold": 80,
     "format": "<span color=\"#7aa2f7\"> </span>{temperatureC}°C",
     "interval": 3
