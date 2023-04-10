@@ -21,7 +21,7 @@ element-text, element-icon {
 }
 
 window {
-    height: 375px;
+    height: 360px;
     width: 550px;
     background-color: @background;
 }
@@ -60,7 +60,7 @@ entry {
 listview {
     border: 0px 0px 0px;
     padding: 6px 0px 0px;
-    margin: 20px 0px 0px 20px;
+    margin: 10px 0px 0px 20px;
     columns: 2;
     background-color: @background;
 }
@@ -77,5 +77,5 @@ element-icon {
 
 element selected {
     background-color:  @background ;
-    text-color: @selected  ;
+    text-color: @selected;
 }

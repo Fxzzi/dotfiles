@@ -5,21 +5,16 @@
     color: #C0CAF5;
 }
 
-#waybar{
-    background: rgba(21, 22, 30, 0.7);
+window#waybar{
+    background: rgba(21, 22, 30, 0.5);
 }
 
 tooltip {
   background: #1e1e2e;
-  border: 3px solid #11111b;
-}
-
-#workspaces {
-  margin-left: 10px;
 }
 
 #workspaces button {
-  padding: 0;
+  padding: 0px;
   color: #c0caf5;
 }
 
@@ -41,9 +36,44 @@ tooltip {
 }
 
 #custom-sep {
-  padding: 4px 10px;
+  background: rgba(21, 22, 30, 0.7);
+  margin: 3px 0px;
+  border: 0px;
 }
 
+#custom-kernel,
+#custom-pacman,
+#clock,
+#window,
+#temperature,
+#cpu,
+#memory,
+#pulseaudio,
 #tray {
-  margin-right: 10px;  
+  background: rgba(21, 22, 30, 0.7);
+  padding: 0px 10px;
+  margin: 3px 0px;
+  border: 0px;
+}
+
+#workspaces {
+  background: rgba(21, 22, 30, 0.7);
+  padding: 0px;
+  margin: 3px 0px;
+  border: 0px;
+}
+
+
+#tray {
+  border-radius: 12px 12px 12px 12px;
+  margin-right: 6px;
+  background: rgba(21, 22, 30, 0.7);
+}
+
+#window, #temperature {
+  border-radius: 12px 0px 0px 12px;
+}
+
+#clock, #custom-pacman {
+  border-radius: 0px 12px 12px 0px;
 }

@@ -2,14 +2,14 @@
     "layer": "top",
     // "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
-    // "height": 28, // Waybar height (to be removed for auto height)
+    "height": 34, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
-    // "spacing": 20, // Gaps between modules (4px)
+    // "spacing": 4, // Gaps between modules (4px)
     
     // Choose the order of the modules
-    "modules-left": ["wlr/workspaces", "custom/sep", "custom/kernel", "custom/sep", "custom/pacman"],
-    "modules-center": ["clock", "custom/sep", "hyprland/window"],
-    "modules-right": ["temperature", "custom/sep", "cpu", "custom/sep", "memory", "custom/sep", "pulseaudio", "custom/sep", "tray"],
+    "modules-left": ["wlr/workspaces", "custom/pacman"],
+    "modules-center": ["hyprland/window", "clock"],
+    "modules-right": ["tray", "temperature", "cpu", "memory", "pulseaudio"],
 
     // Modules configuration
   
