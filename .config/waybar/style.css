@@ -58,7 +58,7 @@ tooltip {
 
 #workspaces {
   background: rgba(21, 22, 30, 0.7);
-  padding: 0px;
+  padding: 0px 10px;
   margin: 3px 0px;
   border: 0px;
 }
