@@ -67,13 +67,16 @@ tooltip {
 #tray {
   border-radius: 12px 12px 12px 12px;
   margin-right: 6px;
-  background: rgba(21, 22, 30, 0.7);
 }
 
-#window, #temperature {
+#window {
+  border-radius: 12px 12px 12px 12px;
+}
+
+#temperature {
   border-radius: 12px 0px 0px 12px;
 }
 
-#clock, #custom-pacman {
+#custom-pacman, #custom-kernel {
   border-radius: 0px 12px 12px 0px;
 }
