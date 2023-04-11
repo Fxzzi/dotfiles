@@ -38,18 +38,10 @@
     },
     
     "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
+        "scroll-step": 5, // %, can be a float
         "format": "<span color=\"#7aa2f7\">{icon} </span>{volume}%",
         "format-muted": "<span color=\"#f7768e\"> </span>Muted",
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
-        },
+        "format-icons": ["", "", ""],
         "on-click": "pavucontrol"
     },
     "hyprland/window": {

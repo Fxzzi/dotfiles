@@ -6,7 +6,6 @@
     // "width": 1280, // Waybar width
     // "spacing": 4, // Gaps between modules (4px)
     "output": "DP-1",
-    
     // Choose the order of the modules
     "modules-left": ["wlr/workspaces", "clock", "custom/kernel"],
     "modules-center": ["hyprland/window"],
@@ -39,20 +38,13 @@
     },
     
     "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
+        "scroll-step": 5, // %, can be a float
         "format": "<span color=\"#7aa2f7\">{icon} </span>{volume}%",
         "format-muted": "<span color=\"#f7768e\"> </span>Muted",
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
-        },
+        "format-icons": ["", "", ""],
         "on-click": "pavucontrol"
     },
+
     "hyprland/window": {
        	"max-length": 48,
         "format": "{}",

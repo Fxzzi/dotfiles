@@ -19,7 +19,9 @@ tooltip {
 }
 
 #workspaces button.active {
-  border-bottom: 2px solid #7aa2f7; 
+  border-bottom: 2px solid #7aa2f7;
+  border-radius: 0px;
+  margin-bottom: 2px;
 }
 
 #workspaces button.focused {
@@ -33,12 +35,6 @@ tooltip {
 #workspaces button:hover {
   background: #11111b;
   color: #cdd6f4;
-}
-
-#custom-sep {
-  background: rgba(21, 22, 30, 0.7);
-  margin: 3px 0px;
-  border: 0px;
 }
 
 #custom-kernel,
@@ -66,7 +62,7 @@ tooltip {
 
 #tray {
   border-radius: 12px 12px 12px 12px;
-  margin-right: 6px;
+  margin-right: 4px;
 }
 
 #window {
