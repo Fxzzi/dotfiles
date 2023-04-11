@@ -3,3 +3,4 @@ renamerrc
 accels.scm
 .zcompdump*
 .config/Vencord/dist
+.config/zsh/zgenom
