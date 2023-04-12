@@ -5,25 +5,30 @@
     color: #C0CAF5;
 }
 
+/* Set background colour of main waybar window */
 window#waybar{
     background: rgba(21, 22, 30, 0.5);
 }
 
+/* Set background colour of tooltips */
 tooltip {
   background: #1e1e2e;
 }
 
+/* Set workspace text colour and padding */
 #workspaces button {
   padding: 0px;
   color: #c0caf5;
 }
 
+/* Sets active workspace to have a solid line on the bottom */
 #workspaces button.active {
   border-bottom: 2px solid #7aa2f7;
   border-radius: 0px;
   margin-bottom: 2px;
 }
 
+/* More workspace stuff for highlighting on hover */
 #workspaces button.focused {
   color: #a6adc8;
 }
@@ -37,42 +42,43 @@ tooltip {
   color: #cdd6f4;
 }
 
+/* sets background, padding, margins, and borders for (all) modules */
 #custom-kernel,
 #custom-pacman,
+#workspaces,
 #clock,
 #window,
 #temperature,
 #cpu,
 #memory,
 #pulseaudio,
-#tray {
+#tray,
+#mpd {
   background: rgba(21, 22, 30, 0.7);
   padding: 0px 10px;
   margin: 3px 0px;
   border: 0px;
 }
 
-#workspaces {
-  background: rgba(21, 22, 30, 0.7);
-  padding: 0px 10px;
-  margin: 3px 0px;
-  border: 0px;
+/* set up rounding to make these modules look like seperate pills */
+#mpd {
+  border-radius: 12px 12px 12px 12px;
+  margin-left: 4px
 }
-
-
 #tray {
   border-radius: 12px 12px 12px 12px;
   margin-right: 4px;
 }
-
 #window {
   border-radius: 12px 12px 12px 12px;
 }
 
+/* rounding only on left of module */
 #temperature {
   border-radius: 12px 0px 0px 12px;
 }
 
+/* rounding only on right of module(s) */
 #custom-pacman, #custom-kernel {
   border-radius: 0px 12px 12px 0px;
 }

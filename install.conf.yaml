@@ -30,4 +30,5 @@
     ~/.zshenv: .zshenv
   
 - shell:
-  - [git clone https://github.com/jandamm/zgenom.git "${HOME}/.config/zsh/zgenom", installing zgenom]
+  - [mkdir -p ~/.local/state/zsh, enabling zsh history]
+  - [git clone https://github.com/jandamm/zgenom.git ~/.config/zsh/.zgenom", installing zgenom]
