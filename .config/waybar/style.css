@@ -62,23 +62,23 @@ tooltip {
 
 /* set up rounding to make these modules look like seperate pills */
 #mpd {
-  border-radius: 12px 12px 12px 12px;
+  border-radius: 8px 8px 8px 8px;
   margin-left: 4px
 }
 #tray {
-  border-radius: 12px 12px 12px 12px;
+  border-radius: 8px 8px 8px 8px;
   margin-right: 4px;
 }
 #window {
-  border-radius: 12px 12px 12px 12px;
+  border-radius: 8px 8px 8px 8px;
 }
 
 /* rounding only on left of module */
 #temperature {
-  border-radius: 12px 0px 0px 12px;
+  border-radius: 8px 0px 0px 8px;
 }
 
 /* rounding only on right of module(s) */
 #custom-pacman, #custom-kernel {
-  border-radius: 0px 12px 12px 0px;
+  border-radius: 0px 8px 8px 0px;
 }

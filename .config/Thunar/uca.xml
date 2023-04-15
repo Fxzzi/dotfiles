@@ -40,7 +40,7 @@
 	<name>Copy File / Folder Path</name>
 	<submenu></submenu>
 	<unique-id>1653335357081852-1</unique-id>
-	<command>echo -n &apos;&quot;%f&quot;&apos; | xclip -selection clipboard</command>
+	<command>echo -n &apos;&quot;%f&quot;&apos; | wl-copy</command>
 	<description></description>
 	<range></range>
 	<patterns>*</patterns>
@@ -50,16 +50,5 @@
 	<other-files/>
 	<text-files/>
 	<video-files/>
-</action>
-<action>
-	<icon></icon>
-	<name>Set as poopy wallpaper</name>
-	<submenu></submenu>
-	<unique-id>1674846902763733-1</unique-id>
-	<command>betterlockscreen -u %f; betterlockscreen -w</command>
-	<description></description>
-	<range>*</range>
-	<patterns>*</patterns>
-	<image-files/>
 </action>
 </actions>

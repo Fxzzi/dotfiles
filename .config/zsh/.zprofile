@@ -24,7 +24,7 @@ export SUDO_PROMPT='[] Enter Password: '
 export EDITOR='lvim'
 
 # execute Hyprland when in TTY1 only
-if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
   exec Hyprland
 fi
 
