@@ -30,6 +30,8 @@ alias gaa='git add --all'
 alias gb='git branch'
 alias gc='git commit --verbose'
 alias gcam='git commit --all --message'
+alias gd='git diff'
+alias gp='git push'
 
 alias updates="checkupdates; paru -Qum"
 alias rs="curl --data-binary @- https://paste.rs | wl-copy"
