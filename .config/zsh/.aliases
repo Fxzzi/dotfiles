@@ -24,5 +24,12 @@ alias polybarrc="$EDITOR $XDG_CONFIG_HOME/polybar/config.ini"
 alias zshrc="$EDITOR $XDG_CONFIG_HOME/zsh/.zshrc"
 alias xinitrc="$EDITOR $XDG_CONFIG_HOME/X11/xinitrc"
 
+alias g='git'
+alias ga='git add'
+alias gaa='git add --all'
+alias gb='git branch'
+alias gc='git commit --verbose'
+alias gcam='git commit --all --message'
+
 alias updates="checkupdates; paru -Qum"
 alias rs="curl --data-binary @- https://paste.rs | wl-copy"

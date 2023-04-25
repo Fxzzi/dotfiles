@@ -7,21 +7,19 @@ zgenom autoupdate
 
 # if the init script doesn't exist
 if ! zgenom saved; then
-
-  # specify plugins here
-  zgenom ohmyzsh
-  zgenom ohmyzsh themes/robbyrussell
-  
-  zgenom load mdumitru/git-aliases
+  # Load pure shell theme
+  zgenom load sindresorhus/pure
+  # Enable fzf (fuzzy finderi) for tab completions and history searching
+  zgenom load Aloxaf/fzf-tab
+  zgenom load joshskidmore/zsh-fzf-history-search
+  # Enable syntax highlighting
   zgenom load zdharma-continuum/fast-syntax-highlighting
+  # Enable useful zsh-users plugins
   zgenom load zsh-users/zsh-autosuggestions
   zgenom load zsh-users/zsh-history-substring-search
-  zgenom load --completion clarketm/zsh-completions
-  zgenom load joshskidmore/zsh-fzf-history-search
-  zgenom load Aloxaf/fzf-tab
-  zgenom load akash329d/zsh-alias-finder
+  zgenom load --completion zsh-users/zsh-completions
 
-# generate the init script from plugins above
+  # generate the init script from plugins above
   zgenom save
 fi
 
@@ -55,6 +53,10 @@ setopt INC_APPEND_HISTORY
 # GLOBDOTS lets files beginning with a . be matched without explicitly specifying the dot.
 # e.g. cd <TAB> will now show files beginning with . 
 setopt globdots
+# Enables using cd command without explicitly using cd in command
+setopt autocd
+# Disable all zsh beeps
+unsetopt BEEP
 
 # Key bindings
 # Print current key bindings: bindkey
