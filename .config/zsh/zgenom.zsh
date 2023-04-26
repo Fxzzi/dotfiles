@@ -22,5 +22,5 @@ if ! zgenom saved; then
   zgenom load --completion zsh-users/zsh-completions
 
   # generate the init script from plugins above
-  zgenom save
+  zgenom save --parallel
 fi
