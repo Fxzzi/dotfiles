@@ -13,6 +13,7 @@ bindkey "^[[1;5C" forward-word # CTRL+ARROW_RIGHT - move cursor forward one word
 bindkey "^[[1;5D" backward-word # CTRL+ARROW_LEFT - move cursor backward one word
 bindkey "^Z" undo # CTRL+Z
 bindkey "^Y" redo # CTRL+Y
+bindkey -v '^?' backward-delete-char # Allows backspace to go onto previous lines like vim
 
 # Bind keys for history substring search
 bindkey '^[[A' history-substring-search-up
