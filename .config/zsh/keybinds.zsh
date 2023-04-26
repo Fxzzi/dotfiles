@@ -1,22 +1,30 @@
 #!/usr/bin/env zsh
 
-# Key bindings
-# Print current key bindings: bindkey
-# List available key bindings: bindkey -l
-# Interactively show pressed key when pressing any keys
+# Define key bindings
+# Use "bindkey -l" to list available key bindings
+# Use "bindkey -M viins" to list key bindings for insert mode
+# Use "bindkey -M vicmd" to list key bindings for command mode
+
+# Move cursor to beginning and end of line
 bindkey "^[[H" beginning-of-line # HOME
 bindkey "^[[F" end-of-line # END
+
+# Delete characters and words
 bindkey "^[[3~" delete-char # DEL
-bindkey "^[[3;5~" delete-word # CTRL+DEL - delete a whole word after cursor
-bindkey "^H" backward-delete-word # CTRL+BACKSPACE - delete a whole word before cursor
-bindkey "^[[1;5C" forward-word # CTRL+ARROW_RIGHT - move cursor forward one word
-bindkey "^[[1;5D" backward-word # CTRL+ARROW_LEFT - move cursor backward one word
+bindkey '^H' backward-kill-word # Ctrl+Backspace (delete word backwards)
+bindkey '^[[3;5~' kill-word # Ctrl+Delete (delete word forwards)
+
+# Move cursor forward and backward one word at a time
+bindkey "^[[1;5C" forward-word # CTRL+ARROW_RIGHT
+bindkey "^[[1;5D" backward-word # CTRL+ARROW_LEFT
+
+# Undo and redo changes
 bindkey "^Z" undo # CTRL+Z
 bindkey "^Y" redo # CTRL+Y
-bindkey -v '^?' backward-delete-char # Allows backspace to go onto previous lines like vim
 
-# Bind keys for history substring search
-bindkey '^[[A' history-substring-search-up
-bindkey '^[OA' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
-bindkey '^[OB' history-substring-search-down
+# Allow backspace to delete characters across multiple lines like in Vim
+bindkey -v '^?' backward-delete-char
+
+# Select the Bash word style so backward-kill-word goes to last / or .
+autoload -U select-word-style
+select-word-style bash
