@@ -28,3 +28,5 @@ bindkey -v '^?' backward-delete-char
 # Select the Bash word style so backward-kill-word goes to last / or .
 autoload -U select-word-style
 select-word-style bash
+
+
