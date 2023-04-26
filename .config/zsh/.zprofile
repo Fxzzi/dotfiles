@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 # Set XDG Base Directory paths
 export XDG_CONFIG_HOME="${HOME}/.config"          # User configuration files
 export XDG_CACHE_HOME="${HOME}/.cache"            # User cache files
