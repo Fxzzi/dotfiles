@@ -29,3 +29,7 @@ setopt autocd
 
 # Disable all beeps in zsh
 unsetopt BEEP
+
+# tells zsh to ignore case when completing commands or filenames.
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+
