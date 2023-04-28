@@ -10,10 +10,11 @@ conf() {
     zsh)      $EDITOR "$XDG_CONFIG_HOME/zsh/.zshrc" ;;
     zprofile) $EDITOR "$XDG_CONFIG_HOME/zsh/.zprofile" ;;
     zaliases)  $EDITOR "$XDG_CONFIG_HOME/zsh/aliases.zsh" ;;
-    zkeybinds)  $EDITOR "$XDG_CONFIG_HOME/zsh/keybinds.zsh" ;;
-    zoptions)  $EDITOR "$XDG_CONFIG_HOME/zsh/options.zsh" ;;
+    zbinds)  $EDITOR "$XDG_CONFIG_HOME/zsh/keybinds.zsh" ;;
+    zlatebinds) $EDITOR "$XDG_CONFIG_HOME/zsh/keybinds-late.zsh" ;;
+    zopt)  $EDITOR "$XDG_CONFIG_HOME/zsh/options.zsh" ;;
     zgenom)  $EDITOR "$XDG_CONFIG_HOME/zsh/zgenom.zsh" ;;
     zcomp)  $EDITOR "$XDG_CONFIG_HOME/zsh/compinit.zsh" ;;
-    conf)  $EDITOR "$XDG_CONFIG_HOME/zsh/conf.zsh" ;;
+    zfunc)  $EDITOR "$XDG_CONFIG_HOME/zsh/functions.zsh" ;;
   esac
 }
