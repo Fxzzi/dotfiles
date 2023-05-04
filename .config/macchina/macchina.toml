@@ -50,8 +50,6 @@ show = [
   "Host",
   "Distribution",
   "Shell",
-  "WindowManager",
-  "Kernel",
   "Packages",
   "Memory",
   "Terminal",

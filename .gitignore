@@ -1,6 +1,8 @@
 *.bak
-renamerrc
-accels.scm
-.zcompdump*
-.config/Vencord/dist
-.config/zsh/zgenom
+.config/Thunar/accels.scm
+.config/Thunar/renamerrc
+.config/gtk-3.0/bookmarks
+.config/ncmpcpp/error.log
+.config/zsh/.zcompdump
+.config/zsh/.zgenom
+.config/nvim/lazy-lock.json

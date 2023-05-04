@@ -23,6 +23,7 @@
     ~/.config/mpd: .config/mpd
     ~/.config/macchina: .config/macchina
     ~/.config/gtk-3.0: .config/gtk-3.0
+    ~/.config/nvim: .config/nvim
     ~/.local/scripts: .local/scripts
     ~/.local/share/fonts: .local/share/fonts
     ~/.local/share/rofi: .local/share/rofi 

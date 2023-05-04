@@ -25,7 +25,7 @@ export PATH=$PATH:~/.local/scripts:~/.local/bin:~/.local/share/cargo/bin
 export SUDO_PROMPT='[] Enter Password: '
 
 # Set default editor
-export EDITOR='lvim'
+export EDITOR='nvim'
 
 # execute Hyprland when in TTY1 only
 if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then

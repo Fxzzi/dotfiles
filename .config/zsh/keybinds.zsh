@@ -6,8 +6,8 @@
 # Use "bindkey -M vicmd" to list key bindings for command mode
 
 # Move cursor to beginning and end of line
-bindkey "^[[H" beginning-of-line # HOME
-bindkey "^[[F" end-of-line # END
+bindkey "\e[5~" beginning-of-line # Page Up
+bindkey "\e[6~" end-of-line # Page Down
 
 # Delete characters and words
 bindkey "^[[3~" delete-char # DEL
@@ -28,5 +28,3 @@ bindkey -v '^?' backward-delete-char
 # Select the Bash word style so backward-kill-word goes to last / or .
 autoload -U select-word-style
 select-word-style bash
-
-

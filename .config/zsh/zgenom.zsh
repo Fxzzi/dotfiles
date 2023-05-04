@@ -1,6 +1,4 @@
 #!/usr/bin/env zsh
-
-# load zgenom
 source "${ZDOTDIR}/.zgenom/zgenom.zsh"
 
 # check for plugin and zgenom updates every 7 days
@@ -24,5 +22,3 @@ if ! zgenom saved; then
   # generate the init script from plugins above
   zgenom save --parallel
 fi
-
-
