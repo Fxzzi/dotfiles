@@ -2,11 +2,13 @@
     link:
       create: true
       relink: true
-      force: true
+    shell:
       stdin: true
       stdout: true
+      stderr: true
+      quiet: true
 
-- clean: ['~', '~/.config']
+- clean: ["~", "~/.config"]
 
 - link:
     ~/.config/hypr: .config/hypr
@@ -22,14 +24,18 @@
     ~/.config/ncmpcpp: .config/ncmpcpp
     ~/.config/mpd: .config/mpd
     ~/.config/macchina: .config/macchina
-    ~/.config/gtk-3.0: .config/gtk-3.0
     ~/.config/nvim: .config/nvim
     ~/.local/scripts: .local/scripts
     ~/.local/share/fonts: .local/share/fonts
-    ~/.local/share/rofi: .local/share/rofi 
+    ~/.local/share/rofi: .local/share/rofi
     ~/Pictures/Wallpapers: Wallpapers
     ~/.zshenv: .zshenv
-  
+
+- create:
+    - ~/.local/state/zsh
+
 - shell:
-  - [mkdir -p ~/.local/state/zsh, enabling zsh history]
-  - [git clone https://github.com/jandamm/zgenom.git ~/.config/zsh/.zgenom", installing zgenom]
+    - [assets/bootstrap/paru.sh, Installing paru]
+    - [assets/bootstrap/packages.sh, Installing packages]
+    - [assets/bootstrap/zgenom.sh, Installing zgenom]
+    - [chsh -s $(which zsh), Making zsh the default shell]
