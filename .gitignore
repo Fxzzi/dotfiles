@@ -5,3 +5,4 @@
 .config/zsh/.zcompdump
 .config/zsh/.zgenom
 .config/nvim/lazy-lock.json
+.local/share/fonts/.uuid
