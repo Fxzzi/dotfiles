@@ -29,9 +29,9 @@ vim.o.showmode = false
 
 -- editing
 vim.o.completeopt = "menuone,noselect"
-vim.o.shortmess = vim.o.shortmess..'c'
-vim.o.inccommand = 'split'
-vim.o.virtualedit = 'onemore'
+vim.o.shortmess = vim.o.shortmess .. "c"
+vim.o.inccommand = "split"
+vim.o.virtualedit = "onemore"
 
 -- timing and delays
 vim.o.timeout = true
@@ -51,7 +51,7 @@ vim.o.hidden = true
 -- window management
 vim.o.splitbelow = true
 vim.o.splitright = true
-vim.o.mouse = 'a'
+vim.o.mouse = "a"
 vim.o.winblend = 10
 
 -- clipboard

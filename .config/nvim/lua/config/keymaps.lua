@@ -14,5 +14,10 @@ vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = "Go to next diagnos
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = "Open floating diagnostic message" })
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = "Open diagnostics list" })
 
-vim.keymap.set("n", "<F3>", function () vim.lsp.buf.format() end, { silent = true })
-vim.keymap.set('n', '<leader>n', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
+vim.keymap.set("n", "<F3>", function() vim.lsp.buf.format() end, { silent = true })
+vim.keymap.set('n', '<leader>e', ':Neotree toggle<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>w', ':WhichKey<CR>', { noremap = true, silent = true })
+
+-- Cycle through open buffers with Space + Tab
+vim.keymap.set('n', '<leader><Tab>', ':bnext<CR>', { noremap = true })
+
