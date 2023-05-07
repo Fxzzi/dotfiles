@@ -27,3 +27,4 @@ alias gp='git push'
 # Misc aliases
 alias updates='checkupdates; paru -Qum'  # Check system and AUR updates
 alias rs='curl --data-binary @- https://paste.rs | wl-copy'  # Share output to a pastebin and copy to clipboard
+alias vim='nvim'
