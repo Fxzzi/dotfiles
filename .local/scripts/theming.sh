@@ -14,7 +14,7 @@ gsettings set org.gnome.desktop.interface font-antialiasing rgba
 # Set font rendering order to blue-green-red
 gsettings set org.gnome.desktop.interface font-rgba-order bgr
 # Set font hinting to slight
-gsettings set org.gnome.desktop.interface font-hinting 1
+gsettings set org.gnome.desktop.interface font-hinting slight
 # Set preferred theme to dark mode
 gsettings set org.gnome.desktop.interface color-scheme prefer-dark
 # Set hyprland cursor

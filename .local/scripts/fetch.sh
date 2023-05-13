@@ -19,19 +19,19 @@ bold='\033[1m'
 end='\033[0m'
 
 len () {
-  echo "${@}" | wc -c
+    echo "${@}" | wc -c
 }
 
 repeat_by_len () {
-  local str=$1
-  local char=$2
-  local len=$(len "$str")
-  local i=1
+    local str=$1
+    local char=$2
+    local len=$(len "$str")
+    local i=1
 
-  while [ $i -lt $len ]; do
-    printf "$char"
-    i=$(expr $i + 1)
-  done
+    while [ $i -lt $len ]; do
+        printf "$char"
+        i=$(expr $i + 1)
+    done
 }
 
 printf '%b' "

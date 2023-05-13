@@ -74,7 +74,8 @@ return {
 		-- Set lualine as statusline
 		"nvim-lualine/lualine.nvim",
 		-- See `:help lualine.txt`
-		opts = {
+		event = "VeryLazy",
+    opts = {
 			options = {
 				icons_enabled = true,
 				theme = "tokyonight",
@@ -87,7 +88,7 @@ return {
 	{
 		"akinsho/bufferline.nvim",
 		version = "*",
-		event = "VeryLazy",
+		event = { "BufReadPre", "BufNewFile" },
 		dependencies = "nvim-tree/nvim-web-devicons",
 		config = true,
 		opts = {
