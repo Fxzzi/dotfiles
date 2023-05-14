@@ -1,21 +1,30 @@
 local servers = {
-  lua_ls = {
-    Lua = {
-      workspace = { checkThirdParty = false },
-      telemetry = { enable = false },
-    },
-  },
+  "bashls",
+  "cssls",
+  "html",
+  "lua_ls",
+  "tsserver",
+  "pylsp",
 }
 
 return {
   -- LSP Configuration & Plugins
   "neovim/nvim-lspconfig",
-  event = { "BufReadPost", "BufNewFile" },
+  event = { "BufReadPre", "BufNewFile" },
   dependencies = {
     -- Automatically install LSPs to stdpath for neovim
-    { "williamboman/mason.nvim",           config = true },
-    { "williamboman/mason-lspconfig.nvim", opts = { ensure_installed = vim.tbl_keys(servers) } },
-    { "j-hui/fidget.nvim",                 config = true },
+    {
+      "williamboman/mason.nvim",
+      config = true,
+      build = ":MasonUpdate",
+    },
+    {
+      "williamboman/mason-lspconfig.nvim",
+      opts = {
+        ensure_installed = servers_key,
+      },
+    },
+    "hrsh7th/cmp-nvim-lsp",
     {
       "jose-elias-alvarez/null-ls.nvim",
       opts = function()
@@ -23,9 +32,11 @@ return {
         return {
           sources = {
             null_ls.builtins.formatting.prettierd,
-            null_ls.builtins.formatting.beautysh,
-            null_ls.builtins.diagnostics.shellcheck,
+            null_ls.builtins.formatting.shfmt,
+            -- null_ls.builtins.diagnostics.shellcheck,
             null_ls.builtins.formatting.stylua,
+            null_ls.builtins.formatting.markdownlint,
+            -- null_ls.builtins.formatting.pylint,
           },
         }
       end,

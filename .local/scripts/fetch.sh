@@ -4,7 +4,10 @@
 # Adapted by: https://github.com/Fxzzi
 user="${USER}"
 shell="$(basename "${SHELL}")"
-distro=$(. /etc/os-release ; echo "$ID")
+distro=$(
+	. /etc/os-release
+	echo "$ID"
+)
 wm="${XDG_CURRENT_DESKTOP}"
 kernel="$(uname -r | cut -d '-' -f1)"
 packages="$(pacman -Q | wc -l)"
@@ -18,20 +21,20 @@ purple='\033[35m'
 bold='\033[1m'
 end='\033[0m'
 
-len () {
-    echo "${@}" | wc -c
+len() {
+	echo "${@}" | wc -c
 }
 
-repeat_by_len () {
-    local str=$1
-    local char=$2
-    local len=$(len "$str")
-    local i=1
+repeat_by_len() {
+	str="$1"
+	char="$2"
+	len="$(len "$str")"
+	i=1
 
-    while [ $i -lt $len ]; do
-        printf "$char"
-        i=$(expr $i + 1)
-    done
+	while [ "$i" -lt "$len" ]; do
+		printf "$char"
+		i=$(("$i" + 1))
+	done
 }
 
 printf '%b' "
