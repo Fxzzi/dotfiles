@@ -1,0 +1,97 @@
+/**
+ * @name DiscordRecolor
+ * @description Allows you to customize Discord's native Color Scheme
+ * @author DevilBro
+ * @version 1.0.0
+ * @authorId 278543574059057154
+ * @invite Jx3TjNS
+ * @donate https://www.paypal.me/MircoWittrien
+ * @patreon https://www.patreon.com/MircoWittrien
+ * @website https://mwittrien.github.io/
+ * @source https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/DiscordRecolor/
+ * @updateUrl https://mwittrien.github.io/BetterDiscordAddons/Themes/DiscordRecolor/DiscordRecolor.theme.css
+ */
+
+/* To change the colors, change the variables inside the root {}, do NOT change the @import url() */
+
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/DiscordRecolor/DiscordRecolor.css);
+@import url("https://d3sox.github.io/complementary-discord-theme/hide-nitro-upselling.theme.css");
+
+/* All colors are in RGB format (red, green, blue) use: https://www.google.com/search?q=colorpicker	*/
+
+:root {
+	--font: "SF Pro Text";
+	--font-code: "SpaceMono Nerd Font Mono";
+
+	--settingsicons: 0;
+	/*	Use Settings Icons in User/Server/Channel Settings: 1 = yes, 0 = no		*/
+
+	--accentcolor: 122, 162, 247;
+	/*	Blurple				- 	default:	88,101,242		- 	hex:	#5865f2		*/
+	--accentcolor2: 187, 154, 247;
+	/*	Boostpink			- 	default:	255,115,250		- hex:	#ff73fa		*/
+	--linkcolor: 122, 162, 247;
+	/*	Link Color			- 	default:	0,176,244		- 	hex:	#00b0f4		*/
+	--mentioncolor: 122, 162, 247;
+	/*	Highlight Color		- 	default:	250,166,26		- hex:	#faa61a		*/
+	--successcolor: 158, 206, 106;
+	/*	Success Color		- 	default:	59,165,92		- hex:	#3ba55c		*/
+	--warningcolor: 224, 175, 104;
+	/*	Warning Color		- 	default:	250,166,26		- hex:	#faa61a		*/
+	--dangercolor: 247, 118, 142;
+	/*	Danger Color		- 	default:	237,66,69		- hex:	#ed4245		*/
+
+	--textbrightest: 192, 202, 245;
+	/*	Text Color 1		- 	default:	255,255,255		- 	hex#ffffff		*/
+	--textbrighter: 192, 202, 245;
+	/*	Text Color 2		- 	default:	220,221,222		- 	hex#dcddde		*/
+	--textbright: 192, 202, 245;
+	/*	Text Color 3		- 	default:	185,187,190		- 	hex#b9bbbe		*/
+	--textdark: 165, 173, 207;
+	/*	Text Color 4		- 	default:	142,146,151		- 	hex#8e9297		*/
+	--textdarker: 133, 139, 166;
+	/*	Text Color 5		- 	default:	114,118,125		- 	hex#72767d		*/
+	--textdarkest: 91, 96, 120;
+	/*	Text Color 6		- 	default:	79,84,92		- hex:	#4f545c		*/
+
+	--backgroundaccent: 32, 33, 44;
+	/*	Background Accent	- 	default:	64,68,75		- 	hex#40444b		*/
+	--backgroundprimary: 26, 27, 38;
+	/*	Background 1		- 	default:	54,57,63		- 	hex#36393f		*/
+	--backgroundsecondary: 19, 21, 31;
+	/*	Background 2		- 	default:	47,49,54		- 	hex#2f3136		*/
+	--backgroundsecondaryalt: 19, 21, 31;
+	/*	Background 3		- 	default:	41,43,47		- 	hex#292b2f		*/
+	--backgroundtertiary: 16, 15, 25;
+	/*	Background 4		- 	default:	32,34,37		- 	hex#202225		*/
+	--backgroundfloating: 24, 25, 33;
+	/*	Background Elevated	- 	default:	24,25,28		- hex:	#18191c		*/
+}
+
+.wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub, .wrapper-3kah-n:hover .childWrapper-1j_1ub {
+    background-color: hsla(var(--spotify-vencord-text)/1);
+  color: var(--spotify-vencord-color);
+}
+.circleIconButton-1VxDrg {
+    color: hsla(var(--spotify-vencord-text)/1);
+}
+.circleIconButton-1VxDrg:hover { 
+  background-color: hsla(var(--spotify-vencord-text)/1);
+  color: var(--spotify-vencord-color);
+}
+
+/* Hides the Billing Settings stuff from discord settings */
+.header-2F5_LB:has(+ .premiumTab-39eQzY) /* Payment Settings */,
+.premiumTab-39eQzY /* Nitro */,
+.premiumTab-39eQzY + .item-2GWPIy /* Server Boost */,
+.premiumTab-39eQzY + .item-2GWPIy + .item-2GWPIy /* Subscriptions */,
+.premiumTab-39eQzY + .item-2GWPIy + .item-2GWPIy + .item-2GWPIy /* Gift Inventory */,
+.premiumTab-39eQzY + .item-2GWPIy + .item-2GWPIy + .item-2GWPIy + .item-2GWPIy /* Billing */,
+.premiumTab-39eQzY + .item-2GWPIy + .item-2GWPIy + .item-2GWPIy + .item-2GWPIy + .separator-2N511j  /* Divider */ {
+  display: none;
+}
+
+/* Hide the nitro gift button */
+[aria-label="Share a free Nitro trial with this friend!"] {
+  display: none;
+}

@@ -19,7 +19,6 @@
     ~/.config/rofi: .config/rofi
     ~/.config/Thunar: .config/Thunar
     ~/.config/zsh: .config/zsh
-    ~/.config/Vencord: .config/Vencord
     ~/.config/paru: .config/paru
     ~/.config/ncmpcpp: .config/ncmpcpp
     ~/.config/mpd: .config/mpd
