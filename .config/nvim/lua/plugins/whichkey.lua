@@ -1,7 +1,8 @@
 return {
   {
     "folke/which-key.nvim",
-    event = "VeryLazy",
+    -- event = "VeryLazy",
+    keys = { "<leader>", '"', "'", "`", "c", "v" },
     config = function()
       vim.o.timeout = true
       vim.o.timeoutlen = 300
