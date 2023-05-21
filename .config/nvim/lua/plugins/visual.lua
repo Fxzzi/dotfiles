@@ -75,7 +75,7 @@ return {
 		"nvim-lualine/lualine.nvim",
 		-- See `:help lualine.txt`
 		-- event = "VeryLazy",
-    event = { "BufReadPre", "BufNewFile" },
+		event = { "BufReadPre", "BufNewFile", "FileType neo-tree" },
 		opts = {
 			options = {
 				icons_enabled = true,
@@ -177,6 +177,7 @@ return {
 				"folke/which-key.nvim",
 				config = true,
 			},
+			{ "MunifTanjim/nui.nvim" },
 		},
 		opts = {
 			lsp = {
@@ -251,5 +252,4 @@ return {
       },
     },
 	},
-  { "MunifTanjim/nui.nvim", lazy = true },
 }
