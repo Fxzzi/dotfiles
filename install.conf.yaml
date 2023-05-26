@@ -24,6 +24,7 @@
     ~/.config/mpd: .config/mpd
     ~/.config/macchina: .config/macchina
     ~/.config/nvim: .config/nvim
+    ~/.config/qt6ct: .config/qt6ct
     ~/.local/scripts: .local/scripts
     ~/.local/share/fonts: .local/share/fonts
     ~/.local/share/rofi: .local/share/rofi
