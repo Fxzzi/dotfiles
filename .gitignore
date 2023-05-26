@@ -2,7 +2,7 @@
 .config/Thunar/accels.scm
 .config/Thunar/renamerrc
 .config/ncmpcpp/error.log
-.config/zsh/.zcompdump
+.config/zsh/.zcompdump*
 .config/zsh/.zgenom
 .config/nvim/lazy-lock.json
 .config/nvim/lua/.luarc.json
