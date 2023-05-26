@@ -7,8 +7,6 @@ zgenom autoupdate
 
 # if the init script doesn't exist
 if ! zgenom saved; then
-  # Load pure shell theme
-  zgenom load sindresorhus/pure
   # Enable fzf (fuzzy finder) for tab completions and history searching
   zgenom load Aloxaf/fzf-tab
   zgenom load joshskidmore/zsh-fzf-history-search
@@ -20,5 +18,5 @@ if ! zgenom saved; then
   zgenom load --completion zsh-users/zsh-completions
 
   # generate the init script from plugins above
-  zgenom save --parallel
+  zgenom save
 fi
