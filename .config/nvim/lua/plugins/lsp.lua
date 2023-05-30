@@ -100,12 +100,12 @@ return {
 			nls.setup({
 				sources = {
 					builtin.formatting.stylua,
-					builtin.formatting.rustfmt,
+					-- builtin.formatting.rustfmt,
 					builtin.formatting.prettierd,
 					builtin.formatting.shfmt,
 					-- builtin.diagnostics.shellcheck,
 					builtin.formatting.stylua,
-					builtin.formatting.markdownlint,
+					-- builtin.formatting.markdownlint,
 					builtin.formatting.pylint,
 				},
 			})

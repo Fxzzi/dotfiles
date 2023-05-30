@@ -78,8 +78,7 @@
     "format": "<span color=\"#7aa2f7\">{stateIcon} </span>{artist} - {title}",
     "format-disconnected": "Disconnected ",
     "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
-    "on-click": "mpc toggle",
-    "format-paused": "<span color=\"#7aa2f7\">{stateIcon} </span>{artist} - {title}",
+    "format-paused": "",
     "interval": 10,
     "consume-icons": {
       "on": " " // Icon shows only when "consume" is on

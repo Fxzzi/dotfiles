@@ -17,7 +17,7 @@
 	<name>Edit with lvim</name>
 	<submenu></submenu>
 	<unique-id>1640175617623905-4</unique-id>
-	<command>kitty lvim %f</command>
+	<command>kitty nvim %f</command>
 	<description></description>
 	<range></range>
 	<patterns>*;*.sh</patterns>

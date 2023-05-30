@@ -1,13 +1,13 @@
 * {
-    font-family: SpaceMono Nerd Font, feather;
-    font-weight: 900;
-    font-size: 14px;
-    color: #C0CAF5;
+  font-family: SpaceMono Nerd Font, feather;
+  font-weight: 900;
+  font-size: 14px;
+  color: #c0caf5;
 }
 
 /* Set background colour of main waybar window */
-window#waybar{
-    background: rgba(21, 22, 30, 0.5);
+window#waybar {
+  background: rgba(21, 22, 30, 0.5);
 }
 
 /* Set background colour of tooltips */
@@ -34,7 +34,7 @@ tooltip {
 }
 
 #workspaces button.urgent {
-  color: #F7768E;
+  color: #f7768e;
 }
 
 #workspaces button:hover {
@@ -63,7 +63,7 @@ tooltip {
 /* set up rounding to make these modules look like seperate pills */
 #mpd {
   border-radius: 8px 8px 8px 8px;
-  margin-left: 4px
+  margin-left: 4px;
 }
 #tray {
   border-radius: 8px 8px 8px 8px;
@@ -79,6 +79,7 @@ tooltip {
 }
 
 /* rounding only on right of module(s) */
-#custom-pacman, #custom-kernel {
+#custom-pacman,
+#custom-kernel {
   border-radius: 0px 8px 8px 0px;
 }

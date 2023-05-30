@@ -9,6 +9,8 @@ source ${ZDOTDIR}/functions.zsh # Source custom functions
 source ${ZDOTDIR}/zgenom.zsh # Source zgenom for plugins
 source ${ZDOTDIR}/keybinds-late.zsh # Source late load keybinds
 
+PROMPT='%F{yellow}%3~%f $ '
+
 # Run fetch script on zsh start
 macchina --theme fazzi
 #fetch.sh

@@ -1,6 +1,6 @@
 return {
-  {
-    "hrsh7th/nvim-cmp",
+	{
+		"hrsh7th/nvim-cmp",
 		event = "InsertEnter",
 		dependencies = {
 			"hrsh7th/cmp-buffer",
@@ -8,12 +8,12 @@ return {
 			"hrsh7th/cmp-cmdline",
 			"L3MON4D3/LuaSnip",
 			"saadparwaiz1/cmp_luasnip",
-      "rafamadriz/friendly-snippets",
+			"rafamadriz/friendly-snippets",
 		},
 		opts = function()
 			local cmp = require("cmp")
 			local luasnip = require("luasnip")
-      require("luasnip.loaders.from_vscode").lazy_load()
+			require("luasnip.loaders.from_vscode").lazy_load()
 			local kind_icons = {
 				Text = "",
 				Method = "󰆧",
@@ -50,7 +50,8 @@ return {
 						luasnip.lsp_expand(args.body)
 					end,
 				},
-				mapping = cmp.mapping.preset.insert({
+				mapping = cmp.mapping.preset.cmdline(),
+				cmp.mapping.preset.insert({
 					["<C-b>"] = cmp.mapping.scroll_docs(-4),
 					["<C-f>"] = cmp.mapping.scroll_docs(4),
 					["<C-Space>"] = cmp.mapping.complete(),
@@ -94,6 +95,7 @@ return {
 					{ name = "luasnip" },
 				}, {
 					{ name = "buffer" },
+					{ name = "path" },
 				}),
 				formatting = {
 					format = function(_, vim_item)

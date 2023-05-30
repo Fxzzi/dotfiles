@@ -19,6 +19,7 @@
 ```
 $ git clone https://gitlab.com/fazzi/dotfiles.git && cd dotfiles && ./install
 ```
+
 This will create symlinks and overwrite files. It will also install all packages from needed.list. Please backup your current configs before installing!
 
 You will then have to enter files containing configs specific to my setup and edit them. eg. dual monitor configs
