@@ -3,7 +3,7 @@ configuration{
     lines: 10;
     font: "SpaceMono Nerd Font 13";
     show-icons: true;
-    icon-theme: "Vimix-dark";
+    icon-theme: "Papirus-Dark";
     terminal: "kitty";
     drun-display-format: "{icon}{name}";
     location: 0;

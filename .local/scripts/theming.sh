@@ -3,7 +3,7 @@
 # Set the GTK theme to TokyoNight
 gsettings set org.gnome.desktop.interface gtk-theme TokyoNight
 # Set the icon theme to Papirus-Dark
-gsettings set org.gnome.desktop.interface icon-theme Vimix-dark
+gsettings set org.gnome.desktop.interface icon-theme Papirus-Dark
 # Set the default font to SF Pro Text at size 11
 gsettings set org.gnome.desktop.interface font-name 'SF Pro Text 11'
 # Set the cursor theme to S1mple and its size to 24

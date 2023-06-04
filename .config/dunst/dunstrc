@@ -201,7 +201,7 @@
     # Set icon theme (only used for recursive icon lookup)
     # icon_theme = Adwaita
     # You can also set multiple icon themes, with the leftmost one being used first.
-    icon_theme = "Vimix-dark"
+    icon_theme = "Papirus-Dark"
 
     # Align icons left/right/top/off
     icon_position = left
