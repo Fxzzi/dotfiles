@@ -1,0 +1,10 @@
+
+=================================================================
+==92446==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 20 byte(s) in 1 object(s) allocated from:
+    #0 0x7f8681c6c33a in __interceptor_strdup /usr/src/debug/gcc/gcc/libsanitizer/asan/asan_interceptors.cpp:454
+    #1 0x5566b7fe146d  (/usr/bin/git+0x2ae46d) (BuildId: 439561fb43da42c4fed65efe3cc5bd63b412d8c5)
+    #2 0xe0039e7a201ac98f  (<unknown module>)
+
+SUMMARY: AddressSanitizer: 20 byte(s) leaked in 1 allocation(s).

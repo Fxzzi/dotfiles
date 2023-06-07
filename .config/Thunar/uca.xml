@@ -14,7 +14,7 @@
 </action>
 <action>
 	<icon>accessories-text-editor</icon>
-	<name>Edit with lvim</name>
+	<name>Edit with NeoVim</name>
 	<submenu></submenu>
 	<unique-id>1640175617623905-4</unique-id>
 	<command>kitty nvim %f</command>

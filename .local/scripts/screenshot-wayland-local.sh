@@ -3,7 +3,10 @@
 # Screenshot the entire monitor, a selection, or active window
 # and then copies the image to your clipboard. It also saves the image locally.
 
-tmpImage=$(mktemp /tmp/tmpImage.XXXXXXXXXX.png) # Makes a temporary file to save the screenshot to
+fileName="Screenshot from $(date '+%y.%m.%d %H:%M:%S').png"
+screenshotDir="$HOME/Pictures/Screenshots"
+path="$screenshotDir/$fileName"
+echo $path
 
 show_usage() {
 	echo "Usage: $(basename "$0") [--monitor|--selection|--active]" >&2
@@ -14,17 +17,17 @@ show_usage() {
 }
 
 case $1 in
-# Takes screenshot of active monitor
---monitor)
-	grimblast save output "$tmpImage"
+--monitor1)
+	grim -o DP-2 "$path"
 	;;
-	# Takes screenshot of rectangle selection
+--monitor2)
+	grim -o DP-1 "$path"
+	;;
 --selection)
-	grimblast save area "$tmpImage"
+  grim -g "$(slurp)" "$path"
 	;;
-	# Takes screenshot of active window
 --active)
-	grimblast save active "$tmpImage"
+  grim -g "$(echo "$(hyprctl activewindow -j)" | jq -r '"\(.at[0]),\(.at[1]) \(.size[0])x\(.size[1])"')" "$path"
 	;;
 *)
 	show_usage
@@ -33,13 +36,12 @@ case $1 in
 esac
 
 # Check file size (if the screenshot was cancelled)
-tmpImageSize=$(wc -c <"$tmpImage")
+fileSize=$(wc -c <"$path")
 
-if [ "$tmpImageSize" != 0 ]; then
+if [ "$fileSize" != 0 ]; then
 	canberra-gtk-play -i camera-shutter &
-	cp "$tmpImage" "$HOME/Pictures/Screenshots/Screenshot from $(date '+%d.%m.%y %H:%M:%S').png"
-	dunstify -i "$tmpImage" -a "screenshot" "Screenshot Copied" "Your screenshot has been copied to the clipboard"
-	wl-copy <"$tmpImage"
+	dunstify -i "$path" -a "screenshot" "Screenshot Copied" "Your screenshot has been copied to the clipboard" &
+	wl-copy < "$path"
 	exit 0
 fi
 
