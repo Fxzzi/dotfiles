@@ -1,8 +1,7 @@
 #!/usr/bin/env sh
 
-killall waybar
-waybar -c "$XDG_CONFIG_HOME"/waybar/config-dp-2.jsonc & # Waybar main monitor
-waybar -c "$XDG_CONFIG_HOME"/waybar/config-dp-1.jsonc & # Waybar secondary monitor
+killall waybar # Kill all instances of waybar
+waybar & # Launch statusbar
 
-killall swaybg
-swaybg -m fill -i ~/Pictures/Wallpapers/orig/mchouse.png
+killall swaybg # Kill all instances of swaybg
+swaybg -m fill -i ~/Pictures/Wallpapers/orig/mchouse.png # Set background

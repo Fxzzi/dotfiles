@@ -1,18 +1,5 @@
 {
-  "layer": "top",
-  // "layer": "top", // Waybar at top layer
-  // "position": "bottom", // Waybar position (top|bottom|left|right)
-  "height": 36, // Waybar height (to be removed for auto height)
-  // "width": 1280, // Waybar width
-  // "spacing": 4, // Gaps between modules (4px)
-  "output": "DP-1",
-  // Choose the order of the modules
-  "modules-left": ["wlr/workspaces", "clock", "custom/kernel", "mpd"],
-  "modules-center": ["hyprland/window"],
-  "modules-right": ["tray", "temperature", "cpu", "memory", "pulseaudio"],
-
   // Modules configuration
-
   "clock": {
     "format": "<span color=\"#7aa2f7\"> </span>{:%H:%M:%S}",
     "format-alt": "<span color=\"#7aa2f7\"> </span>{:%d-%m-%Y}",
@@ -44,7 +31,6 @@
     "format-icons": ["", "", ""],
     "on-click": "pavucontrol"
   },
-
   "hyprland/window": {
     "max-length": 48,
     "format": "{}"
@@ -100,5 +86,6 @@
     },
     "tooltip-format": "MPD (connected)",
     "tooltip-format-disconnected": "MPD (disconnected)"
+    }
   }
 }
