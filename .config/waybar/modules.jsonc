@@ -5,23 +5,23 @@
     "format-alt": "<span color=\"#7aa2f7\"> </span>{:%d-%m-%Y}",
     "interval": 1
   },
+
   "cpu": {
     "format": "<span color=\"#7aa2f7\"> </span>{}%",
-    "tooltip": false,
-    "interval": 3
+    "interval": 2
   },
+
   "memory": {
     "format": "<span color=\"#7aa2f7\"> </span>{used}GiB",
-    "interval": 3
+    "interval": 2
   },
 
   "temperature": {
-    // "thermal-zone": 2,
     "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-    // "hwmon-path": "/tmp/nvidia-temp",
-    // "critical-threshold": 80,
+    "critical-threshold": 80,
     "format": "<span color=\"#7aa2f7\"> </span>{temperatureC}°C",
-    "interval": 3
+    "format-critical": "<span color=\"#f7768e\"> </span>{temperatureC}°C",
+    "interval": 2
   },
 
   "pulseaudio": {
@@ -31,9 +31,9 @@
     "format-icons": ["", "", ""],
     "on-click": "pavucontrol"
   },
+
   "hyprland/window": {
-    "max-length": 48,
-    "format": "{}"
+    "max-length": 48
   },
 
   "custom/kernel": {
@@ -49,43 +49,22 @@
     "signal": 1
   },
 
-  "custom/sep": {
-    "format": "|",
-    "interval": "once"
-  },
   "tray": {
     "icon-size": 18,
     "spacing": 8
   },
+
   "wlr/workspaces": {
-    "disable-scroll": false,
+    "disable-scroll": true,
     "on-click": "activate"
   },
+
   "mpd": {
     "format": "<span color=\"#7aa2f7\">{stateIcon} </span>{artist} - {title}",
-    "format-disconnected": "Disconnected ",
-    "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
     "format-paused": "",
-    "interval": 10,
-    "consume-icons": {
-      "on": " " // Icon shows only when "consume" is on
-    },
-    "random-icons": {
-      "off": "<span color=\"#f53c3c\"></span> ", // Icon grayed out when "random" is off
-      "on": " "
-    },
-    "repeat-icons": {
-      "on": " "
-    },
-    "single-icons": {
-      "on": "1 "
-    },
     "state-icons": {
       "paused": "",
       "playing": ""
-    },
-    "tooltip-format": "MPD (connected)",
-    "tooltip-format-disconnected": "MPD (disconnected)"
     }
   }
 }

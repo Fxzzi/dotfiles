@@ -13,7 +13,7 @@
 
   {
     "layer": "top", // Waybar on highest layer so tooltips go over windows
-    "output": "DP-1", // Set output to primary monitor
+    "output": "DP-1", // Set output to secondary monitor
     "height": 36, // Set height to avoid jumping due to active workspace indicator
 
     "modules-left": ["wlr/workspaces", "clock", "custom/kernel", "mpd"], // Sets modules for the left of the bar

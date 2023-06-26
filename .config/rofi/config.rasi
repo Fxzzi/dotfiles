@@ -1,7 +1,7 @@
 configuration{
     modi: "drun";
     lines: 10;
-    font: "SpaceMono Nerd Font 13";
+    font: "SpaceMono Nerd Font 14";
     show-icons: true;
     icon-theme: "Papirus-Dark";
     terminal: "kitty";

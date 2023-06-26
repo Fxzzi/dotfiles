@@ -5,26 +5,25 @@
   color: #c0caf5;
 }
 
-/* Set background colour of main waybar window */
+/* Set background color of main waybar window */
 window#waybar {
   background: rgba(21, 22, 30, 0.5);
 }
 
-/* Set background colour of tooltips */
+/* Set background color of tooltips */
 tooltip {
   background: #1e1e2e;
 }
 
-/* Set workspace text colour and padding */
+/* Set workspace text color and padding */
 #workspaces button {
-  padding: 0px;
-  color: #c0caf5;
+  padding: 0;
 }
 
 /* Sets active workspace to have a solid line on the bottom */
 #workspaces button.active {
   border-bottom: 2px solid #7aa2f7;
-  border-radius: 0px;
+  border-radius: 0;
   margin-bottom: 2px;
 }
 
@@ -42,7 +41,7 @@ tooltip {
   color: #cdd6f4;
 }
 
-/* sets background, padding, margins, and borders for (all) modules */
+/* Sets background, padding, margins, and borders for (all) modules */
 #custom-kernel,
 #custom-pacman,
 #workspaces,
@@ -55,31 +54,37 @@ tooltip {
 #tray,
 #mpd {
   background: rgba(21, 22, 30, 0.7);
-  padding: 0px 10px;
-  margin: 3px 0px;
-  border: 0px;
+  padding: 0 10px;
+  margin: 3px 0;
+  border: 0;
 }
 
-/* set up rounding to make these modules look like seperate pills */
+#window.empty {
+  background: rgba(0, 0, 0, 0);
+}
+
+/* Set up rounding to make these modules look like separate pills */
 #mpd {
-  border-radius: 8px 8px 8px 8px;
+  border-radius: 8px;
   margin-left: 4px;
 }
+
 #tray {
-  border-radius: 8px 8px 8px 8px;
+  border-radius: 8px;
   margin-right: 4px;
 }
+
 #window {
-  border-radius: 8px 8px 8px 8px;
+  border-radius: 8px;
 }
 
-/* rounding only on left of module */
+/* Rounding only on left of module */
 #temperature {
-  border-radius: 8px 0px 0px 8px;
+  border-radius: 8px 0 0 8px;
 }
 
-/* rounding only on right of module(s) */
+/* Rounding only on right of module(s) */
 #custom-pacman,
 #custom-kernel {
-  border-radius: 0px 8px 8px 0px;
+  border-radius: 0 8px 8px 0;
 }

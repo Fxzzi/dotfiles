@@ -1,0 +1,14 @@
+#!/bin/bash
+ 
+covers=("$2"/{.,}{folder,cover}.{jpg,png})
+for f in "${covers[@]}"; do
+  [ -f "$f" ] && {
+    cover=$f
+    break
+  }
+done
+ 
+if [ -z "$cover" ] || ! convert -thumbnail "$1" "$cover" "$3"; then
+  gdbus call --session --dest=org.freedesktop.thumbnails.Cache1 --object-path /org/freedesktop/thumbnails/Cache1 \
+             --method org.freedesktop.thumbnails.Cache1.Delete "['$4']" >/dev/null
+fi

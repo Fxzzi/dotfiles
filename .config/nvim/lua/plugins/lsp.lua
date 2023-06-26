@@ -101,7 +101,7 @@ return {
 				sources = {
 					builtin.formatting.stylua,
 					-- builtin.formatting.rustfmt,
-					builtin.formatting.prettierd,
+					builtin.formatting.prettier,
 					builtin.formatting.shfmt,
 					-- builtin.diagnostics.shellcheck,
 					builtin.formatting.stylua,
