@@ -4,7 +4,6 @@ packages=(
 bottom
 dunst
 exa
-grimblast-git
 kitty
 macchina
 mpc
@@ -18,7 +17,8 @@ ripgrep
 rofi-lbonn-wayland-only-git
 swaybg
 ttf-space-mono-nerd
-waybar-hyprland-git
+waybar-git
+hyprland-nvidia-git
 )
 
 countdown=5  # Set the countdown time in seconds
