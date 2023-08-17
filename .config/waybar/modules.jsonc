@@ -7,7 +7,7 @@
   },
 
   "cpu": {
-    "format": "<span color=\"#7aa2f7\"> </span>{}%",
+    "format": "<span color=\"#7aa2f7\"> </span>{usage}%",
     "interval": 2
   },
 
