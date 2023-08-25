@@ -121,7 +121,7 @@
 
     ### Text ###
 
-    font = SpaceMono Nerd Font 14
+    font = JetBrainsMono Nerd Font 14
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.

@@ -16,7 +16,7 @@ qt6ct
 ripgrep
 rofi-lbonn-wayland-only-git
 swaybg
-ttf-space-mono-nerd
+ttf-jetbrains-mono-nerd
 waybar-git
 hyprland-nvidia-git
 )

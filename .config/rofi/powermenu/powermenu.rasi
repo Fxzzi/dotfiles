@@ -10,7 +10,7 @@
 /*****----- Configuration -----*****/
 configuration {
     show-icons:                 false;
-    font: "SpaceMono Nerd Font 12";
+    font: "JetBrainsMono Nerd Font 12";
 }
 
 /*****----- Global Properties -----*****/
