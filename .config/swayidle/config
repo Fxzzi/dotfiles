@@ -1,0 +1,7 @@
+timeout 300 'hyprctl dispatch dpms off'
+timeout 315 'swaylock'
+timeout 390 'systemctl suspend'
+
+before-sleep 'swaylock'
+after-resume 'hyprctl dispatch dpms on'
+

@@ -17,17 +17,14 @@ show_usage() {
 }
 
 case $1 in
---monitor1)
-	grim -o DP-2 "$path"
-	;;
---monitor2)
-	grim -o DP-1 "$path"
+--monitor)
+	grim -o eDP-1 "$path"
 	;;
 --selection)
-  grim -g "$(slurp)" "$path"
+	grim -g "$(slurp)" "$path"
 	;;
 --active)
-  grim -g "$(echo "$(hyprctl activewindow -j)" | jq -r '"\(.at[0]),\(.at[1]) \(.size[0])x\(.size[1])"')" "$path"
+	grim -g "$(echo "$(hyprctl activewindow -j)" | jq -r '"\(.at[0]),\(.at[1]) \(.size[0])x\(.size[1])"')" "$path"
 	;;
 *)
 	show_usage
@@ -41,7 +38,7 @@ fileSize=$(wc -c <"$path")
 if [ "$fileSize" != 0 ]; then
 	canberra-gtk-play -i camera-shutter &
 	dunstify -i "$path" -a "screenshot" "Screenshot Copied" "Your screenshot has been copied to the clipboard" &
-	wl-copy < "$path"
+	wl-copy <"$path"
 	exit 0
 fi
 

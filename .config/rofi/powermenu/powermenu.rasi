@@ -29,7 +29,7 @@ window {
     anchor:                      west;
     fullscreen:                  false;
     width:                       115px;
-    x-offset:                   15px;
+    x-offset:                   10px;
     y-offset:                    0px;
 
     /* properties for all widgets */

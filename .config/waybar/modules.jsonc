@@ -1,9 +1,31 @@
 {
   // Modules configuration
-  "clock": {
+  "clock#time": {
     "format": "<span color=\"#7aa2f7\"> </span>{:%H:%M:%S}",
-    "format-alt": "<span color=\"#7aa2f7\"> </span>{:%d-%m-%Y}",
     "interval": 1
+  },
+
+  "clock#date": {
+    "format": "<span color=\"#7aa2f7\"> </span>{:%d/%m/%Y}",
+    "interval": 360
+  },
+
+  "battery": {
+    "bat": "BAT0",
+    "interval": 60,
+    "states": {
+        "warning": 30,
+        "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-icons": [
+                    "<span color=\"#f7768e\"> </span>",
+                    "<span color=\"#f7768e\"> </span>",
+                    "<span color=\"#7aa2f7\"> </span>",
+                    "<span color=\"#7aa2f7\"> </span>",
+                    "<span color=\"#7aa2f7\"> </span>",
+                  ],
+    "format-charging": "<span color=\"#e0af68\">󱐌</span> {capacity}%",
   },
 
   "cpu": {
@@ -17,14 +39,14 @@
   },
 
   "temperature": {
-    "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+    "hwmon-path": "/sys/class/hwmon/hwmon4/temp1_input",
     "critical-threshold": 80,
     "format": "<span color=\"#7aa2f7\"> </span>{temperatureC}°C",
     "format-critical": "<span color=\"#f7768e\"> </span>{temperatureC}°C",
     "interval": 2
   },
 
-  "pulseaudio": {
+  "wireplumber": {
     "scroll-step": 5, // %, can be a float
     "format": "<span color=\"#7aa2f7\">{icon} </span>{volume}%",
     "format-muted": "<span color=\"#f7768e\"> </span>Muted",
@@ -33,7 +55,7 @@
   },
 
   "hyprland/window": {
-    "max-length": 48
+    "max-length": 256
   },
 
   "custom/kernel": {

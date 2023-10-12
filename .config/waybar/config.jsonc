@@ -1,24 +1,12 @@
 [
   {
     "layer": "top", // Waybar on highest layer so tooltips go over windows
-    "output": "DP-2", // Set output to primary monitor
+    "output": "eDP-1", // Set output to primary monitor
     "height": 36, // Set height to avoid jumping due to active workspace indicator
 
-    "modules-left": ["hyprland/workspaces", "clock", "custom/pacman", "mpd"], // Sets modules for the left of the bar
+    "modules-left": ["hyprland/workspaces", "clock#time", "clock#date", "battery"], // Sets modules for the left of the bar
     "modules-center": ["hyprland/window"], // Set modules for the center of the bar
-    "modules-right": ["temperature", "cpu", "memory", "pulseaudio"], // Set modules for the right of the bar
-
-    "include": ["$XDG_CONFIG_HOME/waybar/modules.jsonc"] // Include the module config
-  },
-
-  {
-    "layer": "top", // Waybar on highest layer so tooltips go over windows
-    "output": "DP-1", // Set output to secondary monitor
-    "height": 36, // Set height to avoid jumping due to active workspace indicator
-
-    "modules-left": ["hyprland/workspaces", "clock", "custom/kernel", "mpd"], // Sets modules for the left of the bar
-    "modules-center": ["hyprland/window"], // Sets modules for the center of the bar
-    "modules-right": ["tray", "temperature", "cpu", "memory", "pulseaudio"], // Sets modules for the right of the bar
+    "modules-right": ["tray", "temperature", "cpu", "memory", "wireplumber"], // Set modules for the right of the bar
 
     "include": ["$XDG_CONFIG_HOME/waybar/modules.jsonc"] // Include the module config
   }
