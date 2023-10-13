@@ -1,14 +1,16 @@
-<h1 align="center">dotfiles</h1>
-<h4 align="center">by fazzi.</h4>
-<h4 align="center">based on the tokyonight color scheme.</h4>
+<p align="center">
+  <img src="assets/preview.png" alt="Rice Showcase" width="600">
+</p>
 
-<img src="assets/preview.png" alt="Rice Showcase" align="right" width="450">
+# dotfiles
+#### by fazzi.
+#### based on the tokyonight color scheme.
 
 - **Operating System:** [arch](https://archlinux.org/)
 - **Compositor:** [Hyprland](https://github.com/hyprwm/Hyprland)
 - **Terminal Emulator:** [foot](https://codeberg.org/dnkl/foot)
 - **Status Bar:** [waybar](https://github.com/Alexays/Waybar/)
-- **App Launcher:** [rofi](https://github.com/lbonn/rofi)
+- **App Launcher:** [wofi](https://hg.sr.ht/~scoopta/wofi)
 - **Notification Daemon:** [dunst](https://github.com/dunst-project/dunst)
 - **Shell:** [zsh](https://www.zsh.org/)
 - **Shell Plugin Manager:** [zgenom](https://github.com/jandamm/zgenom)
@@ -16,14 +18,14 @@
 
 ## ✔️ Installation
 
-```
-$ git clone https://gitlab.com/fazzi/dotfiles.git && cd dotfiles && ./install
+```bash
+git clone https://gitlab.com/fazzi/dotfiles.git
+cd dotfiles
+./install
 ```
 
-This will create symlinks and overwrite files. It will also install all packages from needed.list. Please backup your current configs before installing!
-
-You will then have to enter files containing configs specific to my setup and edit them. eg. monitor configs
+This will use `dotbot` to set-up symlinks in the correct locations. It will also install zsh, paru, and other packages. **PLEASE BACKUP YOUR OWN CONFIGS BBEFORE PROCEEDING!**
 
 ## 🖥️ Wallpapers
 
-[Wallpaper Folder](https://gitlab.com/fazzi/dotfiles/-/tree/main/walls "walls folder")
+Browse through the collection of wallpapers in the [Wallpaper Folder](https://gitlab.com/fazzi/dotfiles/-/tree/main/walls "walls folder").
