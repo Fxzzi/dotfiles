@@ -1,10 +1,10 @@
-<p align="center">
-  <img src="assets/preview.png" alt="Rice Showcase" width="600">
-</p>
-
 # dotfiles
 #### by fazzi.
 #### based on the tokyonight color scheme.
+
+<p align="right">
+  <img src="assets/preview.png" alt="Rice Showcase" width="600">
+</p>
 
 - **Operating System:** [arch](https://archlinux.org/)
 - **Compositor:** [Hyprland](https://github.com/hyprwm/Hyprland)
