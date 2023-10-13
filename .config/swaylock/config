@@ -1,5 +1,6 @@
 image=~/Pictures/Wallpapers/tokyonight/tokyonight_topo2_small.png
 clock
+ignore-empty-password
 font=JetBrainsMono Nerd Font
 indicator
 indicator-radius=140
@@ -10,5 +11,4 @@ ring-color=7aa2f7
 line-color=1a1b26
 key-hl-color=c0caf5
 inside-color=1a1b26cc
-#separator-color=1a1b26cc
 text-color=c0caf5

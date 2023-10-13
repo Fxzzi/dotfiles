@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <actions>
 <action>
-	<icon>utilities-terminal</icon>
-	<name>Open Terminal Here</name>
+	<icon>foot</icon>
+	<name>Open terminal here</name>
 	<submenu></submenu>
 	<unique-id>1639924717782833-1</unique-id>
-	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
+	<command>foot %f</command>
 	<description></description>
 	<range></range>
 	<patterns>*</patterns>
@@ -17,7 +17,7 @@
 	<name>Edit file</name>
 	<submenu></submenu>
 	<unique-id>1640175617623905-4</unique-id>
-	<command>kitty $EDITOR %f</command>
+	<command>foot $EDITOR %f</command>
 	<description></description>
 	<range></range>
 	<patterns>*;*.sh</patterns>
@@ -28,7 +28,7 @@
 	<name>Edit with sudoedit</name>
 	<submenu></submenu>
 	<unique-id>1640175685205739-5</unique-id>
-	<command>kitty sudoedit %f</command>
+	<command>foot sudoedit %f</command>
 	<description></description>
 	<range></range>
 	<patterns>*</patterns>

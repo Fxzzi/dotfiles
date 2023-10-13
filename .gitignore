@@ -1,4 +1,5 @@
 *.bak
+.config/hypr/coords
 .config/Thunar/accels.scm
 .config/Thunar/renamerrc
 .config/ncmpcpp/error.log
