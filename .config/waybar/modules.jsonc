@@ -30,12 +30,12 @@
 
   "cpu": {
     "format": "<span color=\"#7aa2f7\"> </span>{usage}%",
-    "interval": 2
+    "interval": 5
   },
 
   "memory": {
     "format": "<span color=\"#7aa2f7\"> </span>{used}GiB",
-    "interval": 2
+    "interval": 5
   },
 
   "temperature": {
@@ -43,7 +43,7 @@
     "critical-threshold": 80,
     "format": "<span color=\"#7aa2f7\"> </span>{temperatureC}°C",
     "format-critical": "<span color=\"#f7768e\"> </span>{temperatureC}°C",
-    "interval": 2
+    "interval": 5
   },
 
   "wireplumber": {
@@ -55,38 +55,16 @@
   },
 
   "hyprland/window": {
-    "max-length": 256
-  },
-
-  "custom/kernel": {
-    "exec": "uname -r | cut -d '-' -f1",
-    "interval": "once",
-    "format": "<span color=\"#7aa2f7\"> </span>{}"
-  },
-
-  "custom/pacman": {
-    "exec": "$XDG_CONFIG_HOME/waybar/scripts/package-updates.sh",
-    "format": "<span color=\"#7aa2f7\"> </span>{}",
-    "interval": 600,
-    "signal": 1
+    "max-length": 128
   },
 
   "tray": {
-    "icon-size": 18,
-    "spacing": 8
+    "icon-size": 24,
+    "spacing": 6
   },
 
   "wlr/workspaces": {
     "disable-scroll": true,
     "on-click": "activate"
   },
-
-  "mpd": {
-    "format": "<span color=\"#7aa2f7\">{stateIcon} </span>{artist} - {title}",
-    "format-paused": "",
-    "state-icons": {
-      "paused": "",
-      "playing": ""
-    }
-  }
 }

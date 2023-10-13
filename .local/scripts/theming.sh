@@ -12,7 +12,7 @@ gsettings set org.gnome.desktop.interface cursor-size 24
 # Set font antialiasing to subpixel rendering
 gsettings set org.gnome.desktop.interface font-antialiasing rgba
 # Set font rendering order to blue-green-red
-gsettings set org.gnome.desktop.interface font-rgba-order bgr
+# gsettings set org.gnome.desktop.interface font-rgba-order bgr
 # Set font hinting to slight
 gsettings set org.gnome.desktop.interface font-hinting slight
 # Set preferred theme to dark mode

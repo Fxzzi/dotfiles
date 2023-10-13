@@ -16,7 +16,8 @@
     ~/.config/waybar: .config/waybar
     ~/.config/dunst: .config/dunst
     ~/.config/foot: .config/foot
-    ~/.config/rofi: .config/rofi
+    ~/.config/wofi: .config/wofi
+    ~/.config/wlogout: .config/wlogout
     ~/.config/Thunar: .config/Thunar
     ~/.config/zsh: .config/zsh
     ~/.config/paru: .config/paru
@@ -39,8 +40,10 @@
     - ~/.local/state/zsh
 
 - shell:
+    - [git submodule update --init --recursive, Installing submodules...]
     - [sudo pacman -S zsh, Installing zsh...]
     - [assets/bootstrap/zgenom.sh, Installing zgenom...]
     - [chsh -s $(which zsh), Making zsh the default shell...]
     - [assets/bootstrap/paru.sh, Installing paru...]
     - [assets/bootstrap/packages.sh, Installing packages...]
+    - [git clone https://github.com/LazyVim/starter ~/.config/nvim, Installing LazyVim...]

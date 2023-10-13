@@ -16,7 +16,8 @@ qt6ct
 ripgrep
 fd
 fzf
-rofi-lbonn-wayland-git
+wofi
+wlogout
 swaybg
 swayidle
 swaylock

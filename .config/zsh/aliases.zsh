@@ -29,3 +29,6 @@ alias updates='checkupdates; paru -Qum; pkill -RTMIN+1 waybar'  # Check system a
 alias rs='curl --data-binary @- https://paste.rs | wl-copy'  # Share output to a pastebin and copy to clipboard
 alias vim='nvim' # Editor
 alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
+
+# conf aliases
+alias 'conf hypr'="$EDITOR ~/.config/hypr/hyprland.conf"
