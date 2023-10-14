@@ -61,3 +61,10 @@ vim.o.pumblend = 10
 -- hide default statusline and ruler in dashboard
 vim.cmd([[autocmd FileType alpha set laststatus=0]])
 vim.cmd([[autocmd FileType alpha set noruler]])
+
+-- set terminal cursor back to vertical on exit
+vim.api.nvim_create_autocmd("ExitPre", {
+	group = vim.api.nvim_create_augroup("Exit", { clear = true }),
+	command = "set guicursor=a:ver90",
+	desc = "Set cursor back to beam when leaving Neovim."
+})

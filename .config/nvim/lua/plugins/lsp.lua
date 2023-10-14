@@ -6,109 +6,141 @@ local servers = {
 	["tsserver"] = {},
 	["pylsp"] = {},
 }
-local servers_key = vim.tbl_keys(servers)
+
 return {
 	{
+		-- LSP Configuration & Plugins
 		"neovim/nvim-lspconfig",
 		event = { "BufReadPre", "BufNewFile" },
 		dependencies = {
-			{ "williamboman/mason.nvim", config = true },
-			{ "folke/neodev.nvim", config = true },
+			-- Automatically install LSPs to stdpath for neovim
+			"williamboman/mason.nvim",
+			"williamboman/mason-lspconfig.nvim",
+
+			-- Useful status updates for LSP
+			-- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
 			{
-				"williamboman/mason-lspconfig.nvim",
-				opts = { ensure_installed = servers_key },
+				"j-hui/fidget.nvim",
+				branch = "legacy",
+				opts = {},
+				enabled = false,
 			},
-			"jose-elias-alvarez/null-ls.nvim",
+
+			-- Additional lua configuration, makes nvim stuff amazing!
+			{
+				"folke/neodev.nvim",
+				opts = {
+					library = { plugins = { "nvim-dap-ui" }, types = true },
+				},
+			},
+
+			-- Interaction between cmp and lspconfig
 			"hrsh7th/cmp-nvim-lsp",
-			"RRethy/vim-illuminate",
 		},
+		init = function()
+			-- disable lsp watcher. Too slow on linux
+			local ok, wf = pcall(require, "vim.lsp._watchfiles")
+			if ok then
+				wf._watchfunc = function()
+					return function() end
+				end
+			end
+		end,
+		config = function()
+			local mason_lspconfig = require("mason-lspconfig")
+
+			require("mason").setup()
+			-- Ensure the servers above are installed
+			mason_lspconfig.setup({
+				ensure_installed = vim.tbl_keys(servers),
+			})
+
+			mason_lspconfig.setup_handlers({
+				function(server_name)
+					if server_name ~= "jdtls" then
+						require("lspconfig")[server_name].setup({
+							settings = servers[server_name],
+						})
+					end
+				end,
+			})
+			-- require('lspconfig').jdtls.setup {
+			--     on_attach = on_attach,
+			--     capabilities = capabilities,
+			-- }
+			for name, icon in pairs(require("config.icons").diagnostics) do
+				name = "DiagnosticSign" .. name
+				vim.fn.sign_define(name, { text = icon, texthl = name, numhl = "" })
+			end
+		end,
+	},
+	{
+		"nvimtools/none-ls.nvim",
+		event = "LspAttach",
+		dependencies = { "neovim/nvim-lspconfig" },
+		opts = function()
+			local nls = require("null-ls")
+			local builtin = nls.builtins
+			return {
+				sources = {
+					builtin.formatting.stylua,
+					builtin.formatting.prettier,
+					builtin.formatting.stylua,
+					builtin.formatting.beautysh,
+					-- builtin.formatting.autopep8,
+					builtin.diagnostics.pylint,
+				},
+			}
+		end,
+	},
+
+	{
+		"folke/trouble.nvim",
+		dependencies = {
+			-- 'nvim-tree/nvim-web-devicons',
+			"neovim/nvim-lspconfig",
+		},
+		cmd = { "Trouble", "TroubleToggle" },
+		opts = {},
+	},
+
+	{
+		"williamboman/mason.nvim",
 		opts = {
-			-- vim.diagnostic.config()
-			virtual_text = true,
-			update_in_insert = true,
-			underline = true,
-			severity_sort = true,
-			float = {
-				focusable = true,
-				style = "minimal",
-				border = "rounded",
-				source = "always",
-				header = "",
-				prefix = "",
+			ensure_installed = {
+				"prettierd",
+				"shfmt",
+				"stylua",
 			},
 		},
 		config = function(_, opts)
-			vim.diagnostic.config(opts)
-			local lspconf = require("lspconfig")
-			local function on_attach(client, bufnr)
-				BUF = bufnr
-				-- Create a command `:Format` local to the LSP buffer
-				vim.api.nvim_buf_create_user_command(bufnr, "Format", function(_)
-					vim.lsp.buf.format()
-				end, { desc = "Format current buffer with LSP" })
-				-- plugin.map_keys(bufnr)
-				require("illuminate").on_attach(client)
-			end
-			local capabilities = require("cmp_nvim_lsp").default_capabilities()
-			for server, opts in pairs(servers) do
-				opts = vim.tbl_deep_extend("force", opts, {
-					capabilities = capabilities,
-					on_attach = on_attach,
-				})
-				lspconf[server].setup(opts)
-				require("which-key").register({
-					["<leader>l"] = {
-						name = "+LSP",
-						s = {
-							name = "+Symbol",
-							r = { vim.lsp.buf.rename, "Rename" },
-							f = { require("telescope.builtin").lsp_document_symbols, "Find" },
-						},
-						w = {
-							name = "+Workspace",
-							a = { vim.lsp.buf_add_workspace_folder, "Add Folder" },
-							d = { vim.lsp.buf_remove_workspace_folder, "Remove Folder" },
-							s = {
-								function()
-									print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
-								end,
-								"List Folders",
-							},
-						},
-						L = {
-							name = "+Plugin",
-							i = { "<CMD>LspInfo<CR>", "LSP Info" },
-							r = { "<CMD>LspRestart<CR>", "LSP Restart" },
-							m = { "<CMD>Mason<CR>", "Mason" },
-						},
-						c = { vim.lsp.buf.code_action, "Code Action" },
-						i = { vim.lsp.buf.signature_help, "Signature Documentation" },
-						d = { vim.diagnostic.open_float, "Diagnostic Float" },
-					},
-					g = {
-						name = "+Goto",
-						d = { vim.lsp.buf.definition, "Definition" },
-						D = { vim.lsp.buf.declaration, "Declaration" },
-						r = { require("telescope.builtin").lsp_references, "References" },
-						i = { vim.lsp.buf.implementation, "Implementation" },
-					},
-					K = { vim.lsp.buf.hover, "Documentation Float" },
-				}, { buffer = BUF, silent = true, noremap = true })
-			end
-			local nls = require("null-ls")
-			local builtin = nls.builtins
-			nls.setup({
-				sources = {
-					builtin.formatting.stylua,
-					-- builtin.formatting.rustfmt,
-					builtin.formatting.prettier,
-					builtin.formatting.shfmt,
-					-- builtin.diagnostics.shellcheck,
-					builtin.formatting.stylua,
-					-- builtin.formatting.markdownlint,
-					builtin.formatting.pylint,
-				},
-			})
+			vim.api.nvim_create_user_command("MasonInstallAll", function()
+				vim.cmd("MasonInstall " .. table.concat(opts.ensure_installed, " "))
+			end, {})
 		end,
+	},
+	{
+		"nvimdev/lspsaga.nvim",
+		event = "LspAttach",
+		opts = {
+			lightbulb = {
+				enable = false,
+			},
+			symbol_in_winbar = {
+				enable = false,
+				separator = "  ",
+			},
+		},
+		dependencies = {
+			-- { 'nvim-tree/nvim-web-devicons' },
+			--Please make sure you install markdown and markdown_inline parser
+			{ "nvim-treesitter/nvim-treesitter" },
+		},
+	},
+	{
+		"mfussenegger/nvim-jdtls",
+		ft = "java",
+		-- enabled = false,
+		dependencies = { "neovim/nvim-lspconfig" },
 	},
 }
