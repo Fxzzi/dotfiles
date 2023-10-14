@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 send_notification() {
-    local brightness=$(xbacklight -get) # Get current brightness level
+    brightness="$(xbacklight -get)" # Get current brightness level
     dunstify -a "changebrightness" -u low -r "9999" -h int:value:"$brightness" -i "notification-display-brightness" "Brightness: ${brightness}%" -t 2000
 }
 

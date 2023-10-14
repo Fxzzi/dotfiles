@@ -20,7 +20,7 @@
 #inner-box {
   margin: 5px;
   border: none;
-  background-color: rgba(21, 22, 30, 0.5);
+  background-color: rgba(21, 22, 30, 0.0);
 }
 
 #outer-box {

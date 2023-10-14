@@ -7,7 +7,7 @@
 
 /* Set background color of main waybar window */
 window#waybar {
-  background: rgba(21, 22, 30, 0.6);
+  background: rgba(21, 22, 30, 0.5);
 }
 
 /* Set background color of tooltips */
