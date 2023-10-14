@@ -32,10 +32,7 @@ case $1 in
 	;;
 esac
 
-# Check file size (if the screenshot was cancelled)
-fileSize=$(wc -c <"$path")
-
-if [ "$fileSize" != 0 ]; then
+if [ -f "$path" ]; then
 	canberra-gtk-play -i camera-shutter &
 	dunstify -i "$path" -a "screenshot" "Screenshot Copied" "Your screenshot has been copied to the clipboard" -r 9998 &
 	wl-copy <"$path"

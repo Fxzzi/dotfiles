@@ -12,23 +12,21 @@ return {
 			-- Adds a number of user-friendly snippets
 			"rafamadriz/friendly-snippets",
 
-			-- I think I put too many parameters in java constructors
-			"hrsh7th/cmp-nvim-lsp-signature-help",
+			-- Path completion
+			"hrsh7th/cmp-path",
 		},
 		config = function()
 			local cmp = require("cmp")
 			local luasnip = require("luasnip")
 			require("luasnip.loaders.from_vscode").lazy_load()
-			require("luasnip.loaders.from_snipmate").lazy_load()
 			luasnip.config.setup({})
 			vim.opt.completeopt = { "menu", "menuone", "noselect" }
 			cmp.setup({
 				formatting = {
 					format = function(_, item)
 						local icons = require("config.icons").kinds
-						-- print(vim.inspect(item))
-						if #item.abbr > 20 then
-							item.abbr = string.sub(item.abbr, 0, 20) .. "~"
+						if #item.abbr > 25 then
+							item.abbr = string.sub(item.abbr, 0, 25) .. "~"
 						end
 						item.menu = ""
 						if icons[item.kind] then
@@ -70,7 +68,7 @@ return {
 				sources = {
 					{ name = "nvim_lsp" },
 					{ name = "luasnip" },
-					{ name = "nvim_lsp_signature_help" },
+					{ name = "path" },
 				},
 				sorting = {
 					comparators = {
