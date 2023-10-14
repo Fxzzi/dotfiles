@@ -25,6 +25,7 @@ tooltip {
   border-bottom: 3px solid #7aa2f7;
   border-radius: 0;
   margin-top: 3px;
+  transition: all 0.3s ease-in-out;
 }
 
 /* More workspace stuff for highlighting on hover */

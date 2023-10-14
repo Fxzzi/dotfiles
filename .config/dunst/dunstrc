@@ -33,7 +33,7 @@
     origin = top-right
 
     # Offset from the origin
-    offset = "10x10"
+    offset = "7x7"
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0
@@ -49,16 +49,16 @@
 
     # Set the progress bar height. This includes the frame, so make sure
     # it's at least twice as big as the frame width.
-    progress_bar_height = 25
+    progress_bar_height = 20
 
     # Set the frame width of the progress bar
-    progress_bar_frame_width = 3
+    progress_bar_frame_width = 2
 
     # Set the minimum width for the progress bar
-    progress_bar_min_width = 240
+    # progress_bar_min_width = 240
 
     # Set the maximum width for the progress bar
-    progress_bar_max_width = 480
+    # progress_bar_max_width = 480
 
 
     # Show how many messages are currently hidden (because of
@@ -77,20 +77,20 @@
     separator_height = 3
 
     # Padding between text and separator.
-    padding = 6
+    padding = 8
 
     # Horizontal padding.
     horizontal_padding = 8
 
     # Padding between text and icon.
-    text_icon_padding = 0
+    text_icon_padding = 8
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 2
+    frame_width = 3
 
     # Defines color of the frame around the notification window.
-    frame_color = "#96CDFB"
+    frame_color = "#70a5eb"
     
     # Defines color of the Progress Bar.
     highlight = "#70a5eb"
@@ -99,7 +99,7 @@
     # If value is greater than 0, separator_height will be ignored and a border
     # of size frame_width will be drawn around each notification instead.
     # Click events on gaps do not currently propagate to applications below.
-    gap_size = 0
+    gap_size = 6
 
     # Define a color for the separator.
     # possible values are:
@@ -125,7 +125,7 @@
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
-    line_height = 2
+    # line_height = 2
 
     # Possible values are:
     # full: Allow a small subset of html markup in notifications:
@@ -201,7 +201,7 @@
     # Set icon theme (only used for recursive icon lookup)
     # icon_theme = Adwaita
     # You can also set multiple icon themes, with the leftmost one being used first.
-    icon_theme = "Papirus-Dark"
+    icon_theme = "Papirus-Dark, Papirus"
 
     # Align icons left/right/top/off
     icon_position = left
@@ -209,7 +209,7 @@
     # Scale small icons up to this size, set to 0 to disable. Helpful
     # for e.g. small files or high-dpi screens. In case of conflict,
     # max_icon_size takes precedence over this.
-    min_icon_size = 60
+    min_icon_size = 48
 
     # Scale larger icons down to this size, set to 0 to disable
     max_icon_size = 100
@@ -229,10 +229,10 @@
     ### Misc/Advanced ###
 
     # dmenu path.
-    dmenu = /usr/bin/rofi -p dunst:
+    dmenu = /usr/bin/wofi -p dunst:
 
     # Browser for opening urls in context menu.
-    browser = /usr/bin/xdg-open
+    browser = /usr/bin/librewolf
 
     # Always run rule-defined scripts, even if the notification is suppressed
     always_run_script = true
@@ -248,7 +248,7 @@
     # corners.
     # The radius will be automatically lowered if it exceeds half of the
     # notification height to avoid clipping text and/or icons.
-    corner_radius = 0
+    corner_radius = 6
 
     # Ignore the dbus closeNotification message.
     # Useful to enforce the timeout set by dunst configuration. Without this
@@ -261,7 +261,7 @@
 
     # Uncomment this if you want to let notications appear under fullscreen
     # applications (default: overlay)
-    # layer = top
+    layer = overlay
 
     # Set this to true to use X11 output on Wayland.
     force_xwayland = false
@@ -312,14 +312,14 @@
     # Otherwise the "#" and following would be interpreted as a comment.
     background = "#171B20"
     foreground = "#b6beca"
-    timeout = 3
+    timeout = 2
     # Icon for notifications with low urgency, uncomment to enable
     #default_icon = /path/to/icon
 
 [urgency_normal]
     background = "#171B20"
     foreground = "#b6beca"
-    timeout = 6
+    timeout = 4
     # Icon for notifications with normal urgency, uncomment to enable
     #default_icon = /path/to/icon
 
@@ -327,7 +327,7 @@
     background = "#171B20"
     foreground = "#b6beca"  
     frame_color = "#e05f65"
-    timeout = 10
+    timeout = 6
     # Icon for notifications with critical urgency, uncomment to enable
     #default_icon = /path/to/icon
 
@@ -411,11 +411,12 @@ appname = "screenshot"
 max_icon_size = 360
 icon_position = top
 alignment = center
+timeout = 4
 
 [audio]
 appname = "audio"
-timeout = 1.5
+timeout = 2
 
 [brightness]
 appname = "brightness"
-timeout = 1.5
+timeout = 2
