@@ -5,7 +5,7 @@ notification() {
     # Get current brightness level
     brightness="$(xbacklight -get)"
     # Send notification about the brightness change
-    dunstify -a "changebrightness" -u low -r "9999" -h int:value:"$brightness" -i "notification-display-brightness" "Brightness: ${brightness}%" -t 2000
+    dunstify -a "brightness" -u low -r "9999" -t 2000 -h int:value:"$brightness" -i "notification-display-brightness" "Brightness" "${brightness}%"
 }
 
 # Function to display script usage information
@@ -15,7 +15,7 @@ show_help() {
     echo "Arguments:"
     echo "  up: Increase brightness by the specified increment value."
     echo "  down: Decrease brightness by the specified increment value."
-    echo "  increment_value: Positive integer value to indicate the amount of change in brightness."
+    echo "  increment_value: Positive increment value to change by."
     echo "Example: brightness.sh up 10"
 }
 

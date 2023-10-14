@@ -12,16 +12,15 @@ volume_noti(){
     fi
 
     # Send volume change notification
-    dunstify -u low -r "9997" -h int:value:"$volume" -i "$icon" "Volume: ${volume}%" -t 2000
-    # Play sound to indicate volume change
-    canberra-gtk-play -i audio-volume-change -d "changeVolume" &
+    dunstify -a "audio" -r "9997" -h int:value:"$volume" -i "$icon" "Volume" "${volume}%"     # Play sound to indicate volume change
+    canberra-gtk-play -i audio-volume-change &
 }
 
 # Function to handle sink toggle notifications
 sink_toggle_noti(){
     if eval "$(pamixer --get-mute)"; then
         # Send notification when sink is muted
-        dunstify -i notification-audio-volume-muted -t 2000 -r 9997 -u low " Sink Muted"
+        dunstify -i notification-audio-volume-muted -a "audio" -r 9997 "Volume" "Muted"
     else
         volume_noti
     fi
@@ -31,10 +30,10 @@ sink_toggle_noti(){
 source_toggle_noti(){
     if eval "$(pamixer --default-source --get-mute)"; then
         # Send notification when source is muted
-        dunstify -i audio-input-microphone-muted-symbolic -t 2000 -r 9996 -u low "Source Muted"
+        dunstify -i audio-input-microphone-muted-symbolic -a "audio" -r 9996 "Microphone" "Muted"
     else
         # Send notification when source is unmuted
-        dunstify -i audio-input-microphone-symbolic -t 2000 -r 9996 -u low "Source Unmuted"
+        dunstify -i audio-input-microphone-symbolic -a "audio" -r 9996 "Microphone" "Unmuted"
     fi
 }
 

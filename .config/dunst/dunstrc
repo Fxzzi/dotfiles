@@ -24,7 +24,7 @@
     # dynamic width from 0 to 300
     # width = (0, 300)
     # constant width of 300
-    width = (240,480)
+    width = (240,380)
 
     # The maximum height of a single notification, excluding the frame.
     height = 480
@@ -408,22 +408,14 @@
 
 [screenshot]
 appname = "screenshot"
-max_icon_size = 250
-summary = "*"
-set_stack_tag = "screenshot"
-format = "<b>%s</b>\n%b"
+max_icon_size = 360
+icon_position = top
+alignment = center
 
-[spotify]
-appname= Spotify
-summary = "*"
-set_stack_tag = "spotify"
-format = "<b>Now Playing</b>\n%s"
+[audio]
+appname = "audio"
+timeout = 1.5
 
-#[volume]
-#summary = "Volume *"
-#format = "<b>Volume</b>\n%n%%"
-
-[discord]
-appname = discord
-summary = "*"
-set_stack_tag = "discord"
+[brightness]
+appname = "brightness"
+timeout = 1.5
