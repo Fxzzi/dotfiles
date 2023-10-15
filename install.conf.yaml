@@ -46,4 +46,3 @@
     - [chsh -s $(which zsh), Making zsh the default shell...]
     - [assets/bootstrap/paru.sh, Installing paru...]
     - [assets/bootstrap/packages.sh, Installing packages...]
-    - [git clone https://github.com/LazyVim/starter ~/.config/nvim, Installing LazyVim...]
