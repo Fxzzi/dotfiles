@@ -151,7 +151,7 @@ enable_gpu_memory = true
 #    default=true
 
 [[row]]
-  ratio=35
+  ratio=30
   [[row.child]]
   ratio=65
   type="cpu"
@@ -167,7 +167,7 @@ enable_gpu_memory = true
         ratio=60
         type="disk"
 [[row]]
-  ratio=35
+  ratio=40
   [[row.child]]
     ratio=45
     type="mem"

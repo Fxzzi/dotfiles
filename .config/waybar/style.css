@@ -1,13 +1,13 @@
 * {
   font-family: JetBrainsMono Nerd Font, feather;
-  /* font-weight: bold; */
-  font-size: 15px;
+  font-weight: bold;
+  font-size: 16px;
   color: #c0caf5;
 }
 
 /* Set background color of main waybar window */
 window#waybar {
-  background: rgba(21, 22, 30, 0.5);
+  background: rgba(26, 27, 38, 0.75);
 }
 
 /* Set background color of tooltips */
@@ -17,7 +17,7 @@ tooltip {
 
 /* Set workspace text color and padding */
 #workspaces button {
-  padding: 0;
+  padding: 2px;
 }
 
 /* Sets active workspace to have a solid line on the bottom */
@@ -52,10 +52,13 @@ tooltip {
 #wireplumber,
 #tray,
 #battery {
-  background: rgba(21, 22, 30, 0.7);
-  padding: 0 7px;
-  /* margin: 3px 0; */
+  background: rgba(26, 27, 38, 1);
+  padding: 0 10px;
   border: 0;
+}
+
+#workspaces {
+  margin-right: -8px;
 }
 
 /* Hide window module when not focused on window or empty workspace */
