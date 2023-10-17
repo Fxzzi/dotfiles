@@ -24,7 +24,7 @@
     # dynamic width from 0 to 300
     # width = (0, 300)
     # constant width of 300
-    width = (240,380)
+    width = (240,300)
 
     # The maximum height of a single notification, excluding the frame.
     height = 480
@@ -49,10 +49,10 @@
 
     # Set the progress bar height. This includes the frame, so make sure
     # it's at least twice as big as the frame width.
-    progress_bar_height = 20
+    progress_bar_height = 14
 
     # Set the frame width of the progress bar
-    progress_bar_frame_width = 2
+    progress_bar_frame_width = 0
 
     # Set the minimum width for the progress bar
     # progress_bar_min_width = 240
@@ -60,6 +60,10 @@
     # Set the maximum width for the progress bar
     # progress_bar_max_width = 480
 
+    progress_bar_corner_radius = 6
+
+    # Corner radius for the icon image.
+    icon_corner_radius = 8
 
     # Show how many messages are currently hidden (because of
     # notification_limit).
@@ -68,7 +72,7 @@
     # The transparency of the window.  Range: [0; 100].
     # This option will only work if a compositing window manager is
     # present (e.g. xcompmgr, compiz, etc.). (X11 only)
-    transparency = 0
+    # transparency = 0
 
     # Draw a line of "separator_height" pixel height between two
     # notifications.
@@ -77,13 +81,13 @@
     separator_height = 3
 
     # Padding between text and separator.
-    padding = 8
+    padding = 12
 
     # Horizontal padding.
-    horizontal_padding = 8
+    horizontal_padding = 12
 
     # Padding between text and icon.
-    text_icon_padding = 8
+    text_icon_padding = 12
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
@@ -212,7 +216,7 @@
     min_icon_size = 48
 
     # Scale larger icons down to this size, set to 0 to disable
-    max_icon_size = 100
+    max_icon_size = 84
 
     # Paths to default icons (only neccesary when not using recursive icon lookup)
     # icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
@@ -248,8 +252,8 @@
     # corners.
     # The radius will be automatically lowered if it exceeds half of the
     # notification height to avoid clipping text and/or icons.
-    corner_radius = 6
-
+    corner_radius = 8
+    
     # Ignore the dbus closeNotification message.
     # Useful to enforce the timeout set by dunst configuration. Without this
     # parameter, an application may close the notification sent before the
@@ -408,7 +412,7 @@
 
 [screenshot]
 appname = "screenshot"
-max_icon_size = 360
+max_icon_size = 300
 icon_position = top
 alignment = center
 timeout = 4

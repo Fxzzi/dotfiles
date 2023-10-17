@@ -55,7 +55,7 @@
   },
 
   "hyprland/window": {
-    "max-length": 128
+    "max-length": 96
   },
 
   "tray": {

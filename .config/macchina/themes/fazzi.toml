@@ -3,7 +3,7 @@
 spacing = 1
 padding = 0
 hide_ascii = false
-separator = ""
+separator = "󰅂"
 key_color = "Blue"
 separator_color = "Green"
 
@@ -23,10 +23,10 @@ color = "Blue"
 kernel = " kr"
 wm = " wm"
 distro = " os"
-shell = " sh"
+shell = " sh"
 packages = " pk"
 memory = "󰍛 mm"
-terminal = " tr"
+terminal = " tr"
 host = " hs"
 
 [palette]
