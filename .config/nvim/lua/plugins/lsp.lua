@@ -17,7 +17,6 @@ return {
       "williamboman/mason.nvim",
       {
         "williamboman/mason-lspconfig.nvim",
-        cmd = { "Mason" },
       },
 
       -- Useful status updates for LSP
