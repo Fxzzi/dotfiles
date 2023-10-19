@@ -6,13 +6,13 @@ alias mkdir='mkdir -vp'  # Recursive, verbose `mkdir`
 alias grep='rg'     # Use `ripgrep` instead of `grep`
 alias cat='bat'     # Use `bat` instead of `cat`
 
-# `exa` aliases for more informative and colored output
-alias la='exa --icons -a --group-directories-first'  # List all files and directories, including hidden ones
-alias ll='exa --icons -lah --group-directories-first'  # List in long format with permissions and human-readable sizes
-alias ls='exa --icons --group-directories-first'  # List files and directories
+# `eza` aliases for more informative and colored output
+alias la='eza --icons -a --group-directories-first'  # List all files and directories, including hidden ones
+alias ll='eza --icons -lah --group-directories-first'  # List in long format with permissions and human-readable sizes
+alias ls='eza --icons --group-directories-first'  # List files and directories
 
-# `exa` alias for displaying directory trees
-alias tree='exa --icons --tree'
+# `eza` alias for displaying directory trees
+alias tree='eza --icons --tree'
 
 # Git aliases
 alias g='git'
