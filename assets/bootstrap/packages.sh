@@ -42,6 +42,6 @@ paru -Syu --needed "${packages[@]}"
 
 echo ""
 echo -e "\033[1;33mThere may be some packages that weren't installed that are still mentioned in configs.\033[0m"
-echo -e "\033[1;33mThese packages like librewolf, webcord, prismlauncher, etc were not included because I'd\033[0m"
+echo -e "\033[1;33mThese packages like librewolf, armcord, prismlauncher, etc were not included because I'd\033[0m"
 echo -e "\033[1;33mlike to leave these larger packages to user choice.\033[0m"
 
