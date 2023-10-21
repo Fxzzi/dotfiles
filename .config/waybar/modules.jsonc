@@ -4,40 +4,35 @@
     "format": "<span color=\"#7aa2f7\"> </span>{:%H:%M:%S}",
     "interval": 1
   },
-
   "clock#date": {
     "format": "<span color=\"#7aa2f7\"> </span>{:%d/%m/%Y}",
     "interval": 360
   },
-
   "battery": {
     "bat": "BAT0",
     "interval": 60,
     "states": {
-        "warning": 30,
-        "critical": 15
+      "warning": 30,
+      "critical": 15
     },
     "format": "{icon} {capacity}%",
     "format-icons": [
-                    "<span color=\"#f7768e\"> </span>",
-                    "<span color=\"#f7768e\"> </span>",
-                    "<span color=\"#7aa2f7\"> </span>",
-                    "<span color=\"#7aa2f7\"> </span>",
-                    "<span color=\"#7aa2f7\"> </span>",
-                  ],
-    "format-charging": "<span color=\"#e0af68\">󱐌</span> {capacity}%",
+      "<span color=\"#f7768e\"> </span>",
+      "<span color=\"#f7768e\"> </span>",
+      "<span color=\"#7aa2f7\"> </span>",
+      "<span color=\"#7aa2f7\"> </span>",
+      "<span color=\"#7aa2f7\"> </span>"
+    ],
+    "format-charging": "<span color=\"#e0af68\">󱐌</span> {capacity}%"
   },
-
   "cpu": {
     "format": "<span color=\"#7aa2f7\"> </span>{usage}%",
     "interval": 5
   },
-
   "memory": {
     "format": "<span color=\"#7aa2f7\"> </span>{used}GiB",
     "interval": 5
   },
-
   "temperature": {
     "hwmon-path": "/sys/class/hwmon/hwmon4/temp1_input",
     "critical-threshold": 80,
@@ -45,7 +40,6 @@
     "format-critical": "<span color=\"#f7768e\"> </span>{temperatureC}°C",
     "interval": 5
   },
-
   "wireplumber": {
     "scroll-step": 5, // %, can be a float
     "format": "<span color=\"#7aa2f7\">{icon} </span>{volume}%",
@@ -53,18 +47,15 @@
     "format-icons": ["", "", ""],
     "on-click": "pavucontrol"
   },
-
   "hyprland/window": {
     "max-length": 96
   },
-
   "tray": {
     "icon-size": 24,
     "spacing": 6
   },
-
   "wlr/workspaces": {
     "disable-scroll": true,
     "on-click": "activate"
-  },
+  }
 }

@@ -14,7 +14,7 @@ vim.o.smartcase = true
 vim.o.hlsearch = false
 vim.o.incsearch = true
 vim.o.gdefault = true
-vim.o.showmatch = true
+-- vim.o.showmatch = true
 
 -- user interface
 vim.o.number = true
@@ -23,7 +23,7 @@ vim.o.wrap = false
 vim.o.termguicolors = true
 vim.o.scrolloff = 8
 vim.o.signcolumn = "yes"
-vim.o.cursorline = true
+vim.o.cursorline = false
 vim.o.list = true
 vim.o.showmode = false
 

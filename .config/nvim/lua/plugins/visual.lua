@@ -41,7 +41,7 @@ return {
 	},
 	{
 		"lukas-reineke/indent-blankline.nvim",
-    version = "2.*",
+		version = "2.*",
 		event = { "BufReadPost", "BufNewFile" },
 		opts = {
 			-- char = "▏",
@@ -75,7 +75,6 @@ return {
 		-- Set lualine as statusline
 		"nvim-lualine/lualine.nvim",
 		-- See `:help lualine.txt`
-		-- event = "VeryLazy",
 		event = { "BufReadPre", "BufNewFile", "FileType neo-tree" },
 		opts = {
 			options = {
@@ -89,7 +88,6 @@ return {
 	},
 	{
 		"akinsho/bufferline.nvim",
-		version = "*",
 		event = { "BufReadPre", "BufNewFile" },
 		dependencies = "nvim-tree/nvim-web-devicons",
 		config = true,
@@ -132,8 +130,7 @@ return {
 			},
 		},
 	},
-	{ "RRethy/vim-illuminate", lazy = true },
-	{
+  {
 		"NvChad/nvim-colorizer.lua",
 		event = { "BufReadPost", "BufNewFile" },
 		config = true,
@@ -146,28 +143,6 @@ return {
 			},
 		},
 	},
-	{
-		"rcarriga/nvim-notify",
-		keys = {
-			{
-				"<leader>un",
-				function()
-					require("notify").dismiss({ silent = true, pending = true })
-				end,
-				desc = "Dismiss all Notifications",
-			},
-		},
-		opts = {
-			timeout = 3000,
-			max_height = function()
-				return math.floor(vim.o.lines * 0.75)
-			end,
-			max_width = function()
-				return math.floor(vim.o.columns * 0.75)
-			end,
-		},
-	},
-
 	-- noicer ui
 	{
 		"folke/noice.nvim",

@@ -21,3 +21,6 @@ vim.keymap.set('n', '<leader>w', ':WhichKey<CR>', { noremap = true, silent = tru
 -- Cycle through open buffers with Space + Tab
 vim.keymap.set('n', '<leader><Tab>', ':bnext<CR>', { noremap = true })
 
+-- keep indentation selection
+vim.keymap.set("v", "<", "<gv")
+vim.keymap.set("v", ">", ">gv")
