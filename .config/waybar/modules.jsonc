@@ -51,7 +51,7 @@
     "max-length": 96
   },
   "tray": {
-    "icon-size": 24,
+    "icon-size": 22,
     "spacing": 6
   },
   "hyprland/workspaces": {
