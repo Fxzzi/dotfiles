@@ -54,7 +54,7 @@
     "icon-size": 24,
     "spacing": 6
   },
-  "wlr/workspaces": {
+  "hyprland/workspaces": {
     "disable-scroll": true,
     "on-click": "activate"
   }
