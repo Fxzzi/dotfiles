@@ -8,6 +8,11 @@ fileName="Screenshot from $(date '+%y.%m.%d %H:%M:%S').png"
 screenshotDir="$HOME/Pictures/Screenshots"
 path="$screenshotDir/$fileName"
 
+if [ ! -d "$screenshotDir" ]; then
+    mkdir -p "$screenshotDir"
+    echo "Directory '$screenshotDir' created successfully."
+fi
+
 show_usage() {
     echo "Usage: $(basename "$0") [--monitor|--selection|--active]" >&2
     echo "Options:"
