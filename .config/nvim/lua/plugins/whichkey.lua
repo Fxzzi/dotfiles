@@ -2,7 +2,7 @@ return {
 	{
 		"folke/which-key.nvim",
 		-- event = "VeryLazy",
-		keys = "<space>",
+		keys = {"<leader>"},
 		config = function()
 			local wk = require("which-key")
 			wk.setup({
