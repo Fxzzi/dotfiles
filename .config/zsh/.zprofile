@@ -23,7 +23,7 @@ export ZSH_FZF_HISTORY_SEARCH_EVENT_NUMBERS=0 # Disable index in zsh-fzf-history
 export ZSH_FZF_HISTORY_SEARCH_REMOVE_DUPLICATES=1 # Hide duplicates in zsh-fzf-history
 
 # Add additional directories to PATH
-export PATH="$PATH":"~/.local/scripts":"~/.local/bin":"~/.local/share/cargo/bin"
+export PATH=${PATH}:~/.local/scripts:~/.local/bin:~/.local/share/cargo/bin
 
 # Set sudo password prompt
 export SUDO_PROMPT='[] Enter Password: '
