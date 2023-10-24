@@ -1,6 +1,7 @@
-# dotfiles
-#### by fazzi.
-#### based on the tokyonight color scheme.
+# ⚈ dotfiles
+
+### 🔷 by fazzi.
+### 🌃 based on the tokyonight color scheme.
 
 <p align="center">
   <img src="assets/preview.png" alt="Rice Showcase">
@@ -16,7 +17,7 @@
 - **Shell Plugin Manager:** [zgenom](https://github.com/jandamm/zgenom)
 - **Browser:** [LibreWolf](https://librewolf.net/)
 
-## ✔️ Installation
+## 📁 Installation
 
 ```bash
 git clone https://gitlab.com/fazzi/dotfiles.git
@@ -28,4 +29,4 @@ This will use `dotbot` to set-up symlinks in the correct locations. It will also
 
 ## 🖥️ Wallpapers
 
-Browse through the collection of wallpapers in the [Wallpaper Folder](https://gitlab.com/fazzi/dotfiles/-/tree/main/walls "walls folder").
+Browse through the collection of wallpapers in the [Wallpaper Folder](https://gitlab.com/fazzi/dotfiles/-/tree/hyprland-laptop/Wallpapers "wallpaper folder").
