@@ -1,6 +1,5 @@
 acpilight
 bottom
-canberra-gtk-play
 dunst
 eza
 fd
@@ -20,6 +19,7 @@ papirus-icon-theme
 pavucontrol
 pipewire
 pipewire-alsa
+pipewire-jack
 pipewire-pulse
 qt6ct
 ripgrep

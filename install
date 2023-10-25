@@ -2,6 +2,13 @@
 
 set -e
 
+if command -v python >/dev/null 2>&1; then
+	echo "python is already installed"
+else
+	echo "Installing python..."
+  sudo pacman -Syu python
+fi
+
 CONFIG="install.conf.yaml"
 DOTBOT_DIR="dotbot"
 
