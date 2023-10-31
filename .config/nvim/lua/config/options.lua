@@ -54,7 +54,7 @@ vim.o.splitright = true
 vim.o.mouse = "a"
 vim.o.winblend = 10
 
--- clipboard
+-- use system clipboard
 vim.o.clipboard = "unnamedplus"
 vim.o.pumblend = 10
 
@@ -62,9 +62,15 @@ vim.o.pumblend = 10
 vim.cmd([[autocmd FileType alpha set laststatus=0]])
 vim.cmd([[autocmd FileType alpha set noruler]])
 
--- set terminal cursor back to vertical on exit
+-- set terminal cursor back to vertical beam on exit
 vim.api.nvim_create_autocmd("ExitPre", {
 	group = vim.api.nvim_create_augroup("Exit", { clear = true }),
 	command = "set guicursor=a:ver90",
 	desc = "Set cursor back to beam when leaving Neovim."
 })
+
+-- Hide "disable mouse" stuff in context menu cuz I like mouse lol
+vim.cmd([[
+  aunmenu PopUp.How-to\ disable\ mouse
+  aunmenu PopUp.-1-
+]])

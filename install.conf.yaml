@@ -29,7 +29,6 @@
     ~/.config/pacman: .config/pacman
     ~/.config/swaylock: .config/swaylock
     ~/.config/swayidle: .config/swayidle
-    ~/.config/armcord-flags.conf: .config/armcord-flags.conf
     ~/.local/scripts: .local/scripts
     ~/.local/share/fonts: .local/share/fonts
     ~/.local/share/icons/default: .local/share/icons/default
