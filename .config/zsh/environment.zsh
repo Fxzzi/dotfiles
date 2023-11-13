@@ -30,9 +30,3 @@ export SUDO_PROMPT='[] Enter Password: '
 
 # Set default editor
 export EDITOR='nvim'
-
-# execute Hyprland when in TTY1 only
-if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-  exec Hyprland
-fi
-

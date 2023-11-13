@@ -1,6 +1,9 @@
 #!/usr/bin/env zsh
 
 # Source ZSH configs
+
+source ${ZDOTDIR}/environment.zsh # Source envvars
+source ${ZDOTDIR}/profile.zsh # Source zprofile
 source ${ZDOTDIR}/options.zsh # Source zsh options
 source ${ZDOTDIR}/compinit.zsh # Source completion conf
 source ${ZDOTDIR}/aliases.zsh # Source zsh aliases
@@ -13,4 +16,3 @@ PROMPT='%F{yellow}%3~%f $ '
 
 # Run fetch script on zsh start
 macchina --theme fazzi
-#fetch.sh

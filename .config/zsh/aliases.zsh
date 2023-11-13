@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 # Basic aliases
 alias rm='rm -rIv'   # Recursive, interactive, and verbose `rm`
 alias cp='cp -rv'   # Recursive and verbose `cp`
@@ -25,7 +27,7 @@ alias gd='git diff'
 alias gp='git push'
 
 # Misc aliases
-alias updates='checkupdates; paru -Qum; pkill -RTMIN+1 waybar'  # Check system and AUR updates
+alias updates='checkupdates; paru -Qum'  # Check system and AUR updates
 alias rs='curl --data-binary @- https://paste.rs | wl-copy'  # Share output to a pastebin and copy to clipboard
 alias vim='nvim' # Editor
 alias vi='nvim'

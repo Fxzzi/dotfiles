@@ -1,4 +1,5 @@
 #!/usr/bin/env zsh
+
 source "${ZDOTDIR}/.zgenom/zgenom.zsh"
 
 # check for plugin and zgenom updates every 7 days

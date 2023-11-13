@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 # Bind keys for history substring search
 
 # This is here instead of keybinds.zsh due to some ordering issues
