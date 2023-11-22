@@ -54,10 +54,6 @@ return {
 					end
 				end,
 			})
-			-- require('lspconfig').jdtls.setup {
-			--     on_attach = on_attach,
-			--     capabilities = capabilities,
-			-- }
 			for name, icon in pairs(require("config.icons").diagnostics) do
 				name = "DiagnosticSign" .. name
 				vim.fn.sign_define(name, { text = icon, texthl = name, numhl = "" })
@@ -75,9 +71,8 @@ return {
 				sources = {
 					builtin.formatting.stylua,
 					builtin.formatting.prettier,
-					builtin.formatting.stylua,
 					builtin.formatting.beautysh,
-					builtin.diagnostics.pylint,
+					-- builtin.diagnostics.pylint,
 				},
 			}
 		end,

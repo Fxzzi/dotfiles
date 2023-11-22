@@ -7,7 +7,7 @@
   <img src="assets/preview.png" alt="Rice Showcase">
 </p>
 
-- **Operating System:** [arch](https://archlinux.org/)
+- **Distribution:** [arch btw](https://archlinux.org/)
 - **Compositor:** [Hyprland](https://github.com/hyprwm/Hyprland)
 - **Terminal Emulator:** [foot](https://codeberg.org/dnkl/foot)
 - **Status Bar:** [waybar](https://github.com/Alexays/Waybar/)
@@ -25,8 +25,8 @@ cd dotfiles
 ./install
 ```
 
-This will use `dotbot` to set-up symlinks in the correct locations. It will also install zsh, paru, and other packages. **PLEASE BACKUP YOUR OWN CONFIGS BBEFORE PROCEEDING!**
+This will use `dotbot` to set-up symlinks in the correct locations. It will also install zsh, paru, and other packages. **PLEASE BACKUP YOUR OWN CONFIGS BEFORE PROCEEDING!**
 
 ## 🖥️ Wallpapers
 
-Browse through the collection of wallpapers in the [Wallpaper Folder](https://gitlab.com/fazzi/dotfiles/-/tree/hyprland-laptop/Wallpapers "wallpaper folder").
+Browse through the collection of wallpapers in the [wallpaper folder](https://gitlab.com/fazzi/dotfiles/-/tree/hyprland-laptop/Wallpapers "wallpaper folder").

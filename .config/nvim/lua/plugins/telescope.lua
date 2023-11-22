@@ -1,6 +1,7 @@
 return {
 	{
 		"nvim-telescope/telescope.nvim",
+		cmd = "Telescope",
 		branch = "0.1.x",
 		config = function()
 			require('telescope').load_extension('fzf')

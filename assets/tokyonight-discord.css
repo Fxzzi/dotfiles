@@ -11,7 +11,7 @@
 
 :root {
 	--font: "SF Pro Text";
-	--font-code: "JetBrainsMono Nerd Font Mono";
+	--font-code: "JetBrainsMono NFM";
 
 	--accentcolor: 122, 162, 247;
 	/*	Blurple				- 	default:	88,101,242		- 	hex:	#5865f2		*/
@@ -274,30 +274,22 @@ html {
 	11.	MODALS
 		1.	USERMODAL
 		2.	GUILDADD/CREATION
-		3.	REGIONSELECTMODAL
-		4.	UPLOADMODAL
-		5.	KEYBOARDSHORTCUTSMODAL
-		6.	QUICKSWITCHER
-		7.	INVITEMODAL/GROUPCREATE
-		8.	LOGINSCREEN
-		9.	TERMACCEPTMODAL
-		10.	DOWNLOADAPPMODAL
-		11.	GUILDBOOSTMODAL
-		12.	REACTIONSMODAL
-		13.	RATEMODAL
-		14.	CHANGELOG
-		15.	NOTIFICATIONSMODAL
-		16.	PAYMENTMODAL
-		17.	CHANNELCREATIONMODAL
-		18.	CLOUDSYNCRESOLUTION
-		19.	APPLICATIONINSTALLATIONMODAL
-		20.	SPECIALMARKDOWNMODAL
-		21.	REPORTPROBLEM
-		22.	DISPATCHERROR
-		23.	HYPESQUADQUIZ
-		24.	NITROFEATUREMODAL
-		25.	DIRECTORYMODAL
-		26.	SERVERAPPMODAL
+		3.	UPLOADMODAL
+		4.	KEYBOARDSHORTCUTSMODAL
+		5.	QUICKSWITCHER
+		6.	INVITEMODAL/GROUPCREATE
+		7.	LOGINSCREEN
+		8.	DOWNLOADAPPMODAL
+		9.	GUILDBOOSTMODAL
+		10.	REACTIONSMODAL
+		11.	CHANGELOG
+		12.	NOTIFICATIONSMODAL
+		13.	PAYMENTMODAL
+		14.	CLOUDSYNCRESOLUTION
+		15.	APPLICATIONINSTALLATIONMODAL
+		16.	DISPATCHERROR
+		17.	HYPESQUADQUIZ
+		18.	SERVERAPPMODAL
 	12.	POPOUTS
 		1.	USERPOPOUT
 		2.	EMOJIPICKER
@@ -362,27 +354,17 @@ svg [fill="#4F545C"] {
 	background: rgba(var(--mentioncolor, --warningcolor),.3);
 }
 
-#app-mount .elevationLow__75cba, #app-mount .elevationLow__2b6de, .lightElevationLow__6c965, .darkElevationLow-2LO4eN {
+#app-mount .elevationLow__75cba, #app-mount .elevationLow__2b6de, .lightElevationLow__6c965 {
 	box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
 }
-#app-mount .elevationHigh__80ea8, #app-mount .elevationHigh__312fd, .lightElevationHigh__1513c, .darkElevationHigh-1BaD2i {
+#app-mount .elevationHigh__80ea8, #app-mount .elevationHigh__312fd, .lightElevationHigh__1513c {
 	box-shadow: 0 2px 10px 0 rgba(0,0,0,.2);
 }
-#app-mount .elevationBorderLow__610e6, #app-mount .elevationBorderLow-2_BGCd, .lightElevationBorderLow_c9bfa0, .darkElevationBorderLow-34oHrM {
+#app-mount .elevationBorderLow__610e6, #app-mount .elevationBorderLow__1fa50, .lightElevationBorderLow_c9bfa0 {
 	box-shadow: 0 0 0 1px rgba(var(--backgroundtertiary),.6), 0 1px 5px 0 rgba(0,0,0,.3);
 }
 #app-mount .elevationBorderHigh_f9a758, #app-mount .elevationBorderHigh__39dae, .lightElevationBorderHigh_a30b06, .darkElevationBorderHigh__63ac9 {
 	box-shadow: 0 0 0 1px rgba(var(--backgroundtertiary),.6), 0 2px 10px 0 rgba(0,0,0,.2);
-}
-
-#app-mount .tooltip-16UpTB,
-#app-mount .tooltip-1_vJJI {
-	background-color: var(--background-floating);
-	color: var(--text-normal);
-}
-#app-mount .tooltipPointer-1KkjI2,
-#app-mount .tooltipPointer-1awMxk {
-	border-right-color: var(--background-floating);
 }
 
 #app-mount .bubble_f48089 {
@@ -411,15 +393,8 @@ svg [fill="#4F545C"] {
 	color: var(--header-primary);
 }
 #app-mount .editIcon__29477 {
-	-webkit-mask: url(https://discord.com/assets/860396b3ff3fa1c4ae355bebfabadecb.svg);
+	-webkit-mask: url(https://discord.com/assets/c87be216431a35927431.svg);
 	background: var(--header-primary);
-}
-
-#app-mount .path2-F-M5gP {									/* loading icons		spinning circles					*/
-	stroke: var(--background-modifier-selected);
-}
-#app-mount .path3-3tVOpU {									/* loading icons		spinning circles					*/
-	stroke: var(--background-modifier-active);
 }
 
 #app-mount .scrollbarGhost__6f715::-webkit-scrollbar-thumb {/* scrollers			old scrollers						*/
@@ -452,20 +427,12 @@ svg [fill="#4F545C"] {
 	color: rgba(var(--textbrightest),.6);
 }
 
-html .backgroundaccent-349kuI {
-	color: var(--header-primary);
-}
-
-html .iconBadge-2wi9r4 {
+html .iconBadge__2abac {
 	background-color: var(--background-floating);
 	color: var(--header-primary);
 }
 
 /* ----		1.1.	TEXT							---- */
-
-.description-1u9Qui {
-	color: var(--header-secondary);
-}
 
 #app-mount h1.title__10613,
 #app-mount h2.title__10613 {
@@ -575,11 +542,11 @@ html .iconBadge-2wi9r4 {
 }
 #app-mount .lookLink__93965.colorPrimary__6ed40:hover .contents_fb6220,
 #app-mount .lookLink__93965.hoverPrimary__3e6c3.hasHover__3ab8c:hover .contents_fb6220 {
-	background-image: linear-gradient(0deg, transparent, transparent 1px, rgb(var(--textbrightest)) 0, rgb(var(--textbrightest)) 2px, transparent 0);
+	--button--underline-color: var(--header-primary);
 	color: var(--header-primary);
 }
 
-#app-mount .borderPrimary-1ygM7_ {
+#app-mount .borderPrimary__60ecd {
 	border-color: var(--header-primary) !important;
 }
 
@@ -641,7 +608,7 @@ html .iconBadge-2wi9r4 {
 }
 #app-mount .lookLink__93965.colorTransparent__4c280:hover .contents_fb6220,
 #app-mount .lookLink__93965.hoverTransparent_a4eefd.hasHover__3ab8c:hover .contents_fb6220 {
-	background-image: linear-gradient(0deg, transparent,transparent 1px,rgb(var(--textbrighter)) 0,rgb(var(--textbrighter)) 2px,transparent 0);
+	--button--underline-color: var(--text-normal);
 	color: var(--text-normal);
 }
 
@@ -698,27 +665,19 @@ html .iconBadge-2wi9r4 {
 	background-color: var(--deprecated-text-input-bg);
 	border-color: var(--deprecated-text-input-border);
 }
-.searchInput-3pIoTy {
+.searchInput_e1c8d3 {
 	background-color: transparent;
 }
 .lookFilled__3dba3.select__0eb48:hover {
 	border-color: var(--deprecated-text-input-border-hover);
 }
 
-#app-mount .container-30qY7E {
+#app-mount .container__0c807 {
 	background-color: var(--deprecated-text-input-bg);
 	border-color: var(--deprecated-text-input-border);
 }
-#app-mount .container-30qY7E:hover {
+#app-mount .container__0c807:hover {
 	border-color: var(--deprecated-text-input-border-hover);
-}
-
-#app-mount .container-2zEtSe {
-	color: var(--header-secondary);
-}
-#app-mount .selected-2xa993 {
-	border-bottom: 2px solid var(--header-primary);
-	color: var(--header-primary);
 }
 
 #app-mount .checkbox_c7f690 {
@@ -734,28 +693,7 @@ html .iconBadge-2wi9r4 {
 	fill: #fff;
 }
 
-#app-mount .checkbox-1ycfTw .checkboxInner-1aRh1d span {
-	border-color: var(--text-muted);
-}
-#app-mount .checkbox-1ycfTw .checkboxInner-1aRh1d .checkboxElement-uwAa9F:checked + span::after {
-	border-color: #fff !important;
-}
-#app-mount .checkbox-1ycfTw .checkboxInner-1aRh1d .checkboxElement-uwAa9F:disabled + span {
-	filter: grayscale(0.5);
-}
-#app-mount .checkbox-1ycfTw .checkboxInner-1aRh1d .checkboxElement-uwAa9F:checked + span {
-	background-color: rgb(var(--accentcolor)) !important;
-	border-color: rgb(var(--accentcolor)) !important;
-}
-#app-mount .checkbox-1ycfTw .checkboxInner-1aRh1d.alt-20KvgT .checkboxElement-uwAa9F + span {
-	background-color: #fff !important;
-	border-color: #fff !important;
-}
-#app-mount .checkbox-1ycfTw .checkboxInner-1aRh1d.alt-20KvgT .checkboxElement-uwAa9F:checked + span::after {
-	border-color: rgb(var(--accentcolor)) !important;
-}
-
-#app-mount .maxLength-IdVNmX {
+#app-mount .maxLength_f4921c {
 	color: var(--text-muted);
 }
 
@@ -797,7 +735,7 @@ html .iconBadge-2wi9r4 {
 .select__55f87 [class*="css-"][class*="-control"]:not(:last-child) {
 	border-color: var(--deprecated-text-input-border-hover);
 }
-.select__55f87.languageSelector-1hjSyO [class*="css-"][class*="-control"] {
+.select__55f87.languageSelector__4961a [class*="css-"][class*="-control"] {
 	background-color: var(--background-tertiary);
 	border: none;
 }
@@ -806,7 +744,6 @@ html .iconBadge-2wi9r4 {
 .select__55f87 [class*="css-"][class*="-indicatorContainer"] {
 	color: var(--text-normal);
 }
-#app-mount .optionNormal-12VR9V,
 .css-1gfjib6-option,
 .css-1yz4bi9-option,
 .css-ru8b0x-option,
@@ -814,7 +751,6 @@ html .iconBadge-2wi9r4 {
 	background-color: rgba(var(--transparencycolor), .1);
 	color: var(--interactive-normal);
 }
-#app-mount .optionNormal-12VR9V:hover,
 .css-pkcurw-option,
 .css-rzbxvl-option,
 .css-1qxn4c5-option,
@@ -822,7 +758,6 @@ html .iconBadge-2wi9r4 {
 	background-color: var(--background-secondary);
 	color: var(--interactive-hover);
 }
-#app-mount .optionActive-KkAdqq,
 .css-1gxgi19-option,
 .css-1ba14n5-option,
 .css-6qzljd-option,
@@ -865,34 +800,86 @@ html .iconBadge-2wi9r4 {
 
 /* ----		1.5.	IMAGES							---- */
 
-#app-mount .successImage-1Ld6xy {
-	background-image:url(https://discord.com/assets/15bc6312ff83991a86d4eb9be19094d6.svg);
+#app-mount .image__0cdbe {
+	background-image: url(https://discord.com/assets/5420f8fd9d89897c6448.svg);
+	opacity: .75;
+}
+
+#app-mount .invalidPoop__03aa3 {
+	background-color: rgba(var(--backgroundaccent),.6);
+	background-image: url(https://discord.com/assets/baa5b6db50bb89d55668.svg);
+	opacity: .5;
+}
+
+#app-mount .sadImage_e4e5ab {
+	background-image: url(https://discord.com/assets/746284e4cfc7cd6c5e15.svg);
+	opacity: .5;
+}
+
+#app-mount .cancelImage__688be {
+	background: url(https://discord.com/assets/d12b5c285831f85c5eee.svg);
+	opacity: .75;
+}
+
+#app-mount .emptyWumpus__67af4 {
+	background: url(https://discord.com/assets/b3dd9b1e282fff30af5b.svg);
+	opacity: .5;
+}
+
+#app-mount .authenticationRequiredImage__92ba7 {
+	background-image: url(https://discord.com/assets/ac36a2fad758d64ffbfb.svg);
+	opacity: .5;
+}
+#app-mount .authenticationSuccessImage_b1a74c {
+	background-image: url(https://discord.com/assets/22a55a08151860da8500.svg);
+	opacity: .5;
+}
+#app-mount .authenticationFailImage-3DXXvB {
+	background-image: url(https://discord.com/assets/5fc4852a2acb3abf0a64.svg);
+	opacity: .5;
+}
+
+#app-mount .conflictUploadArt_c68c28 {
+	background-image: url(https://discord.com/assets/27f92332674f9dacc1e9.svg);
+	opacity: .5;
+}
+#app-mount .conflictDownloadArt__87c31 {
+	background-image: url(https://discord.com/assets/f6bc645aead00959a690.svg);
+	opacity: .5;
+}
+#app-mount .errorArt__7d1bf {
+	background-image: url(https://discord.com/assets/c00cfaed1382bf7f33d4.svg);
 	opacity: .5;
 }
 
 #app-mount .searchIndexBackground__14e66 {
-	background-image: url(https://discord.com/assets/e695cb4a18202a6053674a346e6ba4c2.svg);
+	background-image: url(https://discord.com/assets/1876c6a6db747137a124.svg);
 	opacity: .5;
 }
 #app-mount .resultsBlockedImage_e4bcd7 {
-	background-image: url(https://discord.com/assets/7490848d1fcddf075abeb71e2d1aaff3.svg);
+	background-image: url(https://discord.com/assets/83720a1a3ec0963a1f71.svg);
 	opacity: .5;
 }
 #app-mount .noResultsImage__08760 {
-	background-image: url(https://discord.com/assets/af4424ffab53593f696947192ff1854a.svg);
+	background-image: url(https://discord.com/assets/45cd76fed34c8e398cc8.svg);
 	opacity: .5;
 }
 #app-mount .noResultsImage__08760.alt__77d89 {
-	background-image: url(https://discord.com/assets/f0a2cc54695a7064a1f02e5ca8b95ccc.svg);
+	background-image: url(https://discord.com/assets/99d35a435f00582ddf41.svg);
 	opacity: .5;
 }
 #app-mount .errorImage__416df {
-	background-image: url(https://discord.com/assets/29462d0b6c33d2ed874aa982f6f99326.svg);
+	background-image: url(https://discord.com/assets/8eeb59bba0a61cbffc41.svg);
+	opacity: .5;
+}
+
+#app-mount .emptyStateImage__3e0a5 {
+	background: url(https://discord.com/assets/b3dd9b1e282fff30af5b.svg);
 	opacity: .5;
 }
 
 #app-mount .wrapper__246a1 {								/* crash screen			background							*/
-	background-image: url(https://discord.com/assets/da840b1a6c5d073ca1c6710f8967502a.svg);
+	background-image: url(https://discord.com/assets/14223d22c9628be36fc0.svg);
 }
 #app-mount .image_dabcb8 {									/* crash screen			center image						*/
 	background-image: url(https://discord.com/assets/72eaa596042042be6259.svg);
@@ -904,113 +891,144 @@ html .iconBadge-2wi9r4 {
 	color: var(--header-primary);
 }
 
-#app-mount .noResults-1nD_92 {
-	background: transparent;
-}
-#app-mount .noResults-1nD_92::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: url(https://discord.com/assets/0b298968e0a756e25677771fd6b58b34.svg) no-repeat 50% 40%;
+#app-mount .noResults_c99c73 {
+	background-image: url(https://discord.com/assets/c586aac99de98cfb010d.svg);
 	opacity: .5;
 }
 
-#app-mount .noResults-24KNHj {
-	background-image: url(https://discord.com/assets/0b298968e0a756e25677771fd6b58b34.svg);
+#app-mount .art_ba4492 {
+	background-image: url(https://discord.com/assets/1a8d1cce8efe66c22c6d.svg);
 	opacity: .5;
 }
 
-.fullArt-KDeDyg {
-	opacity: .5;
-}
-#app-mount .art-1bAcVF {
-	background-image: url(https://discord.com/assets/9f670a7821c663913c393f5df62e63d7.svg);
+#app-mount .art__773bf {
+	background-image: url(https://discord.com/assets/29306de8953471954035.svg);
 	opacity: .5;
 }
 
-#app-mount .imageUnverified-1QCPtJ {
-	background-image: url(https://discord.com/assets/e260177e5165e6789e30b9592df75424.svg);
+#app-mount .imageUnverified_fc0bf0 {
+	background-image: url(https://discord.com/assets/f0cba42b6a6d3b2de4fd.svg);
 	opacity: .5;
 }
 
-.fullArt-3CUkwC {
+#app-mount .imageUpgrade__02fcc {
+	background-image: url(https://discord.com/assets/7e81dd54960672eabe78.svg);
+}
+#app-mount .imageCancel_e3036f {
+	background-image: url(https://discord.com/assets/d12b5c285831f85c5eee.svg);
+}
+#app-mount .imageUnclaimed__3f7ec {
+	background-image: url(https://discord.com/assets/41675689ca055858e137.svg);
+	opacity: .5;
+}
+#app-mount .imageUnverified__6dc24 {
+	background-image: url(https://discord.com/assets/f0cba42b6a6d3b2de4fd.svg);
+	opacity: .5;
+}
+
+#app-mount .emptyPreviewImage__86ba2 {
+	background-image: url(https://discord.com/assets/3a354aac283f909d403d.svg);
+	opacity: .5;
+}
+
+.fullArt_a1e55d,
+.fullArt_cba315 {
 	opacity: .5;
 }
 
 .image__0a0fc {
 	opacity: .5;
 }
-.image__0a0fc[style*='url("/assets/03c7541028afafafd1a9f6a81cb7f149.svg")'] {
-	background-image: url(https://discord.com/assets/6793e022dc1b065b21f12d6df02f91bd.svg) !important;
-}
-.image__0a0fc[style*='url("/assets/9b0d90147f7fab54f00dd193fe7f85cd.svg")'] {
-	background-image: url(https://discord.com/assets/308e587f3a68412f137f7317206e92c2.svg) !important;
+.image__0a0fc[style*='url("/assets/9e2f412156e2ac1f14e9.svg")'] {
+	background-image: url(https://discord.com/assets/64df6f04b850029d2e78.svg) !important;
 }
 
 .image__98a59 {
 	opacity: .5;
 }
-.image__98a59[style*='url("/assets/c84361b810ca7c10d6e8ddb6ea722ebe.svg")'] {
-	background-image: url(https://discord.com/assets/b669713872b43ca42333264abf9c858e.svg) !important;
+.image__98a59[style*='url("/assets/0629e34902ae58f8e4ca.svg")'] {
+	background-image: url(https://discord.com/assets/24aa06be5457e66bdd64.svg) !important;
 }
-.image__98a59[style*='url("/assets/857c505aafbe092e4f6efecebcad0bc8.svg")'] {
-	background-image: url(https://discord.com/assets/712a0fd4d14a1caadd31cb0745e91238.svg) !important;
+.image__98a59[style*='url("/assets/5741692705ba077f4190.svg")'] {
+	background-image: url(https://discord.com/assets/bca918618b884a382ab5.svg) !important;
+}
+.image__98a59[style*='url("/assets/a72746e7108167af95c8.svg")'] {
+	background-image: url(https://discord.com/assets/01864c39871ce619d855.svg) !important;
+}
+.image__98a59[style*='url("/assets/ee4637f8627629dd0da5.svg")'] {
+	background-image: url(https://discord.com/assets/532f1d4582d881960783.svg) !important;
 }
 
-img[src='/assets/9ad4d437577c5569dc231a787a5377f6.svg'],
-img[src='/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg'] {
-	background-image: url(https://discord.com/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg);
+.image__98a59[style*='url("/assets/c8be48745cf680093019.svg")'] {
+	background-image: url(https://discord.com/assets/295da3fc92e2adb1b852.svg) !important;
+}
+.image__98a59[style*='url("/assets/5e3480eff150b1cb323e.svg")'] {
+	background-image: url(https://discord.com/assets/cf8f9096a9322f2ae0d7.svg) !important;
+}
+.emptyStateImage__36649 {
+	opacity: .5;
+}
+.emptyStateImage__36649[src='/assets/39e3f389716400ced39a.svg'] {
+	background-image: url(https://discord.com/assets/1bb2be01aece015602f7.svg);
+	object-position: -999999px -999999px;
+}
+.image__98a59[style*='url("/assets/c65431f185feb7b00749.svg")'] {
+	background-image: url(https://discord.com/assets/cdc3f4f6fbf3a0f0766f.svg) !important;
+}
+.image__98a59[style*='url("/assets/a1b0a14d2f22c155a2b3.svg")'] {
+	background-image: url(https://discord.com/assets/c7c4065874955761be3b.svg) !important;
+}
+
+img[src='/assets/73984240bd99493de947.svg'] {
+	background-image: url(https://discord.com/assets/c1875fc8a42a61903ba1.svg);
 	opacity: .5;
 	object-position: -999999px -999999px;
 }
 
-img[src='/assets/c2c982c416a67d43d72d182f079a8d22.svg'],
-img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
-	background-image: url(https://discord.com/assets/58957d928db6fb9d4658eb882f33d7bc.svg);
+img[src='/assets/387a7c504c96b992872d.svg'] {
+	background-image: url(https://discord.com/assets/1964f50ca0220e98dc32.svg);
 	opacity: .5;
 	object-position: -999999px -999999px;
 }
 
-.emptyStateImage-3SXmVX {
-	opacity: .5;
-}
-.emptyStateImage-3SXmVX[src='/assets/38defe07899a762bfc301ddddd206116.svg'] {
-	background-image: url(https://discord.com/assets/446a060321730a318ca1649b0cc40d44.svg);
-	object-position: -999999px -999999px;
-}
-
-#app-mount .image-3wZlK5 {
-	background-image: url(https://discord.com/assets/97e866482f43d3ebd2496641cd934904.svg);
+#app-mount .footerImage__21e33 {
+	background-image: url(https://discord.com/assets/a4bee30fe0b5a0f5b3c7.svg);
 	opacity: .5;
 }
 
 #app-mount .imageError__77b3e {
-	background-image: url(https://discord.com/assets/e0c782560fd96acd7f01fda1f8c6ff24.svg);
-	opacity: .5;
-}
-
-#app-mount .image-1REvn0 {
-	background-image: url(https://discord.com/assets/cefc9c14adce616059f519c581331b32.svg);
 	opacity: .5;
 }
 
 #app-mount .emptyImage__66bed {
-	background-image: url(https://discord.com/assets/4bb32037d9d2e8240d1315ddaf4e4b85.svg);
-	opacity: .5;
-}
-#app-mount .errorImage__0200e {
-	background-image: url(https://discord.com/assets/cdc3daf6fc982fef1df502912b682ada.svg);
+	background-image: url(https://discord.com/assets/1766a563ac224f0a403d.svg);
 	opacity: .5;
 }
 
-#app-mount .missingEntitlementImage-112ztW {
-	background-image: url(https://discord.com/assets/131dcaaa628405e6d0ebee7708111c7a.svg);
+#app-mount .missingEntitlementImage_c06466 {
+	background-image: url(https://discord.com/assets/b3dd9b1e282fff30af5b.svg);
 	opacity: .5;
 }
 
+#app-mount .image__81490 {
+	background-image: url(https://discord.com/assets/a7d6af4279f16c27ae9b.svg);
+	opacity: .5;
+}
+
+#app-mount .image__25781 {
+	background-image: url(https://discord.com/assets/9e9722bd5c8ec20fd746.svg);
+	opacity: .5;
+}
+
+#app-mount .image__1990e {
+	background-image: url(https://discord.com/assets/c8718df1382ba878f1fc.svg);
+	opacity: .5;
+}
+
+#app-mount .image__88b66 {
+	background-image: url(https://discord.com/assets/1766a563ac224f0a403d.svg);
+	opacity: .5;
+}
 
 /* ~~~~		2.		GUIDLIST						~~~~ */
 
@@ -1034,37 +1052,6 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 /* ~~~~		3.		CHANNELLIST						~~~~ */
 
 /* ----		3.1.	GUILDHEADER						---- */
-
-.channelNotice-tO6Tus.invite-OjTXrW,
-.channelNotice-tO6Tus.guildMFAWarning-3GEzs8,
-.channelNotice-tO6Tus.maxMembersCount-3E4zND,
-.channelNotice-3DDmsB,
-#app-mount .channelNotice-3hkOiI {
-	background: transparent;
-}
-.channelNotice-tO6Tus.invite-OjTXrW::before {
-	opacity: 0.6;
-	background: url(https://discord.com/assets/bf625d222187f542b9d7179109422e2c.svg) center 20px no-repeat;
-}
-.channelNotice-tO6Tus.guildMFAWarning-3GEzs8::before {
-	opacity: 0.6;
-	background: url(https://discord.com/assets/916a384814e3bbd2a84e2a1b352a17c3.svg) center 20px no-repeat;
-}
-.channelNotice-tO6Tus.quickswitcher-35bYg4::before {
-	opacity: 0.6;
-}
-.channelNotice-tO6Tus.maxMembersCount-3E4zND::before {
-	opacity: 0.6;
-	background: url(https://discord.com/assets/01f60394adffda20dc7270a1e3c727df.svg) center 16px no-repeat;
-}
-.channelNotice-3DDmsB::before {
-	opacity: 0.6;
-	background: url(https://discord.com/assets/1858873f28bdc62dfb3a1f4b67d459bf.svg) center top 20px/153px no-repeat;
-}
-#app-mount .channelNotice-3hkOiI::before {
-	opacity: 0.6;
-	background: url(https://discord.com/assets/7065587bd42fd829925bf6aa4b36f5e2.svg) center top 22px/220px no-repeat;
-}
 
 /* ----		3.2.	CHANNELS						---- */
 
@@ -1098,13 +1085,9 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 
 .selected_d94cf9,
 .selected_d94cf9:focus-within,
-.selected_d94cf9:hover,
-.snowsgivingLink-1TZi3c:hover {
+.selected_d94cf9:hover {
 	background-color: var(--background-modifier-hover);
 	color: var(--header-primary);
-}
-.snowsgivingLink-1TZi3c {
-	border-radius: 4px;
 }
 
 /* ----		3.4.	ACCOUNT/VOICE/GOLIVE			---- */
@@ -1220,18 +1203,10 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 	color: var(--brand-experiment-200);
 }
 
-#app-mount .noResultIcon__0585c {
-	background-image: url(https://discord.com/assets/1eed0d895df6e35f164d8ed5e84037d2.svg);
-	opacity: .5;
-}
 #app-mount .scrollSeparator_e4c1a2 {
 	box-shadow: 0 1px 0 0 rgba(var(--backgroundfloating),.3), 0 1px 2px 0 rgba(var(--backgroundfloating),.3);
 }
 
-#app-mount .image__0cdbe {
-	background-image: url(https://discord.com/assets/a36505883459aecf5df0ae54c6d7495f.svg);
-	opacity: .75;
-}
 #app-mount .title__5e888 {
 	color: var(--header-primary);
 }
@@ -1251,7 +1226,7 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 	bottom: 0;
 	left: 0;
 	background: var(--header-primary);
-	-webkit-mask: url(https://discord.com/assets/a9847a74a2dac6e2b2958b195a8dad96.svg) center no-repeat;
+	-webkit-mask: url(https://discord.com/assets/1b60cdb56c8c081495ac.svg) center no-repeat;
 }
 
 /* ====		4.2.1.	MESSAGE							==== */
@@ -1270,12 +1245,12 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 	color: var(--channels-default);
 }
 
-.icon__8c32c[style*="/assets/5da4cdab01d4d89c593c48c62ae0d937.svg"] {
-	-webkit-mask: url(https://discord.com/assets/5da4cdab01d4d89c593c48c62ae0d937.svg) center/cover no-repeat;
+.icon__8c32c[style*="/assets/7ed159b6acb6da5d9593.svg"] {
+	-webkit-mask: url(https://discord.com/assets/7ed159b6acb6da5d9593.svg) center/cover no-repeat;
 	background: var(--header-secondary) !important;
 }
-.icon__8c32c[style*="/assets/d80d1fdc43a3c42134a31a39581160ac.svg"] {
-	-webkit-mask: url(https://discord.com/assets/d80d1fdc43a3c42134a31a39581160ac.svg) center/cover no-repeat;
+.icon__8c32c[style*="/assets/a1d461025204711133ec.svg"] {
+	-webkit-mask: url(https://discord.com/assets/a1d461025204711133ec.svg) center/cover no-repeat;
 	background: var(--header-secondary) !important;
 }
 
@@ -1332,9 +1307,6 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 	background-color: var(--background-primary);
 }
 
-.lookMinimal-2OMO3G .arrow-2KJjTM {
-	color: var(--header-secondary);
-}
 #app-mount .svgContentRight_df2494 {
 	fill: var(--interactive-muted);
 }
@@ -1375,7 +1347,7 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 	background-color: var(--background-primary);
 }
 #app-mount .guildIconExpired__1d51f {
-	background-image: url(https://discord.com/assets/e0c782560fd96acd7f01fda1f8c6ff24.svg);
+	background-image: url(https://discord.com/assets/baa5b6db50bb89d55668.svg);
 	opacity: .5;
 }
 #app-mount .resolvingBackground__054c3 {
@@ -1387,7 +1359,8 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 	border-color: rgba(var(--backgroundsecondary),.9);
 }
 #app-mount .artworkSpotifySessionEnded__8272a {
-	background-image: url(https://discord.com/assets/fb6a21ef85b63dec6e7c01c683904e8f.svg);
+	background-image: url(https://discord.com/assets/a7d6af4279f16c27ae9b.svg);
+	opacity: .5;
 }
 #app-mount .header__8b673 {
 	color: var(--text-muted);
@@ -1412,12 +1385,6 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 #app-mount .textLink__47850,
 #app-mount .message-group .textLink__47850 {
 	color: var(--header-primary);
-}
-#app-mount .subHeader-2XPj0v {
-	color: var(--text-muted);
-}
-#app-mount .preview-3GfI5V {
-	border-color: var(--background-tertiary);
 }
 
 /* ----		4.3.	TEXTAREA						---- */
@@ -1553,13 +1520,7 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 	background-image: linear-gradient(0deg, transparent,rgba(0,0,0,.9));
 }
 
-#app-mount .item-2ppWEc {
-	color: var(--header-primary);
-}
-#app-mount .itemValue-3eCU6u {
-	color: var(--header-secondary);
-}
-#app-mount .videoPreview-2MGkOA {
+#app-mount .videoPreview__84f41 {
 	background-color: var(--background-secondary);
 	border: 1px solid var(--background-tertiary);
 }
@@ -1575,18 +1536,8 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 	border: none;
 }
 
-#app-mount .sectionHeader-20RGqu {
-	border-bottom: 1px solid rgba(0,0,0,.2);
-}
 #app-mount .moreMutualGuildsBtn_cad227:hover {
 	border-color: rgba(var(--textbrightest),.6);
-	color: var(--header-primary);
-}
-#app-mount .wrapper-1nP9W7 {
-	background-color: rgba(4,4,5,.8);
-	color: var(--header-secondary);
-}
-#app-mount .header-1bHP7r {
 	color: var(--header-primary);
 }
 
@@ -1598,25 +1549,18 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 	background-color: var(--background-secondary);
 }
 
-#app-mount .emptyPreviewImage-3LUxKH {
-	background-image: url(https://discord.com/assets/b93ef52d62a513a4f2127a6ca0c3208c.svg);
-	opacity: .5;
-}
-
 #app-mount .partyMemberOverflow_d12297 {
 	background-color: var(--background-floating);
 	color: var(--header-secondary);
 }
 #app-mount .partyMemberBackground__8fdc5,
-#app-mount .partyMemberUnknown__573ec {
+#app-mount .partyMemberUnknown__573ec,
+#app-mount .partyMemberBackground__96681,
+#app-mount .partyMemberUnknown_e4becd {
 	background-color: var(--background-accent);
 }
 #app-mount .partyMemberUnknownIcon__7bfe8 {
 	color: var(--text-muted);
-}
-#app-mount .partyMemberUnknown-EEivAl {
-	background-image: url(https://discord.com/assets/c2e09a95e595bfb12fa040d56ca27db5.svg);
-	opacity: .5;
 }
 
 #app-mount .popout_c6d10c {
@@ -1624,16 +1568,13 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 	border-color: var(--background-tertiary);
 	box-shadow: 0 8px 16px rgba(0,0,0,.24);
 }
-#app-mount .enabled-1t_Gxm:hover {
+#app-mount .memberListItem__4000d:not(.popoutDisabled__5e7e3):hover {
 	background-color: var(--background-tertiary);
 }
-#app-mount .memberListItem-31QoHj:not(.popoutDisabled-2RK7MF):hover {
-	background-color: var(--background-tertiary);
-}
-#app-mount .memberListHeader-543n-J {
+#app-mount .memberListHeader_f1f469 {
 	color: var(--header-secondary);
 }
-#app-mount .memberListItem-31QoHj:hover {
+#app-mount .memberListItem__4000d:hover {
 	background-color: var(--background-tertiary);
 }
 #app-mount .multipleIconWrapper__164fb,
@@ -1691,15 +1632,15 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 
 /* ~~~~		6.		STORE/NITRO						~~~~ */
 
-#app-mount .header-2cF-SF {
+#app-mount .header_d454ec {
 	color: var(--header-primary);
 }
-#app-mount .blurb-3d5FqU,
-#app-mount .storeTerms-229iaC,
-#app-mount .subtext-3JuUCk {
+#app-mount .blurb__41902,
+#app-mount .storeTerms__1aed4,
+#app-mount .subtext_d97997 {
 	color: var(--header-secondary);
 }
-#app-mount .divider-3IBpTV {
+#app-mount .divider__8cf9c {
 	background-color: rgba(var(--backgroundsecondary),.6);
 }
 
@@ -1733,48 +1674,25 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 #app-mount .libraryLink_c20b2b {
 	color: rgba(var(--textbrightest),.6);
 }
-#app-mount .invalidPoop__03aa3 {
-	background-color: rgba(var(--backgroundaccent),.6);
-	background-image: url(https://discord.com/assets/e0c782560fd96acd7f01fda1f8c6ff24.svg);
-	opacity: .5;
-}
 #app-mount .metadata_b9783d {
 	color: var(--text-muted);
 }
 
-#app-mount .cancelImage-T807tN {
-	background: url(https://discord.com/assets/03863b539aec443327ca2ffc51a89dac.svg);
-	opacity: .75;
-}
-
-#app-mount .container-2Zlzt0 {
+#app-mount .container__9ecba {
 	background-color: var(--background-secondary);
 }
-
-#app-mount .xboxLogo-3uO7iP {
-	-webkit-mask: url(https://discord.com/assets/7f267bbf7d7569d790f9f6ab97d04044.svg) center no-repeat;
-	background: var(--header-primary);
+#app-mount .loading__053e3 {
+	background-color: transparent;
 }
-
-#app-mount .feature-2IUcBI {
-	background-color: var(--background-secondary-alt);
-	border: 1px solid var(--background-modifier-accent);
-	box-shadow: var(--elevation-medium);
-}
-
-#app-mount .sectionAccountCredit-1lZtoH,
-#app-mount .subscriptionDetails-3u1CML {
+#app-mount .sectionAccountCredit__6e823
+#app-mount .subscriptionDetails__042b3 {
 	border-color: rgba(var(--textdarker),.3);
 }
-#app-mount .background-HqNWlb {
-	background-image: url(https://discord.com/assets/00be7f6ca68f1915a80ae01f061718e5.svg);
-	opacity: .5;
-}
-#app-mount .tier1Banner-LvpkWu {
+#app-mount .tier1Banner__86229 {
 	background: var(--background-secondary);
 	color: var(--header-primary);
 }
-#app-mount .tier1Banner-LvpkWu::before {
+#app-mount .tier1Banner__86229::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -1782,7 +1700,7 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 	bottom: 0;
 	left: 0;
 	background: var(--header-primary);
-	-webkit-mask: url(https://discord.com/assets/cb89c31c79a62ae99ec12351c1efb277.svg) center/cover no-repeat;
+	-webkit-mask: url(https://discord.com/assets/02211574807b44f50d90.svg) center/cover no-repeat;
 }
 
 #app-mount .categoryHeader__46769,
@@ -1792,9 +1710,6 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 }
 #app-mount .viewAllGames__9b81c {
 	color: var(--header-primary);
-}
-#app-mount .divider-3y7HAB {
-	border-color: rgba(var(--backgroundsecondary),.6);
 }
 
 #app-mount .content__45a6a {
@@ -1814,10 +1729,6 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 
 #app-mount .featureIcon__67ee4 {
 	color: var(--header-secondary);
-}
-
-#app-mount .content-26qlhD {
-	color: var(--text-muted);
 }
 
 #app-mount .themedPagination_c56fb8 .arrow_fe649b {
@@ -1928,27 +1839,27 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 	color: var(--header-primary);
 }
 
-#app-mount .applicationName-1iS9zb {
+#app-mount .applicationName__9b48c {
 	color: var(--text-normal);
 }
-#app-mount .price-1PvQ0u {
+#app-mount .price__9237d {
 	background-color: var(--background-accent);
 	color: var(--header-primary);
 }
 
 /* ----		6.1.	BIRTHDAY PAGE					---- */
 
-#app-mount .outerContainer-2qLQSo {
+#app-mount .outerContainer_d40897 {
 	background-color: var(--background-primary);
 }
-#app-mount .outerContainer-2qLQSo .heroWrapper-20MPew {
+#app-mount .outerContainer_d40897 .heroWrapper_f89e7d {
 	overflow: hidden;
 	border-radius: 10px;
 }
-#app-mount .outerContainer-2qLQSo .birthdayExplanationWrapper-c5wg5T,
-#app-mount .outerContainer-2qLQSo .flipCardOpened-hiYLHX,
-#app-mount .outerContainer-2qLQSo .activityCard-3EABg3,
-#app-mount .outerContainer-2qLQSo .celebrateCardContainer-MAdnBa {
+#app-mount .outerContainer_d40897 .birthdayExplanationWrapper_bcfc0b,
+#app-mount .outerContainer_d40897 .flipCardOpened__2789c,
+#app-mount .outerContainer_d40897 .activityCard__8295a,
+#app-mount .outerContainer_d40897 .celebrateCardContainer_cee705 {
 	background-color: var(--background-secondary);
 }
 
@@ -1957,11 +1868,6 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 
 #app-mount .headerCellSorted__41374 {
 	color: var(--header-primary);
-}
-
-#app-mount .emptyWumpus__67af4 {
-	background: url(https://discord.com/assets/131dcaaa628405e6d0ebee7708111c7a.svg);
-	opacity: .5;
 }
 
 #app-mount .rate__087a0 {
@@ -2028,7 +1934,7 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 	background-color: var(--background-primary);
 	color: var(--header-primary);
 }
-.footerImage-3DpC_8 {
+.footerImage_b0b86b {
 	opacity: .5;
 }
 
@@ -2040,25 +1946,25 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 	box-shadow: 0 0 0 1px rgb(91,67,240), 0 0 0 2px rgba(91,67,240,.6), 0 0 0 3px rgba(91,67,240,.3);
 	border-color: transparent;
 }
-#app-mount .search_e47903 .searchBox__88a98 .searchBoxInput-3h4etz {
+#app-mount .search_e47903 .searchBox__88a98 .searchBoxInput_bbea1c {
 	color: #2e3338;
 }
-#app-mount .search_e47903 .searchBox__88a98 .searchBoxInput-3h4etz::-webkit-input-placeholder,
-#app-mount .search_e47903 .searchBox__88a98 .searchBoxInput-3h4etz::-moz-placeholder,
-#app-mount .search_e47903 .searchBox__88a98 .searchBoxInput-3h4etz:-ms-input-placeholder,
-#app-mount .search_e47903 .searchBox__88a98 .searchBoxInput-3h4etz::placeholder {
+#app-mount .search_e47903 .searchBox__88a98 .searchBoxInput_bbea1c::-webkit-input-placeholder,
+#app-mount .search_e47903 .searchBox__88a98 .searchBoxInput_bbea1c::-moz-placeholder,
+#app-mount .search_e47903 .searchBox__88a98 .searchBoxInput_bbea1c:-ms-input-placeholder,
+#app-mount .search_e47903 .searchBox__88a98 .searchBoxInput_bbea1c::placeholder {
 	color: #72767d;
 }
-#app-mount .search_e47903 .searchBox__88a98 .closeIcon-BMGxx0 {
+#app-mount .search_e47903 .searchBox__88a98 .closeIcon__3dfb5 {
 	color: #4f5660;
 }
-#app-mount .search_e47903 .searchBox__88a98 .closeIcon-BMGxx0:hover {
+#app-mount .search_e47903 .searchBox__88a98 .closeIcon__3dfb5:hover {
 	color: #2e3338;
 }
-#app-mount .search_e47903 .searchBox__88a98 .closeIcon-BMGxx0:focus {
+#app-mount .search_e47903 .searchBox__88a98 .closeIcon__3dfb5:focus {
 	color: #060607;
 }
-#app-mount .search_e47903 .searchBox__88a98 .searchIcon-3X4BYL {
+#app-mount .search_e47903 .searchBox__88a98 .searchIcon_f30c40 {
 	color: rgba(79,84,92,.6);
 }
 
@@ -2085,7 +1991,7 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 	color: var(--header-primary);
 }
 #app-mount .streamerModeEnabledImage_a0d94f {
-	background-image: url(https://discord.com/assets/5b7e23080bfec53f966b806abcde8def.svg);
+	background-image: url(https://discord.com/assets/c133c9df9ee4552c188a.svg);
 	opacity: .5;
 }
 
@@ -2137,70 +2043,15 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 #app-mount .closeButtonBold__30e2a:active path[fill] {
 	fill: var(--header-primary);
 }
-#app-mount .keybindBold-1U6HoA {
+#app-mount .keybind__57645 {
 	color: var(--header-secondary);
 }
 
-#app-mount .avatarUploader-AF-hm- .sizeInfo-Wk0Ksj {
-	color: var(--text-muted);
-}
-#app-mount .avatarUploader-AF-hm- .removeButton-3B_Vmg {
-	color: var(--interactive-normal);
-}
-#app-mount .avatarUploader-AF-hm- .removeButton-3B_Vmg:hover {
-	color: var(--interactive-hover);
-}
-#app-mount .avatarUploader-AF-hm- .removeButton-3B_Vmg:active {
-	color: var(--interactive-active);
-}
-#app-mount .avatarUploaderIndicator-2G-aIZ {
-	background: var(--background-floating);
-}
-#app-mount .avatarUploaderIndicator-2G-aIZ::after {
-	content: "";
-	position: relative;
-	width: 100%;
-	height: 100%;
-	background: var(--header-primary);
-	-webkit-mask: url(https://discord.com/assets/d5c25e76af04cea8997e4a060572feae.svg) center no-repeat;
-}
-#app-mount .userSettingsAccount-3wUMIP .viewBody-1l56Sd {
-	color: var(--header-secondary);
-}
-#app-mount .userSettingsSecurityImage-2_okeh {
-	background: url(https://discord.com/assets/cdea41ede63f61153e4a3c0531fa3873.svg) center/cover no-repeat;
-	opacity: .5;
-	object-position: -999999px -999999px;
-}
-
-.colorSwatch-3g4qA8 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.colorSwatch-3g4qA8 > [role="radio"] {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-.colorSwatch-3g4qA8 > .dropperIconButton-2shYII {
-	width: 69px;
-	margin: auto;
-}
-
-#app-mount .authedApp-1tw-eT {
-	background-color: var(--background-secondary);
-}
-
-#app-mount .emptyStateHeader-2qdbzr {
+#app-mount .emptyStateHeader_eb7b9f {
 	color: var(--header-primary);
 }
-#app-mount .emptyStateSubtext-1nMe5m {
+#app-mount .emptyStateSubtext__6dea4 {
 	color: var(--header-secondary);
-}
-#app-mount .emptyStateImage-2qGUMK {
-	background: url(https://discord.com/assets/131dcaaa628405e6d0ebee7708111c7a.svg);
-	opacity: .5;
 }
 
 #app-mount .codeRedemptionRedirect_bc7f36 {
@@ -2233,19 +2084,7 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 #app-mount .card__803af {
 	color: var(--header-primary);
 }
-#app-mount .splashArt__352a8 {
-	background-image: url(https://discord.com/assets/976b56da8d86af63aef4f55afb553a9f.png);
-}
-#app-mount .confirmTitle-3WHs3k {
-	color: var(--header-primary);
-}
-#app-mount .confirmBlurb-2gfQ_7 {
-	color: var(--header-secondary);
-}
 
-#app-mount .item-3eFBNF {
-	box-shadow: inset 0 -1px 0 0 var(--background-accent);
-}
 #app-mount .gemIndicatorContainer_b03ca0 {
 	background-color: var(--background-floating);
 }
@@ -2255,12 +2094,8 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 #app-mount .tierLabel__41356 {
 	color: var(--header-primary);
 }
-#app-mount .guildHeaderBackground-1G51bM {
-	background-image: url(https://discord.com/assets/d03d90cb6f12a7ea06274b278dfa4160.svg);
-	opacity: .75;
-}
-#app-mount .emptyGuilds-1cEt2M {
-	background-image: url(https://discord.com/assets/e500b2fe39bd0080b48e740d9d96e240.svg);
+#app-mount .guildHeaderBackground__04920 {
+	background-image: url(https://discord.com/assets/467602d632b5f9c1ce4b.svg);
 	opacity: .75;
 }
 
@@ -2273,19 +2108,19 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 #app-mount .progress__2cc1d {
 	background-color: var(--text-muted);
 }
-.icon-1fWS75[src="/assets/ebfb23f0cdb11b1871ed8beb3f9ec0ee.svg"],
-.icon-1fWS75[src="/assets/c28317e203e00b2d7390d5ece2399228.svg"] {
-	-webkit-mask: url(https://discord.com/assets/c28317e203e00b2d7390d5ece2399228.svg) center/contain no-repeat;
+.icon__596c8[src="/assets/6762ed8abdaef6a7f6fc.png"],
+.icon__596c8[src="/assets/5af9f85713084d6867a6.png"] {
+	-webkit-mask: url(https://discord.com/assets/6762ed8abdaef6a7f6fc.png) center/contain no-repeat;
 	background-color: var(--header-primary);
 	object-position: -999999px -999999px;
 }
-.icon-1fWS75[src="/assets/8c49c7d4a59675bb6ceaee1bb80b5803.png"],
-.icon-1fWS75[src="/assets/e8b66317ab0dc9ba3bf8d41a4f3ec914.png"] {
-	-webkit-mask: url(https://discord.com/assets/e8b66317ab0dc9ba3bf8d41a4f3ec914.png) center/contain no-repeat;
+.icon__596c8[src="/assets/ea67b1321e3d4154e476.png"],
+.icon__596c8[src="/assets/12c09c71eb271a47bcab.png"] {
+	-webkit-mask: url(https://discord.com/assets/ea67b1321e3d4154e476.png) center/contain no-repeat;
 	background-color: var(--header-primary);
 	object-position: -999999px -999999px;
 }
-#app-mount .userSettingsVoice-1_dzjw .previewOverlay-2reuWf {
+.cameraWrapper__1ee6d {
 	background-color: var(--background-secondary);
 	border-color: var(--background-tertiary);
 }
@@ -2302,9 +2137,6 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 }
 
 
-.overlayWarningIcon-B1Xv81 {
-	background: url(https://discord.com/assets/afc17a02f2ea7406b0ee518c28414f7c.svg) no-repeat;
-}
 #app-mount .game__19f4b {
 	box-shadow: var(--elevation-low);
 }
@@ -2320,7 +2152,7 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 #app-mount .overlayStatusText__61367 {
 	color: var(--text-muted);
 }
-#app-mount .overlayToggleIconOn-21NN2N .fill__80e66 {
+#app-mount .toggleIconOn_ca5bbe .fill__80e66 {
 	fill: var(--text-muted);
 }
 #app-mount .addGamePopout_e4ca8f {
@@ -2369,8 +2201,8 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 #app-mount .nowPlaying__353c3 .overlayStatusText__61367 {
 	color: var(--status-positive-text);
 }
-#app-mount .nowPlaying__353c3 .overlayToggleIconOff-ps4gGp .fill__80e66,
-#app-mount .nowPlaying__353c3 .overlayToggleIconOn-21NN2N .fill__80e66 {
+#app-mount .nowPlaying__353c3 .toggleIconOff_b79a58 .fill__80e66,
+#app-mount .nowPlaying__353c3 .toggleIconOn_ca5bbe .fill__80e66 {
 	fill: var(--status-positive-text);
 }
 #app-mount .notDetected__2a0c9 {
@@ -2381,17 +2213,6 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 }
 #app-mount .notDetected__2a0c9 .lastPlayed_accc56 {
 	color: var(--text-muted);
-}
-
-#app-mount .row-2ooh_3 {
-	box-shadow: inset 0 -1px 0 rgba(var(--textdarker),.3);
-}
-
-#app-mount .foreground-2hyALB {
-	background: var(--interactive-normal);
-}
-#app-mount .link-39xJu3:hover .foreground-2hyALB {
-	background: var(--interactive-active);
 }
 
 .bd-social-link[title="BD" i] .bd-social-logo,
@@ -2419,50 +2240,31 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 
 /* ~~~~		10.		GUILDSETTINGS					~~~~ */
 
-#app-mount .guildSettingsOverviewNotice-2VluqV {
+#app-mount .guildSettingsOverviewNotice__91aaa {
 	background-color: rgba(var(--backgroundtertiary),.95);
 }
-#app-mount .avatarUploader-2yeaMv .avatarUploaderInner-3SDRO_,
-#app-mount .avatarUploaderDisabled-310UAf .avatarUploaderInner-3SDRO_ {
-	box-shadow: 0 2px 10px 0 rgba(0,0,0,.2);
-}
-#app-mount .avatarUploader-2yeaMv .avatarUploaderInner-3SDRO_:hover {
-	box-shadow: 0 2px 10px 0 rgba(0,0,0,.2),inset 0 0 120px rgba(0,0,0,.6);
-}
-#app-mount .avatarUploaderDisabled-310UAf .avatarUploaderInner-3SDRO_:hover {
-	box-shadow: 0 2px 10px 0 rgba(0,0,0,.2);
-}
-#app-mount .divider-3wNib3 {
-	border-color: rgba(var(--textdarker),.3);
-}
-
-.addRoleIcon-3YjErH {
-	-webkit-mask: url(https://discord.com/assets/cef02719c12d8aaf38894c16dca7fbe6.svg);
-	background: var(--header-secondary);
-	object-position: -999999px -999999px;
-}
-#app-mount .dragged-S44x-A {
-	-webkit-mask: url(https://discord.com/assets/a8564dac0d728add0025be388f5ad7a2.svg) center/contain no-repeat;
+#app-mount .dragged__76dd2 {
+	-webkit-mask: url(https://discord.com/assets/038a865e09c25dc13e30.svg) center/contain no-repeat;
 	background: var(--background-tertiary);
 }
 .theme-light .messageContainer__18275 {
 	display: none;
 }
 
-#app-mount .emojiAliasInput-1y-NBz .emojiInput-1aLNse {
+#app-mount .emojiAliasInput_dd55f7 .emojiInput__4fe54 {
 	background-color: var(--deprecated-text-input-bg);
 	border: 1px solid var(--deprecated-text-input-border);
 }
-#app-mount .emojiAliasInput-1y-NBz .emojiInput-1aLNse:hover {
+#app-mount .emojiAliasInput_dd55f7 .emojiInput__4fe54:hover {
 	border-color: var(--deprecated-text-input-border-hover);
 }
-#app-mount .emojiAliasInput-1y-NBz .emojiInput-1aLNse:focus {
+#app-mount .emojiAliasInput_dd55f7 .emojiInput__4fe54:focus {
 	border-color: rgb(var(--accentcolor));
 }
-#app-mount .emojiAliasPlaceholder-3H_iZA {
+#app-mount .emojiAliasPlaceholder__71733 {
 	color: var(--header-primary);
 }
-#app-mount .emojiRow-zIc7ZX {
+#app-mount .emojiRow__4661c {
 	box-shadow: 0 1px 0 0 rgba(var(--textbrightest),.04);
 }
 
@@ -2473,7 +2275,7 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 #app-mount .auditLog__6c805 strong {
 	color: var(--header-primary);
 }
-#app-mount .auditLog__6c805:hover .expandForeground-1nZ4VR {
+#app-mount .auditLog__6c805:hover .expandForeground_c53c75 {
 	stroke: var(--header-primary);
 }
 #app-mount .headerClickable_c4d7a9,
@@ -2491,7 +2293,7 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 #app-mount .userHook_b1bf70 {
 	color: var(--header-primary);
 }
-#app-mount .expandForeground-1nZ4VR {
+#app-mount .expandForeground_c53c75 {
 	stroke: rgba(var(--textbrightest),.6);
 }
 #app-mount .timestamp__2f935 {
@@ -2499,12 +2301,6 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 }
 #app-mount .changeDetails_ecd760 {
 	background-color: rgba(var(--backgroundtertiary),.3);
-}
-#app-mount .auditLogMembersIconFg-2dfgB- {
-	fill: var(--header-primary);
-}
-#app-mount .selected-38kUfI .auditLogMembersIconFg-2dfgB- {
-	fill: #fff;
 }
 .themeOverrideLight__48338.icon__99140,
 .themeOverrideDark_e29cce.icon__99140,
@@ -2521,107 +2317,90 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 	background: var(--header-primary);
 }
 .icon__99140.applicationCommand__0aaef::before {
-	-webkit-mask: url(https://discord.com/assets/561a626f671b8fd8f0c2e85c97df9b04.svg);
+	-webkit-mask: url(https://discord.com/assets/295610bf2d3ec357b4bb.svg);
 }
 .icon__99140.autoModerationBlockMessage__473dc::before {
-	-webkit-mask: url(https://discord.com/assets/210ac667f45d13bc52020744f008b1ed.svg);
+	-webkit-mask: url(https://discord.com/assets/2cb2c7601c0b9a2a1ccd.svg);
 }
 .icon__99140.autoModerationRule__66a81::before {
-	-webkit-mask: url(https://discord.com/assets/210ac667f45d13bc52020744f008b1ed.svg);
+	-webkit-mask: url(https://discord.com/assets/2cb2c7601c0b9a2a1ccd.svg);
 }
 .icon__99140.targetAll__6358b::before {
-	-webkit-mask: url(https://discord.com/assets/22fd0ab3562af24ea964465bb65531aa.svg);
+	-webkit-mask: url(https://discord.com/assets/cda90da758440b5e2cbc.svg);
 }
 .icon__99140.targetBan__28b70::before {
-	-webkit-mask: url(https://discord.com/assets/fd541825b6853aaae233ad9d83e05a18.svg);
+	-webkit-mask: url(https://discord.com/assets/559f43e29d80d719b397.svg);
 }
 .icon__99140.targetChannel__62934::before {
-	-webkit-mask: url(https://discord.com/assets/528ae525a9823affbcd2a35bd20573b0.svg);
+	-webkit-mask: url(https://discord.com/assets/fd8bb90a4678f63f6a50.svg);
 }
 .icon__99140.targetEmoji__499cd::before {
-	-webkit-mask: url(https://discord.com/assets/858ab2bdee17ca226df85e23263bcf3a.svg);
+	-webkit-mask: url(https://discord.com/assets/b734b6798a8b89611ee7.svg);
 }
 .icon__99140.targetGuild__170a1::before {
-	-webkit-mask: url(https://discord.com/assets/448b698d906ab4d93b609282595a1c9d.svg);
+	-webkit-mask: url(https://discord.com/assets/30039d24e09f9ae53597.svg);
 }
 .icon__99140.targetGuildHome__8d852::before {
-	-webkit-mask: url(https://discord.com/assets/eeaa7c1199e8f4cdb46de98c9b924edf.svg);
+	-webkit-mask: url(https://discord.com/assets/bde25f93c922e02f8459.svg);
 }
 .icon__99140.targetGuildScheduledEvent_eefa31::before {
-	-webkit-mask: url(https://discord.com/assets/7093e58edcd5202a129a6e4fbf427c6d.svg);
+	-webkit-mask: url(https://discord.com/assets/119b4083c9d4fce05f2d.svg);
 }
 .icon__99140.targetIntegration_f4a496::before {
-	-webkit-mask: url(https://discord.com/assets/993b5f52b8bd8d1c1c34cac05015c331.svg);
+	-webkit-mask: url(https://discord.com/assets/a82903ac1478ed97b6d4.svg);
 }
 .icon__99140.targetInvite__46153::before {
-	-webkit-mask: url(https://discord.com/assets/d0dc8a4c8ea55b119c5c2cccf69b031f.svg);
+	-webkit-mask: url(https://discord.com/assets/5cc5c2e0ad18a7c383d8.svg);
 }
 .icon__99140.targetMember__27dad::before {
-	-webkit-mask: url(https://discord.com/assets/e2c0846875f889524e3d60e7d25afa55.svg);
+	-webkit-mask: url(https://discord.com/assets/c53abf7172caf6e94497.svg);
 }
 .icon__99140.targetMemberRole__7fd6d::before {
-	-webkit-mask: url(https://discord.com/assets/00124e254d0d86c37f6d02ec0c5b1e02.svg);
+	-webkit-mask: url(https://discord.com/assets/63a73b3d5daccfd7a8fc.svg);
 }
 .icon__99140.targetMessage__0ca53::before {
-	-webkit-mask: url(https://discord.com/assets/aa9f9c29b51e414f0476d4388031aaf4.svg);
+	-webkit-mask: url(https://discord.com/assets/f88edd51273b2e14999a.svg);
 }
 .icon__99140.targetPermission_a619b3::before {
-	-webkit-mask: url(https://discord.com/assets/35de2007bfe0db9821881321d8b7c1fe.svg);
+	-webkit-mask: url(https://discord.com/assets/93b984f7ed0c42796562.svg);
 }
 .icon__99140.targetRole_f0db36::before {
-	-webkit-mask: url(https://discord.com/assets/9aa6e9df74888ec09885bb08341800be.svg);
+	-webkit-mask: url(https://discord.com/assets/842d46ac28c4cc831849.svg);
 }
 .icon__99140.targetStageInstance_f9d669::before {
-	-webkit-mask: url(https://discord.com/assets/dfad85fc7c072498298077f68cf006ca.svg);
+	-webkit-mask: url(https://discord.com/assets/f39f5d92d79071dcd992.svg);
 }
 .icon__99140.targetSticker__18d72::before {
-	-webkit-mask: url(https://discord.com/assets/da5f0aa4b5ccf0165b4220ba9929ea59.svg);
+	-webkit-mask: url(https://discord.com/assets/0020113abbe97807c0be.svg);
 }
 .icon__99140.targetVanityUrl_d8b24a::before {
-	-webkit-mask: url(https://discord.com/assets/bef4eebd4f9e00aabbfa7de1949c8565.svg);
+	-webkit-mask: url(https://discord.com/assets/9ecac67adfc57255096c.svg);
 }
 .icon__99140.targetWebhook__5177a::before {
-	-webkit-mask: url(https://discord.com/assets/210ac667f45d13bc52020744f008b1ed.svg);
+	-webkit-mask: url(https://discord.com/assets/2cb2c7601c0b9a2a1ccd.svg);
 }
 .icon__99140.targetWidget_aaaf18::before {
-	-webkit-mask: url(https://discord.com/assets/03f717eddad9ac74a1900254625657cf.svg);
+	-webkit-mask: url(https://discord.com/assets/fb3b404502ba18187ace.svg);
 }
 .icon__99140.thread_a2b0da::before {
-	-webkit-mask: url(https://discord.com/assets/c254ffdde9bc5c90c5ec5d9e11dbf382.svg);
+	-webkit-mask: url(https://discord.com/assets/6960c3e51b7f0dcefcc0.svg);
 }
 
-#app-mount .rolePills-32B_DQ {
-	color: rgba(var(--textbrightest),.8);
-}
-#app-mount .footerImage-4UrEF0 {
-	background-image: url(https://discord.com/assets/36d0e0bb009fa362c2533003c0af67b5.svg);
-	opacity: .5;
-}
-
-#app-mount .card-1o0mns {
+#app-mount .card__39d1a {
 	border-color: var(--background-secondary-alt);
 }
-#app-mount .card-3IImnr {
+#app-mount .card__05cf8 {
 	border-color: var(--background-secondary-alt);
 }
 
-#app-mount .card-3_CqkU {
+#app-mount .card__81c50 {
 	box-shadow: var(--elevation-high);
 }
-.splashImage-352DQ1[src="/assets/7b6ed225050df29a07cb5db712d35a73.svg"],
-.splashImage-352DQ1[src="/assets/d03d90cb6f12a7ea06274b278dfa4160.svg"] {
-	background: url(https://discord.com/assets/d03d90cb6f12a7ea06274b278dfa4160.svg) center/cover no-repeat;
+.splashImage_bfd001[src="/assets/467602d632b5f9c1ce4b.svg"],
+.splashImage_bfd001[src="/assets/d4d9f2bff23beec65b1f.svg"] {
+	background: url(https://discord.com/assets/467602d632b5f9c1ce4b.svg) center/cover no-repeat;
 	opacity: .75;
 	object-position: -999999px -999999px;
-}
-#app-mount .avatarUploaderInnerSquare-2wsxgt {
-	background-image: url(https://discord.com/assets/d03d90cb6f12a7ea06274b278dfa4160.svg);
-	opacity: .5;
-}
-
-.exampleContainerLight-2cIJFB,
-.exampleContainerDark-yyX7sl {
-	background-image: url(https://discord.com/assets/579d8c1aa51bd06391c5ac19c654cb5e.png);
 }
 
 #app-mount .background__3dd67 {
@@ -2629,23 +2408,6 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 }
 #app-mount .tierInProgress_f08e8b {
 	background-color: var(--background-tertiary);
-}
-#app-mount .moreSubscribers_a13ebc {
-	background-color: var(--background-tertiary);
-	color: var(--header-primary)
-}
-#app-mount .subscriberCount__53026 {
-	color: var(--header-secondary);
-}
-#app-mount .subscriberCount__53026 strong {
-	color: var(--text-normal);
-}
-#app-mount .subscribersPopout__1da1e {
-	background: var(--background-floating);
-	box-shadow: 0 2px 10px 0 rgba(0,0,0,.2);
-}
-#app-mount .subscribersPopoutUser_a790de {
-	color: var(--header-secondary);
 }
 #app-mount .tierHeaderLocked__4d099 {
 	background-color: var(--background-tertiary);
@@ -2666,111 +2428,71 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 	box-shadow: 0 4px 8px rgba(0,0,0,.24);
 }
 
-.exampleContainer-2O-nVK,
-.exampleContainer-25sB-A {
-	background: transparent;
-	position: relative;
-}
-.exampleContainer-2O-nVK > *,
-.exampleContainer-25sB-A > * {
-	z-index: 1;
-}
-.exampleContainer-2O-nVK .exampleModal-1lRfuE,
-.exampleContainer-25sB-A .exampleModal-2X2Vf8 {
-	position: relative;
-	box-shadow: 2 0 0 1px rgba(var(--backgroundtertiary),.3), 0 2px 10px 0 rgba(0,0,0,.2);
-}
-.exampleContainer-2O-nVK::after,
-.exampleContainer-25sB-A::after {
-	content: "";
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: var(--background-tertiary);
-	-webkit-mask: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/common/discord_window_placeholder.svg) 0 0/cover no-repeat;
-}
-
-#app-mount .member-1q7VfX {
+#app-mount .member__55269 {
 	box-shadow: 0 1px 0 0 rgba(var(--textbrightest),.04);
 }
-#app-mount .member-1q7VfX .name-8yzEIY {
+#app-mount .member__55269 .name__7635a {
 	color: var(--header-primary);
 }
-#app-mount .member-1q7VfX .tag-1YGWN9 {
+#app-mount .member__55269 .tag__1a537 {
 	color: var(--text-muted);
 }
-#app-mount .member-1q7VfX .roleWrapper-1Hde_V {
+#app-mount .member__55269 .roleWrapper__0f174 {
 	color: rgba(var(--textbrightest),.8);
 }
-#app-mount .member-1q7VfX .overflowIconFg-QMRRFI {
+#app-mount .member__55269 .overflowIconFg__2b31c {
 	fill: var(--header-primary);
 }
-#app-mount .member-1q7VfX .ownerHelpIcon-3ItaBx {
+#app-mount .member__55269 .ownerHelpIcon__021a4 {
 	color: var(--header-primary);
 }
 
-#app-mount .to-9AOSH0 {
+#app-mount .to_d0a2ea {
 	background-color: var(--background-secondary);
 	box-shadow: 0 0 0 4px var(--background-secondary);
 }
-#app-mount .fromToWrapper-7A2MIP {
+#app-mount .fromToWrapper__2c6f3 {
 	background: transparent;
 }
-#app-mount .fromToWrapper-7A2MIP::before {
+#app-mount .fromToWrapper__2c6f3::before {
 	content: "";
 	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
-	-webkit-mask: url(https://discord.com/assets/7d74fde5c67e7d6dd17ebefedce42c74.svg) 50% 0 no-repeat;
+	-webkit-mask: url(https://discord.com/assets/a2e6c7df5d20d1aeaacb.svg) 50% 0 no-repeat;
 	background: var(--header-primary);
 }
 
-#app-mount .inviteSettingsInviteRow-1rZeIM {
+#app-mount .inviteSettingsInviteRow__0d747 {
 	box-shadow: 0 1px 0 0 rgba(var(--textbrightest),.04);
-}
-#app-mount .row-1oTw_K {
-	color: var(--header-primary);
-}
-#app-mount .row-1oTw_K::after {
-	background-color: rgba(var(--textbrightest),.04);
 }
 
-#app-mount .bannedUser-1IalTM {
+#app-mount .bannedUser__38b44 {
 	box-shadow: 0 1px 0 0 rgba(var(--textbrightest),.04);
 }
-#app-mount .bannedUser-1IalTM .username-1b3MVI {
+#app-mount .bannedUser__38b44 .username__7a2a6 {
 	color: var(--header-primary);
 }
-#app-mount .bannedUser-1IalTM .username-1b3MVI .discrim-oGb-FO,
-#app-mount .bannedUserModal-3RJCOV .reason-YbfGC6,
-#app-mount .bannedUserModal-3RJCOV .userDiscrim-1D2NlF {
-	color: var(--text-muted);
-}
-#app-mount .bannedUserModal-3RJCOV .reasonHeader-2etdjy {
+#app-mount .bannedUserModal_f9f9e4 .reasonHeader__5e7c3 {
 	color: var(--text-normal);
 }
 
 
 /* ~~~~		11.		MODALS							~~~~ */
 
-#app-mount .root_a28985,
+#app-mount .root_a28985:not(.noBackground_ebd8f7),
 #app-mount .modal__060da {
 	background-color: var(--background-primary);
 	border: none;
 	box-shadow: 0 0 0 1px rgba(var(--backgroundtertiary),.3), 0 2px 10px 0 rgba(0,0,0,.2);
 }
-#app-mount .rootWithShadow__073a7 {
+#app-mount .rootWithShadow__073a7:not(.noShadow__49254) {
 	box-shadow: 0 0 0 1px rgba(var(--backgroundtertiary),.3), 0 2px 10px 0 rgba(0,0,0,.2);
 }
 #app-mount .zoomedCarouselModalRoot__1e2da {
 	background: transparent !important;
-}
-#app-mount .separator-2lLxgC {
-	box-shadow: 0 1px 0 0 rgba(var(--backgroundtertiary),.3), 0 1px 2px 0 rgba(var(--backgroundtertiary),.3);
 }
 #app-mount .footer__89240,
 #app-mount .footer__09373 {
@@ -2781,58 +2503,43 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 	box-shadow: inset 0 1px 0 rgba(var(--backgroundsecondary),.6);
 }
 
-.header-1zd7se > .wrapper-1HSdhi:first-child {
-	flex: 1 0 auto;
-}
-
-#app-mount .modal-6GHvdM .tabBarContainer-sCZC4w {
+#app-mount .modal_6GHvdM .tabBarContainer__63f55 {
 	background: rgba(0,0,0,.2);
 	box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
 }
 
-#app-mount .separator-3TK_-B {
+#app-mount .content_ab56e9 + .videoContainer_a9d080 {
+	box-sizing: border-box;
+	height: 100%;
+}
+#app-mount .testimonialContainer__3e4a3 path[fill="#2B2D31"] {
+	fill: var(--background-secondary);
+}
+#app-mount .testimonialContainer__3e4a3 .quotes__35cf8 {
+	color: var(--header-secondary);
+}
+
+#app-mount .separator_ff09cd {
 	box-shadow: 0 1px 0 0 rgba(var(--backgroundfloating),.3), 0 1px 2px 0 rgba(var(--backgroundfloating),.3);
 }
-#app-mount .divider-3APUjw {
+#app-mount .divider__1464c {
 	border-color: var(--background-secondary);
 }
 
-#app-mount .subHeader-2z6h5Z {
+#app-mount .message__3ad07 {
 	color: var(--header-secondary);
 }
-#app-mount .sectionBody-7I2eAN,
-#app-mount .subHeader-1mr1LG {
-	color: var(--header-secondary);
-}
-
-#app-mount .message-1F58Gs {
-	color: var(--header-secondary);
-}
-#app-mount .secondaryButton-197mr8 {
+#app-mount .secondaryButton_e0812e {
 	color: var(--header-primary);
 }
-#app-mount .imageUpgrade-moI_hv {
-	background-image: url(https://discord.com/assets/81ded87ebac6f9d55e8624a3e5167c8f.svg);
-}
-#app-mount .imageCancel-2x4k_k {
-	background: url(https://discord.com/assets/03863b539aec443327ca2ffc51a89dac.svg);
-}
-#app-mount .imageUnclaimed-5nJyYs {
-	background-image: url(https://discord.com/assets/3b65c741e596bc0979f7ba0c42de6fff.svg);
-	opacity: .5;
-}
-#app-mount .imageUnverified-2NLnW6 {
-	background-image: url(https://discord.com/assets/e260177e5165e6789e30b9592df75424.svg);
-	opacity: .5;
-}
 
-#app-mount .divider-MRAL1L {
+#app-mount .divider__17151 {
 	border-color: var(--background-secondary);
 }
-#app-mount .backButtonColor-5k5ViL {
+#app-mount .backButtonColor_ceeab9 {
 	color: var(--header-primary);
 }
-#app-mount .checkboxLabel-NbUiJx {
+#app-mount .checkboxLabel__56eeb {
 	color: var(--header-secondary);
 }
 
@@ -2849,68 +2556,28 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 
 /* ----		11.2.	GUILDADD/CREATION				---- */
 
-.container-x8Y1ix {
+.container__73245 {
 	background-color: var(--background-secondary);
 	border: none;
 }
-.container-x8Y1ix:hover {
+.container__73245:hover {
 	background-color: var(--background-secondary-alt);
 	border: none;
 }
-.arrow-2yY1Tm {
-	-webkit-mask: url(https://discord.com/assets/69a0ea5dbf79a129c81a0cb171b60b7a.svg) center/cover no-repeat;
+.arrow__5e540 {
+	-webkit-mask: url(https://discord.com/assets/ebd4163d89c2d849ec54.svg) center/cover no-repeat;
 	background: var(--text-normal);
 	object-position: -999999px -999999px;
 }
 
-.input-m1-Y7Q {
+.input__0c269 {
 	background: transparent;
 }
-.inputInner-1Z3Tui {
+.inputInner__2e566 {
 	border: 1px solid var(--deprecated-text-input-border);
 }
 
-/* ----		11.3.	REGIONSELECTMODAL				---- */
-
-#app-mount .regionSelect-3lf4eE.regionSelectLoading-34I21m {
-	border: 1px solid var(--header-secondary);
-}
-#app-mount .regionSelect-3lf4eE button {
-	border: 1px solid var(--header-secondary);
-}
-#app-mount .regionSelect-3lf4eE .regionSelectInner-24f4Ce {
-	border: 1px solid var(--header-secondary);
-}
-#app-mount .regionSelectModal-12e-57 {
-	background: var(--background-primary) !important;
-}
-#app-mount .regionSelectModal-12e-57 .regionSelectModalFooter-20C5iA {
-	color: var(--text-muted);
-}
-#app-mount .regionSelectModal-12e-57 .regionSelectModalOption-2DSIZ3 {
-	background-color: var(--background-secondary);
-	border: 2px solid var(--background-secondary);
-}
-#app-mount .regionSelectModal-12e-57 .regionSelectModalOption-2DSIZ3:hover {
-	border-color: var(--background-tertiary);
-}
-#app-mount .regionSelectName-2-2FWh {
-	color: var(--text-muted);
-}
-#app-mount .regionSelectModal-12e-57 .regionSelectModalOption-2DSIZ3:hover .regionSelectName-2-2FWh {
-	color: var(--text-normal);
-}
-#app-mount .regionSelect-3lf4eE:hover button {
-	color: var(--header-primary);
-}
-#app-mount .container-1s4HBn.hover-2AGf5p {
-	border-color: var(--deprecated-text-input-border-hover);
-}
-#app-mount .flag-16iIBd.vip-3pFIN8::after {
-	border-color: var(--background-primary);
-}
-
-/* ----		11.4.	UPLOADMODAL						---- */
+/* ----		11.3.	UPLOADMODAL						---- */
 
 #app-mount .uploadModal_eae2a0 {
 	background-color: var(--background-primary);
@@ -2921,7 +2588,7 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 	box-shadow: inset 0 1px 0 rgba(var(--backgroundsecondary),.6);
 }
 
-/* ----		11.5.	KEYBOARDSHORTCUTSMODAL			---- */
+/* ----		11.4.	KEYBOARDSHORTCUTSMODAL			---- */
 
 #app-mount .keyboardShortcutsModal__74c71 {
 	background-color: var(--background-primary);
@@ -2938,42 +2605,22 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 	color: var(--header-secondary);
 }
 
-#app-mount .keybindShortcut-3zF1P9 {
+#app-mount .combo__57290 {
 	color: var(--header-primary);
 }
-#app-mount .keybindShortcut-3zF1P9 span {
+#app-mount .combo__57290 .key__06fe6 {
 	background-color: var(--text-muted);
-	border: 1px solid var(--background-tertiary);
-	box-shadow: inset 0 -4px 0 rgba(var(--backgroundtertiary),.6);
+	border: 1px solid rgba(0, 0, 0, .4);
+	box-shadow: inset 0 -4px 0 rgba(0, 0, 0, .4);
 	color: var(--header-primary);
 }
-#app-mount .keybindShortcut-3zF1P9 span .bindArrow-EmK4SC g {
-	fill: var(--header-primary);
-}
-#app-mount .keybindShortcut-3zF1P9 span:active {
-	box-shadow: inset 0 -2px 0 var(--background-tertiary);
-	border: 1px solid #000;
+#app-mount .combo__57290 .key__06fe6:active {
+	box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .6);
+	border: 1px solid rgb(0, 0, 0);
 	color: var(--header-secondary);
 }
-#app-mount .keybindShortcut-3zF1P9 span:active .bindArrow-EmK4SC g {
-	fill: var(--header-secondary);
-}
-#app-mount .keybindShortcutTipsSelect-2FpxFp:last-of-type::before {
-	background-color: var(--interactive-muted);
-}
-#app-mount .tabButton-1hJ4oW {
-	background-color: var(--text-muted);
-	border: 1px solid var(--background-tertiary);
-	border-radius: 4px;
-	box-shadow: inset 0 -4px 0 rgba(var(--backgroundtertiary),.6);
-	color: var(--header-primary);
-}
-#app-mount .tabButton-1hJ4oW rect[fill="#4F545C"],
-#app-mount .tabButton-1hJ4oW path[fill="#36393F"] {
-	display: none;
-}
 
-/* ----		11.6.	QUICKSWITCHER					---- */
+/* ----		11.5.	QUICKSWITCHER					---- */
 
 #app-mount .emptyState_afda24 {
 	background: transparent;
@@ -2985,102 +2632,70 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: url(https://discord.com/assets/0b298968e0a756e25677771fd6b58b34.svg) center/100px no-repeat;
+	background: url(https://discord.com/assets/c586aac99de98cfb010d.svg) center/100px no-repeat;
 	opacity: .5;
 }
 
-/* ----		11.7.	INVITEMODAL/GROUPCREATE			---- */
+/* ----		11.6.	INVITEMODAL/GROUPCREATE			---- */
 
 #app-mount .contentWrapper__85d37 {
 	background-color: var(--background-primary);
 }
 #app-mount .friendSelected_f0db37,
-#app-mount .inviteRow-3vmB7i:hover {
+#app-mount .inviteRow_a25947:hover {
 	background-color: var(--background-accent);
 	color: var(--header-primary);
 }
 #app-mount .friend__05c43,
-#app-mount .inviteRowName-3H4s_c {
+#app-mount .inviteRowName_bc8b23 {
 	color: var(--header-secondary);
 }
 #app-mount .footer__274e8,
-#app-mount .footer-1hTRRZ {
+#app-mount .footer__13977 {
 	background-color: var(--background-secondary);
 	box-shadow: inset 0 1px 0 rgba(var(--backgroundsecondary),.6);
 }
-.footerSeparator__010c9,
-#app-mount .content-3nJg0c::before {
+.footerSeparator__010c9 {
 	display: none;
 }
 #app-mount .subtitle__593cd,
 #app-mount .footerText_ae34c9,
-#app-mount .checkBoxLabel-16BK2g,
-#app-mount .footerText-2QLGHU,
-#app-mount .subText-1CcYgq {
+#app-mount .checkBoxLabel__29660,
+#app-mount .footerText__614f3,
+#app-mount .subText__9988c {
 	color: var(--header-secondary);
 }
 #app-mount .errorState_b806b1 {
 	color: var(--text-muted);
 }
 #app-mount .notFriends__778a1 .errorStateIcon__7edd8 {
-	background-image: url(https://discord.com/assets/4f86d7f58df32580164fc595377c0169.svg);
+	background-image: url(https://discord.com/assets/07aa1f325ebe8b8af5cb.svg);
 	opacity: .5;
 }
 #app-mount .noFriends_a7f7ca .errorStateIcon__7edd8 {
-	background-image: url(https://discord.com/assets/16bd6f7e8c2feedd7fa44d25013e687f.svg);
+	background-image: url(https://discord.com/assets/adfe130868d2bcf467b5.svg);
 	opacity: .5;
 }
 #app-mount .partyFull_c6b62b .errorStateIcon__7edd8 {
-	background-image: url(https://discord.com/assets/f690b8a9cd33cda18e431d4717fff5ab.svg);
+	background-image: url(https://discord.com/assets/53d74eda11a4185c1acd.svg);
 	opacity: .5;
 }
 #app-mount .noResults_c69767 .errorStateIcon__7edd8 {
-	background-image: url(https://discord.com/assets/1eed0d895df6e35f164d8ed5e84037d2.svg);
+	background-image: url(https://discord.com/assets/c8718df1382ba878f1fc.svg);
 	opacity: .5;
 }
 
-/* ----		11.8.	LOGINSCREEN						---- */
+/* ----		11.7.	LOGINSCREEN						---- */
 
-.theme-dark.authBox__7196a,
-.theme-light.authBox__7196a {
-	background: var(--background-mobile-primary);
-	color: var(--text-muted);
-}
-.theme-dark.authBox__7196a::before,
-.theme-light.authBox__7196a::before {
-	background-image: url(https://discord.com/assets/4f004ac9be168ac6ee18fc442a52ab53.svg);
-}
-.theme-dark.navRow-dG-XX8,
-.theme-light.navRow-dG-XX8 {
+.theme-dark.navRow_bb8efc,
+.theme-light.navRow_bb8efc {
 	background: var(--background-secondary);
 }
 .subText_b19200 strong {
 	color: rgba(var(--textbright),.9);
 }
-#app-mount .authBoxWithMobileBanner-cYSkMm {
-	background: var(--background-primary);
-	color: var(--text-muted);
-}
 
-/* ----		11.9.	TERMACCEPTMODAL					---- */
-
-#app-mount .modal-DRZfgq {
-	background-color: var(--background-primary);
-	box-shadow: 0 0 0 1px rgba(var(--backgroundtertiary),.3), 0 2px 10px 0 rgba(0,0,0,.2);
-}
-#app-mount .modal-DRZfgq [style*="/assets/a13cfdd7220132fff399a76c3ed64519.svg"],
-#app-mount .modal-DRZfgq [src*="/assets/a13cfdd7220132fff399a76c3ed64519.svg"] {
-	filter: brightness(85%) invert(100%);
-	opacity: .7;
-}
-#app-mount .ack-3sCuAV {
-	color: var(--header-secondary);
-}
-#app-mount .buttonContainer-28osRq {
-	background-color: var(--background-secondary);
-}
-
-/* ----		11.10.	DOWNLOADAPPMODAL				---- */
+/* ----		11.8.	DOWNLOADAPPMODAL				---- */
 
 .downloadApps__30ed7 {
 	background-color: var(--background-primary);
@@ -3110,98 +2725,27 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 	background-color: var(--header-secondary);
 }
 
-/* ----		11.11.	GUILDBOOSTMODAL						---- */
+/* ----		11.9.	GUILDBOOSTMODAL						---- */
 
-#app-mount .perksModal-CLcR1c {
-	background: var(--background-primary);
-}
-#app-mount .perksModal-CLcR1c::before {
-	content: "";
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background-color: var(--header-primary);
-	-webkit-mask: url(https://discord.com/assets/c486dc65ce2877eeb18e4c39bb49507a.svg) bottom/100% no-repeat;
-	pointer-events: none;
-}
-#app-mount .headerLogo-2M4f14 {
-	color: var(--header-primary);
-}
-#app-mount .tierHeaderLocked-3ItHYn {
-	background-color: var(--background-floating);
-	color: var(--text-muted);
-}
-#app-mount .tierLock-1uBqZ0 {
-	color: var(--interactive-muted);
-}
-#app-mount .tierBody-3ju-rc {
-	background-color: var(--background-tertiary);
-	border-color: var(--background-secondary);
-}
-
-#app-mount .barBackground-unEPDT {
-	background-color: var(--background-tertiary);
-}
-#app-mount .tierMarkerBackground-G8FoN4 {
-	background-color: var(--background-primary) !important;
-}
-#app-mount .tierMarkerInProgress-2Tdxjz {
-	background-color: var(--background-tertiary) !important;
-}
-#app-mount .currentTierIcon-2rq-bv {
+#app-mount .subscriberCount__53026 {
 	color: var(--header-secondary);
 }
-#app-mount .selectedTier-24Xj0k .tierMarkerLabelText-1wk8KK {
-	color: var(--header-primary);
+#app-mount .subscriberCount__53026 strong {
+	color: var(--text-normal);
 }
-#app-mount .ctaBar-Nhk8yY {
-	position: relative;
-	background-image: none;
+#app-mount .moreSubscribers_a13ebc {
+	background-color: var(--background-tertiary);
+	color: var(--header-primary)
 }
-#app-mount .ctaBar-Nhk8yY::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background-color: var(--text-normal);
-	-webkit-mask: url(https://discord.com/assets/94ff6fdc535b6ecb7b1bc54f2dd56a10.svg);
+#app-mount .subscribersPopout__1da1e {
+	background: var(--background-floating);
+	box-shadow: 0 2px 10px 0 rgba(0,0,0,.2);
 }
-#app-mount .giftIcon-2kmx1K {
+#app-mount .subscribersPopoutUser_a790de {
 	color: var(--header-secondary);
 }
-#app-mount .button_afdfd9 .giftIcon-2kmx1K {
-	color: currentColor;
-}
-#app-mount .badgeIconWithoutSubscribers-1hjTfX {
-	color: var(--text-muted);
-}
-#app-mount .tierPill-1yRO48 {
-	background-color: var(--background-primary);
-	color: var(--header-primary);
-}
-#app-mount .tierPillStar-34rvoJ {
-	color: var(--header-primary);
-}
-#app-mount .tierPillGem-3zcO2T {
-	color: var(--interactive-muted);
-}
-#app-mount .tierPill-3gJ0eN {
-	background-color: var(--background-primary);
-	color: var(--header-primary);
-}
-#app-mount .perk-19D_HN {
-	background-color: var(--background-secondary);
-}
 
-#app-mount .tierMarkerAccomplished-1SkbEJ .currentTierIcon-2rq-bv {
-	color: #fff;
-}
-
-/* ----		11.12.	REACTIONSMODAL					---- */
+/* ----		11.10.	REACTIONSMODAL					---- */
 
 #app-mount .container_dc03c3,
 #app-mount .reactors__20ab0 {
@@ -3233,71 +2777,69 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 	color: var(--text-muted);
 }
 
-/* ----		11.13.	RATEMODAL						---- */
+/* ----		11.11.	CHANGELOG						---- */
 
-#app-mount .header-sJd8D7 {
-	color: var(--header-primary);
-}
-
-/* ----		11.14.	CHANGELOG						---- */
-
-#app-mount .date-1k6kG2 {
+#app-mount .date__21306 {
 	color: var(--header-secondary);
 }
-#app-mount .content-s2SEQO ol,
-#app-mount .content-s2SEQO p,
-#app-mount .content-s2SEQO ul li {
+#app-mount .content_dc3a33 ol,
+#app-mount .content_dc3a33 p,
+#app-mount .content_dc3a33 ul li,
+#app-mount .content__96073 ol,
+#app-mount .content__96073 p,
+#app-mount .content__96073 ul li {
 	color: var(--header-secondary);
 }
-#app-mount .content-s2SEQO ul li::before {
+#app-mount .content_dc3a33 ul li::before,
+#app-mount .content__96073 ul li::before {
 	background-color: var(--text-normal);
 }
-#app-mount .video-1FESK- {
+#app-mount .video__562f3 {
 	box-shadow: 0 2px 10px 0 rgba(0,0,0,.2);
 }
-#app-mount .socialLink-3n2n25 {
+#app-mount .socialLink_f11d71 {
 	color: var(--interactive-normal);
 }
-#app-mount .socialLink-3n2n25:hover {
+#app-mount .socialLink_f11d71:hover {
 	color: var(--interactive-hover);
 }
-#app-mount .socialLink-3n2n25:active {
+#app-mount .socialLink_f11d71:active {
 	color: var(--interactive-active);
 }
 
-/* ----		11.15.	NOTIFICATIONSMODAL				---- */
+/* ----		11.12.	NOTIFICATIONSMODAL				---- */
 
-#app-mount .channelName-IPB6B3 {
+#app-mount .channelName_a1ccf5 {
 	color: var(--header-primary);
 }
-#app-mount .guildName-1kreI8,
-#app-mount .override-1sK4r0,
-#app-mount .overrideHighlight-3f-yyO {
+#app-mount .guildName_b9dc9e,
+#app-mount .override_f2098b,
+#app-mount .overrideHighlight__6a2f1 {
 	color: var(--header-secondary);
 }
-#app-mount .override-1sK4r0:hover {
+#app-mount .override_f2098b:hover {
 	background-color: rgba(var(--backgroundtertiary),.1);
 }
-#app-mount .overrideHighlight-3f-yyO,
-#app-mount .overrideHighlight-3f-yyO:hover {
+#app-mount .overrideHighlight__6a2f1,
+#app-mount .overrideHighlight__6a2f1:hover {
 	background-color: rgba(var(--backgroundtertiary),.3);
 }
-#app-mount .checkboxContainer-1NbL2v::before {
+#app-mount .checkboxContainer__5a761::before {
 	background-color: rgba(var(--backgroundtertiary),.6);
 }
-#app-mount .overridePlaceholder-1nDEsX {
+#app-mount .overridePlaceholder__46353 {
 	border: 1px dashed var(--background-floating);
 }
 
-/* ----		11.16.	PAYMENTMODAL					---- */
+/* ----		11.13.	PAYMENTMODAL					---- */
 
 #app-mount .sectionHeader_a9d2bb {
 	color: var(--header-secondary);
 }
 
-#app-mount .paypalInput-2to8vl,
-#app-mount .paypalInput-2to8vl:focus,
-#app-mount .paypalInput-2to8vl:hover {
+#app-mount .paypalInput__447d1,
+#app-mount .paypalInput__447d1:focus,
+#app-mount .paypalInput__447d1:hover {
 	border-color: var(--deprecated-text-input-border);
 }
 
@@ -3360,27 +2902,7 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 	color: var(--header-secondary);
 }
 
-#app-mount .authenticationRequiredImage-2E6TQE {
-	background-image: url(https://discord.com/assets/8923d313e1704c4bc45025fc8463affd.svg);
-	opacity: .5;
-}
-#app-mount .authenticationSuccessImage-tBBeV0 {
-	background-image: url(https://discord.com/assets/0c840f9cc846705b725bd89aec58f994.svg);
-	opacity: .5;
-}
-#app-mount .authenticationFailImage-3DXXvB {
-	background-image: url(https://discord.com/assets/42c81194eaf9128b942adc5d2a6fd66e.svg);
-	opacity: .5;
-}
-
-/* ----		11.17.	CHANNELCREATIONMODAL			---- */
-
-#app-mount .cloneInfo-1J6F5H strong,
-#app-mount .subtitle-3Lv1uG {
-	color: var(--header-secondary);
-}
-
-/* ----		11.18.	CLOUDSYNCRESOLUTION				---- */
+/* ----		11.14.	CLOUDSYNCRESOLUTION				---- */
 
 #app-mount .modal__659a5 {
 	color: var(--text-normal);
@@ -3395,18 +2917,6 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 #app-mount .title__57dff {
 	color: var(--text-normal);
 }
-#app-mount .conflictUploadArt_c68c28 {
-	background-image: url(https://discord.com/assets/9fefebe24085efe085629513732efd08.svg);
-	opacity: .5;
-}
-#app-mount .conflictDownloadArt__87c31 {
-	background-image: url(https://discord.com/assets/ec92991091f67ad3984517478f7a16e4.svg);
-	opacity: .5;
-}
-#app-mount .errorArt__7d1bf {
-	background-image: url(https://discord.com/assets/5ad409a997b726652a95dba012336127.svg);
-	opacity: .5;
-}
 #app-mount .buttonBody__02854 {
 	color: var(--header-primary);
 }
@@ -3414,50 +2924,31 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 	background-color: rgba(var(--textdarkest),.6);
 }
 
-/* ----		11.19.	APPLICATIONINSTALLATIONMODAL	---- */
+/* ----		11.15.	APPLICATIONINSTALLATIONMODAL	---- */
 
-#app-mount .gameName-2emMU_ {
+#app-mount .gameName__29f6a {
 	color: var(--text-normal);
 }
-#app-mount .installSize-3az1nt {
+#app-mount .installSize__2829a {
 	background-color: var(--background-accent);
 	color: var(--header-primary);
 }
-#app-mount .divider-2L-ojc {
+#app-mount .divider_f17d46 {
 	background-color: rgba(var(--backgroundsecondary),.6);
 }
-#app-mount .premiumTerms-2Xoh9K {
+#app-mount .premiumTerms__2aebc {
 	color: var(--text-normal);
 }
 
-/* ----		11.20.	SPECIALMARKDOWNMODAL			---- */
+/* ----		11.16.	DISPATCHERROR					---- */
 
-#app-mount .modal-1-Gg9c {
-	background-color: var(--background-primary);
-}
-#app-mount .content-1tc9sG ul li::before {
-	background-color: var(--text-normal);
-}
-
-/* ----		11.21.	REPORTPROBLEM					---- */
-
-#app-mount .art-_juKdZ {
-	background-image: url(https://discordapp.oom/assets/2ceb472e89545af8543aa44b072b910d.svg);
-	opacity: .5;
-}
-#app-mount .description-AZsW3X {
-	color: var(--header-primary);
-}
-
-/* ----		11.22.	DISPATCHERROR					---- */
-
-#app-mount .body-1Y7X6A {
+#app-mount .body__23640 {
 	color: var(--text-normal);
 }
-#app-mount .errorLabel-1DizPW {
+#app-mount .errorLabel__8d7c1 {
 	color: var(--header-secondary);
 }
-#app-mount .errorDetails-3_kds7 {
+#app-mount .errorDetails__73313 {
 	background: var(--background-secondary);
 	border-color: rgba(var(--backgroundsecondary),.3);
 	color: var(--header-primary);
@@ -3466,35 +2957,19 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 	color: var(--header-primary);
 }
 
-/* ----		11.23.	HYPESQUADQUIZ					---- */
+/* ----		11.17.	HYPESQUADQUIZ					---- */
 
-#app-mount .prompt-SAnibq {
+#app-mount .prompt__7ad7f {
 	color: var(--header-primary);
 }
-#app-mount .selectYourAnswer-MqT8vm {
+#app-mount .selectYourAnswer__5e180 {
 	color: var(--channels-default);
 }
-#app-mount .separator-3Yurpx {
+#app-mount .separator__1f4c3 {
 	background-color: var(--background-accent);
 }
 
-/* ----		11.24.	NITROFEATUREMODAL				---- */
-
-#app-mount .cardImageBackground-1zqQ8d {
-	background: #000;
-	opacity: 0.5;
-}
-#app-mount .cardInfo-62VDSb {
-	background: var(--background-floating);
-}
-
-/* ----		11.25.	DIRECTORYMODAL					---- */
-
-#app-mount .directoryModal-YJsOMv {
-	background: var(--background-primary);
-}
-
-/* ----		11.26.	SERVERAPPMODAL					---- */
+/* ----		11.18.	SERVERAPPMODAL					---- */
 
 #app-mount .directoryContainer_d3edd9 {
 	background: var(--background-primary);
@@ -3545,16 +3020,13 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 	border-color: transparent var(--background-tertiary) transparent transparent;
 }
 
-.role__631a3[style*="border-color: rgba(185, 187, 190, .6)"],
-.role-2mCo-N[style*="border-color: rgba(185, 187, 190, .6)"] {
+.role__631a3[style*="border-color: rgba(185, 187, 190, .6)"] {
 	border-color: rgba(var(--textbrighter), .6) !important;
 }
-.role__631a3 .roleCircle-1EgnFN[style*="background-color: rgb(185, 187, 190)"],
-.role-2mCo-N .roleCircle-1ER2zO[style*="background-color: rgb(185, 187, 190)"] {
+.role__631a3 .roleCircle_bae511[style*="background-color: rgb(185, 187, 190)"] {
 	background-color: rgb(var(--textbrighter)) !important;
 }
-.role__631a3 .roleCircle-1EgnFN[style*="background-color: rgb(185, 187, 190)"] path[fill],
-.role-2mCo-N .roleCircle-1ER2zO[style*="background-color: rgb(185, 187, 190)"] path[fill] {
+.role__631a3 .roleCircle_bae511[style*="background-color: rgb(185, 187, 190)"] path[fill] {
 	fill: rgb(var(--textdarkest)) !important;
 }
 
@@ -3567,16 +3039,12 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 .categoryItemDefaultCategory__67fe7:first-child + .categoryItemDefaultCategory__67fe7 {
 	margin-bottom: 8px;
 }
-#app-mount .sadImage_e4e5ab {
-	background-image: url(https://discord.com/assets/e25713e4eba8c1e069ceac8f90262f62.svg);
-	opacity: .5;
-}
 #app-mount .imageLoading__37d01 {
 	background: var(--background-tertiary);
 	border-radius: 10px;
 }
 .premiumPromoClose__11b8f {
-	-webkit-mask: url(https://discord.com/assets/f815a774c2b98d3109293a4e2afb733c.svg) 50% 50% no-repeat;
+	-webkit-mask: url(https://discord.com/assets/411dfecce0d7da63ea2b.svg) 50% 50% no-repeat;
 	background: var(--interactive-normal);
 }
 .premiumPromoClose__11b8f:hover {
@@ -3602,7 +3070,7 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 	background: rgba(var(--textdarkest),.6);
 }
 #app-mount .endContainer__0c909::after {
-	background-image: url(https://discord.com/assets/be5f088125f778701a7e4fad471a45da.svg);
+	background-image: url(https://discord.com/assets/6836d88af9197cbd4cbb.svg);
 	opacity: .5;
 }
 #app-mount .endText__2c9a4 {
@@ -3626,9 +3094,6 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 }
 #app-mount .backButton__6a1f0:active {
 	color: var(--interactive-active);
-}
-#app-mount .content-1CboaJ::after {
-	background: rgba(var(--backgroundaccent),.3);
 }
 
 /* ----		12.3.	SEARCHPOPOUT					---- */
@@ -3673,7 +3138,7 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	-webkit-mask: url(https://discord.com/assets/7619529e87dad31fd2ae83d9b9583e49.svg) center/6px 12px no-repeat;
+	-webkit-mask: url(https://discord.com/assets/f03e2d8e19438cceaad7.svg) center/6px 12px no-repeat;
 	background-color: rgb(var(--textbrightest));
 }
 #app-mount .calendarPicker__5c474 .react-datepicker__navigation--previous {
@@ -3688,7 +3153,7 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 }
 #app-mount .calendarPicker__5c474 .react-datepicker__navigation.react-datepicker__navigation--next,
 #app-mount .calendarPicker__5c474 .react-datepicker__navigation.react-datepicker__navigation--previous {
-	-webkit-mask: url(https://discord.com/assets/7619529e87dad31fd2ae83d9b9583e49.svg) 50%/6px 12px no-repeat;
+	-webkit-mask: url(https://discord.com/assets/f03e2d8e19438cceaad7.svg) 50%/6px 12px no-repeat;
 	background: var(--interactive-normal);
 	border-color: var(--background-floating);
 }
@@ -3734,39 +3199,20 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 
 /* ----		12.4.	EVERYONEMENTION					---- */
 
-#app-mount .everyonePopout-nEbJY3 {
-	background-color: var(--background-primary);
-	box-shadow: 0 2px 10px 0 rgba(0,0,0,.2), 0 0 0 1px rgba(var(--backgroundtertiary),.6);
+.contentWarningPopout__7d8c2 .animation__14012 {
+	opacity: 0.6;
 }
-#app-mount .header-3_S6dz {
-	color: var(--header-primary);
-}
-#app-mount .body-2iXqIL {
-	color: var(--header-secondary);
-}
-#app-mount .body-2iXqIL .animation-3GofIz {
-	opacity: .5;
-}
-#app-mount .buttonHint-2OxJB8 {
-	color: var(--text-muted);
-}
-#app-mount .buttonHint-2OxJB8 strong {
-	color: var(--header-secondary);
-}
-#app-mount .footer-2aTx0s {
+#app-mount .footer__36118 {
 	background-color: rgba(var(--backgroundtertiary),.4);
 	color: var(--text-muted);
-}
-#app-mount .footer-2aTx0s strong {
-	color: var(--header-secondary);
 }
 
 /* ----		12.5.	CHANNELFOLLOW					---- */
 
-#app-mount .header-13P3fr {
+#app-mount .header__4ef99 {
 	background: var(--background-tertiary);
 }
-#app-mount .header-13P3fr::before {
+#app-mount .header__4ef99::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -3774,44 +3220,44 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 	bottom: 0;
 	left: 0;
 	background: var(--header-primary);
-	-webkit-mask: url(https://discord.com/assets/cb89c31c79a62ae99ec12351c1efb277.svg) center/cover no-repeat;
+	-webkit-mask: url(https://discord.com/assets/e9661fbf5e8e3a2e1ac9.svg) center/cover no-repeat;
 }
 
 /* ----		12.6.	CHANNELFOLLOWINFO				---- */
 
-#app-mount .guildPopout-G6M0fK {
+#app-mount .guildPopout_ea4d8c {
 	background-color: var(--background-tertiary);
 	box-shadow: 0 2px 10px 0 rgba(0,0,0,.2), 0 0 0 1px rgba(var(--backgroundtertiary),.6);
 }
-#app-mount .guildName-31Kpwt {
+#app-mount .guildName__2cc2d {
 	color: var(--header-primary);
 }
-#app-mount .dotOffline-19zUSS {
+#app-mount .dotOffline__1bff9 {
 	background-color: var(--header-secondary);
 }
-#app-mount .placeholderSkeleton-2EfCME {
+#app-mount .placeholderSkeleton__7f9ab {
 	background: var(--text-muted);
 }
 
 /* ----		12.7.	STREAMPREVIEW					---- */
 
-#app-mount .streamPreview-3qoMP4 {
+#app-mount .streamPreview__1846c {
 	background-color: var(--background-tertiary);
 }
-#app-mount .previewContainer-21fFBz {
+#app-mount .previewContainer_bb1924 {
 	background-color: var(--background-secondary-alt);
 }
-#app-mount .applicationName-16TISz {
+#app-mount .applicationName__47890 {
 	color: var(--header-primary);
 }
-#app-mount .watchButton-2v6cPT {
+#app-mount .watchButton__0d283 {
 	border-color: var(--text-muted);
 	color: var(--header-primary);
 }
-#app-mount .watchButton-2v6cPT:not([disabled]):hover {
+#app-mount .watchButton__0d283:not([disabled]):hover {
 	border-color: var(--header-primary);
 }
-#app-mount .previewHover-MxPmU1 {
+#app-mount .previewHover__1e0e0 {
 	background: rgba(0,0,0,.6);
 }
 
@@ -3851,14 +3297,14 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 #app-mount .selectableItem__166c5:hover {
 	background-color: var(--background-accent);
 }
-#app-mount .popoutList-10IFAa {
+#app-mount .popoutList_db80c1 {
 	background: var(--background-primary);
 }
-#app-mount .popoutListEmpty-3MWXtE {
+#app-mount .popoutListEmpty_b9719c {
 	color: var(--header-primary);
 }
 #app-mount .quickSelectArrow__9853b {
-	-webkit-mask: url(https://discord.com/assets/f58cf3b8fc79e9d671ab649ab37651a9.svg) 50% no-repeat;
+	-webkit-mask: url(https://discord.com/assets/c4643b70509c385fcc83.svg) 50% no-repeat;
 	background: var(--interactive-normal);
 }
 #app-mount .quickSelectPopout_c0cf80 {
@@ -3872,11 +3318,7 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 /* ----		12.11.	RTCSTATUSPOPOUT					---- */
 
 #app-mount .container__0810b {
-	width: 260px;
-}
-#app-mount .container__0810b .header-2C89wJ {
-	background-color: var(--background-secondary);
-	color: var(--header-primary);
+	width: 290px;
 }
 #app-mount .container__0810b canvas {
 	background-color: #36393f;
@@ -3896,7 +3338,7 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 	color: var(--header-secondary);
 }
 #app-mount .krispLogo__461a0 {
-	-webkit-mask: url(https://discord.com/assets/c28317e203e00b2d7390d5ece2399228.svg) center/contain no-repeat;
+	-webkit-mask: url(https://discord.com/assets/ea67b1321e3d4154e476.svg) center/contain no-repeat;
 	background-color: var(--header-primary);
 }
 
@@ -3906,14 +3348,14 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 	background-color: var(--background-accent);
 	color: var(--header-primary);
 }
-#app-mount .phoneFieldPopout-h7c9mt .countryName-3dA1Xv {
+#app-mount .phoneFieldPopout__3e064 .countryName_eb9b14 {
 	color: var(--header-secondary);
 }
-#app-mount .phoneFieldPopout-h7c9mt .countryCode__7befd {
+#app-mount .phoneFieldPopout__3e064 .countryCode__14e5a {
 	color: var(--header-primary);
 }
 #app-mount .activityInviteEducationArrow_a24987 {
-	-webkit-mask: url(https://discord.com/assets/ba018cf9baa19824316dc4c2beb080a4.svg) center/contain no-repeat;
+	-webkit-mask: url(https://discord.com/assets/6f222b93b4b971e68613.svg) center/contain no-repeat;
 	background: var(--header-primary);
 }
 
@@ -3925,7 +3367,7 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 }
 
 #app-mount .verification__82f71 .image__54a8d {
-	background-image: url(https://discord.com/assets/c290235278e128e94ae5ac37e58c5cbb.svg);
+	background-image: url(https://discord.com/assets/8f8162ee689b2d85996c.svg);
 	opacity: .5;
 }
 #app-mount .verification__82f71 .title__31b19 {
@@ -3942,11 +3384,11 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 	background-color: var(--background-tertiary);
 }
 #app-mount .verificationBlock_c45d0e .image__54a8d.email__44f2f {
-	background-image: url(https://discord.com/assets/cefc9c14adce616059f519c581331b32.svg);
+	background-image: url(https://discord.com/assets/9e9722bd5c8ec20fd746.svg);
 	opacity: .5;
 }
 #app-mount .verificationBlock_c45d0e .image__54a8d.phone__0b460 {
-	background-image: url(https://discord.com/assets/ca452f5271ebcc7132db59f60a2a9cfe.svg);
+	background-image: url(https://discord.com/assets/e9802d8cbd4efea22c7f.svg);
 	opacity: .5;
 }
 #app-mount .verificationBlock_c45d0e .body_cb675e {
@@ -3968,17 +3410,17 @@ img[src='/assets/58957d928db6fb9d4658eb882f33d7bc.svg'] {
 
 /* ----		12.14.	ADDROLE							---- */
 
-#app-mount .container-1YVRxo {
+#app-mount .container_e84cda {
 	width: 300px;
 }
-#app-mount .autocompleteArrow-2CRgr2,
-#app-mount .header-PfVfAO {
+#app-mount .autocompleteArrow__353a5,
+#app-mount .header__02652 {
 	background-color: var(--background-tertiary);
 }
-#app-mount .container-1YVRxo .input-2Zg2X0 {
+#app-mount .container_e84cda .input_e396c0 {
 	color: var(--header-primary);
 }
-#app-mount .container-1YVRxo .sectionTag-euh3ZW {
+#app-mount .container_e84cda .sectionTag_b0df68 {
 	background-color: var(--background-secondary);
 	color: var(--header-secondary);
 }
@@ -4487,4 +3929,42 @@ html:only-child > head + body > div#app-mount.appMount_fae9dd > div.typeWindows_
 
 html:only-child > head + body div.app_b1f720 > div.app_de4237 > div.layers__1c917.layers_a23c37 > div.layer__2efaa.baseLayer__8fda3 + div.layer__2efaa > div.standardSidebarView__1129a > div.sidebarRegion__60457 > div.sidebarRegionScroller__1fa7e.thin_b1c063.scrollerBase_dc3aa9.fade_ba0fa0 > nav.sidebar__9e3e2 > div.side_b4b3f6 > div.info__755e1 {
 	position: relative !important;
+}
+html:only-child > head + body div.app_b1f720 > div.app_de4237 > div.layers__1c917.layers_a23c37 > div.layer__2efaa.baseLayer__8fda3 + div.layer__2efaa > div.standardSidebarView__1129a > div.sidebarRegion__60457 > div.sidebarRegionScroller__1fa7e.thin_b1c063.scrollerBase_dc3aa9.fade_ba0fa0 > nav.sidebar__9e3e2 > div.side_b4b3f6 > div.info__755e1::after {
+	content: "DiscordRecolor by" !important;
+	font-size: 12px !important;
+	color: var(--text-muted) !important;
+	cursor: pointer !important;
+	display: inline !important;
+	opacity: 1 !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	cursor: text !important;
+	visibility: visible !important;
+	position: relative !important;
+	top: unset !important;
+	left: unset !important;
+	bottom: unset !important;
+	right: unset !important;
+	transform: unset !important;
+	animation: unset !important;
+}
+html:only-child > head + body div.app_b1f720 > div.app_de4237 > div.layers__1c917.layers_a23c37 > div.layer__2efaa.baseLayer__8fda3 + div.layer__2efaa > div.standardSidebarView__1129a > div.sidebarRegion__60457 > div.sidebarRegionScroller__1fa7e.thin_b1c063.scrollerBase_dc3aa9.fade_ba0fa0 > nav.sidebar__9e3e2 > div.side_b4b3f6 > div.info__755e1::before {
+	content: "DevilBro" !important;
+	font-size: 12px !important;
+	font-weight: 600 !important;
+	color: rgb(var(--accentcolor)) !important;
+	display: inline !important;
+	opacity: 1 !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	cursor: pointer !important;
+	visibility: visible !important;
+	position: absolute !important;
+	top: unset !important;
+	left: 108px !important;
+	bottom: 8px !important;
+	right: unset !important;
+	transform: unset !important;
+	animation: unset !important;
 }
