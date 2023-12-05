@@ -1,7 +1,7 @@
 image=~/Pictures/Wallpapers/tokyonight/topo2_small.png
 clock
 ignore-empty-password
-font=JetBrainsMono NF
+font=SpaceMono Nerd Font
 indicator
 indicator-radius=140
 indicator-thickness=10
