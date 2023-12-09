@@ -70,9 +70,8 @@ return {
 			return {
 				sources = {
 					builtin.formatting.stylua,
-					builtin.formatting.prettier,
 					builtin.formatting.beautysh,
-					-- builtin.diagnostics.pylint,
+					builtin.formatting.prettier,
 				},
 			}
 		end,

@@ -7,6 +7,7 @@
   "clock#date": {
     "format": "<span color=\"#7aa2f7\"> </span>{:%d/%m/%Y}",
     "tooltip-format": "<tt>{calendar}</tt>",
+    "interval": 360,
     "calendar": {
       "mode": "month",
       "mode-mon-col": 4,
@@ -21,14 +22,13 @@
         "today": "<span color='#f7768e'><b><u>{}</u></b></span>"
       }
     },
-    "interval": 360
   },
   "battery": {
     "bat": "BAT0",
     "interval": 60,
     "states": {
-      "warning": 30,
-      "critical": 15
+      "warning": 40,
+      "critical": 20
     },
     "format": "{icon} {capacity}%",
     "format-icons": [
@@ -42,18 +42,18 @@
   },
   "cpu": {
     "format": "<span color=\"#7aa2f7\"> </span>{usage}%",
-    "interval": 5
+    "interval": 4
   },
   "memory": {
     "format": "<span color=\"#7aa2f7\"> </span>{used}GiB",
-    "interval": 5
+    "interval": 4
   },
   "temperature": {
     "hwmon-path": "/sys/class/hwmon/hwmon4/temp1_input",
     "critical-threshold": 80,
     "format": "<span color=\"#7aa2f7\"> </span>{temperatureC}°C",
     "format-critical": "<span color=\"#f7768e\"> </span>{temperatureC}°C",
-    "interval": 5
+    "interval": 4
   },
   "wireplumber": {
     "scroll-step": 5, // %, can be a float

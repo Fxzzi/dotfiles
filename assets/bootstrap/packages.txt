@@ -6,6 +6,11 @@ fd
 foot
 fzf
 grim
+gvfs
+thunar
+thunar-archive-plugin
+tumbler
+ffmpegthumbnailer
 hyprland
 jq
 macchina
@@ -24,10 +29,10 @@ pipewire-pulse
 qt6ct
 ripgrep
 slurp
-swaybg
+hyprpaper
 swayidle
 swaylock-effects-git
-ttf-jetbrains-mono-nerd
+ttf-space-mono-nerd
 waybar
 wl-clipboard
 wlogout
@@ -35,3 +40,4 @@ wofi
 wireplumber
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
+gnome-keyring
