@@ -1,10 +1,6 @@
 *.bak
-.config/hypr/coords
 .config/Thunar/accels.scm
-.config/Thunar/renamerrc
 .config/ncmpcpp/error.log
 .config/zsh/.zgenom
 .config/nvim/lazy-lock.json
 .config/nvim/lua/.luarc.json
-.local/share/fonts/.uuid
-Wallpapers/fav

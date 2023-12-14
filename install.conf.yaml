@@ -12,28 +12,28 @@
 
 - link:
     ~/.config/hypr: .config/hypr
-    ~/.config/bottom: .config/bottom
-    ~/.config/waybar: .config/waybar
-    ~/.config/dunst: .config/dunst
-    ~/.config/foot: .config/foot
-    ~/.config/wofi: .config/wofi
-    ~/.config/wlogout: .config/wlogout
-    ~/.config/Thunar: .config/Thunar
-    ~/.config/zsh: .config/zsh
-    ~/.config/paru: .config/paru
-    ~/.config/ncmpcpp: .config/ncmpcpp
-    ~/.config/mpd: .config/mpd
-    ~/.config/macchina: .config/macchina
-    ~/.config/nvim: .config/nvim
-    ~/.config/qt6ct: .config/qt6ct
-    ~/.config/pacman: .config/pacman
-    ~/.config/swaylock: .config/swaylock
-    ~/.config/swayidle: .config/swayidle
-    ~/.local/scripts: .local/scripts
-    ~/.local/share/fonts: .local/share/fonts
+    ~/.config/bottom:             .config/bottom
+    ~/.config/waybar:             .config/waybar
+    ~/.config/dunst:              .config/dunst
+    ~/.config/foot:               .config/foot
+    ~/.config/wofi:               .config/wofi
+    ~/.config/wlogout:            .config/wlogout
+    ~/.config/Thunar:             .config/Thunar
+    ~/.config/zsh:                .config/zsh
+    ~/.zshenv:                    .config/zsh/.zshenv
+    ~/.config/paru:               .config/paru
+    ~/.config/ncmpcpp:            .config/ncmpcpp
+    ~/.config/mpd:                .config/mpd
+    ~/.config/macchina:           .config/macchina
+    ~/.config/nvim:               .config/nvim
+    ~/.config/qt6ct:              .config/qt6ct
+    ~/.config/pacman:             .config/pacman
+    ~/.config/swaylock:           .config/swaylock
+    ~/.config/swayidle:           .config/swayidle
+    ~/.local/scripts:             .local/scripts
+    ~/.local/share/fonts:         .local/share/fonts
     ~/.local/share/icons/default: .local/share/icons/default
-    ~/Pictures/Wallpapers: Wallpapers
-    ~/.zshenv: .zshenv
+    ~/Pictures/Wallpapers:        Wallpapers
 
 - create:
     - ~/.local/state/zsh
@@ -45,4 +45,7 @@
     - [chsh -s $(which zsh), Making zsh the default shell...]
     - [assets/bootstrap/paru.sh, Installing paru...]
     - [assets/bootstrap/packages.sh, Installing packages...]
-    - ["wget -cO- https://github.com/phisch/phinger-cursors/releases/latest/download/phinger-cursors-variants.tar.bz2 | tar xfj - -C ~/.local/share/icons", installing cursor pack...]
+    - [
+        "wget -cO- https://github.com/phisch/phinger-cursors/releases/latest/download/phinger-cursors-variants.tar.bz2 | tar xfj - -C ~/.local/share/icons",
+        installing cursor pack...,
+      ]
