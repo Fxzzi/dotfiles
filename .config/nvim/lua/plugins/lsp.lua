@@ -69,9 +69,12 @@ return {
 			local builtin = nls.builtins
 			return {
 				sources = {
+					builtin.formatting.prettierd,
 					builtin.formatting.stylua,
 					builtin.formatting.beautysh,
-					builtin.formatting.prettier,
+					builtin.diagnostics.pylint,
+					builtin.diagnostics.stylelint,
+					builtin.code_actions.shellcheck,
 				},
 			}
 		end,

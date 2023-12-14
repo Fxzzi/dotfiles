@@ -1,45 +1,45 @@
 * {
-  font-family: SpaceMono Nerd Font, feather;
-  font-weight: 500;
-  font-size: 13pt;
-  color: #c0caf5;
+	font-family: SpaceMono Nerd Font, feather;
+	font-weight: 500;
+	font-size: 13pt;
+	color: #c0caf5;
 }
 
 /* Set background color of main waybar window */
 window#waybar {
-  background: rgba(26, 27, 38, 0.75);
+	background: rgba(26, 27, 38, 0.75);
 }
 
 /* Set background color of tooltips */
 tooltip {
-  background: #1e1e2e;
+	background: #1e1e2e;
 }
 
 /* Set workspace text color and padding */
 #workspaces button {
-  padding: 2px;
+	padding: 2px;
 }
 
 /* Sets active workspace to have a solid line on the bottom */
 #workspaces button.active {
-  border-bottom: 3px solid #7aa2f7;
-  border-radius: 0;
-  margin-top: 3px;
-  transition: all 0.3s ease-in-out;
+	border-bottom: 3px solid #7aa2f7;
+	border-radius: 0;
+	margin-top: 3px;
+	transition: all 0.3s ease-in-out;
 }
 
 /* More workspace stuff for highlighting on hover */
 #workspaces button.focused {
-  color: #a6adc8;
+	color: #a6adc8;
 }
 
 #workspaces button.urgent {
-  color: #f7768e;
+	color: #f7768e;
 }
 
 #workspaces button:hover {
-  background: #11111b;
-  color: #cdd6f4;
+	background: #11111b;
+	color: #cdd6f4;
 }
 
 /* Sets background, padding, margins, and borders for (all) modules */
@@ -52,41 +52,39 @@ tooltip {
 #wireplumber,
 #tray,
 #battery {
-  background: rgba(26, 27, 38, 1);
-  padding: 0 10px;
-  border: 0;
+	background: rgba(26, 27, 38, 1);
+	padding: 0 10px;
+	border: 0;
 }
 
 #workspaces {
-  margin-right: -8px;
+	margin-right: -8px;
 }
 
 /* Hide window module when not focused on window or empty workspace */
 window#waybar.empty #window {
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
-  background-color: transparent;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	background-color: transparent;
 }
 
 /* Set up rounding to make these modules look like separate pills */
 #tray {
-  border-radius: 8px;
-  margin-right: 4px;
+	border-radius: 8px;
+	margin-right: 4px;
 }
 
 #window {
-  border-radius: 8px;
+	border-radius: 8px;
 }
 
 /* Rounding only on left of module */
 #temperature {
-  border-radius: 8px 0 0 8px;
+	border-radius: 8px 0 0 8px;
 }
 
 /* Rounding only on right of module(s) */
 #battery {
-  border-radius: 0 8px 8px 0;
+	border-radius: 0 8px 8px 0;
 }
-
-
