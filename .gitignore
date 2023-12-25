@@ -1,5 +1,6 @@
 *.bak
 .config/Thunar/accels.scm
+.config/Thunar/renamerrc
 .config/ncmpcpp/error.log
 .config/zsh/.zgenom
 .config/nvim/lazy-lock.json
