@@ -35,7 +35,7 @@ swaylock-effects-git
 ttf-space-mono-nerd
 waybar
 wl-clipboard
-wlogout
+wleave-git
 wofi
 wireplumber
 xdg-desktop-portal-gtk

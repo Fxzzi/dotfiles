@@ -12,35 +12,35 @@
 
 - link:
     ~/.config/hypr: .config/hypr
-    ~/.config/bottom:             .config/bottom
-    ~/.config/waybar:             .config/waybar
-    ~/.config/dunst:              .config/dunst
-    ~/.config/foot:               .config/foot
-    ~/.config/wofi:               .config/wofi
-    ~/.config/wlogout:            .config/wlogout
-    ~/.config/Thunar:             .config/Thunar
-    ~/.config/zsh:                .config/zsh
-    ~/.zshenv:                    .config/zsh/.zshenv
-    ~/.config/paru:               .config/paru
-    ~/.config/ncmpcpp:            .config/ncmpcpp
-    ~/.config/mpd:                .config/mpd
-    ~/.config/macchina:           .config/macchina
-    ~/.config/nvim:               .config/nvim
-    ~/.config/qt6ct:              .config/qt6ct
-    ~/.config/pacman:             .config/pacman
-    ~/.config/swaylock:           .config/swaylock
-    ~/.config/swayidle:           .config/swayidle
-    ~/.local/scripts:             .local/scripts
-    ~/.local/share/fonts:         .local/share/fonts
+    ~/.config/bottom: .config/bottom
+    ~/.config/waybar: .config/waybar
+    ~/.config/dunst: .config/dunst
+    ~/.config/foot: .config/foot
+    ~/.config/wofi: .config/wofi
+    ~/.config/wleave: .config/wleave
+    ~/.config/Thunar: .config/Thunar
+    ~/.config/zsh: .config/zsh
+    ~/.zshenv: .config/zsh/.zshenv
+    ~/.config/paru: .config/paru
+    ~/.config/ncmpcpp: .config/ncmpcpp
+    ~/.config/mpd: .config/mpd
+    ~/.config/macchina: .config/macchina
+    ~/.config/nvim: .config/nvim
+    ~/.config/qt6ct: .config/qt6ct
+    ~/.config/pacman: .config/pacman
+    ~/.config/swaylock: .config/swaylock
+    ~/.config/swayidle: .config/swayidle
+    ~/.local/scripts: .local/scripts
+    ~/.local/share/fonts: .local/share/fonts
     ~/.local/share/icons/default: .local/share/icons/default
-    ~/Pictures/Wallpapers:        Wallpapers
+    ~/Pictures/Wallpapers: Wallpapers
 
 - create:
     - ~/.local/state/zsh
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules...]
-    - [sudo pacman -S zsh, Installing zsh...]
+    - [sudo pacman -S --noconfirm zsh ccache, Installing zsh and ccache...]
     - [assets/bootstrap/zgenom.sh, Installing zgenom...]
     - [chsh -s $(which zsh), Making zsh the default shell...]
     - [assets/bootstrap/paru.sh, Installing paru...]

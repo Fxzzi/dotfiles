@@ -1,5 +1,5 @@
+// Modules configuration
 {
-  // Modules configuration
   "clock#time": {
     "format": "<span color=\"#7aa2f7\"> </span>{:%H:%M:%S}",
     "interval": 1
@@ -21,7 +21,7 @@
         "weekdays": "<span color='#ff9e64'><b>{}</b></span>",
         "today": "<span color='#f7768e'><b><u>{}</u></b></span>"
       }
-    },
+    }
   },
   "battery": {
     "bat": "BAT0",
@@ -63,7 +63,7 @@
     "on-click": "pavucontrol"
   },
   "hyprland/window": {
-    "max-length": 96
+    "max-length": 64
   },
   "tray": {
     "icon-size": 22,

@@ -13,6 +13,7 @@ window#waybar {
 /* Set background color of tooltips */
 tooltip {
 	background: #1e1e2e;
+	border-radius: 5%;
 }
 
 /* Set workspace text color and padding */
