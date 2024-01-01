@@ -33,19 +33,15 @@
     ~/.local/scripts: .local/scripts
     ~/.local/share/fonts: .local/share/fonts
     ~/.local/share/icons/default: .local/share/icons/default
+    ~/.local/share/icons/Simp1e-Dark: .local/share/icons/Simp1e-Dark
     ~/Pictures/Wallpapers: Wallpapers
 
 - create:
     - ~/.local/state/zsh
 
 - shell:
-    - [git submodule update --init --recursive, Installing submodules...]
-    - [sudo pacman -S --noconfirm zsh ccache, Installing zsh and ccache...]
-    - [assets/bootstrap/zgenom.sh, Installing zgenom...]
-    - [chsh -s $(which zsh), Making zsh the default shell...]
+    - [git submodule update --init --recursive, Updating submodules...]
     - [assets/bootstrap/paru.sh, Installing paru...]
     - [assets/bootstrap/packages.sh, Installing packages...]
-    - [
-        "wget -cO- https://github.com/phisch/phinger-cursors/releases/latest/download/phinger-cursors-variants.tar.bz2 | tar xfj - -C ~/.local/share/icons",
-        installing cursor pack...,
-      ]
+    - [chsh -s $(which zsh), Making zsh the default shell...]
+    - [assets/bootstrap/zgenom.sh, Installing zgenom...]

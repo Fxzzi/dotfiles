@@ -32,6 +32,7 @@ slurp
 hyprpaper
 swayidle
 swaylock-effects-git
+xcursor-simp1e-tokyo-night
 ttf-space-mono-nerd
 waybar
 wl-clipboard
