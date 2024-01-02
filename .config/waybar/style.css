@@ -5,18 +5,17 @@
 	color: #c0caf5;
 }
 
-/* Set background color of main waybar window */
+/* main waybar */
 window#waybar {
 	background: rgba(26, 27, 38, 0.75);
 }
 
-/* Set background color of tooltips */
+/* when hovering over modules */
 tooltip {
 	background: #1e1e2e;
 	border-radius: 5%;
 }
 
-/* Set workspace text color and padding */
 #workspaces button {
 	padding: 2px;
 }
@@ -26,7 +25,7 @@ tooltip {
 	border-bottom: 3px solid #7aa2f7;
 	border-radius: 0;
 	margin-top: 3px;
-	transition: all 0.3s ease-in-out;
+	transition: all 0.5s ease-in-out;
 }
 
 /* More workspace stuff for highlighting on hover */
@@ -80,12 +79,12 @@ window#waybar.empty #window {
 	border-radius: 8px;
 }
 
-/* Rounding only on left of module */
+/* close right side of bar */
 #temperature {
 	border-radius: 8px 0 0 8px;
 }
 
-/* Rounding only on right of module(s) */
+/* close left side of bar */
 #battery {
 	border-radius: 0 8px 8px 0;
 }

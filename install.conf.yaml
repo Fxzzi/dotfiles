@@ -33,7 +33,6 @@
     ~/.local/scripts: .local/scripts
     ~/.local/share/fonts: .local/share/fonts
     ~/.local/share/icons/default: .local/share/icons/default
-    ~/.local/share/icons/Simp1e-Dark: .local/share/icons/Simp1e-Dark
     ~/Pictures/Wallpapers: Wallpapers
 
 - create:
