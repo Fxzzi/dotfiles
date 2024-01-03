@@ -29,7 +29,7 @@ pipewire-pulse
 qt6ct
 ripgrep
 slurp
-hyprpaper
+wbg
 swayidle
 swaylock-effects-git
 xcursor-simp1e-tokyo-night

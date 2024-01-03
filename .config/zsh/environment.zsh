@@ -7,7 +7,7 @@ export XDG_DATA_HOME="${HOME}/.local/share"       # User data files
 export XDG_STATE_HOME="${HOME}/.local/state"      # User state files
 
 # Set other tool and configuration paths to clean up ~
-export CARGO_HOME="$XDG_DATA_HOME"/cargo          # Rust's Cargo package manager
+export CARGO_HOME="$XDG_DATA_HOME"/cargo          # Cargo package manager
 export GNUPGHOME="$XDG_DATA_HOME"/gnupg           # GNU Privacy Guard home
 export _JAVA_OPTIONS="-Djava.util.prefs.userRoot="${XDG_CONFIG_HOME}"/java \
                       -Dawt.useSystemAAFontSettings=gasp" # Java preferences
