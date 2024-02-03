@@ -3,7 +3,7 @@ bottom
 dunst
 eza
 fd
-foot
+foot-transparency-git
 fzf
 grim
 gvfs
