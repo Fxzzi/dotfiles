@@ -1,13 +1,13 @@
 * {
 	font-family: SpaceMono Nerd Font, feather;
-	font-weight: 500;
-	font-size: 13pt;
+	font-weight: 600;
+	font-size: 13.5pt;
 	color: #c0caf5;
 }
 
 /* main waybar */
 window#waybar {
-	background: rgba(26, 27, 38, 0.75);
+	background: rgba(26, 27, 38, 0);
 }
 
 /* when hovering over modules */
@@ -52,7 +52,7 @@ tooltip {
 #wireplumber,
 #tray,
 #battery {
-	background: rgba(26, 27, 38, 1);
+	background: rgba(26, 27, 38, 0.4);
 	padding: 0 10px;
 	border: 0;
 }
@@ -71,20 +71,20 @@ window#waybar.empty #window {
 
 /* Set up rounding to make these modules look like separate pills */
 #tray {
-	border-radius: 8px;
+	border-radius: 12px;
 	margin-right: 4px;
 }
 
 #window {
-	border-radius: 8px;
+	border-radius: 12px;
 }
 
 /* close right side of bar */
 #temperature {
-	border-radius: 8px 0 0 8px;
+	border-radius: 12px 0 0 12px;
 }
 
 /* close left side of bar */
 #battery {
-	border-radius: 0 8px 8px 0;
+	border-radius: 0 12px 12px 0;
 }

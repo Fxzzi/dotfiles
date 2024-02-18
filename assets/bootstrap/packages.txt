@@ -32,7 +32,7 @@ slurp
 wbg
 swayidle
 swaylock-effects-git
-xcursor-simp1e-tokyo-night
+xcursor-simp1e-tokyo-night-light
 ttf-space-mono-nerd
 waybar
 wl-clipboard
