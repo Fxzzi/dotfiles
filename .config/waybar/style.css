@@ -58,7 +58,7 @@ tooltip {
 }
 
 #workspaces {
-	margin-right: -8px;
+	padding-right: 0px;
 }
 
 /* Hide window module when not focused on window or empty workspace */
