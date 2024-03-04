@@ -3,7 +3,7 @@
 # Function to send brightness change notification
 notification() {
     # Get current brightness level
-    brightness="$(xbacklight -get)"
+		brightness="$(round "$(xbacklight -get)")"
     # Send notification about the brightness change
     dunstify -a "brightness" -u low -r "9999" -t 2000 -h int:value:"$brightness" -i "notification-display-brightness" "Brightness" "${brightness}%"
 }
@@ -17,6 +17,16 @@ show_help() {
     echo "  down: Decrease brightness by the specified increment value."
     echo "  increment_value: Positive increment value to change by."
     echo "Example: brightness.sh up 10"
+}
+
+round() {
+    num=$1
+    remainder=$((num % 5))
+    if [ $remainder -lt 3 ]; then
+        echo $((num - remainder))
+    else
+        echo $((num + 5 - remainder))
+    fi
 }
 
 # Main script logic
