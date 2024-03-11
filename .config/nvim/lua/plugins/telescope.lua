@@ -4,17 +4,17 @@ return {
 		cmd = "Telescope",
 		branch = "0.1.x",
 		config = function()
-			require('telescope').load_extension('fzf')
-			require('telescope').setup {
+			require("telescope").load_extension("fzf")
+			require("telescope").setup({
 				defaults = {
 					mappings = {
 						i = {
-							['<C-u>'] = false,
-							['<C-d>'] = false,
+							["<C-u>"] = false,
+							["<C-d>"] = false,
 						},
 					},
 				},
-			}
+			})
 		end,
 		dependencies = {
 			"nvim-lua/plenary.nvim",

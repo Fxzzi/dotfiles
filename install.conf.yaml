@@ -29,7 +29,6 @@
     ~/.config/qt6ct: .config/qt6ct
     ~/.config/pacman: .config/pacman
     ~/.config/swaylock: .config/swaylock
-    ~/.config/swayidle: .config/swayidle
     ~/.local/scripts: .local/scripts
     ~/.local/share/fonts: .local/share/fonts
     ~/.local/share/icons/default: .local/share/icons/default
@@ -40,7 +39,7 @@
 
 - shell:
     - [git submodule update --init --recursive, Updating submodules...]
-    - [assets/bootstrap/paru.sh, Installing paru...]
-    - [assets/bootstrap/packages.sh, Installing packages...]
+    - [./assets/bootstrap/paru.sh, Installing paru...]
+    - [./assets/bootstrap/packages.sh, Installing packages...]
     - [chsh -s $(which zsh), Making zsh the default shell...]
-    - [assets/bootstrap/zgenom.sh, Installing zgenom...]
+    - [./assets/bootstrap/zgenom.sh, Installing zgenom...]

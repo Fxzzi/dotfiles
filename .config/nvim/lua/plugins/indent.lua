@@ -1,15 +1,4 @@
 return {
-	--[[ 	{
-		"lukas-reineke/indent-blankline.nvim",
-		version = "2.*",
-		event = { "BufReadPost", "BufNewFile" },
-		opts = {
-			char = "│",
-			filetype_exclude = { "help", "alpha", "dashboard", "neo-tree", "Trouble", "lazy", "mason" },
-			show_trailing_blankline_indent = false,
-			show_current_context = false,
-		},
-	}, ]]
 	{
 		"lukas-reineke/indent-blankline.nvim",
 		event = { "BufReadPost", "BufNewFile" },
@@ -28,7 +17,7 @@ return {
 	},
 	{
 		"echasnovski/mini.indentscope",
-    enabled = "false",
+		enabled = "false",
 		event = { "BufReadPre", "BufNewFile" },
 		opts = {
 			-- symbol = "▏",

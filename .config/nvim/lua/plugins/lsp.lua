@@ -69,12 +69,11 @@ return {
 			local builtin = nls.builtins
 			return {
 				sources = {
-					builtin.formatting.prettierd,
+					builtin.formatting.prettier,
 					builtin.formatting.stylua,
-					builtin.formatting.beautysh,
 					builtin.diagnostics.pylint,
 					builtin.diagnostics.stylelint,
-					builtin.code_actions.shellcheck,
+					builtin.formatting.shfmt,
 				},
 			}
 		end,
@@ -83,7 +82,6 @@ return {
 	{
 		"folke/trouble.nvim",
 		dependencies = {
-			-- 'nvim-tree/nvim-web-devicons',
 			"neovim/nvim-lspconfig",
 		},
 		cmd = { "Trouble", "TroubleToggle" },
