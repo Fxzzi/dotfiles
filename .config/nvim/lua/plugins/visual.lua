@@ -38,10 +38,16 @@ return {
 		"folke/tokyonight.nvim",
 		lazy = false, -- make sure we load this during startup if it is your main colorscheme
 		priority = 1000, -- make sure to load this before all the other start plugins
-		config = function()
-			-- load the colorscheme here
-			vim.cmd([[colorscheme tokyonight-night]])
-		end,
+		-- config = function()
+		-- 	-- load the colorscheme here
+		-- 	vim.cmd([[colorscheme tokyonight]])
+		-- end,
+		opts = {
+			style = "night",
+			on_colors = function(colors)
+				colors.bg = "#1a1b26"
+			end
+		}
 	},
 	{
 		-- Adds git releated signs to the gutter, as well as utilities for managing changes
