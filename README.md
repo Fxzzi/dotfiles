@@ -9,7 +9,7 @@
 
 - **Distribution:** [arch btw](https://archlinux.org/)
 - **Compositor:** [Hyprland](https://github.com/hyprwm/Hyprland)
-- **Terminal Emulator:** [foot](https://codeberg.org/dnkl/foot)
+- **Terminal Emulator:** [foot-transparency](https://codeberg.org/fazzi/foot)
 - **Status Bar:** [waybar](https://github.com/Alexays/Waybar/)
 - **App Launcher:** [wofi](https://hg.sr.ht/~scoopta/wofi)
 - **Notification Daemon:** [dunst](https://github.com/dunst-project/dunst)
