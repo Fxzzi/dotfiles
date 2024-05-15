@@ -24,9 +24,9 @@ tooltip {
 
 /* Sets active workspace to have a solid line on the bottom */
 #workspaces button.active {
-  border-bottom: 3px solid #7aa2f7;
+  border-bottom: 2px solid #7aa2f7;
   border-radius: 0;
-  margin-top: 3px;
+  margin-top: 2px;
   transition: all 0.5s ease-in-out;
 }
 
@@ -57,7 +57,6 @@ tooltip {
   background: rgba(26, 27, 38, 0.6);
   padding: 0 10px;
   border: 0;
-	/* margin-top: 4px; */
 }
 
 #workspaces {

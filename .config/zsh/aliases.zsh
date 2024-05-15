@@ -1,12 +1,12 @@
 #!/usr/bin/env zsh
 
 # Basic aliases
-alias rm='rm -rIv'   # Recursive, interactive, and verbose `rm`
-alias cp='cp -rv'   # Recursive and verbose `cp`
-alias mv='mv -v'    # Verbose `mv`
-alias mkdir='mkdir -vp'  # Recursive, verbose `mkdir`
-alias grep='rg'     # Use `ripgrep` instead of `grep`
-alias cat='bat'     # Use `bat` instead of `cat`
+# alias rm='rm -rIv'   # Recursive, interactive, and verbose `rm`
+# alias cp='cp -rv'   # Recursive and verbose `cp`
+# alias mv='mv -v'    # Verbose `mv`
+# alias mkdir='mkdir -p'  # recursive mkdir
+alias grep='rg' # use ripgrep
+alias cat='bat'
 
 # `eza` aliases for more informative and colored output
 alias la='eza --icons -a --group-directories-first'  # List all files and directories, including hidden ones
@@ -29,6 +29,6 @@ alias gp='git push'
 # Misc aliases
 alias updates='checkupdates; paru -Qum'  # Check system and AUR updates
 alias rs='curl --data-binary @- https://paste.rs | wl-copy'  # Share output to a pastebin and copy to clipboard
-alias vim='nvim' # Editor
-alias vi='nvim'
+alias vim='$EDITOR'
+alias vi='$EDITOR'
 alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"

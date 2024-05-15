@@ -1,10 +1,10 @@
 #window {
   margin: 0px;
-  border: 2px solid #414868;
+  border: 2px solid #7aa2f7;
   border-radius: 8px;
   background-color: rgba(21, 22, 30, 0.5);
   font-family: SpaceMono Nerd Font;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 #input {
@@ -18,13 +18,13 @@
 }
 
 #inner-box {
-  margin: 5px;
+  margin: 4px;
   border: none;
   background-color: rgba(21, 22, 30, 0.0);
 }
 
 #outer-box {
-  margin: 5px;
+  margin: 4px;
   border: none;
   background-color: rgba(21, 22, 30, 0.5);
 }
@@ -35,7 +35,7 @@
 }
 
 #text {
-  margin: 5px;
+  margin: 4px;
   border: none;
   color: #c0caf5;
 } 
