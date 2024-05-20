@@ -38,4 +38,15 @@
 	<patterns>*</patterns>
 	<directories/>
 </action>
+<action>
+	<icon>utilities-terminal_su</icon>
+	<name>Edit as root</name>
+	<submenu></submenu>
+	<unique-id>1716201472079277-1</unique-id>
+	<command>foot sudoedit %f</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<text-files/>
+</action>
 </actions>
