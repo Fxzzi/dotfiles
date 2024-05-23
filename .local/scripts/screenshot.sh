@@ -23,7 +23,7 @@ show_usage() {
 
 case $1 in
     --monitor)
-        grim -t png -l 1 -o eDP-1 "$path"
+        grim -t png -l 1 -o DP-2 "$path"
         ;;
     --selection)
         grim -t png -l 1 -g "$(slurp)" "$path"

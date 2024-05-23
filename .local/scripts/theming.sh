@@ -7,7 +7,7 @@ gsettings set org.gnome.desktop.interface icon-theme Papirus-Dark
 # Set the default font and size
 gsettings set org.gnome.desktop.interface font-name 'Noto Sans 12'
 # Set the cursor theme and size
-gsettings set org.gnome.desktop.interface cursor-theme Simp1e-Tokyo-Night-Light
+gsettings set org.gnome.desktop.interface cursor-theme Simp1e-Tokyo-Night
 gsettings set org.gnome.desktop.interface cursor-size 24
 # Set font antialiasing
 gsettings set org.gnome.desktop.interface font-antialiasing rgba
