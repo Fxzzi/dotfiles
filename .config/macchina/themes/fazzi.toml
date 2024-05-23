@@ -16,8 +16,8 @@ x = 0
 y = 0
 
 [custom_ascii]
-path = "~/.config/macchina/ascii/arch"
-color = "Blue"
+path = "~/.config/macchina/ascii/cat"
+color = "Gray"
 
 [keys]
 kernel = " kr"
@@ -31,5 +31,5 @@ host = " hs"
 
 [palette]
 type = "Light"
-visible = true
+visible = false
 glyph = "󰊠 "
