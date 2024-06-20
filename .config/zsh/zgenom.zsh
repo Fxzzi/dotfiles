@@ -15,7 +15,7 @@ if ! zgenom saved; then
   zgenom load zdharma-continuum/fast-syntax-highlighting
   # Enable useful zsh-users plugins
   zgenom load zsh-users/zsh-autosuggestions
-  zgenom load zsh-users/zsh-history-substring-search
+  zgenom load dxrcy/zsh-history-substring-search
   zgenom load --completion zsh-users/zsh-completions
 
   # generate the init script from plugins above
