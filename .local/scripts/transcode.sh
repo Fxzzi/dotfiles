@@ -18,6 +18,7 @@ fi
 # Execute ffmpeg command with or without scaling filter based on output resolution
 if [ -n "$output_resolution" ]; then
     ffmpeg -y \
+				-v quiet -stats \
         -threads 11 \
         -hwaccel cuda \
         -hwaccel_output_format cuda \
@@ -25,16 +26,17 @@ if [ -n "$output_resolution" ]; then
         -vf "scale_cuda=$output_resolution" \
         -c:a copy \
         -c:v h264_nvenc \
-        -cq:v 30 \
+        -cq:v 28 \
         "${input_file%.*}-scaled.mp4"
 else
     ffmpeg -y \
         -threads 11 \
+				-v quiet -stats \
         -hwaccel cuda \
         -hwaccel_output_format cuda \
         -i "$input_file" \
         -c:a copy \
         -c:v h264_nvenc \
-        -cq:v 30 \
+        -cq:v 28 \
         "${input_file%.*}-scaled.mp4"
 fi

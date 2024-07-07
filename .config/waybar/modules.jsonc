@@ -5,7 +5,7 @@
     "interval": 1
   },
   "clock#date": {
-    "format": "<span color=\"#7aa2f7\"> </span>{:%d/%m/%Y}",
+    "format": "<span color=\"#7aa2f7\"> </span>{:%a %d/%m}",
     "tooltip-format": "<tt>{calendar}</tt>",
     "interval": 360,
     "calendar": {
