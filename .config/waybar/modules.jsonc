@@ -61,6 +61,7 @@
     "format-muted": "<span color=\"#f7768e\"> </span>Muted",
     "format-icons": ["", "", ""],
     "on-click": "pavucontrol",
+		"interval": 4,
   },
   "hyprland/window": {
     "max-length": 64,

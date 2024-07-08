@@ -49,10 +49,10 @@ physical_cores = true
 show = [
   "Host",
   "Distribution",
-  # "Shell",
+  "Shell",
   "Packages",
   "Memory",
-  # "Terminal",
+  "Terminal",
 ]
 
 #show = [
