@@ -9,7 +9,7 @@
 
 /* main waybar */
 window#waybar {
-  background: rgba(26, 27, 38, 0);
+  background: rgba(26, 27, 38, 0.8);
 }
 
 /* when hovering over modules */
@@ -54,7 +54,7 @@ tooltip {
 #wireplumber,
 #tray,
 #battery {
-  background: rgba(26, 27, 38, 0.85);
+  background: rgba(26, 27, 38, 0);
   padding: 0 10px;
   border: 0;
 }
