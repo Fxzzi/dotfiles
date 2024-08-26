@@ -30,14 +30,14 @@ pipewire-pulse
 qt6ct
 ripgrep
 slurp
-wbg
-swaylock-effects-git
+hyprpaper
+hyprlock
 xcursor-simp1e-tokyo-night-light
 ttf-space-mono-nerd
 waybar
 wl-clipboard
 wleave-git
-wofi
+fuzzel
 wireplumber
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
