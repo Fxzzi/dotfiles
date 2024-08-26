@@ -26,7 +26,7 @@ if [ -n "$output_resolution" ]; then
         -vf "scale_cuda=$output_resolution" \
         -c:a copy \
         -c:v h264_nvenc \
-        -cq:v 28 \
+        -cq:v 27 \
         "${input_file%.*}-scaled.mp4"
 else
     ffmpeg -y \
@@ -37,6 +37,6 @@ else
         -i "$input_file" \
         -c:a copy \
         -c:v h264_nvenc \
-        -cq:v 28 \
+        -cq:v 27 \
         "${input_file%.*}-scaled.mp4"
 fi

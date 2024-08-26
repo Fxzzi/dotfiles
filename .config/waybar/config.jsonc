@@ -1,7 +1,7 @@
 [
   {
     "layer": "top", // Waybar on highest layer so tooltips go over windows
-    "output": "DP-2", // Set output to primary monitor
+    "output": "DP-3", // Set output to primary monitor
     "height": 38, // Set height to avoid jumping due to active workspace indicator
 
     "modules-left": ["hyprland/workspaces", "clock#time", "clock#date"], // Sets modules for the left of the bar
@@ -12,7 +12,7 @@
   },
   {
     "layer": "top", // Waybar on highest layer so tooltips go over windows
-    "output": "DP-1", // Set output to primary monitor
+    "output": "DP-2", // Set output to primary monitor
     "height": 38, // Set height to avoid jumping due to active workspace indicator
 
     "modules-left": ["hyprland/workspaces", "clock#time", "clock#date"], // Sets modules for the left of the bar

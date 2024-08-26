@@ -32,6 +32,10 @@ alias rs='curl --data-binary @- https://paste.rs | wl-copy'  # Share output to a
 alias vim='$EDITOR'
 alias vi='$EDITOR'
 alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
-alias uvolt="sudo bash -c 'source /root/nvidia-undervolt/bin/activate; python /root/nvidia-undervolt/undervolt.py'"
+alias uvolt="sudo systemctl restart nvidia-undervolt.service"
 alias unvolt="sudo bash -c 'source /root/nvidia-undervolt/bin/activate; python /root/nvidia-undervolt/reset_uv.py'"
 alias hyprupd="hyprpm update; hyprpm reload -n"
+
+alias die="pkill -9"
+alias sudo="sudo "
+alias yeet="sudo pacman -Rns"

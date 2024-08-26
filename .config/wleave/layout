@@ -12,7 +12,7 @@
 }
 {
     "label" : "lock",
-    "action" : "swaylock",
+    "action" : "loginctl lock-session",
     "text" : "Lock",
     "keybind" : "l"
 }

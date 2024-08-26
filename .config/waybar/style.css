@@ -1,6 +1,6 @@
 * {
   font-family:
-    SpaceMono Nerd Font,
+    SpaceMono Nerd Font Propo,
     feather;
   font-weight: 600;
   font-size: 12pt;
@@ -65,13 +65,7 @@ tooltip {
 
 /* Hide window module when not focused on window or empty workspace */
 window#waybar.empty #window {
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
-}
-
-window#waybar #window {
-  transition: all 0.5s ease;
+	background: 0;
 }
 
 /* Set up rounding to make these modules look like separate pills */
