@@ -58,7 +58,7 @@ hide_table_gap = true
 # Built-in themes.  Valid values are "default", "default-light", "gruvbox", "gruvbox-light", "nord", "nord-light"
 #color = "default"
 # Show memory values in the processes widget as values by default
-mem_as_value = true
+process_memory_as_value = true
 # Show tree mode by default in the processes widget.
 #tree = false
 # Shows an indicator in table widgets tracking where in the list you are.
@@ -185,21 +185,21 @@ enable_gpu_memory = true
 #case_sensitive = false
 #whole_word = false
 
-[temp_filter]
+[temperature.sensor_filter]
 is_list_ignored = true
 list = ["VRM", "T_Sensor", "nct"]
 regex = false
 case_sensitive = false
 whole_word = false
 
-[net_filter]
+[network.interface_filter]
 is_list_ignored = true
 list = ["virbr0.*"]
 regex = true
 case_sensitive = false
 whole_word = false
 
-[mount_filter]
+[disk.mount_filter]
 is_list_ignored = true
 list = ["/var/cache/pacman/pkg", "/var/log", "/mnt", "/run/timeshift/backup", "/home", "/games"]
 regex = true

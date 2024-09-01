@@ -4,6 +4,9 @@
 # Use "bindkey -l" to list available key bindings
 # Use "bindkey -M viins" to list key bindings for insert mode
 # Use "bindkey -M vicmd" to list key bindings for command mode
+bindkey -r '\e' 
+bindkey -s '^[[27;2;27~' '~'
+
 
 # Move cursor to beginning and end of line
 bindkey "\e[5~" beginning-of-line # Page Up

@@ -94,16 +94,16 @@ return {
 		opts = {
 			ensure_installed = {
 				"bashls",
+				"beautysh",
 				"cssls",
 				"html",
 				"lua_ls",
-				"pylsp",
-				"tsserver",
 				"prettier",
-				"stylua",
 				"pylint",
-				"stylelint",
-				"shfmt"
+				"pylsp",
+				"shellcheck",
+				"stylua",
+				"tsserver",
 			},
 		},
 		config = function(_, opts)

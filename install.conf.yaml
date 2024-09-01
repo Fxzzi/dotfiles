@@ -16,7 +16,7 @@
     ~/.config/waybar: .config/waybar
     ~/.config/dunst: .config/dunst
     ~/.config/foot: .config/foot
-    ~/.config/wofi: .config/wofi
+    ~/.config/fuzzel: .config/fuzzel
     ~/.config/wleave: .config/wleave
     ~/.config/Thunar: .config/Thunar
     ~/.config/zsh: .config/zsh
@@ -28,7 +28,6 @@
     ~/.config/nvim: .config/nvim
     ~/.config/qt6ct: .config/qt6ct
     ~/.config/pacman: .config/pacman
-    ~/.config/swaylock: .config/swaylock
     ~/.local/scripts: .local/scripts
     ~/.local/share/fonts: .local/share/fonts
     ~/.local/share/icons/default: .local/share/icons/default

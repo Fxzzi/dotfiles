@@ -32,7 +32,10 @@ alias rs='curl --data-binary @- https://paste.rs | wl-copy'  # Share output to a
 alias vim='$EDITOR'
 alias vi='$EDITOR'
 alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
+alias uvolt="sudo systemctl restart nvidia-undervolt.service"
+alias unvolt="sudo bash -c 'source /root/nvidia-undervolt/bin/activate; python /root/nvidia-undervolt/reset_uv.py'"
+alias hyprupd="hyprpm update; hyprpm reload -n"
 
-# commonly used commands for laptop
-alias modnet="sudo bash -c 'modprobe -r mt7921e; sudo modprobe mt7921e; systemctl restart NetworkManager'"
-alias batstat="upower -i /org/freedesktop/UPower/devices/battery_BAT0"
+alias die="pkill -9"
+alias sudo="sudo "
+alias yeet="sudo pacman -Rns"
