@@ -1,0 +1,11 @@
+def_key "+"
+  volume_up
+
+def_key "="
+  volume_up
+
+def_key "-"
+  volume_down
+
+def_key "_"
+  volume_down

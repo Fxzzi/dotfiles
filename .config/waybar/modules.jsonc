@@ -2,7 +2,7 @@
 {
   "clock#time": {
     "format": "<span color=\"#7aa2f7\"> </span>{:%H:%M:%S}",
-    "interval": 1
+    "interval": 1,
   },
   "clock#date": {
     "format": "<span color=\"#7aa2f7\"> </span>{:%a %d/%m}",
@@ -19,16 +19,16 @@
         "days": "<span color='#c0caf5'><b>{}</b></span>",
         "weeks": "<span color='#7dcfff'><b>W{}</b></span>",
         "weekdays": "<span color='#ff9e64'><b>{}</b></span>",
-        "today": "<span color='#f7768e'><b><u>{}</u></b></span>"
-      }
-    }
+        "today": "<span color='#f7768e'><b><u>{}</u></b></span>",
+      },
+    },
   },
   "battery": {
     "bat": "BAT0",
     "interval": 60,
     "states": {
       "warning": 40,
-      "critical": 20
+      "critical": 20,
     },
     "format": "{icon} {capacity}%",
     "format-icons": [
@@ -36,48 +36,48 @@
       "<span color=\"#f7768e\"> </span>",
       "<span color=\"#7aa2f7\"> </span>",
       "<span color=\"#7aa2f7\"> </span>",
-      "<span color=\"#7aa2f7\"> </span>"
+      "<span color=\"#7aa2f7\"> </span>",
     ],
-    "format-charging": "<span color=\"#e0af68\">󱐌</span> {capacity}%"
+    "format-charging": "<span color=\"#e0af68\">󱐌</span> {capacity}%",
   },
   "cpu": {
     "format": "<span color=\"#7aa2f7\"> </span>{usage}%",
-    "interval": 2
+    "interval": 2,
   },
   "memory": {
     "format": "<span color=\"#7aa2f7\"> </span>{used}GiB",
-    "interval": 2
+    "interval": 2,
   },
   "temperature#cpu": {
     "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
     "critical-threshold": 80,
     "format": "<span color=\"#7aa2f7\"> </span>{temperatureC}°C",
     "format-critical": "<span color=\"#f7768e\"> </span>{temperatureC}°C",
-    "interval": 2
+    "interval": 2,
   },
   "temperature#gpu": {
     "hwmon-path": "/tmp/nvidia-temp",
     "critical-threshold": 80,
     "format": "<span color=\"#7aa2f7\">󰾲 </span>{temperatureC}°C",
     "format-critical": "<span color=\"#f7768e\">󰾲 </span>{temperatureC}°C",
-    "interval": 2
+    "interval": 2,
   },
   "wireplumber": {
     "scroll-step": 5, // %, can be a float
     "format": "<span color=\"#7aa2f7\">{icon} </span>{volume}%",
     "format-muted": "<span color=\"#f7768e\"> </span>Muted",
     "format-icons": ["", "", ""],
-    "on-click": "pavucontrol-qt"
+    "on-click": "pavucontrol-qt",
   },
   "hyprland/window": {
-    "max-length": 64
+    "max-length": 96,
   },
   "tray": {
-    "icon-size": 22,
-    "spacing": 6
+    "icon-size": 20,
+    "spacing": 6,
   },
   "hyprland/workspaces": {
     "disable-scroll": true,
-    "on-click": "activate"
-  }
+    "on-click": "activate",
+  },
 }

@@ -1,38 +1,32 @@
-* {
-  font-family:
-    SpaceMono Nerd Font Propo,
-    feather;
-  font-weight: 600;
-  font-size: 12pt;
-  color: #c0caf5;
-}
-
-/* main waybar */
-window#waybar {
-  background: rgba(26, 27, 38, 0);
-}
-
-/* when hovering over modules */
-tooltip {
-  background: #1e1e2e;
-  border-radius: 5%;
-}
-
+.module,
 #workspaces button {
-  padding: 2px;
+  font-family:
+    SpaceMono Nerd Font,
+    feather;
+  font-weight: 900;
+  font-size: 16px;
+  color: #c0caf5;
+  padding: 0px;
+  background: transparent;
+  transition: none;
+}
+
+window#waybar {
+  background: #1a1b26;
+  border: 2px solid #414868;
+  background-color: rgba(26, 27, 38, 0.75);
+}
+
+tooltip {
+  background: #1a1b26;
 }
 
 /* Sets active workspace to have a solid line on the bottom */
 #workspaces button.active {
   border-bottom: 2px solid #7aa2f7;
-  border-radius: 2;
-  margin-top: 3px;
-  transition: all 0.5s ease-in-out;
-}
-
-/* More workspace stuff for highlighting on hover */
-#workspaces button.focused {
-  color: #a6adc8;
+  border-radius: 0px;
+  margin-bottom: 4px;
+  margin-top: 6px;
 }
 
 #workspaces button.urgent {
@@ -40,50 +34,19 @@ tooltip {
 }
 
 #workspaces button:hover {
-  background: #11111b;
-  color: #cdd6f4;
-}
-
-/* Sets background, padding, margins, and borders for (all) modules */
-#workspaces,
-#clock,
-#window,
-#temperature,
-#cpu,
-#memory,
-#wireplumber,
-#tray,
-#battery {
-  background: rgba(26, 27, 38, 0.6);
-  padding: 0 10px;
-  border: 0;
+  color: #7aa2f7;
+  background: transparent;
 }
 
 #workspaces {
-  padding-right: 0px;
+  margin-left: 8px;
+}
+
+#wireplumber {
+  margin-right: 8px;
 }
 
 /* Hide window module when not focused on window or empty workspace */
 window#waybar.empty #window {
-	background: 0;
-}
-
-/* Set up rounding to make these modules look like separate pills */
-#tray {
-  border-radius: 12px;
-  margin-right: 4px;
-}
-
-#window {
-  border-radius: 12px;
-}
-
-/* close right side of bar */
-#temperature.gpu {
-  border-radius: 12px 0 0 12px;
-}
-
-/* close left side of bar */
-#clock.date {
-  border-radius: 0 12px 12px 0;
+  opacity: 0;
 }
