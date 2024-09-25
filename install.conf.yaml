@@ -13,7 +13,7 @@
 - link:
     ~/.config/hypr: .config/hypr
     ~/.config/bottom: .config/bottom
-    ~/.config/waybar: .config/waybar
+    ~/.config/ags: .config/ags
     ~/.config/dunst: .config/dunst
     ~/.config/foot: .config/foot
     ~/.config/fuzzel: .config/fuzzel

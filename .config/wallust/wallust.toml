@@ -22,3 +22,6 @@ foot.target = "~/.cache/wallust/colors_foot.ini"
 
 pywalfox.template = "colors_pywalfox.json"
 pywalfox.target = "~/.cache/wal/colors.json"
+
+wleave.template = "colors_wleave.css"
+wleave.target = '~/.config/wleave/colors_wleave.css'
