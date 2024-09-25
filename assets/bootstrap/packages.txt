@@ -12,7 +12,7 @@ thunar-archive-plugin
 tumbler
 ffmpegthumbnailer
 hyprland
-hypridle-git
+hypridle
 jq
 macchina
 mpc
@@ -32,9 +32,11 @@ ripgrep
 slurp
 hyprpaper
 hyprlock
-xcursor-simp1e-tokyo-night-light
+xcursor-simp1e
 ttf-space-mono-nerd
-waybar
+ags
+wallust
+python-pywalfox-librewolf
 wl-clipboard
 wleave-git
 fuzzel

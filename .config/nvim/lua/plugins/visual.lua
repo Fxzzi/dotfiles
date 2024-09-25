@@ -57,7 +57,7 @@ return {
 		priority = 1000,
 		opts = {
 			use_wallust = true,
-			transparent_background = true,
+			-- transparent_background = true,
 		},
 	},
 	{

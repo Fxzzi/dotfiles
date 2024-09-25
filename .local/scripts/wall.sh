@@ -16,4 +16,6 @@ hyprctl hyprpaper wallpaper ", "$WALLPAPER""
 
 # Set the wallpaper
 wallust run "$WALLPAPER"
+
+systemctl --user restart dunst
 pywalfox --browser librewolf update &
