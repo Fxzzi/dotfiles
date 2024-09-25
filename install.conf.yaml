@@ -28,6 +28,7 @@
     ~/.config/nvim: .config/nvim
     ~/.config/qt6ct: .config/qt6ct
     ~/.config/pacman: .config/pacman
+    ~/.config/wallust: .config/wallust
     ~/.local/scripts: .local/scripts
     ~/.local/share/fonts: .local/share/fonts
     ~/.local/share/icons/default: .local/share/icons/default

@@ -13,14 +13,6 @@ if [ ! -d "$screenshotDir" ]; then
     echo "Directory '$screenshotDir' created successfully."
 fi
 
-show_usage() {
-    echo "Usage: $(basename "$0") [--monitor|--selection|--active]" >&2
-    echo "Options:"
-    echo "  --monitor     Take a screenshot of the entire monitor"
-    echo "  --selection   Take a screenshot of a rectangle selection"
-    echo "  --active      Take a screenshot of the active window"
-}
-
 case $1 in
     --monitor)
         grim -t png -l 1 -o DP-3 "$path"
@@ -32,7 +24,7 @@ case $1 in
         grim -t png -l 1 -g "$(echo "$(hyprctl activewindow -j)" | jq -r '"\(.at[0]),\(.at[1]) \(.size[0])x\(.size[1])"')" "$path"
         ;;
     *)
-        show_usage
+        echo "invalid cmd"
         exit 1
         ;;
 esac

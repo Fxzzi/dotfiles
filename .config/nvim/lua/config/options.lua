@@ -84,4 +84,4 @@ vim.cmd([[
   aunmenu PopUp.-1-
 ]])
 
-vim.cmd.colorscheme('tokyonight')
+vim.cmd([[colorscheme neopywal]])

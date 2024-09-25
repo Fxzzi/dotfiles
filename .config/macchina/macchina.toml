@@ -49,7 +49,7 @@ physical_cores = true
 show = [
   "Host",
   "Distribution",
-  "Shell",
+  "WindowManager",
   "Packages",
   "Memory",
   "Terminal",
