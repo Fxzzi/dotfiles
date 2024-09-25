@@ -1,9 +1,11 @@
+@import url("./colors_wleave.css");
+
 window {
   font-family: SpaceMono Nerd Font;
   font-size: 20pt;
   color: #c0caf5;
   /* text */
-  background-color: rgba(21, 22, 30, 0.7);
+  background-color: @background;
 }
 
 button {
@@ -12,7 +14,7 @@ button {
   background-position: center;
   background-size: 50%;
   border: none;
-  background-color: rgba(21, 22, 30, 0);
+  background-color: transparent;
   margin: 5px;
   transition:
     box-shadow 0.1s ease-in-out,
@@ -20,12 +22,12 @@ button {
 }
 
 button:hover {
-  background-color: rgba(49, 50, 68, 0.1);
+  background-color: @color0;
 }
 
 button:focus {
-  background-color: #7aa2f7;
-  color: #1e1e2e;
+  background-color: @color1;
+  color: @foreground;
 }
 
 #lock {
