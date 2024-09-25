@@ -13,7 +13,7 @@
 - link:
     ~/.config/hypr: .config/hypr
     ~/.config/bottom: .config/bottom
-    ~/.config/waybar: .config/waybar
+    ~/.config/ags: .config/ags
     ~/.config/dunst: .config/dunst
     ~/.config/foot: .config/foot
     ~/.config/fuzzel: .config/fuzzel
@@ -28,6 +28,7 @@
     ~/.config/nvim: .config/nvim
     ~/.config/qt6ct: .config/qt6ct
     ~/.config/pacman: .config/pacman
+    ~/.config/wallust: .config/wallust
     ~/.local/scripts: .local/scripts
     ~/.local/share/fonts: .local/share/fonts
     ~/.local/share/icons/default: .local/share/icons/default

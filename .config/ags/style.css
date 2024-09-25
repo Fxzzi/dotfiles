@@ -1,0 +1,68 @@
+@import url("colors_ags.css");
+
+window > box {
+  background: @background;
+  font: 16px "SpaceMono Nerd Font";
+  color: @foreground;
+  margin: 4px;
+  margin-bottom: 0px;
+  border: 2px solid @color0;
+  min-height: 36px;
+}
+
+button {
+  background: transparent;
+  transition: none;
+  box-shadow: none;
+}
+
+label {
+  font-weight: 600;
+}
+
+.workspaces {
+  margin-left: 6px;
+  margin-right: 0px;
+}
+
+.volume {
+  margin-right: 6px;
+}
+
+.workspaces button {
+  border-radius: 0;
+  transition: none;
+  padding: 0 1px;
+  box-shadow: none;
+  color: @foreground;
+  background-color: transparent;
+}
+
+.workspaces button.focused {
+  border-bottom: 2px solid @color4;
+  margin-bottom: 2px;
+	margin-top: 4px;
+}
+
+.workspaces button:hover {
+  color: @color4;
+  background: transparent;
+}
+
+.icon {
+  padding-right: 6px;
+  color: @color4;
+}
+
+.muted {
+  color: @color9;
+}
+
+.tray {
+  background: transparent;
+  margin-right: -10px;
+}
+
+.trayicon {
+	margin: 0px;
+}
