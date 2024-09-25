@@ -5,3 +5,8 @@
 .config/zsh/.zgenom
 .config/nvim/lazy-lock.json
 .config/nvim/lua/.luarc.json
+.config/wleave/colors_wleave.css
+.config/ags/colors_ags.css
+
+# file is generated from ~/.config/wallust/templates/colors_dunstrc
+.config/dunst/dunstrc

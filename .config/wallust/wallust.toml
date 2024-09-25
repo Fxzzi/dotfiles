@@ -26,5 +26,5 @@ pywalfox.target = "~/.cache/wal/colors.json"
 wleave.template = "colors_wleave.css"
 wleave.target = '~/.config/wleave/colors_wleave.css'
 
-dunstrc.template = "colors_dunstrc"
+dunstrc.template = "dunstrc"
 dunstrc.target = '~/.config/dunst/dunstrc'

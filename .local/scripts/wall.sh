@@ -2,7 +2,7 @@
 
 case $1 in
 	random)
-		WALLPAPER_DIR="$HOME/Pictures/Wallpapers/orig/"
+		WALLPAPER_DIR="$HOME/Pictures/Wallpapers/wallust/"
 		WALLPAPER=$(find "$WALLPAPER_DIR" -type f | shuf -n 1)
 		;;
 	*)
@@ -10,12 +10,9 @@ case $1 in
 		;;
 esac
 
-hyprctl hyprpaper unload all
-hyprctl hyprpaper preload "$WALLPAPER"
-hyprctl hyprpaper wallpaper ", "$WALLPAPER""
-
+swww img "$WALLPAPER" --transition-type wipe --transition-fps 60 --transition-duration 1 --transition-step 180
 # Set the wallpaper
 wallust run "$WALLPAPER"
 
-systemctl --user restart dunst
+systemctl restart --user dunst &
 pywalfox --browser librewolf update &

@@ -1,8 +1,12 @@
 @import url("colors_ags.css");
 
+* {
+	transition: color 1s ease-in-out, background 1s ease-in-out;	
+}
+
 window > box {
   background: @background;
-  font: 16px "SpaceMono Nerd Font";
+  font: 16.5px "SpaceMono Nerd Font";
   color: @foreground;
   margin: 4px;
   margin-bottom: 0px;
@@ -39,6 +43,7 @@ label {
 }
 
 .workspaces button.focused {
+	transition: color 1s ease-in-out, background 1s ease-in-out, border 1s ease-in-out;
   border-bottom: 2px solid @color4;
   margin-bottom: 2px;
 	margin-top: 4px;
@@ -65,4 +70,12 @@ label {
 
 .trayicon {
 	margin: 0px;
+}
+
+.charging {
+	color: @color15;
+}
+
+.charged {
+	color: @color13;
 }
