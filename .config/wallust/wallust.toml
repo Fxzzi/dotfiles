@@ -1,6 +1,6 @@
 check_contrast = true
-backend = "kmeans"
-# palette = "softdark"
+backend = "fastresize"
+palette = "ansidark"
 
 [templates]
 
@@ -28,5 +28,5 @@ pywalfox.target = "~/.cache/wal/colors.json"
 wleave.template = "colors_wleave.css"
 wleave.target = '~/.config/wleave/colors_wleave.css'
 
-dunstrc.template = "dunstrc"
-dunstrc.target = '~/.config/dunst/dunstrc'
+dunst.template = "dunstrc"
+dunst.target = '~/.config/dunst/dunstrc'
