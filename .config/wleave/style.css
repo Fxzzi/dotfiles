@@ -26,7 +26,7 @@ button:hover {
 }
 
 button:focus {
-  background-color: @color1;
+  background-color: @color4;
   color: @foreground;
 }
 

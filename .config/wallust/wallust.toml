@@ -1,4 +1,6 @@
 check_contrast = true
+backend = "kmeans"
+# palette = "softdark"
 
 [templates]
 

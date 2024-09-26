@@ -12,7 +12,7 @@ App.addIcons(`${App.configDir}/icons/`);
 
 // Reload CSS when changes detected
 Utils.subprocess(
-  ["inotifywait", "--event", "modify", "-m", "-q", `${App.configDir}/colors_ags.css`],
+  ["inotifywait", "--event", "modify", "-m", "-q", `${App.configDir}`],
   () => {
     console.log("Caught wallust reload, reloading css!");
     App.resetCss();
