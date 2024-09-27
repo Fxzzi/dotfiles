@@ -1,6 +1,6 @@
 check_contrast = true
-backend = "fastresize"
-palette = "ansidark"
+backend = "wal"
+color_space = "lch"
 
 [templates]
 

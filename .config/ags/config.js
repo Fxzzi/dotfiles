@@ -115,7 +115,7 @@ function monitorCssFile() {
     });
 
     if (!monitor) {
-        console.error("Failed to monitor CSS file.")r
+        console.error("Failed to monitor CSS file.");
     }
 }
 
