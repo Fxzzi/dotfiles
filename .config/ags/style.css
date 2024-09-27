@@ -1,12 +1,12 @@
 @import url("colors_ags.css");
 
 * {
-	transition: color 0.5s ease-in-out, background 0.5s ease-in-out;	
+	transition: color ease-in-out 0.25s, background ease-in-out 0.25s;
 }
 
 window > box {
   background: @background;
-  font: 17px "SpaceMono Nerd Font";
+  font: 18px "SpaceMono Nerd Font";
   color: @foreground;
   margin: 4px;
   margin-bottom: 0px;
@@ -16,18 +16,11 @@ window > box {
 
 button {
   background: transparent;
-  transition: none;
   box-shadow: none;
-}
-
-label {
-  font-weight: 600;
 }
 
 .workspaces {
   margin-left: 6px;
-  margin-right: 0px;
-	transition: all 1s ease-in-out;
 }
 
 .volume {
@@ -43,12 +36,7 @@ label {
   background-color: transparent;
 }
 
-box.workspaces {
-	transition: all 5s ease-in-out;
-}
-
 .workspaces button.focused {
-	transition: color 1s ease-in-out, background 1s ease-in-out;
   border-bottom: 2px solid @color6;
 	margin-top: 2px;
 }
@@ -59,27 +47,19 @@ box.workspaces {
 }
 
 .icon {
-  padding-right: 6px;
+  padding-right: 5px;
   color: @color4;
-}
-
-.muted {
-  color: @color9;
 }
 
 .tray {
   background: transparent;
-  margin-right: -10px;
+  margin-right: -5px;
 }
 
-.trayicon {
-	margin: 0px;
-}
-
-.charging {
+.icon .charging {
 	color: @color15;
 }
 
-.charged {
+.icon .charged {
 	color: @color13;
 }

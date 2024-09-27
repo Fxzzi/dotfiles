@@ -1,5 +1,6 @@
 import App from "resource:///com/github/Aylur/ags/app.js";
 import Gdk from "gi://Gdk";
+import Gio from 'gi://Gio';
 
 // import widget modules
 import { DateWidget } from "./modules/Date.js";
@@ -17,30 +18,23 @@ import { SysTrayWidget } from "./modules/SysTray.js";
 // Add svg icons from the ./icons directory
 App.addIcons(`${App.configDir}/icons/`);
 
-function Left(monitorName) {
-  return Widget.Box({
-    spacing: 10,
-    children: [
-      Workspaces(monitorName), // Pass the monitor name to Workspaces
-      TimeWidget(),
-      DateWidget(),
-      BatteryWidget(),
-    ],
-  });
-}
+const createBox = (spacing, children, hpack = null) =>
+  Widget.Box({ spacing, children, hpack });
 
-function Center() {
-  return Widget.Box({
-    spacing: 10,
-    children: [ClientTitleWidget()],
-  });
-}
+const Left = (monitorName) =>
+  createBox(10, [
+    Workspaces(monitorName),
+    TimeWidget(),
+    DateWidget(),
+    BatteryWidget(),
+  ]);
 
-function Right() {
-  return Widget.Box({
-    hpack: "end",
-    spacing: 10,
-    children: [
+const Center = () => createBox(10, [ClientTitleWidget()]);
+
+const Right = () =>
+  createBox(
+    10,
+    [
       SysTrayWidget(),
       GpuTempWidget(),
       CpuTempWidget(),
@@ -48,69 +42,54 @@ function Right() {
       MemUsageWidget(),
       VolumeWidget(),
     ],
-  });
-}
+    "end",
+  );
 
-function Bar(gdkMonitor) {
-  const monitorName = getMonitorName(gdkMonitor); // Get the monitor name
+const Bar = (gdkMonitor) => {
+  const monitorName = getMonitorName(gdkMonitor);
   return Widget.Window({
-    name: `bar-${monitorName}`, // Use the monitor name for the window name
+    name: `bar-${monitorName}`,
     class_name: "bar",
-    gdkmonitor: gdkMonitor, // Pass the Gdk.Monitor object directly
+    gdkmonitor: gdkMonitor,
     anchor: ["top", "left", "right"],
     exclusivity: "exclusive",
     child: Widget.CenterBox({
-      start_widget: Left(monitorName), // Pass the monitor name to Left
+      start_widget: Left(monitorName),
       center_widget: Center(),
       end_widget: Right(),
     }),
   });
-}
+};
 
 const hyprland = await Service.import("hyprland");
 const display = Gdk.Display.get_default();
 
-// Returns monitor name (e.g. DP-3, HDMI-A-1, etc) from Gdk.Monitor object
-function getMonitorName(gdkmonitor) {
+const getMonitorName = (gdkmonitor) => {
   const screen = display.get_default_screen();
   for (let i = 0; i < display.get_n_monitors(); ++i) {
     if (gdkmonitor === display.get_monitor(i))
       return screen.get_monitor_plug_name(i);
   }
   return null;
-}
+};
 
-// Returns a Gdk.Monitor object from the name of the monitor.
-function getMonitorByName(name) {
+const getMonitorByName = (name) => {
   for (let i = 0; i < display.get_n_monitors(); ++i) {
-    const gdkMonitor = display.get_monitor(i); // Get the GdkMonitor
-    const gdkMonitorName = getMonitorName(gdkMonitor); // Get the monitor name using getMonitorName
-    if (gdkMonitorName === name) {
-      return gdkMonitor; // Return the Gdk.Monitor if the name matches
-    }
+    const gdkMonitor = display.get_monitor(i);
+    if (getMonitorName(gdkMonitor) === name) return gdkMonitor;
   }
-  return null; // Return null if no match found
-}
+  return null;
+};
 
-// Loops through all ags windows and removes them.
-function removeAllWindows() {
-  const windows = App.windows; // Get all windows from the App
-  windows.forEach((window) => {
-    App.removeWindow(window); // Remove each window
-  });
-}
+const removeAllWindows = () => App.windows.forEach(App.removeWindow);
 
-// Initialises a bar for each monitor.
-function InitBars() {
-  removeAllWindows(); // first remove all existing windows
-  hyprland.monitors.map((mon) => {
-    const monitorName = mon.name; // get the name from the Hyprland JSON
-    const gdkMonitor = getMonitorByName(monitorName); // get the corresponding Gdk.Monitor
-    if (gdkMonitor) {
-      App.addWindow(Bar(gdkMonitor, mon.id)); // Pass both Gdk.Monitor and hyprland monitor id into Bar()
-    }
+const InitBars = () => {
+  removeAllWindows();
+  hyprland.monitors.forEach((mon) => {
+    const gdkMonitor = getMonitorByName(mon.name);
+    if (gdkMonitor) App.addWindow(Bar(gdkMonitor));
   });
-}
+};
 
 // listen for monitor connects and disconnects, and reinit all bars.
 hyprland.connect("event", (_, name) => {
@@ -121,19 +100,26 @@ hyprland.connect("event", (_, name) => {
 });
 
 // App configuration
-App.config({
-  style: "./style.css",
-});
+App.config({ style: "./style.css" });
 
 // Reload CSS when wallust updates colors
-Utils.subprocess(
-  ["inotifywait", "--event", "modify", "-m", "-q", `${App.configDir}`],
-  () => {
-    console.log("Caught wallust reload, reloading CSS!");
-    App.resetCss();
-    App.applyCss(`${App.configDir}/style.css`);
-  },
-);
+function monitorCssFile() {
+    const cssFilePath = `${App.configDir}/colors_ags.css`;
+
+    const monitor = Utils.monitorFile(cssFilePath, (file, event) => {
+        if (event === Gio.FileMonitorEvent.CHANGES_DONE_HINT) {
+            console.log("Caught wallust reload, reloading CSS!");
+            App.resetCss();
+            App.applyCss(`${App.configDir}/style.css`);
+        }
+    });
+
+    if (!monitor) {
+        console.error("Failed to monitor CSS file.")r
+    }
+}
 
 // on startup, create bars for all monitors
 InitBars();
+// Call the function to start monitoring
+monitorCssFile();
