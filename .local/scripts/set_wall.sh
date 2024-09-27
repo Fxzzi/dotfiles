@@ -11,4 +11,6 @@ hyprctl hyprpaper preload $WALLPAPER
 hyprctl hyprpaper wallpaper ", $WALLPAPER"
 
 wallust run "$WALLPAPER"
+
+systemctl --user restart dunst.service
 pywalfox --browser librewolf update &

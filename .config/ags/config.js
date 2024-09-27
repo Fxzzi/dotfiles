@@ -1,8 +1,7 @@
 import App from "resource:///com/github/Aylur/ags/app.js";
 import Gdk from "gi://Gdk";
-import { idle } from "resource:///com/github/Aylur/ags/utils/timeout.js";
 
-// Import widget modules
+// import widget modules
 import { DateWidget } from "./modules/Date.js";
 import { TimeWidget } from "./modules/Time.js";
 import { BatteryWidget } from "./modules/Battery.js";
@@ -15,18 +14,14 @@ import { MemUsageWidget } from "./modules/MemUsage.js";
 import { GpuTempWidget } from "./modules/GpuTemp.js";
 import { SysTrayWidget } from "./modules/SysTray.js";
 
-// Define per-monitor windows (bars, popups, etc.)
-const perMonitorWindows = [Bar];
+// Add svg icons from the ./icons directory
+App.addIcons(`${App.configDir}/icons/`);
 
-/* Define unique windows (no need to be created per monitor) */
-const uniqueWindows = [];
-
-// Left section of the bar
-function Left(monitor) {
+function Left(monitorName) {
   return Widget.Box({
     spacing: 10,
     children: [
-      Workspaces(monitor),
+      Workspaces(monitorName), // Pass the monitor name to Workspaces
       TimeWidget(),
       DateWidget(),
       BatteryWidget(),
@@ -34,7 +29,6 @@ function Left(monitor) {
   });
 }
 
-// Center section of the bar
 function Center() {
   return Widget.Box({
     spacing: 10,
@@ -42,7 +36,6 @@ function Center() {
   });
 }
 
-// Right section of the bar
 function Right() {
   return Widget.Box({
     hpack: "end",
@@ -58,46 +51,72 @@ function Right() {
   });
 }
 
-// Bar layout for a specific monitor
-function Bar(monitor) {
+function Bar(gdkMonitor) {
+  const monitorName = getMonitorName(gdkMonitor); // Get the monitor name
   return Widget.Window({
-    name: `bar-${monitor}`,
+    name: `bar-${monitorName}`, // Use the monitor name for the window name
     class_name: "bar",
-    gdkmonitor,
+    gdkmonitor: gdkMonitor, // Pass the Gdk.Monitor object directly
     anchor: ["top", "left", "right"],
     exclusivity: "exclusive",
     child: Widget.CenterBox({
-      start_widget: Left(monitor),
+      start_widget: Left(monitorName), // Pass the monitor name to Left
       center_widget: Center(),
       end_widget: Right(),
     }),
   });
 }
 
-// Run idle to set up initial windows and monitor events
-idle(async () => {
-  // Add unique windows (widgets that don't depend on specific monitors)
-  uniqueWindows.map((win) => App.addWindow(win));
+const hyprland = await Service.import("hyprland");
+const display = Gdk.Display.get_default();
 
-  // Get the default display and create bars for each monitor
-  const display = Gdk.Display.get_default();
-  if (display) {
-    for (let m = 0; m < display.get_n_monitors(); m++) {
-      const monitor = display.get_monitor(m);
-      perMonitorWindows.map((win) => App.addWindow(win(monitor)));
+// Returns monitor name (e.g. DP-3, HDMI-A-1, etc) from Gdk.Monitor object
+function getMonitorName(gdkmonitor) {
+  const screen = display.get_default_screen();
+  for (let i = 0; i < display.get_n_monitors(); ++i) {
+    if (gdkmonitor === display.get_monitor(i))
+      return screen.get_monitor_plug_name(i);
+  }
+  return null;
+}
+
+// Returns a Gdk.Monitor object from the name of the monitor.
+function getMonitorByName(name) {
+  for (let i = 0; i < display.get_n_monitors(); ++i) {
+    const gdkMonitor = display.get_monitor(i); // Get the GdkMonitor
+    const gdkMonitorName = getMonitorName(gdkMonitor); // Get the monitor name using getMonitorName
+    if (gdkMonitorName === name) {
+      return gdkMonitor; // Return the Gdk.Monitor if the name matches
     }
+  }
+  return null; // Return null if no match found
+}
 
-    // Monitor added event
-    display.connect("monitor-added", (disp, monitor) => {
-      perMonitorWindows.map((win) => App.addWindow(win(monitor)));
-    });
+// Loops through all ags windows and removes them.
+function removeAllWindows() {
+  const windows = App.windows; // Get all windows from the App
+  windows.forEach((window) => {
+    App.removeWindow(window); // Remove each window
+  });
+}
 
-    // Monitor removed event
-    display.connect("monitor-removed", (disp, monitor) => {
-      App.windows.forEach((window) => {
-        if (window.gdkmonitor === monitor) App.removeWindow(window);
-      });
-    });
+// Initialises a bar for each monitor.
+function InitBars() {
+  removeAllWindows(); // first remove all existing windows
+  hyprland.monitors.map((mon) => {
+    const monitorName = mon.name; // get the name from the Hyprland JSON
+    const gdkMonitor = getMonitorByName(monitorName); // get the corresponding Gdk.Monitor
+    if (gdkMonitor) {
+      App.addWindow(Bar(gdkMonitor, mon.id)); // Pass both Gdk.Monitor and hyprland monitor id into Bar()
+    }
+  });
+}
+
+// listen for monitor connects and disconnects, and reinit all bars.
+hyprland.connect("event", (_, name) => {
+  if (name === "monitoradded" || name === "monitorremoved") {
+    console.log(`monitor change event detected!`);
+    InitBars();
   }
 });
 
@@ -105,9 +124,6 @@ idle(async () => {
 App.config({
   style: "./style.css",
 });
-
-// Add SVG icons from the icons directory
-App.addIcons(`${App.configDir}/icons/`);
 
 // Reload CSS when wallust updates colors
 Utils.subprocess(
@@ -118,3 +134,6 @@ Utils.subprocess(
     App.applyCss(`${App.configDir}/style.css`);
   },
 );
+
+// on startup, create bars for all monitors
+InitBars();
