@@ -6,9 +6,9 @@
       "ES2022"
     ],
     "allowJs": true,
-    "checkJs": true,
+    "checkJs": false,
     "strict": true,
-    "noImplicitAny": false,
+    "noImplicitAny": true,
     "baseUrl": ".",
     "typeRoots": [
       "./types"
