@@ -6,7 +6,7 @@
 
 window > box {
   background: @background;
-  font: 18px "SpaceMono Nerd Font";
+  font: 17px "SpaceMono Nerd Font";
   color: @foreground;
   margin: 4px;
   margin-bottom: 0px;
