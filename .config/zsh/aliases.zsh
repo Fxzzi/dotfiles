@@ -1,10 +1,6 @@
 #!/usr/bin/env zsh
 
 # Basic aliases
-# alias rm='rm -rIv'   # Recursive, interactive, and verbose `rm`
-# alias cp='cp -rv'   # Recursive and verbose `cp`
-# alias mv='mv -v'    # Verbose `mv`
-# alias mkdir='mkdir -p'  # recursive mkdir
 alias grep='rg' # use ripgrep
 alias cat='bat'
 
@@ -32,10 +28,18 @@ alias rs='curl --data-binary @- https://paste.rs | wl-copy'  # Share output to a
 alias vim='$EDITOR'
 alias vi='$EDITOR'
 alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
+
+# nvidia gpu undervolt script
 alias uvolt="sudo systemctl restart nvidia-undervolt.service"
 alias unvolt="sudo bash -c 'source /root/nvidia-undervolt/bin/activate; python /root/nvidia-undervolt/reset_uv.py'"
+
+# update hyprland plugins
 alias hyprupd="hyprpm update; hyprpm reload -n"
 
 alias die="pkill -9"
 alias sudo="sudo "
 alias yeet="sudo pacman -Rns"
+
+# spotify adblocker
+alias spotx="bash <(curl -sSL https://spotx-official.github.io/run.sh)"
+alias spotxset="spotx -h -l"

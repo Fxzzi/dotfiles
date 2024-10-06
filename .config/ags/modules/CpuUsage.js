@@ -1,7 +1,7 @@
 const cpuUsage = Variable("", {
   poll: [
     2000,
-    `bash -c "top -b -n 1 | grep 'Cpu(s)' | awk '{print $2}'"`,
+    `bash -c "grep 'cpu ' /proc/stat | awk '{usage = ($2 + $4) * 100 / ($2 + $4 + $5); print usage}'"`,
     (out) => `${parseFloat(out).toFixed(0)}%`,
   ],
 });

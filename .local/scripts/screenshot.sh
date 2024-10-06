@@ -26,7 +26,7 @@ case $1 in
         grim -t png -l 1 "$path"
         ;;
     --selection)
-        grim -t png -l 1 -g "$(slurp)" "$path"
+        pidof slurp || grim -t png -l 1 -g "$(slurp)" "$path"
         ;;
     --active)
         grim -t png -l 1 -g "$(echo "$(hyprctl activewindow -j)" | jq -r '"\(.at[0]),\(.at[1]) \(.size[0])x\(.size[1])"')" "$path"

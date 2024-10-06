@@ -1,7 +1,7 @@
 const hyprland = await Service.import("hyprland");
 
 export function ClientTitleWidget() {
-  const maxLength = 96;
+  const maxLength = 64;
   return Widget.Box({
     children: [
       Widget.Label({
