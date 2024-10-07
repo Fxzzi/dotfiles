@@ -1,6 +1,6 @@
 import App from "resource:///com/github/Aylur/ags/app.js";
 import Gdk from "gi://Gdk";
-import Gio from 'gi://Gio';
+import Gio from "gi://Gio";
 
 // import widget modules
 import { DateWidget } from "./modules/Date.js";
@@ -14,6 +14,7 @@ import { CpuTempWidget } from "./modules/CpuTemp.js";
 import { MemUsageWidget } from "./modules/MemUsage.js";
 import { GpuTempWidget } from "./modules/GpuTemp.js";
 import { SysTrayWidget } from "./modules/SysTray.js";
+//import { NotificationPopups } from "./modules/notificationPopups.js"
 
 // Add svg icons from the ./icons directory
 App.addIcons(`${App.configDir}/icons/`);
@@ -83,11 +84,11 @@ const getMonitorByName = (name) => {
 
 const removeAllWindows = () => App.windows.forEach(App.removeWindow);
 
-const InitBars = () => {
-  removeAllWindows();
+const InitBars = (wdg) => {
+  
   hyprland.monitors.forEach((mon) => {
     const gdkMonitor = getMonitorByName(mon.name);
-    if (gdkMonitor) App.addWindow(Bar(gdkMonitor));
+    if (gdkMonitor) App.addWindow(wdg(gdkMonitor));
   });
 };
 
@@ -95,31 +96,36 @@ const InitBars = () => {
 hyprland.connect("event", (_, name) => {
   if (name === "monitoradded" || name === "monitorremoved") {
     console.log(`monitor change event detected!`);
-    InitBars();
+    removeAllWindows();
+		InitBars(Bar);
+		//InitBars(NotificationPopups)
   }
 });
 
 // App configuration
-App.config({ style: "./style.css" });
+App.config({
+  style: "./style.css",
+});
 
 // Reload CSS when wallust updates colors
 function monitorCssFile() {
-    const cssFilePath = `${App.configDir}/colors_ags.css`;
+  const cssFilePath = `${App.configDir}/colors_ags.css`;
 
-    const monitor = Utils.monitorFile(cssFilePath, (file, event) => {
-        if (event === Gio.FileMonitorEvent.CHANGES_DONE_HINT) {
-            console.log("Caught wallust reload, reloading CSS!");
-            App.resetCss();
-            App.applyCss(`${App.configDir}/style.css`);
-        }
-    });
-
-    if (!monitor) {
-        console.error("Failed to monitor CSS file.");
+  const monitor = Utils.monitorFile(cssFilePath, (file, event) => {
+    if (event === Gio.FileMonitorEvent.CHANGES_DONE_HINT) {
+      console.log("Caught wallust reload, reloading CSS!");
+      App.resetCss();
+      App.applyCss(`${App.configDir}/style.css`);
     }
+  });
+
+  if (!monitor) {
+    console.error("Failed to monitor CSS file.");
+  }
 }
 
 // on startup, create bars for all monitors
-InitBars();
-// Call the function to start monitoring
+InitBars(Bar);
+//InitBars(NotificationPopups)
+// start monitoring colors_ags.css
 monitorCssFile();

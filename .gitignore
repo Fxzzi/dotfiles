@@ -5,3 +5,6 @@
 .config/zsh/.zgenom
 .config/nvim/lazy-lock.json
 .config/nvim/lua/.luarc.json
+
+.config/ags/colors_ags.css
+.config/dunst/dunstrc

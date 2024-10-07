@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 WALLPAPER_DIR="$HOME/Pictures/Wallpapers/wallust/"
-INDEX_FILE="$HOME/.config/hypr/hyprpaper-index.txt"
+INDEX_FILE="/tmp/hyprpaper-index.txt"
 
 # Get all wallpapers into an array
 WALLPAPER_LIST=("$WALLPAPER_DIR"/*)
