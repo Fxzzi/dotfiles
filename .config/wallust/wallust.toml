@@ -13,9 +13,6 @@ fuzzel.target = "~/.cache/wallust/colors_fuzzel.ini"
 hyprland.template = "colors_hyprland.conf"
 hyprland.target = "~/.cache/wallust/colors_hyprland.ini"
 
-macchina.template = 'colors_macchina.toml'
-macchina.target = '~/.cache/wallust/colors_macchina.toml'
-
 ags.template = "colors_ags.css"
 ags.target = '~/.config/ags/colors_ags.css'
 

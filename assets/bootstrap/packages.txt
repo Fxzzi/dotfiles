@@ -21,7 +21,6 @@ mpd
 ncmpcpp
 neovim
 npm
-pamixer
 papirus-icon-theme
 pavucontrol
 pipewire
