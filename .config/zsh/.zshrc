@@ -16,7 +16,7 @@ PROMPT='%F{yellow}%3~%f $ '
 
 # Run fetch script on zsh start
 if [ -z $WAYLAND_DISPLAY ]; then
-	macchina --theme fazzi
+	fastfetch -l none
 else
 	fastfetch
 fi

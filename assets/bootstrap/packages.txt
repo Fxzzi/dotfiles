@@ -14,7 +14,7 @@ ffmpegthumbnailer
 hyprland
 hypridle
 jq
-macchina
+fastfetch
 mpc
 mpd
 ncmpcpp

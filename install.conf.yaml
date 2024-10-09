@@ -14,7 +14,6 @@
     ~/.config/hypr: .config/hypr
     ~/.config/bottom: .config/bottom
     ~/.config/ags: .config/ags
-    ~/.config/dunst: .config/dunst
     ~/.config/foot: .config/foot
     ~/.config/fuzzel: .config/fuzzel
     ~/.config/wleave: .config/wleave
@@ -24,7 +23,7 @@
     ~/.config/paru: .config/paru
     ~/.config/ncmpcpp: .config/ncmpcpp
     ~/.config/mpd: .config/mpd
-    ~/.config/macchina: .config/macchina
+    ~/.config/fastfetch: .config/fastfetch
     ~/.config/nvim: .config/nvim
     ~/.config/qt6ct: .config/qt6ct
     ~/.config/pacman: .config/pacman
