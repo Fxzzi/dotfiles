@@ -1,9 +1,9 @@
 check_contrast = true
-backend = "fastresize"
+# backend = "fastresize"
 color_space = "lch"
+# palette = "darkcomp16"
 
 [templates]
-
 neopywal.template = "colors_neopywal.vim"
 neopywal.target = "~/.cache/wallust/colors_neopywal.vim"
 

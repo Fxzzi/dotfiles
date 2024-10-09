@@ -15,4 +15,8 @@ source ${ZDOTDIR}/keybinds-late.zsh # Source late load keybinds
 PROMPT='%F{yellow}%3~%f $ '
 
 # Run fetch script on zsh start
-macchina --theme fazzi
+if [ -z $WAYLAND_DISPLAY ]; then
+	macchina --theme fazzi
+else
+	fastfetch
+fi
