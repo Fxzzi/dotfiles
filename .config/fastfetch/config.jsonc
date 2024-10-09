@@ -1,0 +1,56 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "source": "~/.config/fastfetch/tomoe.sixel",
+    "type": "raw",
+    "height": 9,
+		"width": 18,
+    "padding": {
+			"top": 1,
+      "left": 2,
+    },
+  },
+  "modules": [
+		{
+      "type": "title",
+      "key": " hs",
+      "keyColor": "green",
+      "format": "{1}@{2}",
+    },
+    {
+      "type": "os",
+      "key": " os",
+      "keyColor": "green",
+      "format": "{3}",
+    },
+    {
+      "type": "wm",
+      "key": " wm",
+      "keyColor": "blue",
+      "format": "{1}",
+    },
+    {
+      "type": "packages",
+      "key": " pk",
+      "keyColor": "blue",
+      "format": "{1}",
+    },
+    {
+      "type": "memory",
+      "key": "󰍛 mm",
+      "keyColor": "yellow",
+      "format": "{1}",
+    },
+    {
+      "type": "terminal",
+      "key": " tr",
+      "keyColor": "yellow",
+      "format": "{1}",
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "{#90}󰊠 {#31}󰊠 {#32}󰊠 {#33}󰊠 {#34}󰊠 {#35}󰊠 {#36}󰊠 {#37}󰊠",
+    },
+  ],
+}

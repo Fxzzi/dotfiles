@@ -7,4 +7,5 @@
 .config/nvim/lua/.luarc.json
 
 .config/ags/colors_ags.css
+.config/wleave/colors_wleave.css
 .config/dunst/dunstrc

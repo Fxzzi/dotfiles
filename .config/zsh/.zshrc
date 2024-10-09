@@ -17,6 +17,6 @@ PROMPT='%F{yellow}%3~%f $ '
 if [ -n "${WAYLAND_DISPLAY}" ]; then
     fastfetch
 else
-    macchina --theme fazzi
+    fastfetch -l none
 fi
 

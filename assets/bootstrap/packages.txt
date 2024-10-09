@@ -1,4 +1,5 @@
 acpilight
+ags
 bottom
 dunst
 eza
@@ -14,7 +15,7 @@ ffmpegthumbnailer
 hyprland
 hypridle-git
 jq
-macchina
+fastfetch
 mpc
 mpd
 ncmpcpp
@@ -32,9 +33,7 @@ ripgrep
 slurp
 hyprpaper
 hyprlock
-xcursor-simp1e-tokyo-night-light
 ttf-space-mono-nerd
-waybar
 wl-clipboard
 wleave-git
 fuzzel

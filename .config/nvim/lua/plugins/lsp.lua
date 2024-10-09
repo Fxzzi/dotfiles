@@ -3,7 +3,7 @@ local servers = {
 	["cssls"] = {},
 	["html"] = {},
 	["lua_ls"] = {},
-	["tsserver"] = {},
+	["ts_ls"] = {},
 	["pylsp"] = {},
 }
 
@@ -103,7 +103,7 @@ return {
 				"pylsp",
 				"shellcheck",
 				"stylua",
-				"tsserver",
+				"ts_ls",
 			},
 		},
 		config = function(_, opts)
