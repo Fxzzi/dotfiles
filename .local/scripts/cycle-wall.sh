@@ -1,13 +1,13 @@
 #!/usr/bin/env sh
 
-WALLPAPER_DIR="$HOME/walls/"
+WALLPAPER_DIR="$HOME/walls/images/"
 INDEX_FILE="/tmp/wallust-index"
 
-# Create index file if it doesn't exist, defaulting to -1
+# Create index file if it doesn't exist, defaulting to 0
 [ ! -f "$INDEX_FILE" ] && echo -1 > "$INDEX_FILE"
 
-# Read the current index and get the list of images with specific extensions
-mapfile -t IMAGES < <(find "$WALLPAPER_DIR" -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.webp" \) | sort)
+# Read the current index and get sorted image list in one step
+mapfile -t IMAGES < <(find "$WALLPAPER_DIR" -type f)
 
 # Calculate the next index
 NEXT_INDEX=$(( ($(<"$INDEX_FILE") + 1) % ${#IMAGES[@]} ))
