@@ -36,4 +36,4 @@ If errors arise at this point, this will be because you have existing configs in
 
 ## 🖥️ Wallpapers
 
-Browse through the collection of wallpapers in the [walls repo.](https://gitlab.com/fazzi/walls "walls repo").
+Browse through the collection of wallpapers in the [walls repo.](https://gitlab.com/fazzi/walls "walls repo")
