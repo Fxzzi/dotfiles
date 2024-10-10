@@ -19,14 +19,20 @@
 
 ## 📁 Installation
 
+Make sure you install GNU Stow. To do this on Arch, run
+```bash
+sudo pacman -S stow
+```
+
+
 ```bash
 git clone https://gitlab.com/fazzi/dotfiles.git
 cd dotfiles
-./install
+stow .
 ```
 
-This will use `dotbot` to set-up symlinks in the correct locations. It will also install zsh, paru, and other packages. **PLEASE BACKUP YOUR OWN CONFIGS BEFORE PROCEEDING!**
+This will set-up symlinks to the correct locations. It will also install zsh, paru, and other packages. **PLEASE BACKUP YOUR OWN CONFIGS BEFORE PROCEEDING!**
 
 ## 🖥️ Wallpapers
 
-Browse through the collection of wallpapers in the [wallpaper folder](https://gitlab.com/fazzi/dotfiles/-/tree/hyprland-laptop/Wallpapers "wallpaper folder").
+Browse through the collection of wallpapers in the [walls repo.](https://gitlab.com/fazzi/walls "walls repo").
