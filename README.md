@@ -19,19 +19,20 @@
 
 ## 📁 Installation
 
-Make sure you install GNU Stow. To do this on Arch, run
+Make sure you install GNU Stow and git. To do this on Arch, run
 ```bash
-sudo pacman -S stow
+sudo pacman -S --needed stow git
 ```
-
-
+Then, you can clone the repo and cd into it 
 ```bash
 git clone https://gitlab.com/fazzi/dotfiles.git
 cd dotfiles
+```
+And finally, set up the symlinks.
+```
 stow .
 ```
-
-This will set-up symlinks to the correct locations. It will also install zsh, paru, and other packages. **PLEASE BACKUP YOUR OWN CONFIGS BEFORE PROCEEDING!**
+If errors arise at this point, this will be because you have existing configs in those locations. Please back these up somewhere else to allow the stow command to complete successfully.
 
 ## 🖥️ Wallpapers
 
