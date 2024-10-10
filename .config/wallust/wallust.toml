@@ -27,3 +27,6 @@ wleave.target = '~/.config/wleave/colors_wleave.css'
 
 dunst.template = "dunstrc"
 dunst.target = '~/.config/dunst/dunstrc'
+
+startpage.template = "colors_startpage.css"
+startpage.target = '~/.cache/wallust/colors_startpage.css'

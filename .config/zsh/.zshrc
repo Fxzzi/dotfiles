@@ -14,9 +14,9 @@ source ${ZDOTDIR}/keybinds-late.zsh # Source late load keybinds
 
 PROMPT='%F{yellow}%3~%f $ '
 
-if [ -n "${WAYLAND_DISPLAY}" ]; then
-    fastfetch
+# Run fetch script on zsh start
+if [ -z $WAYLAND_DISPLAY ]; then
+	fastfetch -l none
 else
-    fastfetch -l none
+	fastfetch
 fi
-

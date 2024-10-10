@@ -1,39 +1,27 @@
-mpd_music_dir = "$HOME/Music/"
-lyrics_directory = ~/.local/share/ncmpcpp/lyrics
-mouse_list_scroll_whole_page = "yes"
-lines_scrolled = "1"
+# Directories
+mpd_music_dir = "~/Music"
+lyrics_directory = "~/.local/share/ncmpcpp/lyrics"
 
+# Mouse and scrolling
+mouse_support = "yes"
+lines_scrolled = 1
+
+# Playlist settings
 playlist_shorten_total_times = "yes"
-playlist_display_mode = "classic"
 autocenter_mode = "yes"
-user_interface = "alternative"
-display_bitrate = "no"
+
+# Editor
 external_editor = "nvim"
 
+# Progress bar settings
 progressbar_elapsed_color = "blue"
 progressbar_color = "black"
+progressbar_look = "━━"
 
-progressbar_look = "▃▃▃"
+# Song formatting
+# song_columns_list_format = "(7)[blue]{l} (30)[green]{b} (25)[yellow]{a} (10)[red]{t}
+song_columns_list_format = "(7)[blue]{l} (30)[yellow]{a} (20)[red]{t}
+song_window_title_format = "{%a} - {%t}"
 
-mouse_support = "yes"
-header_visibility = "no"
-statusbar_visibility = "no"
-
-statusbar_color = "white"
-titles_visibility = "no"
-enable_window_title = "yes"
-
-now_playing_prefix = "$b "
-now_playing_suffix = "$/b"
-
-
-song_columns_list_format = "(6)[]{} (23)[red]{a} (26)[yellow]{t|f} (40)[green]{b} (4)[blue]{l}"
-
-color1 = "white"
-color2 = "black"
-
-song_list_format = "$5{%a $2»$8 %t}$0"
-song_window_title_format = " {%a} - {%t}"
-execute_on_song_change = dunstify -a "ncmpcpp" -u low -r 9000 -i emblem-music-symbolic "Now Playing" "$(mpc --format '%title% \n%artist%' current)"
-
-
+# Notifications
+execute_on_song_change = dunstify -a "ncmpcpp" -u low -r 9000 -i emblem-music-symbolic "Now Playing" "$(mpc --format '%title%\n%artist%' current)"
