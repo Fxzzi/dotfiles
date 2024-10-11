@@ -1,6 +1,7 @@
 @import url("colors_ags.css");
 
-window > box {
+window > box,
+window > button {
   background: @background;
   font: 18px "SpaceMono Nerd Font";
   color: @foreground;
@@ -13,6 +14,8 @@ window > box {
 button {
   background: transparent;
   box-shadow: none;
+	padding: 0;
+	margin: 0;
 }
 
 .workspaces {
@@ -25,7 +28,6 @@ button {
 
 .workspaces button {
   border-radius: 0;
-  transition: none;
   padding: 0 1px;
   box-shadow: none;
   color: @foreground;

@@ -1,7 +1,8 @@
 const hyprland = await Service.import("hyprland");
 
+const MAX_TITLE_LENGTH = 64;
+
 export function ClientTitleWidget() {
-  const maxLength = 64;
   return Widget.Box({
     children: [
       Widget.Label({
@@ -9,8 +10,8 @@ export function ClientTitleWidget() {
         label: hyprland.active.client
           .bind("title")
           .as((title) =>
-            title.length > maxLength
-              ? `${title.substring(0, maxLength - 3)}...`
+            title.length > MAX_TITLE_LENGTH
+              ? `${title.substring(0, MAX_TITLE_LENGTH - 3)}...`
               : title,
           ),
       }),

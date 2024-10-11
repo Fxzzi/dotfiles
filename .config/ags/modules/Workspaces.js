@@ -4,11 +4,11 @@ const hyprland = await Service.import("hyprland");
 export function Workspaces(monitorName) {
   const activeId = hyprland.active.workspace.bind("id");
 
+  // Dynamically filter workspaces by monitor name on each update
   const workspaces = hyprland.bind("workspaces").as((ws) => {
-    // Filter workspaces by the monitor name and sort them
     const filteredWorkspaces = ws
-      .filter(({ monitor }) => monitor === monitorName) // Compare monitor names
-      .sort((a, b) => a.id - b.id);
+      .filter(({ monitor }) => monitor === monitorName)
+      .sort((a, b) => a.id - b.id); // Ensure workspaces are sorted by ID
 
     // Create buttons for each workspace
     return filteredWorkspaces.map(({ id }) =>
@@ -16,7 +16,7 @@ export function Workspaces(monitorName) {
         on_clicked: () => hyprland.messageAsync(`dispatch workspace ${id}`),
         child: Widget.Label(`${id}`),
         class_name: activeId.as((active) => (active === id ? "focused" : "")),
-      }),
+      })
     );
   });
 

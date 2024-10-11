@@ -4,7 +4,7 @@ WALLPAPER_DIR="$HOME/Pictures/Wallpapers/wallust"
 INDEX_FILE="/tmp/wallust-index"
 
 # Create index file if it doesn't exist, defaulting to 0
-[ ! -f "$INDEX_FILE" ] && echo 0 > "$INDEX_FILE"
+[ ! -f "$INDEX_FILE" ] && echo -1 > "$INDEX_FILE"
 
 # Read the current index and get sorted image list in one step
 mapfile -t IMAGES < <(find "$WALLPAPER_DIR" -type f)
