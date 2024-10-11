@@ -1,6 +1,7 @@
 acpilight
 ags
 bottom
+chafa
 dunst
 eza
 fd
@@ -13,7 +14,7 @@ thunar-archive-plugin
 tumbler
 ffmpegthumbnailer
 hyprland
-hypridle-git
+hypridle
 jq
 fastfetch
 mpc
