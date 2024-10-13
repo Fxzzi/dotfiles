@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+export ZDOTDIR="$HOME"/.config/zsh
 
 # Set XDG Base Directory paths
 export XDG_CONFIG_HOME="${HOME}/.config"          # User configuration files
@@ -15,8 +15,9 @@ export ANDROID_HOME="${XDG_DATA_HOME}/android"    # Android SDK home
 
 # Set zsh shell history file path and set max history length
 export HISTFILE="${XDG_STATE_HOME}/zsh/history"
-export HISTSIZE=10000
-export SAVEHIST=10000
+export HISTSIZE=5000
+export SAVEHIST=$HISTSIZE
+export HISTDUP=erase
 
 export ZSH_FZF_HISTORY_SEARCH_DATES_IN_SEARCH=0 # Disable dates in zsh-fzf-history
 export ZSH_FZF_HISTORY_SEARCH_EVENT_NUMBERS=0 # Disable index in zsh-fzf-history
