@@ -1,16 +1,17 @@
 @import url("colors_ags.css");
 
-window > box,
-window > button {
+window > box {
   background: @background;
-  font: 18px "SpaceMono Nerd Font";
-  color: @foreground;
   margin: 4px;
   margin-bottom: 0px;
   border: 2px solid @color4;
   min-height: 32px;
 }
 
+label {
+  font: 18px "SpaceMono Nerd Font";
+  color: @foreground;
+}
 button {
   background: transparent;
   box-shadow: none;
@@ -28,10 +29,9 @@ button {
 
 .workspaces button {
   border-radius: 0;
-  padding: 0 1px;
+  padding: 0 2px;
   box-shadow: none;
   color: @foreground;
-  background-color: transparent;
 }
 
 .workspaces button.focused {
@@ -41,7 +41,6 @@ button {
 
 .workspaces button:hover {
   color: @color4;
-  background: transparent;
 }
 
 .icon {
@@ -52,12 +51,4 @@ button {
 .tray {
   background: transparent;
   margin-right: -5px;
-}
-
-.icon .charging {
-	color: unset;
-}
-
-.icon .charged {
-	color: unset;
 }

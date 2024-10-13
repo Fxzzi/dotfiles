@@ -1,9 +1,9 @@
 #!/usr/bin/env sh
 
-WALLPAPER_DIR="$HOME/Pictures/Wallpapers/wallust"
+WALLPAPER_DIR="$HOME/walls/images/"
 INDEX_FILE="/tmp/wallust-index"
 
-# Create index file if it doesn't exist, defaulting to 0
+# Create index file if it doesn't exist, defaulting to -1
 [ ! -f "$INDEX_FILE" ] && echo -1 > "$INDEX_FILE"
 
 # Read the current index and get sorted image list in one step
