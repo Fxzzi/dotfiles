@@ -28,6 +28,7 @@ alias rs='curl --data-binary @- https://paste.rs | wl-copy'  # Share output to a
 alias vim='$EDITOR'
 alias vi='$EDITOR'
 alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
+alias ncm='ncmpcpp'
 
 # nvidia gpu undervolt script
 alias uvolt="sudo systemctl restart nvidia-undervolt.service"
@@ -43,3 +44,5 @@ alias yeet="sudo pacman -Rns"
 # spotify adblocker
 alias spotx="bash <(curl -sSL https://spotx-official.github.io/run.sh)"
 alias spotxset="spotx -h -l"
+
+alias mtpr="rsync --verbose --progress --omit-dir-times --no-perms --recursive --inplace"
