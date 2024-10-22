@@ -6,7 +6,8 @@
 
 window > box {
   background: @background;
-  font: 17px "SpaceMono Nerd Font";
+  font: 17px monospace;
+	font-weight: bold;
   color: @foreground;
   margin: 4px;
   margin-bottom: 0px;
@@ -20,11 +21,11 @@ button {
 }
 
 .workspaces {
-  margin-left: 6px;
+  margin-left: 5px;
 }
 
 .volume {
-  margin-right: 6px;
+  margin-right: 5px;
 }
 
 .workspaces button {
@@ -47,19 +48,11 @@ button {
 }
 
 .icon {
-  padding-right: 5px;
+  padding-right: 4px;
   color: @color4;
 }
 
 .tray {
   background: transparent;
-  margin-right: -5px;
-}
-
-.icon .charging {
-	color: @color15;
-}
-
-.icon .charged {
-	color: @color13;
+  margin-right: -4px;
 }
