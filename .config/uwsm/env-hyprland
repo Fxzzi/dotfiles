@@ -11,5 +11,5 @@ export MOZ_DISABLE_RDD_SANDBOX=1
 env = __GL_SYNC_TO_VBLANK,0
 
 # enable these when nvidia gets their shit together
-env = __GL_GSYNC_ALLOWED,0
-env = __GL_VRR_ALLOWED,0
+env = __GL_GSYNC_ALLOWED,1
+env = __GL_VRR_ALLOWED,1
